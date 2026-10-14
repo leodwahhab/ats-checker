@@ -1,0 +1,101 @@
+{
+  "titulo": "Engenharia de Software Júnior - Python/AWS - Comunidade Finanças",
+  "familia": "desenvolvimento",
+  "senioridade": "junior",
+  "idioma": "pt",
+  "modelo": "presencial",
+  "local": "São Paulo - SP",
+  "pais": "Brasil",
+  "temSecoes": true,
+  "requisitos": [
+    {
+      "texto": "Você fará parte de um ambiente colaborativo, inovador e com grande exposição a desafios reais de negócio, trabalhando ao lado de profissionais experientes em projetos estratégicos de transformação digital, modernização de plataformas e soluções em nuvem.",
+      "tipo": "informativo",
+      "fonte": "secao",
+      "componentes": [
+        "skill:cloud"
+      ]
+    },
+    {
+      "texto": "No dia a dia, você terá a oportunidade de desenvolver conhecimentos em engenharia de dados, automação, cloud computing, observabilidade e boas práticas de desenvolvimento, contribuindo para a construção de soluções escaláveis que impactam diretamente a experiência de milhões de clientes.",
+      "tipo": "informativo",
+      "fonte": "secao",
+      "componentes": [
+        "skill:engenharia-dados",
+        "skill:cloud",
+        "skill:observabilidade"
+      ]
+    },
+    {
+      "texto": "AWS",
+      "tipo": "obrigatorio",
+      "fonte": "secao",
+      "componentes": [
+        "skill:aws"
+      ]
+    },
+    {
+      "texto": "Glue",
+      "tipo": "obrigatorio",
+      "fonte": "secao",
+      "componentes": [
+        "skill:glue"
+      ]
+    },
+    {
+      "texto": "Athena",
+      "tipo": "obrigatorio",
+      "fonte": "secao",
+      "componentes": [
+        "skill:athena"
+      ]
+    },
+    {
+      "texto": "Python",
+      "tipo": "obrigatorio",
+      "fonte": "secao",
+      "componentes": [
+        "skill:python"
+      ]
+    },
+    {
+      "texto": "Metodologia de projetos ágeis",
+      "tipo": "obrigatorio",
+      "fonte": "secao",
+      "componentes": [
+        "skill:agil"
+      ]
+    },
+    {
+      "texto": "SQL",
+      "tipo": "obrigatorio",
+      "fonte": "secao",
+      "componentes": [
+        "skill:sql"
+      ]
+    },
+    {
+      "texto": "Clean Architecture, Clean Code",
+      "tipo": "obrigatorio",
+      "fonte": "secao",
+      "componentes": [
+        "skill:clean-architecture",
+        "skill:clean-code"
+      ]
+    },
+    {
+      "texto": "Experiência com Git, code review e métricas de qualidade de codigo",
+      "tipo": "obrigatorio",
+      "fonte": "secao",
+      "componentes": [
+        "skill:git",
+        "skill:code-review"
+      ]
+    }
+  ],
+  "naoAvaliaveis": [],
+  "eliminatorias": [
+    "local: Trabalho presencial em São Paulo - SP"
+  ],
+  "afirmativa": null
+}

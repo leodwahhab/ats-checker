@@ -1,0 +1,36 @@
+A Equifax é onde você pode potencializar suas possibilidades. Se você deseja alcançar seu verdadeiro potencial, abrir novos caminhos, desenvolver novas habilidades, colaborar com mentes brilhantes e causar um impacto significativo, queremos ouvir de você.
+
+Funções que serão desempenhadas:
+
+    Auxiliar no design e desenvolvimento de componentes, microsserviços e APIs em Java, mantendo a documentação técnica atualizada.
+
+    Escrever código limpo, testável e participar ativamente de code reviews e discussões de arquitetura.
+
+    Atuar em um time colaborativo utilizando metodologias ágeis para transformar requisitos de negócio em soluções de tecnologia.
+
+    Aplicar práticas modernas de desenvolvimento (microsserviços, arquitetura serverless , CI/CD e Infraestrutura como Código).
+
+
+Requisitos necessários:
+
+    Superior completo em Ciência da Computação, Engenharia de Software, Sistemas de Informação ou áreas correlatas.
+
+    Familiaridade e vivência prévia em linguagem de programação Java.
+
+    Familiaridade ou vivência prévia com serviços em Nuvem (AWS, GCP ou Azure).
+
+    Familiaridade com controle de versão (Git / GitHub).
+
+Oferecemos benefícios abrangentes, como Participação nos Resultados, Benefícios Flexíveis (VR, VA, Plano de Saúde e Odontológico), Seguro de Vida, Previdência Privada, Gympass e Day-off no aniversário. Apoiamos famílias com Auxílio Creche, licença-maternidade de 180 dias e licença-paternidade de 20 dias.
+
+Nossa prioridade é promover bem-estar, equilíbrio, crescimento pessoal e profissional.
+
+Você está pronto para impulsionar o seu potencial? Candidate-se hoje mesmo e comece a trilhar um caminho rumo a uma nova e empolgante carreira na Equifax, onde você pode fazer a diferença!
+
+Who is Equifax? 
+
+At Equifax, we believe knowledge drives progress. As a global data, analytics and technology company, we play an essential role in the global economy by helping employers, employees, financial institutions and government agencies make critical decisions with greater confidence. ​​​​​​​ 
+
+We work to help create seamless and positive experiences during life’s pivotal moments: applying for jobs or a mortgage, financing an education or buying a car. Our impact is real and to accomplish our goals we focus on nurturing our people for career advancement and their learning and development, supporting our next generation of leaders, maintaining an inclusive and diverse work environment, and regularly engaging and recognizing our employees. Regardless of location or role, the individual and collective work of our employees makes a difference and we are looking for talented team players to join us as we help people live their financial best. 
+
+Equifax is an Equal Opportunity Employer. All qualified applicants will receive consideration for employment without regard to race, color, religion, sex, sexual orientation, gender identity, national origin, disability, veteran status, and other legally protected characteristics.

@@ -1,0 +1,92 @@
+Sobre a vaga
+
+Descrição da vaga
+
+No Grupo Stefanini, acreditamos no poder da colaboração. Co-criamos soluções inovadoras em parceria com nossos clientes, combinando tecnologia de ponta, inteligência artificial e a criatividade humana. Estamos na vanguarda da resolução de problemas de negócios, proporcionando impacto real em escala global.
+
+Ao se juntar à Stefanini, você se torna parte de uma jornada global de transformação. Estamos empenhados em criar impacto positivo não apenas nos negócios, mas também na vida de nossos colaboradores. Se você procura uma oportunidade de crescimento profissional em uma empresa que valoriza inovação, respeito, autonomia e parceria, você encontra aqui!
+
+Junte-se a nós e seja parte da mudança!
+
+Responsabilidades e atribuições
+
+Estamos em busca de uma pessoa Desenvolvedora Full Stack Júnior para apoiar a digitalização e a automação de processos, contribuindo para o desenvolvimento, manutenção e evolução de sistemas e soluções tecnológicas. A posição exige boa base em programação, capacidade de aprendizado e interesse em atuar em diferentes etapas do desenvolvimento de software. s e atribuições
+
+    Analisar e diagnosticar necessidades dos usuários e clientes;
+    Participar do levantamento e da especificação de requisitos;
+    Desenvolver, manter e evoluir sistemas e aplicações;
+    Criar novas telas, funcionalidades, integrações e automações;
+    Implementar e consumir APIs;
+    Desenvolver soluções utilizando plataformas Low Code e ferramentas de workflow;
+    Realizar manutenções corretivas, preventivas e evolutivas nos sistemas;
+    Elaborar e executar testes para garantir a qualidade das aplicações;
+    Identificar causas-raiz de problemas e propor soluções;
+    Apoiar a identificação de pontos únicos de falha e oportunidades de melhoria;
+    Modelar tabelas e realizar consultas em bancos de dados;
+    Otimizar consultas e rotinas de acesso aos dados;
+    Elaborar documentação técnica clara e objetiva;
+    Apoiar a definição de fluxos, componentes e arquiteturas de sistemas;
+    Realizar revisões de código, seguindo os padrões e boas práticas da empresa;
+    Acompanhar o desempenho, a disponibilidade e a escalabilidade das soluções desenvolvidas;
+    Contribuir para o desenvolvimento de soluções escaláveis e resilientes para processos críticos;
+    Atuar em equipe, sob orientação técnica, participando das etapas de análise, desenvolvimento, testes e manutenção.
+
+Experiência desejada
+
+    Experiência acadêmica, profissional ou em projetos de desenvolvimento de software;
+    Vivência com desenvolvimento de sistemas, APIs, banco de dados ou automações;
+    Experiência com levantamento de requisitos e entendimento das necessidades dos usuários;
+    Conhecimento em manutenção e evolução de aplicações;
+    Experiência com testes, documentação técnica ou revisão de código será considerada um diferencial;
+    Vivência com metodologias de desenvolvimento, projetos acadêmicos, bootcamps ou cursos práticos na área de tecnologia.
+
+Requisitos e qualificações
+
+Conhecimentos técnicos
+
+    Conhecimento em lógica de programação;
+    Conhecimento em pelo menos uma linguagem de programação, como Java, JavaScript, C#, .NET, J2EE ou Python;
+    Conhecimento em desenvolvimento de APIs e integrações;
+    Conhecimento em HTML, XML e CSS;
+    Conhecimento em SQL e bancos de dados;
+    Noções de modelagem de dados e criação de tabelas;
+    Noções de análise e arquitetura de sistemas;
+    Conhecimento em desenvolvimento e manutenção de aplicações;
+    Noções de testes de software e garantia da qualidade;
+    Conhecimento em Git e controle de versão;
+    Noções de microsserviços, DevSecOps e segurança da informação;
+    Conhecimento em sistemas operacionais e boas práticas de proteção de ambientes;
+    Noções de usabilidade e acessibilidade na web;
+    Conhecimento ou interesse em ferramentas de workflow e plataformas Low Code.
+
+Tecnologias e ferramentas
+
+    Java;
+    JavaScript;
+    Angular;
+    React Native;
+    C# e .NET;
+    Python;
+    HTML, XML e CSS;
+    SQL;
+    Oracle, MySQL, PostgreSQL ou SQL Server;
+    Eclipse, JBoss e SQL Developer;
+    ServiceNow ou outras ferramentas de ITSM;
+    Força;
+    Ferramentas de workflow e automação.
+
+Competências comportamentais
+
+    Vontade de aprender e se desenvolver profissionalmente;
+    Proatividade e curiosidade;
+    Organização e atenção aos detalhes;
+    Capacidade de análise e resolução de problemas;
+    Boa comunicação e trabalho em equipe;
+    Comprometimento com prazos e qualidade das entregas;
+    Interesse por inovação, automação e melhoria contínua;
+    Capacidade de receber orientações, aprender com o time e evoluir tecnicamente.
+
+ Certificações
+
+    Certificações em desenvolvimento, cloud, DevOps, bancos de dados, ITSM ou metodologias ágeis serão consideradas diferenciais;
+    Certificações desejáveis: AWS Certified Developer, Microsoft Azure Developer Associate, Microsoft DevOps Engineer, Google Cloud Architect, IBM Cloud, CSDP ou ITIL 4 Foundation.

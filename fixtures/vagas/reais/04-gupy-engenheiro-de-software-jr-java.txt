@@ -1,0 +1,94 @@
+Engenheiro de Software Jr. (Java)
+
+Publicada em 20 de agosto de 2026
+
+Inscrições abertas até 31 de dezembro de 2026
+
+Local de trabalho: São Paulo - SPjobTypes.vacancy_type_effectiveSão Paulo - SP
+
+Tipo de vaga: EfetivoModelo de trabalho íconeEfetivo
+
+Modelo de trabalho: HíbridoTrabalho Híbrido íconeHíbrido
+
+Vaga também para PcD
+Ícone de accessibilidadeVaga também para PcD
+Descrição da vaga
+
+Quando você pensa em carreira, o que vem à sua mente? Propósito? Colaboração? Ser protagonista para fazer a diferença? No PagBank temos tudo isso e muito mais. 💛
+
+Estamos em busca de pessoas que vistam a camisa com orgulho. Gente com vontade de facilitar a vida financeira das pessoas e impulsionar negócios!
+
+Tá a fim de uma carreira que rende mais? Confira essa oportunidade e #VemProPags!
+Responsabilidades e atribuições
+
+Atuar no desenvolvimento e manutenção de aplicações Java, seguindo boas práticas de desenvolvimento de software.
+Participar do levantamento e entendimento de requisitos de negócio e técnicos com apoio do time.
+Auxiliar na elaboração e atualização de documentações técnicas, fluxos e diagramas.
+Atuar na implementação de melhorias e correções em sistemas existentes.
+Apoiar a identificação e resolução de problemas em aplicações, realizando análises e depurações de código.
+Colaborar com desenvolvedores mais experientes na evolução e sustentação dos sistemas.
+Participar das discussões técnicas e contribuir com sugestões de melhorias para os produtos e processos.
+Desenvolver e manter testes unitários e de integração.
+Apoiar o desenvolvimento e manutenção de APIs e serviços.
+Trabalhar em conjunto com equipes multidisciplinares utilizando metodologias ágeis.
+
+Requisitos e qualificações
+
+Ensino Superior completo ou em andamento em Ciência da Computação, Engenharia da Computação, Sistemas de Informação ou áreas correlatas.
+Conhecimento em desenvolvimento Java.
+Conhecimento básico em banco de dados relacionais e SQL (Oracle, MySQL ou PostgreSQL).
+Conhecimento em controle de versão utilizando Git.
+Conhecimento em metodologias ágeis, como Scrum ou Kanban.
+Conhecimento em orientação a objetos e conceitos básicos de padrões de projeto.
+Conhecimento em testes automatizados utilizando JUnit, Mockito ou frameworks similares.
+Desejável conhecimento em Spring Boot.
+Desejável conhecimento em ferramentas de integração e entrega contínua (CI/CD).
+Desejável conhecimento em Python e aplicações de Inteligência Artificial.
+
+Etapas do processo
+
+    Etapa 1: Cadastro1Cadastro
+    Etapa 2: Triagem2Triagem
+    Etapa 3: Entrevista RH3Entrevista RH
+    Etapa 4: Entrevista Gestor4Entrevista Gestor
+    Etapa 5: Finalistas5Finalistas
+    Etapa 6: Contratação6Contratação
+
+Olá, somos o PagBank!
+
+Talvez você nos conheça por maquininhas ou comerciais que ficam na memória, mas somos muito mais! 
+
+Todos os dias desenvolvemos produtos e soluções inspiradas pelo nosso propósito: facilitar a vida financeira das pessoas e negócios. 
+
+Trabalhamos para transformar a forma como as pessoas lidam com dinheiro abrindo novas possibilidades para alcançarem seus sonhos. Como fazemos tudo isso? 
+
+💛 Com gente 
+
+Somos um time que joga junto! Aqui valorizamos todas as diversidades, seja de raça/etnia, gênero, idade, origem, pessoa com deficiência, orientação afetivo-sexual, constituição familiar e estética.
+
+💛 Com tecnologia 
+
+O espírito disruptivo e inovador está no nosso DNA: somos parte do Grupo UOL, empresa 100% brasileira, foi pioneira na internet e transforma a vida das pessoas desde 1996. 
+
+💛 Com uma só cultura
+
+Temos uma cultura forte e única, capaz de nos levar além, para continuarmos crescendo e perpetuando o nosso negócio.
+
+Somos um dos maiores bancos digitais do país e uma das fintechs mais rentáveis do segmento e certificados como um Excelente Lugar para Trabalhar pela Great Place to Work.
+
+Para vivenciar tudo isso, você terá um pacote completo de benefícios que fazem toda a diferença:
+
+    Vale-alimentação e/ou refeição.
+    Plano de saúde e odontológico.
+    Seguro de vida.
+    Parceria com TotalPass e ZenKlub.
+    Licença maternidade e paternidade estendidas.
+    Auxílio-creche.
+    Descontos de até 50% em pós-graduação e MBA de grandes instituições, como FIA, FAAP e PUCRS.
+
+
+E tem mais:
+
+    No dress code: o importante é você usar o que te faz bem.
+    #TáDeParabéns: Day off no aniversário.
+    Baby Gift: presente para recém-nascidos.

@@ -1,0 +1,85 @@
+{
+  "titulo": null,
+  "familia": null,
+  "senioridade": null,
+  "idioma": "pt",
+  "modelo": null,
+  "local": null,
+  "pais": null,
+  "temSecoes": true,
+  "requisitos": [
+    {
+      "texto": "Auxiliar no design e desenvolvimento de componentes, microsserviços e APIs em Java, mantendo a documentação técnica atualizada.",
+      "tipo": "informativo",
+      "fonte": "secao",
+      "componentes": [
+        "skill:microsservicos",
+        "skill:apis",
+        "skill:java",
+        "skill:documentacao"
+      ]
+    },
+    {
+      "texto": "Escrever código limpo, testável e participar ativamente de code reviews e discussões de arquitetura.",
+      "tipo": "informativo",
+      "fonte": "secao",
+      "componentes": [
+        "skill:clean-code",
+        "skill:code-review"
+      ]
+    },
+    {
+      "texto": "Atuar em um time colaborativo utilizando metodologias ágeis para transformar requisitos de negócio em soluções de tecnologia.",
+      "tipo": "informativo",
+      "fonte": "secao",
+      "componentes": [
+        "skill:agil"
+      ]
+    },
+    {
+      "texto": "Aplicar práticas modernas de desenvolvimento (microsserviços, arquitetura serverless , CI/CD e Infraestrutura como Código).",
+      "tipo": "informativo",
+      "fonte": "secao",
+      "componentes": [
+        "alguma:microsservicos|serverless|ci-cd|iac"
+      ]
+    },
+    {
+      "texto": "Superior completo em Ciência da Computação, Engenharia de Software, Sistemas de Informação ou áreas correlatas.",
+      "tipo": "obrigatorio",
+      "fonte": "secao",
+      "componentes": [
+        "formacao:graduacao:ti"
+      ]
+    },
+    {
+      "texto": "Familiaridade e vivência prévia em linguagem de programação Java.",
+      "tipo": "obrigatorio",
+      "fonte": "secao",
+      "componentes": [
+        "skill:java"
+      ]
+    },
+    {
+      "texto": "Familiaridade ou vivência prévia com serviços em Nuvem (AWS, GCP ou Azure).",
+      "tipo": "obrigatorio",
+      "fonte": "secao",
+      "componentes": [
+        "alguma:cloud|aws|gcp|azure"
+      ]
+    },
+    {
+      "texto": "Familiaridade com controle de versão (Git / GitHub).",
+      "tipo": "obrigatorio",
+      "fonte": "secao",
+      "componentes": [
+        "alguma:versionamento|git|github"
+      ]
+    }
+  ],
+  "naoAvaliaveis": [],
+  "eliminatorias": [
+    "formacao: Ensino superior completo em TI ou área afim"
+  ],
+  "afirmativa": null
+}

@@ -1,0 +1,68 @@
+Analista de Sistemas Jr - Vila Olímpia
+
+Publicada em 28 de setembro de 2026
+
+Inscrições abertas até 20 de outubro de 2026
+
+Local de trabalho: São Paulo - SPjobTypes.vacancy_type_effectiveSão Paulo - SP
+
+Tipo de vaga: EfetivoModelo de trabalho íconeEfetivo
+
+Modelo de trabalho: HíbridoTrabalho Híbrido íconeHíbrido
+
+Vaga também para PcD
+Ícone de accessibilidadeVaga também para PcD
+Descrição da vaga
+
+Na Elgin, a tecnologia vai além de cada costura —
+
+ela nasce da nossa paixão por fazer diferente e melhor, todos os dias.
+
+Somos uma empresa orgulhosamente brasileira, com mais de 70 anos de história, e seguimos com a energia de quem está sempre começando. Crescemos com o Brasil, acompanhando a evolução das famílias, dos comércios e das indústrias. Hoje, somos mais de 2.000 profissionais altamente qualificados espalhados por unidades em São Paulo, Mogi das Cruzes, Jundiaí, Manaus, Itajaí, Joinville, Hortolândia e Cabo de Santo Agostinho.
+
+💡 Da automação ao ar-condicionado.
+
+🔋 Da refrigeração à iluminação inteligente.
+
+📱 Do dia a dia nas casas ao movimento das grandes empresas.
+
+Estamos presentes com soluções que facilitam, transformam e inovam mais do que você imagina. Aqui, cada ideia conta, cada desafio é oportunidade e cada colaborador tem espaço para crescer e deixar sua marca. Todo mundo é bem-vindo para ser quem é, porque só quando somos diferentes uns dos outros conseguimos criar soluções que acompanham o mundo em constante mudança.
+
+Na Elgin, você não entra só para trabalhar.
+
+Você entra para criar o novo.
+
+#VemSerElgin #ElginMaisDoQueVocêImagina
+Responsabilidades e atribuições
+
+
+    Realizar atendimento N1 aos usuários do Ecomex, analisando incidentes, requisições e dúvidas operacionais.
+     Acompanhar e tratar chamados junto ao fornecedor NSI/Ecomex.
+    Realizar análise funcional inicial de erros e identificar necessidade de escalonamento.
+     Acompanhar homologações de correções, melhorias e patches do Ecomex.
+    Apoiar a análise e monitoração das integrações Ecomex x SAP, identificando falhas, coletando evidências e realizando o direcionamento para os times responsáveis quando necessário.
+     Criar cenários de teste e acompanhar validações com usuários e áreas de negócio.
+     Acompanhar chamados até sua resolução e validação.
+     Apoiar os processos de Importação e Exportação relacionados ao sistema Ecomex
+     Produzir documentações, procedimentos e orientação aos usuários
+
+Requisitos e qualificações
+
+    Ensino Superior cursando ou completo em Sistemas de Informação, Análise e Desenvolvimento de Sistemas, Ciência da Computação, Engenharia da Computação ou áreas correlatas
+    Conhecimentos ou cursos relacionados a Comércio Exterior, Importação e Exportação
+     Conhecimentos de SAP, especialmente processos integrados com sistemas de comércio exterior
+     ITIL ou fundamentos de gestão de incidentes e serviços de TI
+    Desejável conhecimento do Ecomex/NSI
+    Conhecimentos básicos sobre integrações entre sistemas (IDoc, RFC, APIs/Webservices) serão considerados diferencial.
+    Capacidade de análise e troubleshooting de incidentes
+     Conhecimento de processos de suporte N1 e gestão de chamados
+     Conhecimento básico de processos de Importação e Exportação
+    Capacidade de conduzir homologações e produzir documentações
+    Conhecimento de integrações entre sistemas, especialmente Ecomex x SAP
+     Organização e acompanhamento de pendências até a resolução
+     Boa comunicação com usuários, áreas de negócio e fornecedores
+    Ecomex / NSI desejável conhecimento básico ou experiência de utilização
+     Microsoft Excel nível intermediário
+    Microsoft 365 (Outlook, Teams, Word e PowerPoint)
+     Ferramentas de gestão de chamados / Service Desk
+     Conhecimentos básicos em ferramentas e tecnologias de integração (IDoc, RFC, APIs/Webservices) desejável

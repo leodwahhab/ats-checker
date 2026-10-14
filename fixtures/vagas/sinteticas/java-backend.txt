@@ -1,0 +1,19 @@
+Pessoa Desenvolvedora Back-end Java
+
+Responsabilidades
+- Desenvolver e manter microsserviços em Java
+- Participar de code reviews
+
+Requisitos obrigatórios
+- Java
+- Spring Boot
+- SQL
+- Docker
+
+Desejável
+- Kafka
+- AWS
+
+Benefícios
+- Vale refeição
+- Plano de saúde

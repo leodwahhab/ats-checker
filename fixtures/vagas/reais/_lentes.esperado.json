@@ -1,0 +1,80 @@
+{
+  "01-greenhouse-engenheiro.de.sofware.junior": {
+    "CV_J-2": "Aderência parcial (Maybe) · Aderência média · Maybe (3 de 3 skills) · Nota D",
+    "CV_P-1": "Aderência parcial (Maybe) · Aderência média · Maybe (3 de 3 skills) · Nota D",
+    "Profile": "Aderência parcial (Maybe) · Aderência média · Maybe (2 de 3 skills) · Nota D",
+    "CV_Canva": "Aderência parcial (Maybe) · Aderência média · Maybe (2 de 3 skills) · Nota D"
+  },
+  "02-greenhouse-software,engineer.backend": {
+    "CV_J-2": "Não atende (Not fit) · Aderência baixa · Not a fit (8 de 11 skills) · Nota C",
+    "CV_P-1": "Não atende (Not fit) · Aderência baixa · Not a fit (8 de 11 skills) · Nota C",
+    "Profile": "Não atende (Not fit) · Aderência baixa · Not a fit (7 de 11 skills) · Nota D",
+    "CV_Canva": "Não atende (Not fit) · Aderência baixa · Not a fit (5 de 11 skills) · Nota D"
+  },
+  "03-inhire-desenvolvedor.fullstack.junior": {
+    "CV_J-2": "Não atende (Not fit) · Aderência baixa · Not a fit (16 de 24 skills) · Nota C",
+    "CV_P-1": "Não atende (Not fit) · Aderência baixa · Not a fit (16 de 24 skills) · Nota C",
+    "Profile": "Não atende (Not fit) · Aderência baixa · Not a fit (12 de 24 skills) · Nota D",
+    "CV_Canva": "Não atende (Not fit) · Aderência baixa · Not a fit (11 de 24 skills) · Nota D"
+  },
+  "04-gupy-engenheiro-de-software-jr-java": {
+    "CV_J-2": "Alta aderência (Top fit) · Aderência alta · Top fit (13 de 14 skills) · Nota A",
+    "CV_P-1": "Alta aderência (Top fit) · Aderência alta · Top fit (13 de 14 skills) · Nota A",
+    "Profile": "Não atende (Not fit) · Aderência baixa · Not a fit (10 de 14 skills) · Nota C",
+    "CV_Canva": "Não atende (Not fit) · Aderência baixa · Not a fit (10 de 14 skills) · Nota C"
+  },
+  "06-myworkdayjobs-engenheiro.software.backend.junior": {
+    "CV_J-2": "Alta aderência (Top fit) · Aderência alta · Top fit (3 de 3 skills) · Nota A",
+    "CV_P-1": "Alta aderência (Top fit) · Aderência alta · Top fit (3 de 3 skills) · Nota A",
+    "Profile": "Alta aderência (Top fit) · Aderência alta · Top fit (3 de 3 skills) · Nota A",
+    "CV_Canva": "Não atende (Not fit) · Aderência baixa · Not a fit (2 de 3 skills) · Nota D"
+  },
+  "07-gupy-analista.de.sistemas.jr": {
+    "CV_J-2": "Aderência parcial (Maybe) · Aderência baixa · Maybe (2 de 3 skills) · Nota C",
+    "CV_P-1": "Aderência parcial (Maybe) · Aderência baixa · Maybe (2 de 3 skills) · Nota C",
+    "Profile": "Não atende (Not fit) · Aderência baixa · Not a fit (2 de 3 skills) · Nota C",
+    "CV_Canva": "Não atende (Not fit) · Aderência baixa · Not a fit (2 de 3 skills) · Nota D"
+  },
+  "08-gupy-analista.de.sistemas.jr": {
+    "CV_J-2": "Não atende (Not fit) · Aderência baixa · Not a fit (4 de 9 skills) · Nota D",
+    "CV_P-1": "Não atende (Not fit) · Aderência baixa · Not a fit (4 de 9 skills) · Nota D",
+    "Profile": "Não atende (Not fit) · Aderência baixa · Not a fit (7 de 9 skills) · Nota C",
+    "CV_Canva": "Não atende (Not fit) · Aderência baixa · Not a fit (2 de 9 skills) · Nota D"
+  },
+  "09-gupy-analista.de.sistemas.jr": {
+    "CV_J-2": "Não atende (Not fit) · Aderência baixa · Not a fit (2 de 7 skills) · Nota D",
+    "CV_P-1": "Não atende (Not fit) · Aderência baixa · Not a fit (2 de 7 skills) · Nota D",
+    "Profile": "Não atende (Not fit) · Aderência baixa · Not a fit (4 de 7 skills) · Nota C",
+    "CV_Canva": "Não atende (Not fit) · Aderência baixa · Not a fit (1 de 7 skills) · Nota D"
+  },
+  "10-gupy-engenharia.de.software.jr": {
+    "CV_J-2": "Não atende (Not fit) · Aderência baixa · Not a fit (22 de 24 skills) · Nota C",
+    "CV_P-1": "Não atende (Not fit) · Aderência baixa · Not a fit (22 de 24 skills) · Nota C",
+    "Profile": "Não atende (Not fit) · Aderência baixa · Not a fit (21 de 24 skills) · Nota C",
+    "CV_Canva": "Não atende (Not fit) · Aderência baixa · Not a fit (16 de 24 skills) · Nota D"
+  },
+  "11-gupy-engenheiro.de.TI.junior": {
+    "CV_J-2": "Não atende (Not fit) · Aderência baixa · Not a fit (5 de 10 skills) · Nota C",
+    "CV_P-1": "Não atende (Not fit) · Aderência baixa · Not a fit (5 de 10 skills) · Nota C",
+    "Profile": "Não atende (Not fit) · Aderência baixa · Not a fit (4 de 10 skills) · Nota D",
+    "CV_Canva": "Não atende (Not fit) · Aderência baixa · Not a fit (4 de 10 skills) · Nota D"
+  },
+  "12-linkedin-desenvolvedor.fullstack.junior.java.spring": {
+    "CV_J-2": "Não atende (Not fit) · Aderência baixa · Not a fit (10 de 15 skills) · Nota C",
+    "CV_P-1": "Não atende (Not fit) · Aderência baixa · Not a fit (10 de 15 skills) · Nota C",
+    "Profile": "Não atende (Not fit) · Aderência baixa · Not a fit (8 de 15 skills) · Nota D",
+    "CV_Canva": "Não atende (Not fit) · Aderência baixa · Not a fit (6 de 15 skills) · Nota D"
+  },
+  "13-linkedin-junior.java.developer": {
+    "CV_J-2": "Aderência parcial (Maybe) · Aderência média · Maybe (12 de 14 skills) · Nota C",
+    "CV_P-1": "Aderência parcial (Maybe) · Aderência média · Maybe (12 de 14 skills) · Nota C",
+    "Profile": "Não atende (Not fit) · Aderência baixa · Not a fit (9 de 14 skills) · Nota C",
+    "CV_Canva": "Não atende (Not fit) · Aderência baixa · Not a fit (12 de 14 skills) · Nota C"
+  },
+  "14-linkedin-desenvolvedor.fullstack.jr.java.angular": {
+    "CV_J-2": "Não atende (Not fit) · Aderência baixa · Not a fit (14 de 23 skills) · Nota D",
+    "CV_P-1": "Não atende (Not fit) · Aderência baixa · Not a fit (14 de 23 skills) · Nota D",
+    "Profile": "Não atende (Not fit) · Aderência baixa · Not a fit (11 de 23 skills) · Nota D",
+    "CV_Canva": "Não atende (Not fit) · Aderência baixa · Not a fit (12 de 23 skills) · Nota C"
+  }
+}

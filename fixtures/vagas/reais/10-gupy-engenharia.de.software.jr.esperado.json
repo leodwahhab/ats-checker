@@ -1,0 +1,160 @@
+{
+  "titulo": "CAS | Engenharia de Software JR - (Preferencialmente para Pessoas com Deficiência)",
+  "familia": "desenvolvimento",
+  "senioridade": "junior",
+  "idioma": "pt",
+  "modelo": "remoto",
+  "local": null,
+  "pais": null,
+  "temSecoes": true,
+  "requisitos": [
+    {
+      "texto": "Participar do desenvolvimento e manutenção de aplicações e APIs.",
+      "tipo": "informativo",
+      "fonte": "secao",
+      "componentes": [
+        "skill:apis"
+      ]
+    },
+    {
+      "texto": "Colaborar com desenvolvedores mais experientes em revisões de código e definição de soluções.",
+      "tipo": "informativo",
+      "fonte": "secao",
+      "componentes": [
+        "skill:code-review"
+      ]
+    },
+    {
+      "texto": "Conhecimento em desenvolvimento de aplicações back-end utilizando Java e Spring Boot.",
+      "tipo": "obrigatorio",
+      "fonte": "secao",
+      "componentes": [
+        "skill:backend-dev",
+        "skill:java",
+        "skill:spring-boot"
+      ]
+    },
+    {
+      "texto": "Experiência acadêmica, projetos pessoais ou profissionais na construção e manutenção de APIs RESTful.",
+      "tipo": "obrigatorio",
+      "fonte": "secao",
+      "componentes": [
+        "skill:rest"
+      ]
+    },
+    {
+      "texto": "Conhecimento básico em bancos de dados relacionais e/ou não relacionais, incluindo consultas e modelagem de dados.",
+      "tipo": "obrigatorio",
+      "fonte": "secao",
+      "componentes": [
+        "alguma:banco-relacional|nosql",
+        "skill:modelagem-dados"
+      ]
+    },
+    {
+      "texto": "Noções de arquitetura de microsserviços e integração entre sistemas.",
+      "tipo": "obrigatorio",
+      "fonte": "secao",
+      "componentes": [
+        "skill:microsservicos",
+        "skill:integracao-sistemas"
+      ]
+    },
+    {
+      "texto": "Familiaridade com boas práticas de desenvolvimento, como Clean Code, princípios básicos de SOLID e versionamento de código.",
+      "tipo": "obrigatorio",
+      "fonte": "secao",
+      "componentes": [
+        "skill:clean-code",
+        "skill:solid",
+        "skill:versionamento"
+      ]
+    },
+    {
+      "texto": "Conhecimento em testes unitários e preocupação com qualidade de software.",
+      "tipo": "obrigatorio",
+      "fonte": "secao",
+      "componentes": [
+        "skill:testes-unitarios",
+        "skill:qualidade-software"
+      ]
+    },
+    {
+      "texto": "Interesse ou experiência inicial com mensageria e arquitetura orientada a eventos, como Kafka.",
+      "tipo": "obrigatorio",
+      "fonte": "secao",
+      "componentes": [
+        "skill:mensageria",
+        "alguma:event-driven|kafka"
+      ]
+    },
+    {
+      "texto": "Conhecimento básico em Docker e conceitos de conteinerização.",
+      "tipo": "obrigatorio",
+      "fonte": "secao",
+      "componentes": [
+        "skill:docker",
+        "skill:containers"
+      ]
+    },
+    {
+      "texto": "Experiência com ferramentas de versionamento, especialmente Git.",
+      "tipo": "obrigatorio",
+      "fonte": "secao",
+      "componentes": [
+        "alguma:versionamento|git"
+      ]
+    },
+    {
+      "texto": "Familiaridade com conceitos de CI/CD e ferramentas de automação de build e deploy.",
+      "tipo": "obrigatorio",
+      "fonte": "secao",
+      "componentes": [
+        "skill:ci-cd"
+      ]
+    },
+    {
+      "texto": "Conhecimento básico ou interesse em ambientes AWS, como S3, SQS e ECS.",
+      "tipo": "obrigatorio",
+      "fonte": "secao",
+      "componentes": [
+        "alguma:aws|s3|sqs|ecs"
+      ]
+    },
+    {
+      "texto": "Interesse em ferramentas de monitoramento e observabilidade, como Grafana, Prometheus ou similares.",
+      "tipo": "obrigatorio",
+      "fonte": "secao",
+      "componentes": [
+        "alguma:observabilidade|grafana|prometheus"
+      ]
+    },
+    {
+      "texto": "Experiência com metodologias ágeis.",
+      "tipo": "desejavel",
+      "fonte": "secao",
+      "componentes": [
+        "skill:agil"
+      ]
+    },
+    {
+      "texto": "Conhecimento em Kubernetes, Kafka ou arquitetura de microsserviços.",
+      "tipo": "desejavel",
+      "fonte": "secao",
+      "componentes": [
+        "alguma:kubernetes|kafka|microsservicos"
+      ]
+    },
+    {
+      "texto": "Certificações ou cursos relacionados a desenvolvimento back-end, cloud ou DevOps.",
+      "tipo": "desejavel",
+      "fonte": "secao",
+      "componentes": [
+        "alguma:backend-dev|cloud|devops"
+      ]
+    }
+  ],
+  "naoAvaliaveis": [],
+  "eliminatorias": [],
+  "afirmativa": "CAS | Engenharia de Software JR - (Preferencialmente para Pessoas com Deficiência)"
+}

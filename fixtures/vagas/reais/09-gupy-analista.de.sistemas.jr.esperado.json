@@ -1,0 +1,125 @@
+{
+  "titulo": "Analista de Sistemas Jr. (Sustentação)",
+  "familia": "suporte",
+  "senioridade": "junior",
+  "idioma": "pt",
+  "modelo": "hibrido",
+  "local": "São Paulo - SP",
+  "pais": "Brasil",
+  "temSecoes": true,
+  "requisitos": [
+    {
+      "texto": "Prestar suporte técnico a sistemas corporativos, aplicativos e softwares básicos, atuando na resolução de incidentes e requisições de baixa e média complexidade, com orientação quando necessário.",
+      "tipo": "informativo",
+      "fonte": "secao",
+      "componentes": [
+        "skill:suporte"
+      ]
+    },
+    {
+      "texto": "Registrar, acompanhar e atualizar chamados, garantindo atendimento dentro dos prazos acordados e a continuidade dos processos das áreas de negócio.",
+      "tipo": "informativo",
+      "fonte": "secao",
+      "componentes": [
+        "skill:service-desk"
+      ]
+    },
+    {
+      "texto": "Apoiar o levantamento e a documentação das necessidades do negócio, contribuindo para a tradução das demandas em requisitos funcionais.",
+      "tipo": "informativo",
+      "fonte": "secao",
+      "componentes": [
+        "skill:documentacao",
+        "skill:requisitos"
+      ]
+    },
+    {
+      "texto": "Apoiar a elaboração e execução de testes funcionais, validando se as entregas atendem aos requisitos definidos.",
+      "tipo": "informativo",
+      "fonte": "secao",
+      "componentes": [
+        "skill:qualidade-software"
+      ]
+    },
+    {
+      "texto": "Ensino Superior completo nas áreas de Tecnologia da Informação, Sistemas de Informação, Administração ou áreas correlatas.",
+      "tipo": "obrigatorio",
+      "fonte": "secao",
+      "componentes": [
+        "formacao:graduacao:ti"
+      ]
+    },
+    {
+      "texto": "Experiência com suporte a sistemas corporativos e atendimento de chamados (SLA/Incidentes).",
+      "tipo": "obrigatorio",
+      "fonte": "secao",
+      "componentes": [
+        "skill:suporte",
+        "skill:service-desk"
+      ]
+    },
+    {
+      "texto": "Noções de levantamento de requisitos e desenho de processos.",
+      "tipo": "obrigatorio",
+      "fonte": "secao",
+      "componentes": [
+        "skill:requisitos",
+        "skill:processos"
+      ]
+    },
+    {
+      "texto": "Domínio de ferramentas de escritório (Excel, ferramentas de chamados).",
+      "tipo": "obrigatorio",
+      "fonte": "secao",
+      "componentes": [
+        "alguma:office|excel|service-desk"
+      ]
+    },
+    {
+      "texto": "Conhecimentos em linguagem SQL.",
+      "tipo": "obrigatorio",
+      "fonte": "secao",
+      "componentes": [
+        "skill:sql"
+      ]
+    },
+    {
+      "texto": "Conhecimento em sistemas ERP saúde operadora.",
+      "tipo": "desejavel",
+      "fonte": "secao",
+      "componentes": [
+        "?:ERP"
+      ]
+    },
+    {
+      "texto": "Experiência prévia no setor de Saúde Suplementar (Regras ANS).",
+      "tipo": "desejavel",
+      "fonte": "secao",
+      "componentes": [
+        "?:Saúde Suplementar|Regras ANS"
+      ]
+    },
+    {
+      "texto": "Familiaridade com operações da Operadora (produtos, contratos, prestadores, fluxos de autorizações e contas médicas).",
+      "tipo": "desejavel",
+      "fonte": "secao",
+      "componentes": [
+        "?:Operadora"
+      ]
+    },
+    {
+      "texto": "Certificado em ITIL.",
+      "tipo": "desejavel",
+      "fonte": "secao",
+      "componentes": [
+        "skill:itil"
+      ]
+    }
+  ],
+  "naoAvaliaveis": [],
+  "eliminatorias": [
+    "local: Trabalho híbrido em São Paulo - SP",
+    "formacao: Ensino superior completo em TI ou área afim"
+  ],
+  "afirmativa": null
+}

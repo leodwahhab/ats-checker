@@ -1,0 +1,146 @@
+{
+  "titulo": null,
+  "familia": "fullstack",
+  "senioridade": null,
+  "idioma": "pt",
+  "modelo": null,
+  "local": null,
+  "pais": null,
+  "temSecoes": true,
+  "requisitos": [
+    {
+      "texto": "Buscamos um(a) Dev(a) Full Stack para a Neppo, para construir e evoluir features de chatbot e automação usando nossa DSL e o builder Low-Code, integrar fontes de dados e serviços externos, e aplicar IA (NLU/geração de respostas) para entregar conversas inteligentes e resultados de negócio mensuráveis (tempo de resposta, resolução automática, redução de custo).",
+      "tipo": "informativo",
+      "fonte": "secao",
+      "componentes": [
+        "skill:chatbots",
+        "skill:low-code",
+        "alguma:ia|chatbots"
+      ]
+    },
+    {
+      "texto": "Desenvolver soluções full stack ponta a ponta, com atuação em back-end para serviços e APIs;",
+      "tipo": "informativo",
+      "fonte": "secao",
+      "componentes": [
+        "skill:backend-dev",
+        "skill:apis"
+      ]
+    },
+    {
+      "texto": "Desenhar e aplicar boas práticas de arquitetura em microsserviços, integrando fluxos com APIs REST, serviços HTTP e eventos em tempo real (WebSocket/SockJS);",
+      "tipo": "informativo",
+      "fonte": "secao",
+      "componentes": [
+        "skill:microsservicos",
+        "skill:rest",
+        "skill:http",
+        "skill:websocket"
+      ]
+    },
+    {
+      "texto": "Conectar bots a sistemas externos (CRM/ERP) e canais de mensageria (WhatsApp, Telegram, Instagram, e-mail, SMS e voz);",
+      "tipo": "informativo",
+      "fonte": "secao",
+      "componentes": [
+        "skill:mensageria"
+      ]
+    },
+    {
+      "texto": "Apoiar o time em iniciativas envolvendo IA/NLU e criação de componentes DSL/Low-Code para fluxos de automação;",
+      "tipo": "informativo",
+      "fonte": "secao",
+      "componentes": [
+        "alguma:ia|chatbots",
+        "skill:low-code"
+      ]
+    },
+    {
+      "texto": "Monitorar e melhorar métricas de negócio (CSAT/NPS), observabilidade e resiliência da aplicação (retries, idempotência, circuit breaker);",
+      "tipo": "informativo",
+      "fonte": "secao",
+      "componentes": [
+        "skill:observabilidade",
+        "skill:resiliencia"
+      ]
+    },
+    {
+      "texto": "Escrever documentações técnicas curtas (como ADRs e readmes) e garantir a qualidade do código através de testes e revisão de PRs.",
+      "tipo": "informativo",
+      "fonte": "secao",
+      "componentes": [
+        "skill:documentacao"
+      ]
+    },
+    {
+      "texto": "Graduação em Ciência da Computação, Engenharia de Software, Sistemas de Informação, ou áreas afins;",
+      "tipo": "obrigatorio",
+      "fonte": "secao",
+      "componentes": [
+        "formacao:graduacao:ti"
+      ]
+    },
+    {
+      "texto": "Experiência em Back-End: Java (versão 8+), ecossistema Spring (Boot, Cloud) e arquitetura de Microsserviços;",
+      "tipo": "obrigatorio",
+      "fonte": "secao",
+      "componentes": [
+        "skill:java",
+        "skill:spring-boot",
+        "skill:spring-cloud",
+        "skill:microsservicos"
+      ]
+    },
+    {
+      "texto": "Conhecimento sólido em Bancos de Dados (MySQL/MariaDB, SQL/NoSQL) e protocolos de comunicação (REST, GRPC, Sockets);",
+      "tipo": "obrigatorio",
+      "fonte": "secao",
+      "componentes": [
+        "alguma:mysql|mariadb|sql|nosql",
+        "alguma:rest|grpc|websocket"
+      ]
+    },
+    {
+      "texto": "Conhecimento em Front-End: JavaScript e Angular;",
+      "tipo": "obrigatorio",
+      "fonte": "secao",
+      "componentes": [
+        "skill:javascript",
+        "skill:angular"
+      ]
+    },
+    {
+      "texto": "Vivência prática com testes (unitários e de integração), cache, ferramentas de observabilidade (ex: Grafana) e padrões de resiliência;",
+      "tipo": "obrigatorio",
+      "fonte": "secao",
+      "componentes": [
+        "skill:testes-unitarios",
+        "skill:testes-integracao",
+        "skill:caching",
+        "alguma:observabilidade|grafana",
+        "skill:resiliencia"
+      ]
+    },
+    {
+      "texto": "Diferencial: Conhecimento em Kotlin;",
+      "tipo": "desejavel",
+      "fonte": "marcador",
+      "componentes": [
+        "skill:kotlin"
+      ]
+    },
+    {
+      "texto": "Diferencial: Experiência com Inteligência Artificial, chatbots ou ferramentas low code (N8N, Zapier).",
+      "tipo": "desejavel",
+      "fonte": "marcador",
+      "componentes": [
+        "alguma:ia|chatbots|low-code"
+      ]
+    }
+  ],
+  "naoAvaliaveis": [],
+  "eliminatorias": [
+    "formacao: Ensino superior completo em TI ou área afim"
+  ],
+  "afirmativa": null
+}

@@ -1,0 +1,49 @@
+Sobre a vaga
+
+Na CI&T , ajudamos grandes empresas a transformar o potencial da AI em impacto real nos negócios com AI Deployment, execução AI-native e tech-integrated business solutions.
+
+Com 30 anos de experiência em transformação tecnológica, aceleramos inovação com expertise em agentic SDLC, application modernization, Data & AI, martech e business strategy. 
+
+Somos 8.000 CI&Ters em mais de 25 países, colaborando para construir soluções com impacto real. AI já faz parte da forma como trabalhamos, evoluímos e inovamos todos os dias.
+
+
+Importante: se você reside na Região Metropolitana de Campinas, sua presença nos escritórios da cidade será obrigatória, conforme a política de frequencia vigente.
+
+
+Na CI&T, nosso rápido crescimento é impulsionado pelas soluções inovadoras que criamos para nossos clientes globais.
+
+Estamos procurando um profissional de Desenvolvimento de Software com foco em Java que esteja preparado para enfrentar desafios técnicos complexos e contribuir para a criação de soluções escaláveis e de alto desempenho.
+
+Sua missão:
+
+
+    Atuar em parceria com o time de desenvolvimento, garantindo entregas de alta qualidade e alinhadas às expectativas do cliente;
+
+    Contribuir para a resolução de problemas de forma assertiva, com visão sistêmica e foco no impacto para o negócio;
+     
+
+
+
+Requisitos:
+
+
+    Experiência com desenvolvimento em Java, utilizando Spring Boot 3;
+
+    Experiência com JavaScript e TypeScript (v4+);
+
+    Conhecimento em Design Patterns, POO, SOLID, KISS, DRY e YAGNI;
+
+    Conhecimento em com Testes Automatizados;
+
+    Vivência com Git;
+
+    Conhecimento em bancos de dados relacionais e/ou não relacionais;
+
+    Experiência na construção e consumo de APIs RESTful
+
+
+
+Diferencial
+
+
+    Conhecimento em desenvolvimento Front-end

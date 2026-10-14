@@ -1,0 +1,119 @@
+{
+  "titulo": null,
+  "familia": "desenvolvimento",
+  "senioridade": null,
+  "idioma": "pt",
+  "modelo": null,
+  "local": null,
+  "pais": null,
+  "temSecoes": true,
+  "requisitos": [
+    {
+      "texto": "Na CI&T , ajudamos grandes empresas a transformar o potencial da AI em impacto real nos negócios com AI Deployment, execução AI-native e tech-integrated business solutions.",
+      "tipo": "informativo",
+      "fonte": "secao",
+      "componentes": [
+        "skill:ia"
+      ]
+    },
+    {
+      "texto": "Com 30 anos de experiência em transformação tecnológica, aceleramos inovação com expertise em agentic SDLC, application modernization, Data & AI, martech e business strategy.",
+      "tipo": "informativo",
+      "fonte": "secao",
+      "componentes": [
+        "skill:ia"
+      ]
+    },
+    {
+      "texto": "AI já faz parte da forma como trabalhamos, evoluímos e inovamos todos os dias.",
+      "tipo": "informativo",
+      "fonte": "secao",
+      "componentes": [
+        "skill:ia"
+      ]
+    },
+    {
+      "texto": "Estamos procurando um profissional de Desenvolvimento de Software com foco em Java que esteja preparado para enfrentar desafios técnicos complexos e contribuir para a criação de soluções escaláveis e de alto desempenho.",
+      "tipo": "informativo",
+      "fonte": "secao",
+      "componentes": [
+        "skill:java"
+      ]
+    },
+    {
+      "texto": "Experiência com desenvolvimento em Java, utilizando Spring Boot 3;",
+      "tipo": "obrigatorio",
+      "fonte": "secao",
+      "componentes": [
+        "skill:java",
+        "skill:spring-boot"
+      ]
+    },
+    {
+      "texto": "Experiência com JavaScript e TypeScript (v4+);",
+      "tipo": "obrigatorio",
+      "fonte": "secao",
+      "componentes": [
+        "skill:javascript",
+        "skill:typescript"
+      ]
+    },
+    {
+      "texto": "Conhecimento em Design Patterns, POO, SOLID, KISS, DRY e YAGNI;",
+      "tipo": "obrigatorio",
+      "fonte": "secao",
+      "componentes": [
+        "skill:design-patterns",
+        "skill:poo",
+        "skill:solid",
+        "skill:kiss-dry-yagni"
+      ]
+    },
+    {
+      "texto": "Conhecimento em com Testes Automatizados;",
+      "tipo": "obrigatorio",
+      "fonte": "secao",
+      "componentes": [
+        "skill:testes-automatizados"
+      ]
+    },
+    {
+      "texto": "Vivência com Git;",
+      "tipo": "obrigatorio",
+      "fonte": "secao",
+      "componentes": [
+        "skill:git"
+      ]
+    },
+    {
+      "texto": "Conhecimento em bancos de dados relacionais e/ou não relacionais;",
+      "tipo": "obrigatorio",
+      "fonte": "secao",
+      "componentes": [
+        "alguma:banco-relacional|nosql"
+      ]
+    },
+    {
+      "texto": "Experiência na construção e consumo de APIs RESTful",
+      "tipo": "obrigatorio",
+      "fonte": "secao",
+      "componentes": [
+        "skill:apis",
+        "skill:rest"
+      ]
+    },
+    {
+      "texto": "Conhecimento em desenvolvimento Front-end",
+      "tipo": "desejavel",
+      "fonte": "secao",
+      "componentes": [
+        "skill:frontend-dev"
+      ]
+    }
+  ],
+  "naoAvaliaveis": [],
+  "eliminatorias": [
+    "local: Local de residência"
+  ],
+  "afirmativa": null
+}

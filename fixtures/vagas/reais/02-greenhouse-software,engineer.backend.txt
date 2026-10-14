@@ -1,0 +1,87 @@
+Software Engineer, Backend (All teams) – Brazil – Vaga exclusiva para PCD
+São Paulo, Brazil; São Paulo, Brasil
+
+Engineering the future of logistics – from Brazil to the world
+
+This position is dedicated to professionals with disabilities (PCD), in accordance with Brazilian Law No. 8.213/91 (Lei de Cotas).
+
+At DoorDash, we believe diverse teams build better products. We are committed to providing an accessible, inclusive workplace with equal opportunities for all.
+
+Reasonable accommodations are available throughout the hiring process and in the work environment. If you require any accommodation, please inform your recruiter at the beginning of the process.
+
+Medical documentation may be requested in accordance with applicable legislation.
+
+DoorDash is building the world’s most reliable on-demand logistics platform. Brazil is a strategic and growing engineering hub for DoorDash. Based in São Paulo, our teams build and scale systems that power millions of users globally. This is an opportunity to shape world-class logistics technology while growing your career in Brazil.This is a unique opportunity to join one of Silicon Valley’s fastest-growing companies, while staying close to home.
+
+We’re looking for Backend Engineers who are excited to solve real-world problems at scale. You’ll work on product teams or platform teams that power our three-sided marketplace of Consumers, Dashers, and Merchants. From improving restaurant discovery to optimizing delivery logistics, you’ll help shape the experience of millions of users.
+
+You’ll work alongside experienced engineers, product managers, and designers—many based in the U.S.—so fluency in English and strong collaboration skills are essential.
+What you’ll do
+
+    Design, build, and maintain large-scale backend systems used by millions of users
+    Contribute to our technical roadmap and define the architecture for key product areas
+    Drive improvements in performance, scalability, reliability, and security
+    Help transition parts of our monolithic codebase to a microservices architecture
+    Collaborate with cross-functional teams across Brazil and the U.S.
+    Work on high-impact features that directly improve the user experience for Dashers, Merchants, or Consumers
+
+We’re excited about you because…
+
+    You have 1+ years of experience with backend technologies and distributed systems
+    You have proficiency in using AI coding tools (e.g., Claude Code, Codex, Cursor) in the full software development lifecycle, including designing, generating code, testing, monitoring and releasing software
+    You’re comfortable with modern web architecture (HTTP, REST APIs, grpc, microservices)
+    You’ve worked with relational and non-relational databases
+    You enjoy solving complex problems with elegant code and clear thinking
+    You’re comfortable collaborating in English, including participating in meetings and code reviews. 
+    You’re fluent in English and confident participating in meetings and code reviews in English
+    You care about quality and write tests to ensure your code works as expected
+    You take ownership and enjoy working with autonomy in a fast-paced environment
+
+Nice to haves
+
+    Experience working at a tech company with scale
+    Familiarity with Java, Kotlin, or similar JVM languages
+    Exposure to big data technologies or event-driven architecture
+    Interest in mentorship or growing into a technical leadership role
+
+Why join DoorDash Brazil?
+
+    Work on a global product, with real impact on millions of people
+    Be part of a fast-growing engineering hub in São Paulo
+    Hybrid remote model with great office space in Av. Paulista
+    English immersion and opportunities to grow your international career
+    Contribute to a modern, scalable platform used across multiple countries
+    Build the future of local commerce with a team that values ownership, humility, and getting 1% better every day
+    Be part of a growing engineering organization committed to building inclusive teams and equitable opportunities
+
+ 
+
+Notice to Applicants for Jobs Located in NYC or Remote Jobs Associated With Office in NYC Only
+
+We use Covey as part of our hiring and/or promotional process for jobs in NYC and certain features may qualify it as an AEDT in NYC. As part of the hiring and/or promotion process, we provide Covey with job requirements and candidate submitted applications. We began using Covey Scout for Inbound from August 21, 2023, through December 21, 2023, and resumed using Covey Scout for Inbound again on June 29, 2024.
+
+The Covey tool has been reviewed by an independent auditor. Results of the audit may be viewed here: Covey
+About DoorDash
+
+At DoorDash, our mission to empower local economies shapes how our team members move quickly, learn, and reiterate in order to make impactful decisions that display empathy for our range of users—from Dashers to merchant partners to consumers. We are a technology and logistics company that started by enabling door-to-door delivery, and we are looking for team members who can help us go from a company that is known as the place you order food to a company that people turn to for any and all goods.
+
+DoorDash is growing rapidly and changing constantly, which gives our team members the opportunity to share their unique perspectives, solve new challenges, and own their careers. We're committed to supporting employees’ happiness, healthiness, and overall well-being by providing comprehensive benefits and perks.
+Our Commitment to Diversity and Inclusion
+
+We’re committed to growing and empowering a more inclusive community within our company, industry, and cities. That’s why we hire and cultivate diverse teams of people from all backgrounds, experiences, and perspectives. We believe that true innovation happens when everyone has room at the table and the tools, resources, and opportunity to excel.
+
+This position is open to candidates with disabilities. DoorDash welcomes applicants registered with the national autism registry (SisTEA) and others who seek an inclusive workplace.
+
+If you need any accommodations, please inform your recruiting contact upon initial connection.
+
+ 
+
+ 
+
+We use Covey as part of our hiring and/or promotional process for jobs in certain locations.
+
+The Covey tool has been reviewed by an independent auditor. Results of the audit may be viewed here: https://getcovey.com/nyc-local-law-144
+
+To request a reasonable accommodation under applicable law or alternate selection process, please inform your recruiting contact upon initial connection.
+
+Beware of recruitment scams: DoorDash, Deliveroo, and Wolt will never ask you to pay money or share sensitive financial information during hiring — learn more about our legitimate recruiting process at Recruitment Scam Awareness - DoorDash .

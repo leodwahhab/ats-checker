@@ -1,0 +1,346 @@
+{
+  "titulo": null,
+  "familia": "fullstack",
+  "senioridade": "junior",
+  "idioma": "pt",
+  "modelo": null,
+  "local": null,
+  "pais": null,
+  "temSecoes": true,
+  "requisitos": [
+    {
+      "texto": "Co-criamos soluções inovadoras em parceria com nossos clientes, combinando tecnologia de ponta, inteligência artificial e a criatividade humana.",
+      "tipo": "informativo",
+      "fonte": "secao",
+      "componentes": [
+        "skill:ia"
+      ]
+    },
+    {
+      "texto": "Participar do levantamento e da especificação de requisitos;",
+      "tipo": "informativo",
+      "fonte": "secao",
+      "componentes": [
+        "skill:requisitos"
+      ]
+    },
+    {
+      "texto": "Implementar e consumir APIs;",
+      "tipo": "informativo",
+      "fonte": "secao",
+      "componentes": [
+        "skill:apis"
+      ]
+    },
+    {
+      "texto": "Desenvolver soluções utilizando plataformas Low Code e ferramentas de workflow;",
+      "tipo": "informativo",
+      "fonte": "secao",
+      "componentes": [
+        "skill:low-code"
+      ]
+    },
+    {
+      "texto": "Elaborar documentação técnica clara e objetiva;",
+      "tipo": "informativo",
+      "fonte": "secao",
+      "componentes": [
+        "skill:documentacao"
+      ]
+    },
+    {
+      "texto": "Realizar revisões de código, seguindo os padrões e boas práticas da empresa;",
+      "tipo": "informativo",
+      "fonte": "secao",
+      "componentes": [
+        "skill:code-review"
+      ]
+    },
+    {
+      "texto": "Experiência acadêmica, profissional ou em projetos de desenvolvimento de software;",
+      "tipo": "desejavel",
+      "fonte": "secao",
+      "componentes": [
+        "?:"
+      ]
+    },
+    {
+      "texto": "Vivência com desenvolvimento de sistemas, APIs, banco de dados ou automações;",
+      "tipo": "desejavel",
+      "fonte": "secao",
+      "componentes": [
+        "skill:apis"
+      ]
+    },
+    {
+      "texto": "Experiência com levantamento de requisitos e entendimento das necessidades dos usuários;",
+      "tipo": "desejavel",
+      "fonte": "secao",
+      "componentes": [
+        "skill:requisitos"
+      ]
+    },
+    {
+      "texto": "Conhecimento em manutenção e evolução de aplicações;",
+      "tipo": "desejavel",
+      "fonte": "secao",
+      "componentes": [
+        "?:"
+      ]
+    },
+    {
+      "texto": "Experiência com testes, documentação técnica ou revisão de código será considerada um diferencial;",
+      "tipo": "desejavel",
+      "fonte": "marcador",
+      "componentes": [
+        "alguma:documentacao|code-review"
+      ]
+    },
+    {
+      "texto": "Conhecimento em lógica de programação;",
+      "tipo": "obrigatorio",
+      "fonte": "secao",
+      "componentes": [
+        "skill:logica"
+      ]
+    },
+    {
+      "texto": "Conhecimento em pelo menos uma linguagem de programação, como Java, JavaScript, C#, .NET, J2EE ou Python;",
+      "tipo": "obrigatorio",
+      "fonte": "secao",
+      "componentes": [
+        "alguma:java|javascript|csharp|dotnet|jakarta-ee|python"
+      ]
+    },
+    {
+      "texto": "Conhecimento em desenvolvimento de APIs e integrações;",
+      "tipo": "obrigatorio",
+      "fonte": "secao",
+      "componentes": [
+        "skill:apis"
+      ]
+    },
+    {
+      "texto": "Conhecimento em HTML, XML e CSS;",
+      "tipo": "obrigatorio",
+      "fonte": "secao",
+      "componentes": [
+        "skill:html",
+        "skill:xml",
+        "skill:css"
+      ]
+    },
+    {
+      "texto": "Conhecimento em SQL e bancos de dados;",
+      "tipo": "obrigatorio",
+      "fonte": "secao",
+      "componentes": [
+        "skill:sql"
+      ]
+    },
+    {
+      "texto": "Noções de modelagem de dados e criação de tabelas;",
+      "tipo": "obrigatorio",
+      "fonte": "secao",
+      "componentes": [
+        "skill:modelagem-dados"
+      ]
+    },
+    {
+      "texto": "Noções de análise e arquitetura de sistemas;",
+      "tipo": "obrigatorio",
+      "fonte": "secao",
+      "componentes": [
+        "skill:arquitetura-software"
+      ]
+    },
+    {
+      "texto": "Conhecimento em desenvolvimento e manutenção de aplicações;",
+      "tipo": "obrigatorio",
+      "fonte": "secao",
+      "componentes": [
+        "?:"
+      ]
+    },
+    {
+      "texto": "Noções de testes de software e garantia da qualidade;",
+      "tipo": "obrigatorio",
+      "fonte": "secao",
+      "componentes": [
+        "skill:qualidade-software"
+      ]
+    },
+    {
+      "texto": "Conhecimento em Git e controle de versão;",
+      "tipo": "obrigatorio",
+      "fonte": "secao",
+      "componentes": [
+        "skill:git",
+        "skill:versionamento"
+      ]
+    },
+    {
+      "texto": "Noções de microsserviços, DevSecOps e segurança da informação;",
+      "tipo": "obrigatorio",
+      "fonte": "secao",
+      "componentes": [
+        "skill:microsservicos",
+        "skill:devops",
+        "skill:seguranca-app"
+      ]
+    },
+    {
+      "texto": "Conhecimento em sistemas operacionais e boas práticas de proteção de ambientes;",
+      "tipo": "obrigatorio",
+      "fonte": "secao",
+      "componentes": [
+        "skill:sistemas-operacionais"
+      ]
+    },
+    {
+      "texto": "Noções de usabilidade e acessibilidade na web;",
+      "tipo": "obrigatorio",
+      "fonte": "secao",
+      "componentes": [
+        "skill:ux-ui",
+        "skill:acessibilidade"
+      ]
+    },
+    {
+      "texto": "Conhecimento ou interesse em ferramentas de workflow e plataformas Low Code.",
+      "tipo": "obrigatorio",
+      "fonte": "secao",
+      "componentes": [
+        "skill:low-code"
+      ]
+    },
+    {
+      "texto": "Java;",
+      "tipo": "informativo",
+      "fonte": "secao",
+      "componentes": [
+        "skill:java"
+      ]
+    },
+    {
+      "texto": "JavaScript;",
+      "tipo": "informativo",
+      "fonte": "secao",
+      "componentes": [
+        "skill:javascript"
+      ]
+    },
+    {
+      "texto": "Angular;",
+      "tipo": "informativo",
+      "fonte": "secao",
+      "componentes": [
+        "skill:angular"
+      ]
+    },
+    {
+      "texto": "React Native;",
+      "tipo": "informativo",
+      "fonte": "secao",
+      "componentes": [
+        "skill:react-native"
+      ]
+    },
+    {
+      "texto": "C# e .NET;",
+      "tipo": "informativo",
+      "fonte": "secao",
+      "componentes": [
+        "skill:csharp",
+        "skill:dotnet"
+      ]
+    },
+    {
+      "texto": "Python;",
+      "tipo": "informativo",
+      "fonte": "secao",
+      "componentes": [
+        "skill:python"
+      ]
+    },
+    {
+      "texto": "HTML, XML e CSS;",
+      "tipo": "informativo",
+      "fonte": "secao",
+      "componentes": [
+        "skill:html",
+        "skill:xml",
+        "skill:css"
+      ]
+    },
+    {
+      "texto": "SQL;",
+      "tipo": "informativo",
+      "fonte": "secao",
+      "componentes": [
+        "skill:sql"
+      ]
+    },
+    {
+      "texto": "Oracle, MySQL, PostgreSQL ou SQL Server;",
+      "tipo": "informativo",
+      "fonte": "secao",
+      "componentes": [
+        "alguma:oracle|mysql|postgresql|sql-server"
+      ]
+    },
+    {
+      "texto": "Eclipse, JBoss e SQL Developer;",
+      "tipo": "informativo",
+      "fonte": "secao",
+      "componentes": [
+        "skill:wildfly",
+        "skill:sql"
+      ]
+    },
+    {
+      "texto": "ServiceNow ou outras ferramentas de ITSM;",
+      "tipo": "informativo",
+      "fonte": "secao",
+      "componentes": [
+        "alguma:servicenow|service-desk"
+      ]
+    },
+    {
+      "texto": "Ferramentas de workflow e automação.",
+      "tipo": "informativo",
+      "fonte": "secao",
+      "componentes": [
+        "skill:low-code"
+      ]
+    },
+    {
+      "texto": "Certificações em desenvolvimento, cloud, DevOps, bancos de dados, ITSM ou metodologias ágeis serão consideradas diferenciais;",
+      "tipo": "desejavel",
+      "fonte": "marcador",
+      "componentes": [
+        "alguma:cloud|devops|service-desk|agil"
+      ]
+    },
+    {
+      "texto": "Certificações desejáveis: AWS Certified Developer, Microsoft Azure Developer Associate, Microsoft DevOps Engineer, Google Cloud Architect, IBM Cloud, CSDP ou ITIL 4 Foundation.",
+      "tipo": "desejavel",
+      "fonte": "marcador",
+      "componentes": [
+        "alguma:aws|azure|devops|gcp|cloud|itil"
+      ]
+    }
+  ],
+  "naoAvaliaveis": [
+    "Vontade de aprender e se desenvolver profissionalmente;",
+    "Proatividade e curiosidade;",
+    "Organização e atenção aos detalhes;",
+    "Capacidade de análise e resolução de problemas;",
+    "Boa comunicação e trabalho em equipe;",
+    "Comprometimento com prazos e qualidade das entregas;",
+    "Interesse por inovação, automação e melhoria contínua;",
+    "Capacidade de receber orientações, aprender com o time e evoluir tecnicamente."
+  ],
+  "eliminatorias": [],
+  "afirmativa": null
+}

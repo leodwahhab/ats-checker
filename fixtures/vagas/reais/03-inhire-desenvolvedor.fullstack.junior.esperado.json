@@ -1,0 +1,186 @@
+{
+  "titulo": "Desenvolvedor FullStack Júnior",
+  "familia": "fullstack",
+  "senioridade": "junior",
+  "idioma": "pt",
+  "modelo": "hibrido",
+  "local": "São Paulo - SP",
+  "pais": "Brasil",
+  "temSecoes": true,
+  "requisitos": [
+    {
+      "texto": "Desenvolver funcionalidades ponta a ponta (do banco de dados à interface) nos protótipos e produtos da CN Innovation, com backend em C#/.NET e/ou Node.js + TypeScript e frontend em Angular ou React.",
+      "tipo": "informativo",
+      "fonte": "secao",
+      "componentes": [
+        "skill:backend-dev",
+        "alguma:csharp|dotnet|nodejs",
+        "skill:typescript",
+        "skill:frontend-dev",
+        "alguma:angular|react"
+      ]
+    },
+    {
+      "texto": "Participar do desenho técnico das soluções: modelagem de dados, contratos de API, divisão em módulos/serviços e registro de decisões (ADRs leves).",
+      "tipo": "informativo",
+      "fonte": "secao",
+      "componentes": [
+        "skill:modelagem-dados",
+        "skill:apis"
+      ]
+    },
+    {
+      "texto": "Aplicar boas práticas de engenharia: código limpo, princípios SOLID, code review, versionamento com Git e documentação técnica.",
+      "tipo": "informativo",
+      "fonte": "secao",
+      "componentes": [
+        "skill:clean-code",
+        "skill:solid",
+        "skill:code-review",
+        "skill:git",
+        "skill:documentacao"
+      ]
+    },
+    {
+      "texto": "Escrever testes em todos os níveis (unitários, integração e E2E) e participar da esteira de CI/CD, com apoio de ferramentas como Playwright.",
+      "tipo": "informativo",
+      "fonte": "secao",
+      "componentes": [
+        "skill:testes-e2e",
+        "skill:ci-cd",
+        "skill:playwright"
+      ]
+    },
+    {
+      "texto": "Integrar recursos de IA (APIs de LLM, extração de documentos) às funcionalidades, respeitando fallback, limites de custo e latência.",
+      "tipo": "informativo",
+      "fonte": "secao",
+      "componentes": [
+        "alguma:ia|apis|ia-generativa"
+      ]
+    },
+    {
+      "texto": "Graduação em andamento/concluída em TI, Engenharia, Ciência da Computação ou áreas correlatas (ou experiência equivalente comprovada em projetos/portfólio).",
+      "tipo": "obrigatorio",
+      "fonte": "secao",
+      "componentes": [
+        "formacao:graduacao~cursando:ti"
+      ]
+    },
+    {
+      "texto": "Fundamentos de engenharia de software: lógica, estruturas de dados, POO, HTTP/REST e noções de arquitetura em camadas.",
+      "tipo": "obrigatorio",
+      "fonte": "secao",
+      "componentes": [
+        "skill:estruturas-dados",
+        "skill:poo",
+        "alguma:http|rest",
+        "skill:arquitetura-software"
+      ]
+    },
+    {
+      "texto": "Experiência acadêmica, estágio ou projetos pessoais com ao menos uma linguagem backend (C#/.NET, Node.js/TypeScript ou Python) e com um framework frontend (Angular, React ou Vue).",
+      "tipo": "obrigatorio",
+      "fonte": "secao",
+      "componentes": [
+        "alguma:backend-dev|csharp|dotnet|nodejs|typescript|python",
+        "alguma:frontend-dev|angular|react|vue"
+      ]
+    },
+    {
+      "texto": "SQL e modelagem relacional básica.",
+      "tipo": "obrigatorio",
+      "fonte": "secao",
+      "componentes": [
+        "skill:sql",
+        "skill:modelagem-dados"
+      ]
+    },
+    {
+      "texto": "Git e fluxo de pull request/code review.",
+      "tipo": "obrigatorio",
+      "fonte": "secao",
+      "componentes": [
+        "skill:git",
+        "skill:code-review"
+      ]
+    },
+    {
+      "texto": "Testes automatizados básicos.",
+      "tipo": "obrigatorio",
+      "fonte": "secao",
+      "componentes": [
+        "skill:testes-automatizados"
+      ]
+    },
+    {
+      "texto": "Leitura de documentação técnica em inglês.",
+      "tipo": "obrigatorio",
+      "fonte": "secao",
+      "componentes": [
+        "skill:documentacao",
+        "idioma:ingles>=intermediario"
+      ]
+    },
+    {
+      "texto": "Noções de Docker, CI/CD (Azure DevOps/GitHub Actions) e nuvem (Azure).",
+      "tipo": "desejavel",
+      "fonte": "secao",
+      "componentes": [
+        "skill:docker",
+        "alguma:ci-cd|azure-devops|github-actions",
+        "alguma:cloud|azure"
+      ]
+    },
+    {
+      "texto": "Experiência com Playwright, Cypress ou outra ferramenta de testes E2E.",
+      "tipo": "desejavel",
+      "fonte": "secao",
+      "componentes": [
+        "alguma:playwright|cypress|testes-e2e"
+      ]
+    },
+    {
+      "texto": "Contato com APIs de LLM e prompts (Claude/OpenAI).",
+      "tipo": "desejavel",
+      "fonte": "secao",
+      "componentes": [
+        "skill:apis",
+        "skill:ia-generativa",
+        "alguma:claude|openai-api"
+      ]
+    },
+    {
+      "texto": "Noções de mensageria/filas, cache e observabilidade.",
+      "tipo": "desejavel",
+      "fonte": "secao",
+      "componentes": [
+        "skill:mensageria",
+        "skill:caching",
+        "skill:observabilidade"
+      ]
+    },
+    {
+      "texto": "Interesse em fintech, mercado financeiro regulado ou blockchain/tokenização.",
+      "tipo": "desejavel",
+      "fonte": "secao",
+      "componentes": [
+        "skill:blockchain"
+      ]
+    },
+    {
+      "texto": "Projetos no GitHub/portfólio publicado.",
+      "tipo": "desejavel",
+      "fonte": "secao",
+      "componentes": [
+        "skill:github"
+      ]
+    }
+  ],
+  "naoAvaliaveis": [],
+  "eliminatorias": [
+    "local: Trabalho híbrido em São Paulo - SP",
+    "formacao: Ensino superior completo ou em andamento em TI ou área afim"
+  ],
+  "afirmativa": null
+}

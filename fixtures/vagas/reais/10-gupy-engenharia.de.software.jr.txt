@@ -1,0 +1,49 @@
+CAS | Engenharia de Software JR - (Preferencialmente para Pessoas com Deficiência)
+
+Publicada em 08 de outubro de 2026
+
+Inscrições abertas até 30 de novembro de 2026
+
+Tipo de vaga: EfetivoModelo de trabalho íconeEfetivo
+
+Modelo de trabalho: RemotoTrabalho Remoto íconeRemoto
+
+Vaga também para PcD
+Ícone de accessibilidadeVaga também para PcD
+Descrição da vaga
+
+No Sicredi, valorizamos relações próximas, colaboração e uma cultura mais horizontal, simples e participativa.
+Somos movidos por tecnologia, inovação e pelo propósito de gerar impacto positivo para pessoas e comunidades.
+
+Nesta oportunidade, você fará parte de um time de produto dedicado à construção de uma nova experiência para a instituição financeira. O desafio envolve a modernização do Core Bancário e o desenvolvimento de uma plataforma digital cooperativa para o futuro.
+
+
+Buscamos uma pessoa com habilidades técnicas, visão de negócio, comprometimento e vontade de aprender e fazer acontecer.
+
+Responsabilidades e atribuições
+
+    Participar do desenvolvimento e manutenção de aplicações e APIs.
+    Atuar na correção de bugs e implementação de melhorias.
+    Colaborar com desenvolvedores mais experientes em revisões de código e definição de soluções.
+    Contribuir com a qualidade, desempenho e evolução contínua dos sistemas.
+
+Requisitos e qualificações
+
+    Conhecimento em desenvolvimento de aplicações back-end utilizando Java e Spring Boot.
+    Experiência acadêmica, projetos pessoais ou profissionais na construção e manutenção de APIs RESTful.
+    Conhecimento básico em bancos de dados relacionais e/ou não relacionais, incluindo consultas e modelagem de dados.
+    Noções de arquitetura de microsserviços e integração entre sistemas.
+    Familiaridade com boas práticas de desenvolvimento, como Clean Code, princípios básicos de SOLID e versionamento de código.
+    Conhecimento em testes unitários e preocupação com qualidade de software.
+    Interesse ou experiência inicial com mensageria e arquitetura orientada a eventos, como Kafka.
+    Conhecimento básico em Docker e conceitos de conteinerização.
+    Experiência com ferramentas de versionamento, especialmente Git.
+    Familiaridade com conceitos de CI/CD e ferramentas de automação de build e deploy.
+    Conhecimento básico ou interesse em ambientes AWS, como S3, SQS e ECS.
+    Interesse em ferramentas de monitoramento e observabilidade, como Grafana, Prometheus ou similares.
+
+Diferenciais
+
+    Experiência com metodologias ágeis.
+    Conhecimento em Kubernetes, Kafka ou arquitetura de microsserviços.
+    Certificações ou cursos relacionados a desenvolvimento back-end, cloud ou DevOps.

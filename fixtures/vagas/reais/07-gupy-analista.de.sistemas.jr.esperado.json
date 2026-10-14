@@ -1,0 +1,108 @@
+{
+  "titulo": "Analista de sistemas Jr (TI Sistemas Backoffice)",
+  "familia": "desenvolvimento",
+  "senioridade": "junior",
+  "idioma": "pt",
+  "modelo": "hibrido",
+  "local": "São Paulo - SP",
+  "pais": "Brasil",
+  "temSecoes": true,
+  "requisitos": [
+    {
+      "texto": "Há 50 anos, transformamos o varejo de moda com estilo, qualidade e acessibilidade.",
+      "tipo": "informativo",
+      "fonte": "secao",
+      "componentes": [
+        "skill:acessibilidade"
+      ]
+    },
+    {
+      "texto": "O profissional fará parte de uma equipe de Sistemas responsável por projetos e sustentação de aplicações, participando de atividades de análise, desenvolvimento, testes, implantação e suporte às soluções.",
+      "tipo": "informativo",
+      "fonte": "secao",
+      "componentes": [
+        "skill:suporte"
+      ]
+    },
+    {
+      "texto": "Desenvolver e manter aplicações e integrações utilizando tecnologias Web, Low-Code e No-Code.",
+      "tipo": "informativo",
+      "fonte": "secao",
+      "componentes": [
+        "skill:low-code"
+      ]
+    },
+    {
+      "texto": "Desenvolver programas, scripts, APIs e integrações.",
+      "tipo": "informativo",
+      "fonte": "secao",
+      "componentes": [
+        "skill:apis",
+        "skill:integracao-sistemas"
+      ]
+    },
+    {
+      "texto": "Realizar testes funcionais e apoiar a construção de testes automatizados.",
+      "tipo": "informativo",
+      "fonte": "secao",
+      "componentes": [
+        "skill:qualidade-software",
+        "skill:testes-automatizados"
+      ]
+    },
+    {
+      "texto": "Elaborar documentação técnica básica das soluções desenvolvidas.",
+      "tipo": "informativo",
+      "fonte": "secao",
+      "componentes": [
+        "skill:documentacao"
+      ]
+    },
+    {
+      "texto": "Utilizar ferramentas de Inteligência Artificial Generativa como apoio ao desenvolvimento de software, respeitando padrões de segurança, qualidade e governança definidos pela empresa.",
+      "tipo": "informativo",
+      "fonte": "secao",
+      "componentes": [
+        "skill:ia-generativa"
+      ]
+    },
+    {
+      "texto": "Graduação completa em Ciência da Computação, Sistemas de Informação, Engenharia de Software, Análise e Desenvolvimento de Sistemas, Engenharia da Computação ou áreas correlatas;",
+      "tipo": "obrigatorio",
+      "fonte": "secao",
+      "componentes": [
+        "formacao:graduacao:ti"
+      ]
+    },
+    {
+      "texto": "Conhecimentos de lógica de programação e desenvolvimento de sistemas.",
+      "tipo": "obrigatorio",
+      "fonte": "secao",
+      "componentes": [
+        "skill:logica"
+      ]
+    },
+    {
+      "texto": "Conhecimentos básicos sobre Inteligência Artificial Generativa e seu uso no desenvolvimento de software.",
+      "tipo": "obrigatorio",
+      "fonte": "secao",
+      "componentes": [
+        "skill:ia-generativa"
+      ]
+    },
+    {
+      "texto": "Familiaridade com metodologias ágeis, como Scrum ou Kanban.",
+      "tipo": "obrigatorio",
+      "fonte": "secao",
+      "componentes": [
+        "alguma:agil|scrum|kanban"
+      ]
+    }
+  ],
+  "naoAvaliaveis": [],
+  "eliminatorias": [
+    "local: Trabalho híbrido em São Paulo - SP",
+    "formacao: Ensino superior completo em TI ou área afim"
+  ],
+  "afirmativa": null
+}

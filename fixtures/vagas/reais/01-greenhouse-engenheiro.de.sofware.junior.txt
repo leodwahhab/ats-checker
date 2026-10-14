@@ -1,0 +1,32 @@
+Engenheiro(a) de Software | Assistente e Júnior
+São Paulo, SP
+
+Sobre nós ​ 
+
+A XP Inc. é uma das maiores instituições financeiras independente do Brasil, dona das marcas XP, Rico, Clear, XP Educação, InfoMoney, entre outras. Com mais de 4,6 milhões de clientes ativos e um valor superior a R$ 1,1 trilhão de ativos sob custódia, há 25 anos vem transformando o mercado financeiro para melhorar a vida das pessoas.
+
+Com uma cultura marcante guiada por quatro valores - Sonho Grande, Espírito Empreendedor, Foco no Cliente e Mente Aberta - a XP Inc. está sempre em busca dos melhores talentos que tem ambição de fazer o impossível.
+
+ 
+🔍 O Que Procuramos
+
+Pré-requisitos Essenciais:
+
+    Conhecimento básico em desenvolvimento de software em uma ou mais linguagens de programação (C#, Java, Go ou Rust) 
+    Noção de boas práticas de desenvolvimento;  
+    Disponibilidade para trabalhar no modelo presencial com flexibilidade (2x por semana no escritório) em São Paulo/SP.
+
+Diferenciais:
+
+    Conhecimento em Cloud pública, preferencialmente Azure.
+    Conhecimento em Front-end, preferencialmente React.
+
+🎯 Sobre a área de Engenharia de Software na XP
+
+ 
+
+A área de Engenharia de Software é responsável por criar sistemas e soluções eficientes que sustentam nossos produtos e entregam segurança, inovação e qualidade para os nossos clientes.
+
+É também um ambiente de desenvolvimento. Fomentamos uma comunidade interna de tecnologia que promove eventos, talks e fóruns colaborativos, além da iniciativa TechTrails, focada no aprendizado contínuo. 
+
+Aqui atuamos em diferentes frentes dentro da XP Inc., desde produtos financeiros (Crédito, Banking, Renda Fixa e Renda Variável) até áreas de suporte como Cadastro, Análise de Crédito, entre outras.

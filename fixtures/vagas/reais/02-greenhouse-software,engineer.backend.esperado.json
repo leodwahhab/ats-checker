@@ -1,0 +1,139 @@
+{
+  "titulo": "Software Engineer, Backend (All teams) – Brazil – Vaga exclusiva para PCD",
+  "familia": "backend",
+  "senioridade": null,
+  "idioma": "en",
+  "modelo": "hibrido",
+  "local": "São Paulo - SP",
+  "pais": "Brasil",
+  "temSecoes": true,
+  "requisitos": [
+    {
+      "texto": "We’re looking for Backend Engineers who are excited to solve real-world problems at scale.",
+      "tipo": "informativo",
+      "fonte": "secao",
+      "componentes": [
+        "skill:backend-dev"
+      ]
+    },
+    {
+      "texto": "Design, build, and maintain large-scale backend systems used by millions of users",
+      "tipo": "informativo",
+      "fonte": "secao",
+      "componentes": [
+        "skill:backend-dev"
+      ]
+    },
+    {
+      "texto": "Help transition parts of our monolithic codebase to a microservices architecture",
+      "tipo": "informativo",
+      "fonte": "secao",
+      "componentes": [
+        "skill:microsservicos"
+      ]
+    },
+    {
+      "texto": "Work on high-impact features that directly improve the user experience for Dashers, Merchants, or Consumers",
+      "tipo": "informativo",
+      "fonte": "secao",
+      "componentes": [
+        "skill:ux-ui"
+      ]
+    },
+    {
+      "texto": "You have 1+ years of experience with backend technologies and distributed systems",
+      "tipo": "obrigatorio",
+      "fonte": "secao",
+      "componentes": [
+        "skill:backend-dev",
+        "skill:sistemas-distribuidos",
+        "anos:1"
+      ]
+    },
+    {
+      "texto": "You have proficiency in using AI coding tools (e.g., Claude Code, Codex, Cursor) in the full software development lifecycle, including designing, generating code, testing, monitoring and releasing software",
+      "tipo": "obrigatorio",
+      "fonte": "secao",
+      "componentes": [
+        "skill:ai-coding"
+      ]
+    },
+    {
+      "texto": "You’re comfortable with modern web architecture (HTTP, REST APIs, grpc, microservices)",
+      "tipo": "obrigatorio",
+      "fonte": "secao",
+      "componentes": [
+        "alguma:http|rest|grpc|microsservicos"
+      ]
+    },
+    {
+      "texto": "You’ve worked with relational and non-relational databases",
+      "tipo": "obrigatorio",
+      "fonte": "secao",
+      "componentes": [
+        "skill:banco-relacional",
+        "skill:nosql"
+      ]
+    },
+    {
+      "texto": "You’re comfortable collaborating in English, including participating in meetings and code reviews.",
+      "tipo": "obrigatorio",
+      "fonte": "secao",
+      "componentes": [
+        "skill:code-review",
+        "idioma:ingles>=intermediario"
+      ]
+    },
+    {
+      "texto": "You’re fluent in English and confident participating in meetings and code reviews in English",
+      "tipo": "obrigatorio",
+      "fonte": "secao",
+      "componentes": [
+        "skill:code-review",
+        "idioma:ingles>=fluente"
+      ]
+    },
+    {
+      "texto": "You care about quality and write tests to ensure your code works as expected",
+      "tipo": "obrigatorio",
+      "fonte": "secao",
+      "componentes": [
+        "skill:testes-automatizados"
+      ]
+    },
+    {
+      "texto": "Experience working at a tech company with scale",
+      "tipo": "desejavel",
+      "fonte": "secao",
+      "componentes": [
+        "?:"
+      ]
+    },
+    {
+      "texto": "Familiarity with Java, Kotlin, or similar JVM languages",
+      "tipo": "desejavel",
+      "fonte": "secao",
+      "componentes": [
+        "alguma:java|kotlin"
+      ]
+    },
+    {
+      "texto": "Exposure to big data technologies or event-driven architecture",
+      "tipo": "desejavel",
+      "fonte": "secao",
+      "componentes": [
+        "skill:big-data",
+        "skill:event-driven"
+      ]
+    }
+  ],
+  "naoAvaliaveis": [
+    "You take ownership and enjoy working with autonomy in a fast-paced environment",
+    "Interest in mentorship or growing into a technical leadership role"
+  ],
+  "eliminatorias": [
+    "local: Trabalho híbrido em São Paulo - SP",
+    "idioma: Inglês fluente ou acima"
+  ],
+  "afirmativa": "Software Engineer, Backend (All teams) – Brazil – Vaga exclusiva para PCD"
+}

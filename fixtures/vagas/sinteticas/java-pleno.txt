@@ -1,0 +1,15 @@
+Desenvolvedor Java Pleno
+
+Sobre a vaga
+Você vai atuar no time de pagamentos, desenvolvendo APIs REST em microsserviços.
+
+Requisitos:
+- 3+ anos de experiência com Java e Spring Boot
+- Bancos relacionais (PostgreSQL ou MySQL)
+- Inglês intermediário
+
+Diferenciais:
+- AWS ou GCP
+- Kubernetes
+
+Modelo híbrido em São Paulo - SP

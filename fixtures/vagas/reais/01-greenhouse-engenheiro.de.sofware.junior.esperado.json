@@ -1,0 +1,51 @@
+{
+  "titulo": "Engenheiro(a) de Software | Assistente e Júnior",
+  "familia": "desenvolvimento",
+  "senioridade": "junior",
+  "idioma": "pt",
+  "modelo": "hibrido",
+  "local": "São Paulo - SP",
+  "pais": "Brasil",
+  "temSecoes": true,
+  "requisitos": [
+    {
+      "texto": "Conhecimento básico em desenvolvimento de software em uma ou mais linguagens de programação (C#, Java, Go ou Rust)",
+      "tipo": "obrigatorio",
+      "fonte": "secao",
+      "componentes": [
+        "alguma:csharp|java|go|rust"
+      ]
+    },
+    {
+      "texto": "Noção de boas práticas de desenvolvimento;",
+      "tipo": "obrigatorio",
+      "fonte": "secao",
+      "componentes": [
+        "?:"
+      ]
+    },
+    {
+      "texto": "Conhecimento em Cloud pública, preferencialmente Azure.",
+      "tipo": "desejavel",
+      "fonte": "marcador",
+      "componentes": [
+        "alguma:cloud|azure"
+      ]
+    },
+    {
+      "texto": "Conhecimento em Front-end, preferencialmente React.",
+      "tipo": "desejavel",
+      "fonte": "marcador",
+      "componentes": [
+        "alguma:frontend-dev|react"
+      ]
+    }
+  ],
+  "naoAvaliaveis": [
+    "Disponibilidade para trabalhar no modelo presencial com flexibilidade (2x por semana no escritório) em São Paulo/SP."
+  ],
+  "eliminatorias": [
+    "local: Trabalho híbrido em São Paulo - SP"
+  ],
+  "afirmativa": null
+}

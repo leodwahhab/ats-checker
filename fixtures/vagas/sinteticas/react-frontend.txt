@@ -1,0 +1,14 @@
+Desenvolvedor(a) Front-end React
+
+O que você vai fazer
+- Construir interfaces web responsivas
+
+Requisitos
+- Experiência com React e TypeScript
+- Next.js
+- Testes automatizados (Jest, Testing Library ou similares)
+- Boa comunicação
+
+Diferenciais
+- Tailwind CSS
+- Storybook

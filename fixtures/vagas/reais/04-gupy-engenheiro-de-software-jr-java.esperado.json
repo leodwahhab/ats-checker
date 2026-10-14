@@ -1,0 +1,152 @@
+{
+  "titulo": "Engenheiro de Software Jr. (Java)",
+  "familia": "desenvolvimento",
+  "senioridade": "junior",
+  "idioma": "pt",
+  "modelo": "hibrido",
+  "local": "São Paulo - SP",
+  "pais": "Brasil",
+  "temSecoes": true,
+  "requisitos": [
+    {
+      "texto": "Atuar no desenvolvimento e manutenção de aplicações Java, seguindo boas práticas de desenvolvimento de software.",
+      "tipo": "informativo",
+      "fonte": "secao",
+      "componentes": [
+        "skill:java"
+      ]
+    },
+    {
+      "texto": "Auxiliar na elaboração e atualização de documentações técnicas, fluxos e diagramas.",
+      "tipo": "informativo",
+      "fonte": "secao",
+      "componentes": [
+        "skill:documentacao"
+      ]
+    },
+    {
+      "texto": "Colaborar com desenvolvedores mais experientes na evolução e sustentação dos sistemas.",
+      "tipo": "informativo",
+      "fonte": "secao",
+      "componentes": [
+        "skill:suporte"
+      ]
+    },
+    {
+      "texto": "Desenvolver e manter testes unitários e de integração.",
+      "tipo": "informativo",
+      "fonte": "secao",
+      "componentes": [
+        "skill:testes-unitarios",
+        "skill:testes-integracao"
+      ]
+    },
+    {
+      "texto": "Apoiar o desenvolvimento e manutenção de APIs e serviços.",
+      "tipo": "informativo",
+      "fonte": "secao",
+      "componentes": [
+        "skill:apis"
+      ]
+    },
+    {
+      "texto": "Trabalhar em conjunto com equipes multidisciplinares utilizando metodologias ágeis.",
+      "tipo": "informativo",
+      "fonte": "secao",
+      "componentes": [
+        "skill:agil"
+      ]
+    },
+    {
+      "texto": "Ensino Superior completo ou em andamento em Ciência da Computação, Engenharia da Computação, Sistemas de Informação ou áreas correlatas.",
+      "tipo": "obrigatorio",
+      "fonte": "secao",
+      "componentes": [
+        "formacao:graduacao~cursando:ti"
+      ]
+    },
+    {
+      "texto": "Conhecimento em desenvolvimento Java.",
+      "tipo": "obrigatorio",
+      "fonte": "secao",
+      "componentes": [
+        "skill:java"
+      ]
+    },
+    {
+      "texto": "Conhecimento básico em banco de dados relacionais e SQL (Oracle, MySQL ou PostgreSQL).",
+      "tipo": "obrigatorio",
+      "fonte": "secao",
+      "componentes": [
+        "skill:banco-relacional",
+        "alguma:sql|oracle|mysql|postgresql"
+      ]
+    },
+    {
+      "texto": "Conhecimento em controle de versão utilizando Git.",
+      "tipo": "obrigatorio",
+      "fonte": "secao",
+      "componentes": [
+        "skill:versionamento",
+        "skill:git"
+      ]
+    },
+    {
+      "texto": "Conhecimento em metodologias ágeis, como Scrum ou Kanban.",
+      "tipo": "obrigatorio",
+      "fonte": "secao",
+      "componentes": [
+        "alguma:agil|scrum|kanban"
+      ]
+    },
+    {
+      "texto": "Conhecimento em orientação a objetos e conceitos básicos de padrões de projeto.",
+      "tipo": "obrigatorio",
+      "fonte": "secao",
+      "componentes": [
+        "skill:poo",
+        "skill:design-patterns"
+      ]
+    },
+    {
+      "texto": "Conhecimento em testes automatizados utilizando JUnit, Mockito ou frameworks similares.",
+      "tipo": "obrigatorio",
+      "fonte": "secao",
+      "componentes": [
+        "skill:testes-automatizados",
+        "alguma:junit|mockito"
+      ]
+    },
+    {
+      "texto": "Desejável conhecimento em Spring Boot.",
+      "tipo": "desejavel",
+      "fonte": "marcador",
+      "componentes": [
+        "skill:spring-boot"
+      ]
+    },
+    {
+      "texto": "Desejável conhecimento em ferramentas de integração e entrega contínua (CI/CD).",
+      "tipo": "desejavel",
+      "fonte": "marcador",
+      "componentes": [
+        "skill:ci-cd"
+      ]
+    },
+    {
+      "texto": "Desejável conhecimento em Python e aplicações de Inteligência Artificial.",
+      "tipo": "desejavel",
+      "fonte": "marcador",
+      "componentes": [
+        "skill:python",
+        "skill:ia"
+      ]
+    }
+  ],
+  "naoAvaliaveis": [],
+  "eliminatorias": [
+    "local: Trabalho híbrido em São Paulo - SP",
+    "formacao: Ensino superior completo ou em andamento em TI ou área afim"
+  ],
+  "afirmativa": null
+}

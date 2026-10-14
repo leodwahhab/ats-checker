@@ -1,0 +1,69 @@
+Desenvolvedor FullStack Júnior
+Híbrido
+São Paulo, SP, BR
+
+Na nossa jornada, cada talento importa. Valorizamos o desenvolvimento individual, o trabalho em equipe e a troca constante de conhecimento, pois acreditamos que é assim que crescemos juntos. 
+
+Aqui, você terá espaço para experimentar novas tecnologias, propor ideias e construir soluções que realmente fazem a diferença. Buscamos pessoas que gostem de desafios e queiram evoluir em um ambiente colaborativo e respeitoso. 
+
+Se você procura autonomia, aprendizado contínuo e oportunidades reais de crescimento profissional, seu lugar pode ser com a gente. 
+
+ 
+
+Responsabilidades e atribuições:
+• Desenvolver funcionalidades ponta a ponta (do banco de dados à interface) nos protótipos e produtos da CN Innovation, com backend em C#/.NET e/ou Node.js + TypeScript e frontend em Angular ou React.
+• Participar do desenho técnico das soluções: modelagem de dados, contratos de API, divisão em módulos/serviços e registro de decisões (ADRs leves).
+• Aplicar boas práticas de engenharia: código limpo, princípios SOLID, code review, versionamento com Git e documentação técnica.
+• Escrever testes em todos os níveis (unitários, integração e E2E) e participar da esteira de CI/CD, com apoio de ferramentas como Playwright.
+• Dar suporte à operação dos serviços: logs, monitoramento, tratamento de erros e investigação de bugs em ambientes de desenvolvimento e produção.
+• Integrar recursos de IA (APIs de LLM, extração de documentos) às funcionalidades, respeitando fallback, limites de custo e latência.
+• Pairing com devs mais seniores, refinamento com o PM e demos das entregas.
+
+ 
+
+ Requisitos e qualificações:
+ 
+
+ • Graduação em andamento/concluída em TI, Engenharia, Ciência da Computação ou áreas correlatas (ou experiência equivalente comprovada em projetos/portfólio).
+• Fundamentos de engenharia de software: lógica, estruturas de dados, POO, HTTP/REST e noções de arquitetura em camadas.
+• Experiência acadêmica, estágio ou projetos pessoais com ao menos uma linguagem backend (C#/.NET, Node.js/TypeScript ou Python) e com um framework frontend (Angular, React ou Vue).
+• SQL e modelagem relacional básica.
+• Git e fluxo de pull request/code review.
+• Testes automatizados básicos.
+• Leitura de documentação técnica em inglês.
+
+Diferenciais:
+• Noções de Docker, CI/CD (Azure DevOps/GitHub Actions) e nuvem (Azure).
+• Experiência com Playwright, Cypress ou outra ferramenta de testes E2E.
+• Contato com APIs de LLM e prompts (Claude/OpenAI).
+• Noções de mensageria/filas, cache e observabilidade.
+• Interesse em fintech, mercado financeiro regulado ou blockchain/tokenização.
+• Projetos no GitHub/portfólio publicado.
+ 
+
+📍 Local de Atuação da vaga: São Paulo/SP 
+
+Modelo de atuação: Híbrido na Zona Sul de São Paulo (1 ou 2 dias na semana)
+ 
+
+  
+
+Benefícios que você terá aqui; 
+
+🍛 Vale Refeição no cartão iFood Benefícios  
+
+💳 Valor em Multibenefícios no cartão iFood Benefícios  
+
+👨‍🎓 Desconto em cursos, universidades e instituições de idiomas  
+
+🏥 Assistência médica Amil Saúde 
+
+🦷 Assistência odontológica Porto Seguro 
+
+👶 Auxílio-creche para filhos até 6 anos. 
+
+📚 Apoio a certificações  
+
+🏖️ Credencial SESC  
+
+🏋️ TotalPass – Plataforma de bem-estar e academias 

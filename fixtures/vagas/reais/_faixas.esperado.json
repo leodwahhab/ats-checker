@@ -1,0 +1,80 @@
+{
+  "01-greenhouse-engenheiro.de.sofware.junior": {
+    "CV_J-2": "maybe 75 · ✓? · ✓✓",
+    "CV_P-1": "maybe 75 · ✓? · ✓✓",
+    "Profile": "maybe 61 · ✓? · ✓✗",
+    "CV_Canva": "maybe 47 · ✓? · ✗✓"
+  },
+  "02-greenhouse-software,engineer.backend": {
+    "CV_J-2": "not 66 · ✓◐✓✗✓◐✓ · ?✓✗",
+    "CV_P-1": "not 66 · ✓◐✓✗✓◐✓ · ?✓✗",
+    "Profile": "not 38 · ✗✗✓✗✗✗✓ · ?✓✗",
+    "CV_Canva": "not 28 · ✗✗✓✗✗✗✓ · ?✓✗"
+  },
+  "03-inhire-desenvolvedor.fullstack.junior": {
+    "CV_J-2": "not 68 · ✓✗✓✗✓✓✓ · ✓✗◐◐✗✓",
+    "CV_P-1": "not 68 · ✓✗✓✗✓✓✓ · ✓✗◐◐✗✓",
+    "Profile": "not 47 · ✓✗✗✗✗✓✓ · ◐✗✗◐✗✓",
+    "CV_Canva": "not 28 · ✗◐✓✗✗✓✗ · ✗✗✗✗✗✓"
+  },
+  "04-gupy-engenheiro-de-software-jr-java": {
+    "CV_J-2": "top 92 · ✓✓✓✓✓✓✓ · ✓✓✗",
+    "CV_P-1": "top 92 · ✓✓✓✓✓✓✓ · ✓✓✗",
+    "Profile": "not 75 · ✓✓✓✓✓✗✓ · ✓✗✗",
+    "CV_Canva": "not 55 · ✗✓✓✓✓✗✓ · ✓✗✗"
+  },
+  "06-myworkdayjobs-engenheiro.software.backend.junior": {
+    "CV_J-2": "top 100 · ✓✓✓✓ · -",
+    "CV_P-1": "top 100 · ✓✓✓✓ · -",
+    "Profile": "top 100 · ✓✓✓✓ · -",
+    "CV_Canva": "not 50 · ✗✓✗✓ · -"
+  },
+  "07-gupy-analista.de.sistemas.jr": {
+    "CV_J-2": "maybe 92 · ✓✓◐✓ · -",
+    "CV_P-1": "maybe 92 · ✓✓◐✓ · -",
+    "Profile": "not 82 · ✓✓✗✓ · -",
+    "CV_Canva": "not 45 · ✗✓✗✓ · -"
+  },
+  "08-gupy-analista.de.sistemas.jr": {
+    "CV_J-2": "not 50 · ✓?✗✗✓✗?✓✗✗✗✗ · ?✓?✓",
+    "CV_P-1": "not 50 · ✓?✗✗✓✗?✓✗✗✗✗ · ?✓?✓",
+    "Profile": "not 65 · ✓?✗✗✓✓?✓✗✓✓✓ · ?✓?✓",
+    "CV_Canva": "not 16 · ✗?✗✗✗✗?✗✗✗✗✗ · ?✓?✓"
+  },
+  "09-gupy-analista.de.sistemas.jr": {
+    "CV_J-2": "not 40 · ✓✗✗✗✓ · ???✗",
+    "CV_P-1": "not 40 · ✓✗✗✗✓ · ???✗",
+    "Profile": "not 58 · ✓✓✗✓✓ · ???✗",
+    "CV_Canva": "not 13 · ✗✗✗✗✓ · ???✗"
+  },
+  "10-gupy-engenharia.de.software.jr": {
+    "CV_J-2": "not 94 · ✓✓✗✓◐✓✓✓✓✓✓✓ · ✓✓✓",
+    "CV_P-1": "not 94 · ✓✓✗✓◐✓✓✓✓✓✓✓ · ✓✓✓",
+    "Profile": "not 90 · ✓✓✗✓◐✓✓✓✓✗✓✓ · ✓✓✓",
+    "CV_Canva": "not 58 · ✓✓✗✗✓✓✗✓✓✗✗✗ · ✓✗✓"
+  },
+  "11-gupy-engenheiro.de.TI.junior": {
+    "CV_J-2": "not 75 · ✓◐◐✗✓✓✗✓ · -",
+    "CV_P-1": "not 75 · ✓◐◐✗✓✓✗✓ · -",
+    "Profile": "not 64 · ✓◐◐✗✓✓✗✗ · -",
+    "CV_Canva": "not 23 · ✗✗✗✗✓✓✗✗ · -"
+  },
+  "12-linkedin-desenvolvedor.fullstack.junior.java.spring": {
+    "CV_J-2": "not 63 · ✓◐✓◐✗ · ◐✓",
+    "CV_P-1": "not 63 · ✓◐✓◐✗ · ◐✓",
+    "Profile": "not 43 · ✓◐✓✗✗ · ◐✗",
+    "CV_Canva": "not 28 · ✗✗✓◐✗ · ◐✗"
+  },
+  "13-linkedin-junior.java.developer": {
+    "CV_J-2": "maybe 92 · ✓◐◐✓✓✓✓ · ✓",
+    "CV_P-1": "maybe 92 · ✓◐◐✓✓✓✓ · ✓",
+    "Profile": "not 54 · ✓✗✗✓✓✓✓ · ✗",
+    "CV_Canva": "not 90 · ✓✓✗✓✓✓✓ · ✓"
+  },
+  "14-linkedin-desenvolvedor.fullstack.jr.java.angular": {
+    "CV_J-2": "not 57 · ✓✓✓◐✓✗✗?✓✓◐✗✗✗ · ?✓✗?✓✓✓",
+    "CV_P-1": "not 57 · ✓✓✓◐✓✗✗?✓✓◐✗✗✗ · ?✓✗?✓✓✓",
+    "Profile": "not 53 · ✓✓✓✗✓✗✗?✓✓✗✗✗✗ · ?✓✗?✓✓✓",
+    "CV_Canva": "not 45 · ✓✓✓◐✓✗✓?✓✓✗✗✗✗ · ?✓✗?✗✓✗"
+  }
+}

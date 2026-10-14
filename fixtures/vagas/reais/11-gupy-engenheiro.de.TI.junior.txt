@@ -1,0 +1,62 @@
+Engenharia de Software Júnior - Python/AWS - Comunidade Finanças
+
+Publicada em 22 de setembro de 2026
+
+Inscrições abertas até 21 de dezembro de 2026
+
+Local de trabalho: São Paulo - SPjobTypes.vacancy_type_effectiveSão Paulo - SP
+
+Tipo de vaga: EfetivoModelo de trabalho íconeEfetivo
+
+Modelo de trabalho: PresencialTrabalho Presencial íconePresencial
+Descrição da vaga
+
+O Itaú é a marca mais valiosa do Brasil, a melhor empresa para trabalhar segundo o Great Place to Work e o maior banco da América Latina. Nós impactamos diariamente mais de 98 milhões de clientes em 18 países.
+
+Somos feitos de pessoas e acreditamos que ter um time com pluralidade de origens, culturas, crenças, experiências, raças, deficiências, gêneros, orientações afetivo-sexuais e gerações ampliam as perspectivas e contribuem para um clima de respeito e valorização das diferenças.
+
+
+
+
+
+ 
+Responsabilidades e atribuições
+
+    Estamos em busca de uma pessoa apaixonada por tecnologia, curiosa e com vontade de aprender para atuar como Engenheiro(a) de TI Júnior. Você fará parte de um ambiente colaborativo, inovador e com grande exposição a desafios reais de negócio, trabalhando ao lado de profissionais experientes em projetos estratégicos de transformação digital, modernização de plataformas e soluções em nuvem.
+    No dia a dia, você terá a oportunidade de desenvolver conhecimentos em engenharia de dados, automação, cloud computing, observabilidade e boas práticas de desenvolvimento, contribuindo para a construção de soluções escaláveis que impactam diretamente a experiência de milhões de clientes.
+    Aqui, valorizamos a troca de conhecimento, a experimentação e o desenvolvimento contínuo. Se você gosta de resolver problemas, aprender novas tecnologias e transformar dados em valor para o negócio, esta vaga é para você.
+
+Requisitos e qualificações
+
+    AWS
+    Glue
+    Athena
+    Python
+    Metodologia de projetos ágeis
+    SQL
+    Clean Architecture, Clean Code
+    Experiência com Git, code review e métricas de qualidade de codigo
+
+
+Informações adicionais
+
+Ao se tornar um ituber você tem_
+
+    Vale-Transporte
+    Vale-Refeição (Restaurantes) / Vale-Alimentação (Supermercados)
+    Plano médico (Fundação Saúde Itaú ou Central Nacional Unimed)
+    Plano odontológico (Odontoprev ou Interodonto)
+    Seguro de Vida
+    PLR – Participação nos Lucros e Resultados (Mediante resultados do banco)
+    Previdência privada
+    Descontos exclusivos em nossos produtos financeiros
+    Licença maternidade e paternidade estendida
+    Auxílio Creche / Babá (para papais e mamães)
+    Incentivo a estudos
+    Wellhub ou TotalPass
+    Acesso aos Clubes de Lazer Itaú (Guarapiranga / Itanhaém e São Sebastião)
+    + Algumas vantagens que você pode conhecer durante o processo 😊
+
+Conheça mais sobre nossa cultura: https://www.itau.com.br/relacoes-com-investidores/noticias/cultura-itubers-e-nosso-novo-conjunto-de-valores/
+
+*Estimulamos candidaturas de pessoas com deficiência em todas as nossas posições, sendo assim, sinta-se à vontade para se candidatar em vagas sinalizadas como exclusivas ou não para pessoas com deficiência. Somos comprometidos com a inclusão e valorizamos a diversidade.

@@ -1,0 +1,5 @@
+Estamos contratando pessoa desenvolvedora Python para o time de dados.
+Buscamos experiência com Python e Django, conhecimento em AWS e familiaridade com Docker.
+Diferencial: Airflow.
+Conhecimento em Protheus é um plus.
+Boa comunicação e trabalho em equipe.

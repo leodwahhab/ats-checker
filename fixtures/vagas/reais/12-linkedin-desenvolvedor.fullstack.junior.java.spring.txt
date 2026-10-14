@@ -1,0 +1,34 @@
+Sobre a vaga
+
+Buscamos um(a) Dev(a) Full Stack para a Neppo, para construir e evoluir features de chatbot e automação usando nossa DSL e o builder Low-Code, integrar fontes de dados e serviços externos, e aplicar IA (NLU/geração de respostas) para entregar conversas inteligentes e resultados de negócio mensuráveis (tempo de resposta, resolução automática, redução de custo).
+
+
+🧑🦽Todas as nossas vagas estão disponíveis para pessoas com deficiência!
+
+
+Que tal se juntar ao nosso time e embarcar nessa jornada com a gente?
+
+
+RESPONSABILIDADES E ATRIBUIÇÕES
+
+    Desenvolver soluções full stack ponta a ponta, com atuação em back-end para serviços e APIs;
+    Desenhar e aplicar boas práticas de arquitetura em microsserviços, integrando fluxos com APIs REST, serviços HTTP e eventos em tempo real (WebSocket/SockJS);
+    Conectar bots a sistemas externos (CRM/ERP) e canais de mensageria (WhatsApp, Telegram, Instagram, e-mail, SMS e voz);
+    Apoiar o time em iniciativas envolvendo IA/NLU e criação de componentes DSL/Low-Code para fluxos de automação;
+    Realizar a autogestão do próprio backlog: quebrar tarefas, estimar prazos, comunicar riscos e desbloquear problemas com senso de dono;
+    Monitorar e melhorar métricas de negócio (CSAT/NPS), observabilidade e resiliência da aplicação (retries, idempotência, circuit breaker);
+    Escrever documentações técnicas curtas (como ADRs e readmes) e garantir a qualidade do código através de testes e revisão de PRs.
+
+
+REQUISITOS E QUALIFICAÇÕES
+
+    Graduação em Ciência da Computação, Engenharia de Software, Sistemas de Informação, ou áreas afins;
+    Experiência em Back-End: Java (versão 8+), ecossistema Spring (Boot, Cloud) e arquitetura de Microsserviços;
+    Conhecimento sólido em Bancos de Dados (MySQL/MariaDB, SQL/NoSQL) e protocolos de comunicação (REST, GRPC, Sockets);
+    Conhecimento em Front-End: JavaScript e Angular;
+    Vivência prática com testes (unitários e de integração), cache, ferramentas de observabilidade (ex: Grafana) e padrões de resiliência;
+    Diferencial: Conhecimento em Kotlin;
+    Diferencial: Experiência com Inteligência Artificial, chatbots ou ferramentas low code (N8N, Zapier).
+
+
+Na Neppo, você irá trabalhar com um dos produtos que mais tem ajudado as empresas em seu posicionamento e estratégia de comunicação e relacionamento digital, com oportunidade de ascensão profissional e premiações exclusivas 💚
