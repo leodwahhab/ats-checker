@@ -1,0 +1,746 @@
+{
+ "SECOES": [
+  [
+   "desejavel",
+   {
+    "$re": "\\b(diferencia(l|is)|desejave(l|is)|nice to haves?|plus|pluses|bonus( points)?|pontos? extras?|preferenciais|preferred( qualifications)?|(sera|seria|vai ser) (um )?(diferencial|otimo|legal)|(experiencias?|conhecimentos?|requisitos?|qualificac(ao|oes)|habilidades|competencias|tecnologias) desejad[oa]s?)\\b|^(certificac(ao|oes)|certificados|certifications)$",
+    "flags": ""
+   }
+  ],
+  [
+   "obrigatorio",
+   {
+    "$re": "\\b(requisitos?|pre ?requisitos?|qualificac(ao|oes)|qualifications?|o que (buscamos|esperamos|procuramos|precisamos)|o que voce (precisa|deve) ter|voce (precisa|deve) ter|(tem|precisa|deve) que ter|precisamos que voce|must haves?|requirements?|obrigatori(o|a|os|as)|conhecimentos? (necessarios?|tecnicos?|exigidos?|obrigatorios?)|competencias( tecnicas)?|perfil (desejado|tecnico|esperado|procurado)|habilidades( tecnicas)?|hard skills|skills|o que e necessario|we ?re excited about you|what we ?re looking for|about you|who you are|what you bring|you have|minimum qualifications|basic qualifications)\\b",
+    "flags": ""
+   }
+  ],
+  [
+   "contexto",
+   {
+    "$re": "\\b(responsabilidades|atribuic(ao|oes)|atividades|funcoes|o que voce (vai|ira) fazer|o que voce fara|desafios|dia a dia|sobre a (vaga|posicao|funcao|oportunidade)|descricao( da vaga)?|your role|the role|about the role|responsibilities|what you ?(will|ll) do|como e trabalhar|(sua )?missao|your mission)\\b",
+    "flags": ""
+   }
+  ],
+  [
+   "stack",
+   {
+    "$re": "\\b(tecnologias|ambiente tecnico|tech stack)\\b|^(nossa |a |principal )?stack( tecnica| tecnologica)?$",
+    "flags": ""
+   }
+  ],
+  [
+   "ignorada",
+   {
+    "$re": "\\b(beneficios|benefits|perks|o que oferecemos|oferecemos|what we offer|o que voce (vai )?encontra(r|ra)|what (can )?you (can )?expect|como se candidatar|how to apply|sobre (a empresa|nos|o time|a gente|a area|o time)|quem somos|quem e|who is|about us|about [a-z]+|why join|conheca|processo seletivo|etapas( do processo)?|hiring process|remuneracao|salario|local de (trabalho|atuacao)|localizacao|modelo de (trabalho|atuacao)|regime( de contratacao)?|contratacao|informacoes adicionais|diversidade|inclusao|diversity|inclusion|our commitment|equal opportunity|notice to applicants)\\b",
+    "flags": ""
+   }
+  ]
+ ],
+ "MARCADOR_DESEJAVEL": {
+  "$re": "\\b(desejave(l|is)|diferencia(l|is)|nice[\\s-]to[\\s-]have|(e|sera|seria) um plus|plus|bonus|preferencialmente|idealmente|nao (e )?obrigatori[oa])\\b",
+  "flags": ""
+ },
+ "MARCADOR_OBRIGATORIO": {
+  "$re": "\\b(obrigatori(o|a|os|as)|imprescindive(l|is)|indispensave(l|is)|essencia(l|is)|mandatori[oa]s?|exigid[oa]s?|must[\\s-]have|required)\\b",
+  "flags": ""
+ },
+ "HEURISTICA_OBRIGATORIO": {
+  "$re": "\\b(experiencia (com|em|solida|comprovada|previa|pratica|profissional)|dominio (de|em|do|da|dos|das)|solid[oa]s? conhecimentos?|conhecimentos? solid[oa]s?|proficiencia|vivencia (com|em|pratica)|atuacao (com|em)|\\d{1,2}\\s*\\+?\\s*anos?)\\b",
+  "flags": ""
+ },
+ "SOFT_SKILLS": {
+  "$re": "\\b(comunicac(ao|oes)|comunicativ[oa]|trabalh(o|ar) em equipe|colaboracao|colaborativ[oa]|proatividade|proativ[oa]|lideranca|resolucao de problemas|pensamento (critico|analitico|logico)|perfil analitico|organizacao|organizad[oa]|autonomia|autonom[oa]|comprometimento|comprometid[oa]|vontade de aprender|curiosidade|curios[oa]|criatividade|criativ[oa]|flexibilidade|adaptabilidade|adaptavel|empatia|didatica|senso de (dono|urgencia)|foco (em|no) (resultados?|cliente)|orientad[oa] a resultados?|relacionamento interpessoal|inteligencia emocional|resiliencia|resiliente|boa escrita|escuta ativa|negociacao|gestao do tempo|team player|ownership|communication skills|problem solving|dinamismo|dinamic[oa]|atencao aos? detalhes|aprendizado continuo|gostar de desafios|leadership|mentorship|mentoria|teamwork|autonomy|curiosity|inovacao|melhoria continua|receber orientac(ao|oes)|aprender com o time|evoluir tecnicamente|interesse em aprender|capacidade de aprendizado|situacoes adversas)\\b",
+  "flags": ""
+ },
+ "PARECE_REQUISITO": {
+  "$re": "\\b(conhecimentos?|experiencias?|vivencias?|familiaridade|nocao|nocoes|dominio|capacidade|habilidades?|formacao|graduacao|cursos?|certificac(ao|oes)|certificad[oa]|saber|possuir|disponibilidade|interesse|entendimento|compreensao|knowledge|experience|familiar(ity)?|proficien(t|cy)|ability|understanding|exposure|background)\\b",
+  "flags": ""
+ },
+ "IGNORAR_LINHA": {
+  "$re": "(\\b(modelo (de trabalho )?(hibrido|remoto|presencial)|trabalho (hibrido|remoto|presencial)|100% (remoto|presencial)|home[\\s-]?office|regime (clt|pj)|contratacao (clt|pj)|clt|pj|salario|remuneracao|faixa salarial|beneficios?|vale[\\s-](refeicao|alimentacao|transporte)|vr|va|plano de saude|plano odontologico|gympass|wellhub|plr|ppr|participacao nos lucros|horario|jornada|day off|auxilio|seguro de vida)\\b|^(local|localizacao|cidade|remoto|hibrido|presencial)\\b)",
+  "flags": ""
+ },
+ "ANOS": {
+  "$re": "(?:\\+\\s*)?(\\d{1,2})\\s*\\+?\\s*(?:(?:a|-|ate)\\s*\\d{1,2}\\s*)?(?:anos?|years?)\\b",
+  "flags": ""
+ },
+ "IDIOMAS": [
+  [
+   "Inglês",
+   {
+    "$re": "\\b(ingles|english)\\b",
+    "flags": ""
+   }
+  ],
+  [
+   "Espanhol",
+   {
+    "$re": "\\b(espanhol|spanish)\\b",
+    "flags": ""
+   }
+  ],
+  [
+   "Francês",
+   {
+    "$re": "\\b(frances|french)\\b",
+    "flags": ""
+   }
+  ],
+  [
+   "Alemão",
+   {
+    "$re": "\\b(alemao|german)\\b",
+    "flags": ""
+   }
+  ],
+  [
+   "Italiano",
+   {
+    "$re": "\\b(italiano|italian)\\b",
+    "flags": ""
+   }
+  ],
+  [
+   "Mandarim",
+   {
+    "$re": "\\b(mandarim|mandarin|chines)\\b",
+    "flags": ""
+   }
+  ],
+  [
+   "Japonês",
+   {
+    "$re": "\\b(japones|japanese)\\b",
+    "flags": ""
+   }
+  ],
+  [
+   "Português",
+   {
+    "$re": "\\b(portugues|portuguese)\\b",
+    "flags": ""
+   }
+  ]
+ ],
+ "ORDEM_IDIOMA": [
+  "basico",
+  "intermediario",
+  "avancado",
+  "fluente",
+  "nativo"
+ ],
+ "ROTULO_IDIOMA": {
+  "basico": "básico",
+  "intermediario": "intermediário",
+  "avancado": "avançado",
+  "fluente": "fluente",
+  "nativo": "nativo"
+ },
+ "NIVEIS_IDIOMA": [
+  [
+   "nativo",
+   {
+    "$re": "\\b(nativo|native|bilingue|bilingual)\\b",
+    "flags": ""
+   }
+  ],
+  [
+   "fluente",
+   {
+    "$re": "\\b(fluente|fluencia|fluent|fluency|c1|c2|full professional)\\b",
+    "flags": ""
+   }
+  ],
+  [
+   "avancado",
+   {
+    "$re": "\\b(avancado|advanced|b2|professional working)\\b",
+    "flags": ""
+   }
+  ],
+  [
+   "intermediario",
+   {
+    "$re": "\\b(intermediario|intermediate|b1|conversacao|conversacional|tecnico|leitura|limited working)\\b",
+    "flags": ""
+   }
+  ],
+  [
+   "basico",
+   {
+    "$re": "\\b(basico|basic|a1|a2|elementary)\\b",
+    "flags": ""
+   }
+  ]
+ ],
+ "NIVEIS_FORMACAO": [
+  [
+   "doutorado",
+   {
+    "$re": "\\b(doutorado|phd|doctorate)\\b",
+    "flags": ""
+   }
+  ],
+  [
+   "mestrado",
+   {
+    "$re": "\\b(mestrado|master'?s degree|msc)\\b",
+    "flags": ""
+   }
+  ],
+  [
+   "pos",
+   {
+    "$re": "\\b(pos[\\s-]?graduacao|pos[\\s-]?graduad[oa]|especializacao|mba)\\b",
+    "flags": ""
+   }
+  ],
+  [
+   "graduacao",
+   {
+    "$re": "\\b(ensino superior|nivel superior|curso superior|superior (completo|incompleto|em andamento|cursando)|graduacao|graduad[oa]|bacharel(ado)?|licenciatura|tecnologo|formacao (superior|academica|completa|concluida|em andamento)|faculdade|bachelor'?s?|degree)\\b",
+    "flags": ""
+   }
+  ],
+  [
+   "tecnico",
+   {
+    "$re": "\\b(curso tecnico|tecnico em|ensino tecnico|formacao tecnica)\\b",
+    "flags": ""
+   }
+  ],
+  [
+   "medio",
+   {
+    "$re": "\\b(ensino medio)\\b",
+    "flags": ""
+   }
+  ]
+ ],
+ "ORDEM_FORMACAO": [
+  "medio",
+  "tecnico",
+  "graduacao",
+  "pos",
+  "mestrado",
+  "doutorado"
+ ],
+ "ROTULO_FORMACAO": {
+  "medio": "Ensino médio",
+  "tecnico": "Técnico",
+  "graduacao": "Ensino superior",
+  "pos": "Pós-graduação",
+  "mestrado": "Mestrado",
+  "doutorado": "Doutorado"
+ },
+ "AREA_TI_CURSO": {
+  "$re": "\\b(ciencias? da computacao|ciencia de computacao|engenharia (da|de) computacao|engenharia de software|engenharia informatica|engenharia de dados|sistemas de informacao|analise e desenvolvimento de sistemas|desenvolvimento de (sistemas|software)|ads|redes de computadores|seguranca da informacao|ciberseguranca|ciencia de dados|banco de dados|jogos digitais|informatica|tecnologia da informacao|gestao (da|de) ti|sistemas para internet|computacao|inteligencia artificial|computer science|software engineering|information systems|information technology)\\b",
+  "flags": ""
+ },
+ "PERIODO_CURSO": {
+  "$re": "\\b(a partir do \\d{1,2}\\s*(o|º|°)?\\s*(semestre|periodo|ano)|\\d{1,2}\\s*(o|º|°)?\\s*(semestre|periodo) (em diante|ou superior)|previsao de (formatura|conclusao)|formatura prevista|conclusao prevista)\\b",
+  "flags": ""
+ },
+ "ACEITA_CURSANDO": {
+  "$re": "\\b(cursando|em andamento|incompleto|em curso|matriculad[oa]|ultimos? (anos?|semestres?))\\b",
+  "flags": ""
+ },
+ "AREA_TI": {
+  "$re": "\\b(ti|tecnologia( da informacao)?|computacao|informatica|sistemas( de informacao)?|software|ciencia de dados|analise e desenvolvimento|ads|engenharia|exatas|areas? (afins|correlatas|relacionadas|similares))\\b",
+  "flags": ""
+ },
+ "COMO_CARGO": {
+  "$re": "\\bcomo\\s+(?:pessoa\\s+)?(desenvolvedor(a)?|engenheir[oa]|analista|programador(a)?|qa|tester|cientista|arquitet[oa]|tech lead|lider tecnic[oa]|product (owner|manager)|devops|sre)\\b[^,.;]*",
+  "flags": ""
+ },
+ "PALAVRAS_GENERICAS": {
+  "$set": [
+   "experiencia",
+   "experiencias",
+   "conhecimento",
+   "conhecimentos",
+   "nocao",
+   "nocoes",
+   "vivencia",
+   "dominio",
+   "familiaridade",
+   "boas",
+   "praticas",
+   "pratica",
+   "desenvolvimento",
+   "sistemas",
+   "sistema",
+   "aplicacoes",
+   "aplicacao",
+   "projetos",
+   "projeto",
+   "ferramentas",
+   "ferramenta",
+   "tecnologias",
+   "tecnologia",
+   "linguagens",
+   "linguagem",
+   "frameworks",
+   "framework",
+   "bibliotecas",
+   "banco",
+   "bancos",
+   "dados",
+   "metodologias",
+   "metodologia",
+   "ambiente",
+   "ambientes",
+   "time",
+   "times",
+   "equipe",
+   "equipes",
+   "clientes",
+   "cliente",
+   "negocio",
+   "negocios",
+   "solucoes",
+   "solucao",
+   "plataformas",
+   "plataforma",
+   "produto",
+   "produtos",
+   "software",
+   "codigo",
+   "qualidade",
+   "arquitetura",
+   "infraestrutura",
+   "servicos",
+   "servico",
+   "integracao",
+   "integracoes",
+   "processos",
+   "processo",
+   "ti",
+   "it",
+   "api",
+   "apis",
+   "web",
+   "mobile",
+   "backend",
+   "frontend",
+   "fullstack",
+   "back-end",
+   "front-end",
+   "full-stack",
+   "similares",
+   "afins",
+   "pj",
+   "clt",
+   "pcd",
+   "remoto",
+   "hibrido",
+   "presencial",
+   "vaga",
+   "empresa",
+   "area",
+   "areas",
+   "nivel",
+   "superior",
+   "completo",
+   "cursando",
+   "graduacao",
+   "ensino",
+   "ingles",
+   "espanhol",
+   "portugues",
+   "avancado",
+   "intermediario",
+   "basico",
+   "fluente",
+   "junior",
+   "pleno",
+   "senior",
+   "estagio",
+   "estagiario",
+   "trainee",
+   "ciencia",
+   "ciencias",
+   "computacao",
+   "engenharia",
+   "informacao",
+   "analise",
+   "informatica",
+   "bacharelado",
+   "tecnologo",
+   "brasil",
+   "kpi",
+   "kpis",
+   "okr",
+   "okrs",
+   "sla",
+   "slas",
+   "b2b",
+   "b2c",
+   "saas",
+   "mvp",
+   "poc",
+   "rh",
+   "ceo",
+   "cto",
+   "po",
+   "pm",
+   "qa",
+   "ux",
+   "ui",
+   "etc",
+   "cnh",
+   "lgbtqia",
+   "lgbtqia+",
+   "plus",
+   "bonus",
+   "desejavel",
+   "desejaveis",
+   "diferencial",
+   "diferenciais",
+   "obrigatorio",
+   "obrigatorios",
+   "desenvolvedor",
+   "desenvolvedora",
+   "desenvolvedores",
+   "pessoa",
+   "pessoas",
+   "profissional",
+   "oportunidade",
+   "candidato",
+   "candidata",
+   "incidentes",
+   "administracao",
+   "economia",
+   "contabilidade",
+   "matematica",
+   "fisica",
+   "design",
+   "certified",
+   "developer",
+   "associate",
+   "engineer",
+   "architect",
+   "foundation",
+   "practitioner",
+   "specialist",
+   "microsoft",
+   "amazon",
+   "brazil",
+   "nyc",
+   "us",
+   "ii",
+   "iii",
+   "english",
+   "portuguese",
+   "spanish",
+   "sao",
+   "paulo",
+   "rio",
+   "janeiro",
+   "belo",
+   "horizonte",
+   "curitiba",
+   "porto",
+   "alegre",
+   "recife",
+   "fortaleza",
+   "salvador",
+   "brasilia",
+   "campinas",
+   "florianopolis",
+   "goiania",
+   "manaus",
+   "belem",
+   "vitoria",
+   "natal",
+   "joao",
+   "maceio",
+   "aracaju",
+   "teresina",
+   "luis",
+   "cuiaba",
+   "campo",
+   "grande",
+   "osasco",
+   "barueri",
+   "santo",
+   "andre",
+   "bernardo",
+   "guarulhos",
+   "sorocaba",
+   "ribeirao",
+   "preto",
+   "jose",
+   "campos",
+   "joinville",
+   "blumenau",
+   "londrina",
+   "maringa",
+   "uberlandia",
+   "niteroi",
+   "sp",
+   "rj",
+   "mg",
+   "pr",
+   "rs",
+   "sc",
+   "ba",
+   "pe",
+   "ce",
+   "df",
+   "go",
+   "es",
+   "am",
+   "pa"
+  ]
+ },
+ "RESIDENCIA": {
+  "$re": "\\b(residir|resida|reside|residente|morar (em|na|no|perto)|disponibilidade (para|de) mudanca|mudanca de cidade|relocation|relocate)\\b",
+  "flags": ""
+ },
+ "DISPONIBILIDADE": [
+  [
+   "Disponibilidade para viagens",
+   {
+    "$re": "\\b(viagens?|viajar|travel(ing|ling)?)\\b",
+    "flags": ""
+   }
+  ],
+  [
+   "Plantão ou sobreaviso",
+   {
+    "$re": "\\b(plantao|plantoes|sobreaviso|on-?call)\\b",
+    "flags": ""
+   }
+  ],
+  [
+   "Trabalho em fins de semana, feriados ou turnos",
+   {
+    "$re": "\\b(finais de semana|fins de semana|feriados|turnos?|escalas? de trabalho|horario noturno)\\b",
+    "flags": ""
+   }
+  ],
+  [
+   "Início imediato",
+   {
+    "$re": "\\b(inicio imediato|disponibilidade imediata|imediata disponibilidade)\\b",
+    "flags": ""
+   }
+  ]
+ ],
+ "CONTEXTO_DISPONIBILIDADE": {
+  "$re": "\\b(disponibilidade|disponivel|availability|available|willing(ness)?|necessari[oa]|requer|exige|precisa)\\b|^(inicio imediato|disponibilidade imediata)",
+  "flags": ""
+ },
+ "DOCUMENTO": [
+  [
+   "CNH",
+   {
+    "$re": "\\b(cnh|carteira (nacional )?de habilitacao|habilitacao (categoria|tipo) [a-e]|driver.?s license)\\b",
+    "flags": ""
+   }
+  ],
+  [
+   "Veículo próprio",
+   {
+    "$re": "\\b(veiculo proprio|carro proprio|moto propria|own (car|vehicle))\\b",
+    "flags": ""
+   }
+  ],
+  [
+   "Autorização de trabalho ou visto",
+   {
+    "$re": "\\b(autorizacao (de|para) trabalh\\w*|work authorization|authorized to work|right to work|visto de trabalho|visa sponsorship|sponsorship)\\b",
+    "flags": ""
+   }
+  ],
+  [
+   "Passaporte",
+   {
+    "$re": "\\b(passaporte|passport)\\b",
+    "flags": ""
+   }
+  ]
+ ],
+ "CERTIFICACAO": {
+  "$re": "\\b(certificac(ao|oes)|certificad[oa]s?|certification|certifications|certified)\\b",
+  "flags": ""
+ },
+ "AFIRMATIVA": {
+  "$re": "\\b(vagas? (exclusivas?|afirmativas?)|exclusiv[ao]s? para|exclusivamente para|preferencialmente para pessoas|dedicated to (professionals|people|candidates)|exclusively for|affirmative)\\b",
+  "flags": ""
+ },
+ "GRUPO_AFIRMATIVO": {
+  "$re": "\\b(pcd|pessoas? com deficiencia|deficiencia|disabilit(y|ies)|negr[ao]s|pret[ao]s|pard[ao]s|indigenas?|mulher(es)?|women|lgbt\\w*|trans|maturidade|refugiad[ao]s?)\\b|50\\+",
+  "flags": ""
+ },
+ "PALAVRAS_PT": {
+  "$set": [
+   "de",
+   "da",
+   "do",
+   "das",
+   "dos",
+   "para",
+   "com",
+   "em",
+   "na",
+   "nos",
+   "nas",
+   "que",
+   "uma",
+   "um",
+   "os",
+   "ao",
+   "nao",
+   "voce",
+   "nosso",
+   "nossa",
+   "experiencia",
+   "conhecimento",
+   "desenvolvimento",
+   "pelo",
+   "pela",
+   "sobre",
+   "como"
+  ]
+ },
+ "PALAVRAS_EN": {
+  "$set": [
+   "the",
+   "and",
+   "of",
+   "to",
+   "with",
+   "for",
+   "you",
+   "we",
+   "our",
+   "your",
+   "is",
+   "are",
+   "will",
+   "be",
+   "an",
+   "experience",
+   "knowledge",
+   "development",
+   "this",
+   "that",
+   "from",
+   "have",
+   "about"
+  ]
+ },
+ "VERBO_ATIVIDADE": {
+  "$re": "^(desenvolver|implementar|atuar|trabalhar|participar|contribuir|apoiar|criar|manter|garantir|realizar|colaborar|elaborar|executar|construir|projetar|auxiliar|acompanhar|analisar|documentar|integrar|sustentar|evoluir|prestar|monitorar|identificar|propor|definir|conduzir|gerenciar|liderar|apresentar|interagir|atender|testar|codificar|programar|revisar|otimizar|automatizar|investigar|resolver|mapear|levantar|especificar|treinar|orientar|planejar|entregar|desenhar|modelar|configurar|administrar|operar|escrever|sugerir|aplicar|formatar)\\b",
+  "flags": ""
+ },
+ "PAISES": [
+  [
+   "Brasil",
+   {
+    "$re": "\\b(brasil|brazil)\\b",
+    "flags": ""
+   }
+  ],
+  [
+   "Portugal",
+   {
+    "$re": "\\bportugal\\b",
+    "flags": ""
+   }
+  ],
+  [
+   "Estados Unidos",
+   {
+    "$re": "\\b(estados unidos|eua|united states|usa)\\b",
+    "flags": ""
+   }
+  ],
+  [
+   "Canadá",
+   {
+    "$re": "\\bcanada\\b",
+    "flags": ""
+   }
+  ],
+  [
+   "Reino Unido",
+   {
+    "$re": "\\b(reino unido|united kingdom|inglaterra|england)\\b",
+    "flags": ""
+   }
+  ],
+  [
+   "Irlanda",
+   {
+    "$re": "\\b(irlanda|ireland)\\b",
+    "flags": ""
+   }
+  ],
+  [
+   "Alemanha",
+   {
+    "$re": "\\b(alemanha|germany)\\b",
+    "flags": ""
+   }
+  ],
+  [
+   "Espanha",
+   {
+    "$re": "\\b(espanha|spain)\\b",
+    "flags": ""
+   }
+  ],
+  [
+   "Holanda",
+   {
+    "$re": "\\b(holanda|netherlands|paises baixos)\\b",
+    "flags": ""
+   }
+  ],
+  [
+   "França",
+   {
+    "$re": "\\b(franca|france)\\b",
+    "flags": ""
+   }
+  ],
+  [
+   "Argentina",
+   {
+    "$re": "\\bargentina\\b",
+    "flags": ""
+   }
+  ],
+  [
+   "México",
+   {
+    "$re": "\\bmexico\\b",
+    "flags": ""
+   }
+  ],
+  [
+   "Chile",
+   {
+    "$re": "\\bchile\\b",
+    "flags": ""
+   }
+  ],
+  [
+   "Colômbia",
+   {
+    "$re": "\\bcolombia\\b",
+    "flags": ""
+   }
+  ],
+  [
+   "Uruguai",
+   {
+    "$re": "\\b(uruguai|uruguay)\\b",
+    "flags": ""
+   }
+  ]
+ ]
+}

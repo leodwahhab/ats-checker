@@ -6,7 +6,7 @@ export type Familia =
   | 'seguranca' | 'produto' | 'suporte' | 'desenvolvimento';
 
 // A ordem importa: a primeira família que casar vence ("Desenvolvedor Java" é backend, não genérico).
-const FAMILIAS: Array<[Familia, string, string[]]> = [
+export const FAMILIAS: Array<[Familia, string, string[]]> = [
   ['fullstack', 'Full stack', ['full stack', 'fullstack', 'full-stack']],
   ['backend', 'Back-end', [
     'back-end', 'backend', 'back end', 'desenvolvedor java', 'desenvolvedora java', 'java developer', 'engenheiro java',
@@ -46,7 +46,7 @@ const FAMILIAS: Array<[Familia, string, string[]]> = [
   ]],
 ];
 
-const SENIORIDADES: Array<[Senioridade, string, string[]]> = [
+export const SENIORIDADES: Array<[Senioridade, string, string[]]> = [
   ['estagio', 'Estágio', ['estagiário', 'estagiária', 'estágio', 'intern', 'internship']],
   ['junior', 'Júnior', ['júnior', 'jr', 'jr.', 'trainee', 'entry level', 'entry-level']],
   ['pleno', 'Pleno', ['pleno', 'pl', 'pl.', 'mid-level', 'mid level']],

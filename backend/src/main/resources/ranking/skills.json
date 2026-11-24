@@ -1,0 +1,4189 @@
+{
+ "skills": [
+  {
+   "id": "java",
+   "rotulo": "Java",
+   "categoria": "linguagem",
+   "aliases": [
+    "jvm"
+   ],
+   "relacionadas": [
+    "kotlin"
+   ],
+   "implica": [
+    "logica",
+    "backend-dev"
+   ]
+  },
+  {
+   "id": "kotlin",
+   "rotulo": "Kotlin",
+   "categoria": "linguagem",
+   "aliases": [],
+   "implica": [
+    "logica",
+    "backend-dev"
+   ]
+  },
+  {
+   "id": "scala",
+   "rotulo": "Scala",
+   "categoria": "linguagem",
+   "aliases": [],
+   "implica": [
+    "logica",
+    "backend-dev"
+   ]
+  },
+  {
+   "id": "groovy",
+   "rotulo": "Groovy",
+   "categoria": "linguagem",
+   "aliases": [],
+   "implica": [
+    "logica"
+   ]
+  },
+  {
+   "id": "javascript",
+   "rotulo": "JavaScript",
+   "categoria": "linguagem",
+   "aliases": [
+    "js",
+    "ecmascript",
+    "es6",
+    "vanilla js",
+    "vanillajs"
+   ],
+   "implica": [
+    "logica"
+   ]
+  },
+  {
+   "id": "typescript",
+   "rotulo": "TypeScript",
+   "categoria": "linguagem",
+   "aliases": [],
+   "implica": [
+    "javascript",
+    "logica"
+   ]
+  },
+  {
+   "id": "python",
+   "rotulo": "Python",
+   "categoria": "linguagem",
+   "aliases": [
+    "python3",
+    "python 3"
+   ],
+   "implica": [
+    "logica",
+    "backend-dev"
+   ]
+  },
+  {
+   "id": "go",
+   "rotulo": "Go",
+   "categoria": "linguagem",
+   "aliases": [
+    "golang",
+    "linguagem go"
+   ],
+   "regex": "(?<![\\p{L}\\p{N}_])Go(?![\\p{L}\\p{N}_])",
+   "implica": [
+    "logica",
+    "backend-dev"
+   ]
+  },
+  {
+   "id": "rust",
+   "rotulo": "Rust",
+   "categoria": "linguagem",
+   "aliases": [],
+   "implica": [
+    "logica",
+    "backend-dev"
+   ]
+  },
+  {
+   "id": "c",
+   "rotulo": "C",
+   "categoria": "linguagem",
+   "aliases": [
+    "linguagem c",
+    "ansi c"
+   ],
+   "regex": "(?<!(?:[Cc]ategoria|[Cc]lasse|CNH|cnh|[Tt]ipo|[Nn][ií]vel|[Pp]lano)\\s)(?<![\\p{L}\\p{N}_])C(?![\\p{L}\\p{N}_#+])(?!\\.\\s*\\p{Lu})",
+   "implica": [
+    "logica"
+   ]
+  },
+  {
+   "id": "cpp",
+   "rotulo": "C++",
+   "categoria": "linguagem",
+   "aliases": [
+    "cpp",
+    "c plus plus"
+   ],
+   "implica": [
+    "logica"
+   ]
+  },
+  {
+   "id": "csharp",
+   "rotulo": "C#",
+   "categoria": "linguagem",
+   "aliases": [
+    "c sharp",
+    "csharp"
+   ],
+   "implica": [
+    "dotnet",
+    "logica",
+    "backend-dev"
+   ]
+  },
+  {
+   "id": "fsharp",
+   "rotulo": "F#",
+   "categoria": "linguagem",
+   "aliases": [
+    "f sharp"
+   ],
+   "implica": [
+    "dotnet",
+    "logica",
+    "backend-dev"
+   ]
+  },
+  {
+   "id": "php",
+   "rotulo": "PHP",
+   "categoria": "linguagem",
+   "aliases": [],
+   "implica": [
+    "logica",
+    "backend-dev"
+   ]
+  },
+  {
+   "id": "ruby",
+   "rotulo": "Ruby",
+   "categoria": "linguagem",
+   "aliases": [],
+   "implica": [
+    "logica",
+    "backend-dev"
+   ]
+  },
+  {
+   "id": "elixir",
+   "rotulo": "Elixir",
+   "categoria": "linguagem",
+   "aliases": [],
+   "implica": [
+    "logica",
+    "backend-dev"
+   ]
+  },
+  {
+   "id": "erlang",
+   "rotulo": "Erlang",
+   "categoria": "linguagem",
+   "aliases": [],
+   "implica": [
+    "logica"
+   ]
+  },
+  {
+   "id": "clojure",
+   "rotulo": "Clojure",
+   "categoria": "linguagem",
+   "aliases": [],
+   "implica": [
+    "logica"
+   ]
+  },
+  {
+   "id": "haskell",
+   "rotulo": "Haskell",
+   "categoria": "linguagem",
+   "aliases": [],
+   "implica": [
+    "logica"
+   ]
+  },
+  {
+   "id": "dart",
+   "rotulo": "Dart",
+   "categoria": "linguagem",
+   "aliases": [],
+   "implica": [
+    "logica"
+   ]
+  },
+  {
+   "id": "swift",
+   "rotulo": "Swift",
+   "categoria": "linguagem",
+   "aliases": [],
+   "implica": [
+    "logica"
+   ]
+  },
+  {
+   "id": "objective-c",
+   "rotulo": "Objective-C",
+   "categoria": "linguagem",
+   "aliases": [
+    "objective c",
+    "objc"
+   ],
+   "implica": [
+    "logica"
+   ]
+  },
+  {
+   "id": "r",
+   "rotulo": "R",
+   "categoria": "linguagem",
+   "aliases": [
+    "linguagem r",
+    "rstudio",
+    "r studio"
+   ],
+   "regex": "(?<![\\p{L}\\p{N}_])R(?![\\p{L}\\p{N}_$])(?!\\.\\s*\\p{Lu})",
+   "implica": [
+    "logica"
+   ]
+  },
+  {
+   "id": "matlab",
+   "rotulo": "MATLAB",
+   "categoria": "linguagem",
+   "aliases": [],
+   "implica": [
+    "logica"
+   ]
+  },
+  {
+   "id": "perl",
+   "rotulo": "Perl",
+   "categoria": "linguagem",
+   "aliases": [],
+   "implica": [
+    "logica"
+   ]
+  },
+  {
+   "id": "lua",
+   "rotulo": "Lua",
+   "categoria": "linguagem",
+   "aliases": [],
+   "regex": "(?<![\\p{L}\\p{N}_])Lua(?![\\p{L}\\p{N}_])",
+   "implica": [
+    "logica"
+   ]
+  },
+  {
+   "id": "shell",
+   "rotulo": "Shell Script",
+   "categoria": "linguagem",
+   "aliases": [
+    "shell",
+    "shellscript",
+    "shell scripting",
+    "bash",
+    "zsh"
+   ],
+   "implica": [
+    "logica"
+   ]
+  },
+  {
+   "id": "powershell",
+   "rotulo": "PowerShell",
+   "categoria": "linguagem",
+   "aliases": [
+    "power shell"
+   ],
+   "implica": [
+    "logica"
+   ]
+  },
+  {
+   "id": "vba",
+   "rotulo": "VBA",
+   "categoria": "linguagem",
+   "aliases": [],
+   "implica": [
+    "logica"
+   ]
+  },
+  {
+   "id": "delphi",
+   "rotulo": "Delphi",
+   "categoria": "linguagem",
+   "aliases": [],
+   "implica": [
+    "logica"
+   ]
+  },
+  {
+   "id": "cobol",
+   "rotulo": "COBOL",
+   "categoria": "linguagem",
+   "aliases": [],
+   "implica": [
+    "logica"
+   ]
+  },
+  {
+   "id": "vbnet",
+   "rotulo": "VB.NET",
+   "categoria": "linguagem",
+   "aliases": [
+    "visual basic"
+   ],
+   "implica": [
+    "dotnet",
+    "logica",
+    "backend-dev"
+   ]
+  },
+  {
+   "id": "solidity",
+   "rotulo": "Solidity",
+   "categoria": "linguagem",
+   "aliases": [],
+   "implica": [
+    "logica",
+    "blockchain"
+   ]
+  },
+  {
+   "id": "assembly",
+   "rotulo": "Assembly",
+   "categoria": "linguagem",
+   "aliases": [
+    "assembler"
+   ],
+   "implica": [
+    "logica"
+   ]
+  },
+  {
+   "id": "abap",
+   "rotulo": "ABAP",
+   "categoria": "linguagem",
+   "aliases": [],
+   "implica": [
+    "sap",
+    "logica"
+   ]
+  },
+  {
+   "id": "sql",
+   "rotulo": "SQL",
+   "categoria": "banco",
+   "aliases": [
+    "linguagem sql"
+   ]
+  },
+  {
+   "id": "plsql",
+   "rotulo": "PL/SQL",
+   "categoria": "banco",
+   "aliases": [
+    "plsql",
+    "pl sql"
+   ],
+   "implica": [
+    "sql",
+    "oracle"
+   ]
+  },
+  {
+   "id": "tsql",
+   "rotulo": "T-SQL",
+   "categoria": "banco",
+   "aliases": [
+    "tsql",
+    "transact-sql",
+    "transact sql"
+   ],
+   "implica": [
+    "sql",
+    "sql-server"
+   ]
+  },
+  {
+   "id": "banco-relacional",
+   "rotulo": "Bancos relacionais",
+   "categoria": "banco",
+   "aliases": [
+    "banco relacional",
+    "banco de dados relacional",
+    "bancos de dados relacionais",
+    "banco de dados relacionais",
+    "sgbd relacional",
+    "sgbds relacionais",
+    "rdbms",
+    "banco de dados sql",
+    "bancos de dados sql",
+    "bancos sql",
+    "relational",
+    "relational database",
+    "relational databases",
+    "sql databases",
+    "relacional",
+    "relacionais"
+   ],
+   "implica": [
+    "sql"
+   ],
+   "conceito": true
+  },
+  {
+   "id": "postgresql",
+   "rotulo": "PostgreSQL",
+   "categoria": "banco",
+   "aliases": [
+    "postgres",
+    "postgre",
+    "pgsql"
+   ],
+   "implica": [
+    "sql",
+    "banco-relacional"
+   ],
+   "relacionadas": [
+    "mysql",
+    "mariadb",
+    "sql-server",
+    "oracle",
+    "db2"
+   ]
+  },
+  {
+   "id": "mysql",
+   "rotulo": "MySQL",
+   "categoria": "banco",
+   "aliases": [],
+   "implica": [
+    "sql",
+    "banco-relacional"
+   ],
+   "relacionadas": [
+    "postgresql",
+    "mariadb",
+    "sql-server",
+    "oracle",
+    "db2"
+   ]
+  },
+  {
+   "id": "mariadb",
+   "rotulo": "MariaDB",
+   "categoria": "banco",
+   "aliases": [],
+   "implica": [
+    "sql",
+    "banco-relacional"
+   ],
+   "relacionadas": [
+    "postgresql",
+    "mysql",
+    "sql-server",
+    "oracle",
+    "db2"
+   ]
+  },
+  {
+   "id": "sql-server",
+   "rotulo": "SQL Server",
+   "categoria": "banco",
+   "aliases": [
+    "mssql",
+    "ms sql",
+    "ms sql server",
+    "microsoft sql server"
+   ],
+   "implica": [
+    "sql",
+    "banco-relacional"
+   ],
+   "relacionadas": [
+    "postgresql",
+    "mysql",
+    "mariadb",
+    "oracle",
+    "db2"
+   ]
+  },
+  {
+   "id": "oracle",
+   "rotulo": "Oracle Database",
+   "categoria": "banco",
+   "aliases": [
+    "oracle",
+    "oracle db",
+    "banco oracle"
+   ],
+   "implica": [
+    "sql",
+    "banco-relacional"
+   ],
+   "relacionadas": [
+    "postgresql",
+    "mysql",
+    "mariadb",
+    "sql-server",
+    "db2"
+   ]
+  },
+  {
+   "id": "db2",
+   "rotulo": "IBM Db2",
+   "categoria": "banco",
+   "aliases": [
+    "db2"
+   ],
+   "implica": [
+    "sql",
+    "banco-relacional"
+   ],
+   "relacionadas": [
+    "postgresql",
+    "mysql",
+    "mariadb",
+    "sql-server",
+    "oracle"
+   ]
+  },
+  {
+   "id": "sqlite",
+   "rotulo": "SQLite",
+   "categoria": "banco",
+   "aliases": [],
+   "implica": [
+    "sql",
+    "banco-relacional"
+   ]
+  },
+  {
+   "id": "h2",
+   "rotulo": "H2 Database",
+   "categoria": "banco",
+   "aliases": [
+    "banco h2"
+   ],
+   "implica": [
+    "sql",
+    "banco-relacional"
+   ]
+  },
+  {
+   "id": "nosql",
+   "rotulo": "NoSQL",
+   "categoria": "banco",
+   "aliases": [
+    "no-sql",
+    "banco nosql",
+    "bancos nosql",
+    "banco de dados nosql",
+    "bancos de dados nosql",
+    "banco não relacional",
+    "bancos não relacionais",
+    "banco de dados não relacional",
+    "bancos de dados não relacionais",
+    "não relacional",
+    "não relacionais",
+    "non-relational",
+    "non-relational databases",
+    "nosql databases"
+   ],
+   "conceito": true
+  },
+  {
+   "id": "mongodb",
+   "rotulo": "MongoDB",
+   "categoria": "banco",
+   "aliases": [
+    "mongo",
+    "mongo db"
+   ],
+   "implica": [
+    "nosql"
+   ]
+  },
+  {
+   "id": "redis",
+   "rotulo": "Redis",
+   "categoria": "banco",
+   "aliases": [],
+   "implica": [
+    "nosql"
+   ]
+  },
+  {
+   "id": "cassandra",
+   "rotulo": "Cassandra",
+   "categoria": "banco",
+   "aliases": [
+    "apache cassandra"
+   ],
+   "implica": [
+    "nosql"
+   ]
+  },
+  {
+   "id": "dynamodb",
+   "rotulo": "DynamoDB",
+   "categoria": "banco",
+   "aliases": [
+    "dynamo",
+    "dynamo db",
+    "aws dynamodb"
+   ],
+   "implica": [
+    "nosql",
+    "aws"
+   ]
+  },
+  {
+   "id": "elasticsearch",
+   "rotulo": "Elasticsearch",
+   "categoria": "banco",
+   "aliases": [
+    "elastic search",
+    "elastic"
+   ],
+   "implica": [
+    "nosql"
+   ]
+  },
+  {
+   "id": "opensearch",
+   "rotulo": "OpenSearch",
+   "categoria": "banco",
+   "aliases": [
+    "open search"
+   ],
+   "relacionadas": [
+    "elasticsearch"
+   ]
+  },
+  {
+   "id": "neo4j",
+   "rotulo": "Neo4j",
+   "categoria": "banco",
+   "aliases": [],
+   "implica": [
+    "nosql"
+   ]
+  },
+  {
+   "id": "couchbase",
+   "rotulo": "Couchbase",
+   "categoria": "banco",
+   "aliases": [],
+   "implica": [
+    "nosql"
+   ]
+  },
+  {
+   "id": "firebase",
+   "rotulo": "Firebase",
+   "categoria": "banco",
+   "aliases": [
+    "firestore",
+    "firebase realtime database"
+   ],
+   "implica": [
+    "nosql"
+   ]
+  },
+  {
+   "id": "memcached",
+   "rotulo": "Memcached",
+   "categoria": "banco",
+   "aliases": []
+  },
+  {
+   "id": "spring",
+   "rotulo": "Spring",
+   "categoria": "framework",
+   "aliases": [
+    "spring framework"
+   ],
+   "implica": [
+    "backend-dev"
+   ]
+  },
+  {
+   "id": "spring-boot",
+   "rotulo": "Spring Boot",
+   "categoria": "framework",
+   "aliases": [
+    "springboot",
+    "spring-boot"
+   ],
+   "implica": [
+    "spring"
+   ]
+  },
+  {
+   "id": "spring-security",
+   "rotulo": "Spring Security",
+   "categoria": "framework",
+   "aliases": [],
+   "implica": [
+    "spring"
+   ]
+  },
+  {
+   "id": "spring-data",
+   "rotulo": "Spring Data",
+   "categoria": "framework",
+   "aliases": [
+    "spring data mongodb"
+   ],
+   "implica": [
+    "spring"
+   ]
+  },
+  {
+   "id": "spring-data-jpa",
+   "rotulo": "Spring Data JPA",
+   "categoria": "framework",
+   "aliases": [
+    "data jpa"
+   ],
+   "implica": [
+    "spring-data",
+    "jpa"
+   ]
+  },
+  {
+   "id": "spring-cloud",
+   "rotulo": "Spring Cloud",
+   "categoria": "framework",
+   "aliases": [],
+   "implica": [
+    "spring"
+   ]
+  },
+  {
+   "id": "spring-batch",
+   "rotulo": "Spring Batch",
+   "categoria": "framework",
+   "aliases": [],
+   "implica": [
+    "spring"
+   ]
+  },
+  {
+   "id": "spring-mvc",
+   "rotulo": "Spring MVC",
+   "categoria": "framework",
+   "aliases": [],
+   "implica": [
+    "spring"
+   ]
+  },
+  {
+   "id": "webflux",
+   "rotulo": "Spring WebFlux",
+   "categoria": "framework",
+   "aliases": [
+    "webflux",
+    "project reactor"
+   ],
+   "implica": [
+    "spring"
+   ]
+  },
+  {
+   "id": "jpa",
+   "rotulo": "JPA",
+   "categoria": "framework",
+   "aliases": [
+    "java persistence api",
+    "jakarta persistence"
+   ],
+   "implica": [
+    "orm"
+   ]
+  },
+  {
+   "id": "hibernate",
+   "rotulo": "Hibernate",
+   "categoria": "framework",
+   "aliases": [
+    "hibernate orm"
+   ],
+   "implica": [
+    "jpa",
+    "orm"
+   ]
+  },
+  {
+   "id": "quarkus",
+   "rotulo": "Quarkus",
+   "categoria": "framework",
+   "aliases": [],
+   "relacionadas": [
+    "spring-boot",
+    "micronaut"
+   ],
+   "implica": [
+    "backend-dev"
+   ]
+  },
+  {
+   "id": "micronaut",
+   "rotulo": "Micronaut",
+   "categoria": "framework",
+   "aliases": [],
+   "relacionadas": [
+    "spring-boot"
+   ],
+   "implica": [
+    "backend-dev"
+   ]
+  },
+  {
+   "id": "jakarta-ee",
+   "rotulo": "Jakarta EE",
+   "categoria": "framework",
+   "aliases": [
+    "java ee",
+    "j2ee",
+    "jee",
+    "javaee"
+   ],
+   "implica": [
+    "backend-dev"
+   ]
+  },
+  {
+   "id": "jsf",
+   "rotulo": "JSF",
+   "categoria": "framework",
+   "aliases": [
+    "java server faces",
+    "javaserver faces",
+    "primefaces"
+   ]
+  },
+  {
+   "id": "struts",
+   "rotulo": "Struts",
+   "categoria": "framework",
+   "aliases": [
+    "apache struts"
+   ]
+  },
+  {
+   "id": "vertx",
+   "rotulo": "Vert.x",
+   "categoria": "framework",
+   "aliases": [
+    "vertx"
+   ]
+  },
+  {
+   "id": "lombok",
+   "rotulo": "Lombok",
+   "categoria": "framework",
+   "aliases": []
+  },
+  {
+   "id": "mapstruct",
+   "rotulo": "MapStruct",
+   "categoria": "framework",
+   "aliases": []
+  },
+  {
+   "id": "flyway",
+   "rotulo": "Flyway",
+   "categoria": "framework",
+   "aliases": [],
+   "relacionadas": [
+    "liquibase"
+   ]
+  },
+  {
+   "id": "liquibase",
+   "rotulo": "Liquibase",
+   "categoria": "framework",
+   "aliases": []
+  },
+  {
+   "id": "nodejs",
+   "rotulo": "Node.js",
+   "categoria": "framework",
+   "aliases": [
+    "nodejs",
+    "node js",
+    "node"
+   ],
+   "implica": [
+    "javascript",
+    "backend-dev"
+   ]
+  },
+  {
+   "id": "express",
+   "rotulo": "Express",
+   "categoria": "framework",
+   "aliases": [
+    "express.js",
+    "expressjs"
+   ],
+   "implica": [
+    "nodejs",
+    "backend-dev"
+   ],
+   "regex": "(?<![\\p{L}\\p{N}_])Express(?![\\p{L}\\p{N}_])"
+  },
+  {
+   "id": "nestjs",
+   "rotulo": "NestJS",
+   "categoria": "framework",
+   "aliases": [
+    "nest.js",
+    "nest js"
+   ],
+   "implica": [
+    "nodejs",
+    "typescript",
+    "backend-dev"
+   ]
+  },
+  {
+   "id": "fastify",
+   "rotulo": "Fastify",
+   "categoria": "framework",
+   "aliases": [],
+   "implica": [
+    "nodejs"
+   ]
+  },
+  {
+   "id": "django",
+   "rotulo": "Django",
+   "categoria": "framework",
+   "aliases": [
+    "django rest framework",
+    "drf"
+   ],
+   "implica": [
+    "python",
+    "backend-dev"
+   ]
+  },
+  {
+   "id": "flask",
+   "rotulo": "Flask",
+   "categoria": "framework",
+   "aliases": [],
+   "implica": [
+    "python",
+    "backend-dev"
+   ]
+  },
+  {
+   "id": "fastapi",
+   "rotulo": "FastAPI",
+   "categoria": "framework",
+   "aliases": [
+    "fast api"
+   ],
+   "implica": [
+    "python",
+    "backend-dev"
+   ]
+  },
+  {
+   "id": "rails",
+   "rotulo": "Ruby on Rails",
+   "categoria": "framework",
+   "aliases": [
+    "rails",
+    "ror"
+   ],
+   "implica": [
+    "ruby",
+    "backend-dev"
+   ]
+  },
+  {
+   "id": "laravel",
+   "rotulo": "Laravel",
+   "categoria": "framework",
+   "aliases": [],
+   "implica": [
+    "php",
+    "backend-dev"
+   ]
+  },
+  {
+   "id": "symfony",
+   "rotulo": "Symfony",
+   "categoria": "framework",
+   "aliases": [],
+   "implica": [
+    "php",
+    "backend-dev"
+   ]
+  },
+  {
+   "id": "dotnet",
+   "rotulo": ".NET",
+   "categoria": "framework",
+   "aliases": [
+    "dotnet",
+    ".net framework"
+   ],
+   "implica": [
+    "backend-dev"
+   ]
+  },
+  {
+   "id": "dotnet-core",
+   "rotulo": ".NET Core",
+   "categoria": "framework",
+   "aliases": [
+    "dotnet core"
+   ],
+   "implica": [
+    "dotnet"
+   ]
+  },
+  {
+   "id": "aspnet",
+   "rotulo": "ASP.NET",
+   "categoria": "framework",
+   "aliases": [
+    "asp.net core",
+    "asp.net mvc",
+    "aspnet",
+    "aspnet core",
+    "asp net"
+   ],
+   "implica": [
+    "dotnet"
+   ]
+  },
+  {
+   "id": "entity-framework",
+   "rotulo": "Entity Framework",
+   "categoria": "framework",
+   "aliases": [
+    "entity framework core",
+    "ef core",
+    "entityframework"
+   ],
+   "implica": [
+    "dotnet",
+    "orm"
+   ]
+  },
+  {
+   "id": "blazor",
+   "rotulo": "Blazor",
+   "categoria": "framework",
+   "aliases": [],
+   "implica": [
+    "dotnet"
+   ]
+  },
+  {
+   "id": "ktor",
+   "rotulo": "Ktor",
+   "categoria": "framework",
+   "aliases": [],
+   "implica": [
+    "kotlin"
+   ]
+  },
+  {
+   "id": "akka",
+   "rotulo": "Akka",
+   "categoria": "framework",
+   "aliases": []
+  },
+  {
+   "id": "play",
+   "rotulo": "Play Framework",
+   "categoria": "framework",
+   "aliases": []
+  },
+  {
+   "id": "orm",
+   "rotulo": "ORM",
+   "categoria": "pratica",
+   "aliases": [
+    "mapeamento objeto-relacional",
+    "mapeamento objeto relacional"
+   ],
+   "conceito": true
+  },
+  {
+   "id": "soa",
+   "rotulo": "SOA (arquitetura orientada a serviços)",
+   "categoria": "pratica",
+   "aliases": [
+    "arquitetura orientada a serviços",
+    "service oriented architecture",
+    "service-oriented architecture"
+   ],
+   "regex": "(?<![\\p{L}\\p{N}_])SOA(?![\\p{L}\\p{N}_])",
+   "relacionadas": [
+    "microsservicos"
+   ]
+  },
+  {
+   "id": "rest",
+   "rotulo": "APIs REST",
+   "categoria": "pratica",
+   "aliases": [
+    "rest",
+    "restful",
+    "api rest",
+    "rest api",
+    "rest apis",
+    "api restful",
+    "apis restful",
+    "restful api",
+    "restful apis",
+    "web services rest",
+    "serviços rest"
+   ],
+   "implica": [
+    "apis",
+    "web-services"
+   ]
+  },
+  {
+   "id": "soap",
+   "rotulo": "SOAP",
+   "categoria": "pratica",
+   "aliases": [
+    "web services soap"
+   ],
+   "implica": [
+    "apis",
+    "web-services"
+   ]
+  },
+  {
+   "id": "graphql",
+   "rotulo": "GraphQL",
+   "categoria": "pratica",
+   "aliases": [],
+   "implica": [
+    "apis"
+   ]
+  },
+  {
+   "id": "grpc",
+   "rotulo": "gRPC",
+   "categoria": "pratica",
+   "aliases": [],
+   "implica": [
+    "apis"
+   ]
+  },
+  {
+   "id": "websocket",
+   "rotulo": "WebSockets",
+   "categoria": "pratica",
+   "aliases": [
+    "websocket",
+    "web sockets",
+    "web socket",
+    "socket.io",
+    "sockets",
+    "sockjs"
+   ],
+   "implica": [
+    "apis"
+   ]
+  },
+  {
+   "id": "mensageria",
+   "rotulo": "Mensageria",
+   "categoria": "pratica",
+   "aliases": [
+    "filas de mensagens",
+    "fila de mensagens",
+    "message broker",
+    "message brokers",
+    "messaging",
+    "sistemas de mensageria"
+   ],
+   "conceito": true
+  },
+  {
+   "id": "event-driven",
+   "rotulo": "Arquitetura orientada a eventos",
+   "categoria": "pratica",
+   "aliases": [
+    "orientada a eventos",
+    "orientado a eventos",
+    "event-driven",
+    "event driven",
+    "event sourcing",
+    "arquitetura de eventos"
+   ],
+   "implica": [
+    "mensageria",
+    "sistemas-distribuidos"
+   ]
+  },
+  {
+   "id": "microsservicos",
+   "rotulo": "Microsserviços",
+   "categoria": "pratica",
+   "aliases": [
+    "microsserviço",
+    "microserviços",
+    "microserviço",
+    "micro serviços",
+    "micro-serviços",
+    "microservices",
+    "microservice",
+    "micro services"
+   ],
+   "implica": [
+    "sistemas-distribuidos"
+   ]
+  },
+  {
+   "id": "clean-code",
+   "rotulo": "Clean Code",
+   "categoria": "pratica",
+   "aliases": [
+    "código limpo"
+   ]
+  },
+  {
+   "id": "clean-architecture",
+   "rotulo": "Clean Architecture",
+   "categoria": "pratica",
+   "aliases": [
+    "arquitetura limpa"
+   ]
+  },
+  {
+   "id": "hexagonal",
+   "rotulo": "Arquitetura hexagonal",
+   "categoria": "pratica",
+   "aliases": [
+    "hexagonal",
+    "ports and adapters",
+    "portas e adaptadores"
+   ]
+  },
+  {
+   "id": "ddd",
+   "rotulo": "DDD",
+   "categoria": "pratica",
+   "aliases": [
+    "domain driven design",
+    "domain-driven design",
+    "design orientado a domínio"
+   ]
+  },
+  {
+   "id": "solid",
+   "rotulo": "SOLID",
+   "categoria": "pratica",
+   "aliases": [
+    "princípios solid"
+   ],
+   "regex": "(?<![\\p{L}\\p{N}_])SOLID(?![\\p{L}\\p{N}_])"
+  },
+  {
+   "id": "design-patterns",
+   "rotulo": "Design Patterns",
+   "categoria": "pratica",
+   "aliases": [
+    "design pattern",
+    "padrões de projeto",
+    "padrão de projeto",
+    "padrões de design",
+    "gof"
+   ]
+  },
+  {
+   "id": "poo",
+   "rotulo": "Orientação a objetos",
+   "categoria": "pratica",
+   "aliases": [
+    "poo",
+    "oop",
+    "orientação a objeto",
+    "orientado a objetos",
+    "programação orientada a objetos",
+    "programação orientada a objeto",
+    "object oriented",
+    "object oriented programming",
+    "object-oriented programming"
+   ]
+  },
+  {
+   "id": "funcional",
+   "rotulo": "Programação funcional",
+   "categoria": "pratica",
+   "aliases": [
+    "functional programming"
+   ]
+  },
+  {
+   "id": "code-review",
+   "rotulo": "Code review",
+   "categoria": "pratica",
+   "aliases": [
+    "code reviews",
+    "revisão de código",
+    "revisões de código",
+    "pull request",
+    "pull requests"
+   ]
+  },
+  {
+   "id": "estruturas-dados",
+   "rotulo": "Estruturas de dados",
+   "categoria": "pratica",
+   "aliases": [
+    "estrutura de dados",
+    "data structures",
+    "algoritmos e estruturas de dados"
+   ]
+  },
+  {
+   "id": "arquitetura-software",
+   "rotulo": "Arquitetura de software",
+   "categoria": "pratica",
+   "aliases": [
+    "arquitetura de sistemas",
+    "system design",
+    "design de sistemas",
+    "arquitetura em camadas",
+    "arquitetura de camadas",
+    "layered architecture"
+   ]
+  },
+  {
+   "id": "sistemas-distribuidos",
+   "rotulo": "Sistemas distribuídos",
+   "categoria": "pratica",
+   "aliases": [
+    "distributed systems",
+    "aplicações distribuídas"
+   ],
+   "conceito": true
+  },
+  {
+   "id": "multithreading",
+   "rotulo": "Programação concorrente",
+   "categoria": "pratica",
+   "aliases": [
+    "multithreading",
+    "multi-threading",
+    "programação paralela",
+    "concorrência e paralelismo",
+    "threads"
+   ]
+  },
+  {
+   "id": "caching",
+   "rotulo": "Caching",
+   "categoria": "pratica",
+   "aliases": [
+    "cache",
+    "cache distribuído",
+    "estratégias de cache"
+   ]
+  },
+  {
+   "id": "seguranca-app",
+   "rotulo": "Segurança de aplicações",
+   "categoria": "pratica",
+   "aliases": [
+    "owasp",
+    "appsec",
+    "segurança da informação",
+    "secure coding",
+    "desenvolvimento seguro"
+   ]
+  },
+  {
+   "id": "lgpd",
+   "rotulo": "LGPD",
+   "categoria": "pratica",
+   "aliases": [
+    "lei geral de proteção de dados",
+    "gdpr"
+   ]
+  },
+  {
+   "id": "oauth",
+   "rotulo": "OAuth 2.0",
+   "categoria": "pratica",
+   "aliases": [
+    "oauth",
+    "oauth2",
+    "oauth 2",
+    "openid connect",
+    "oidc"
+   ]
+  },
+  {
+   "id": "jwt",
+   "rotulo": "JWT",
+   "categoria": "pratica",
+   "aliases": [
+    "json web token",
+    "json web tokens"
+   ]
+  },
+  {
+   "id": "feature-flags",
+   "rotulo": "Feature flags",
+   "categoria": "pratica",
+   "aliases": [
+    "feature flag",
+    "feature toggle",
+    "feature toggles",
+    "unleash",
+    "launchdarkly"
+   ]
+  },
+  {
+   "id": "serverless",
+   "rotulo": "Serverless",
+   "categoria": "pratica",
+   "aliases": [
+    "arquitetura serverless",
+    "serverless framework",
+    "sem servidor"
+   ],
+   "conceito": true
+  },
+  {
+   "id": "iac",
+   "rotulo": "Infraestrutura como código",
+   "categoria": "pratica",
+   "aliases": [
+    "iac",
+    "infrastructure as code",
+    "infra como código"
+   ],
+   "conceito": true
+  },
+  {
+   "id": "ci-cd",
+   "rotulo": "CI/CD",
+   "categoria": "pratica",
+   "aliases": [
+    "ci cd",
+    "cicd",
+    "ci-cd",
+    "integração contínua",
+    "entrega contínua",
+    "integração e entrega contínua",
+    "integração e entrega contínuas",
+    "deploy contínuo",
+    "implantação contínua",
+    "continuous integration",
+    "continuous delivery",
+    "continuous deployment",
+    "esteira de deploy",
+    "esteiras de deploy",
+    "pipeline de deploy",
+    "pipelines de deploy"
+   ],
+   "conceito": true
+  },
+  {
+   "id": "versionamento",
+   "rotulo": "Controle de versão",
+   "categoria": "pratica",
+   "aliases": [
+    "versionamento de código",
+    "controle de versionamento",
+    "controle de versões",
+    "version control",
+    "ferramentas de versionamento"
+   ],
+   "conceito": true
+  },
+  {
+   "id": "responsividade",
+   "rotulo": "Design responsivo",
+   "categoria": "pratica",
+   "aliases": [
+    "responsividade",
+    "layout responsivo",
+    "layouts responsivos",
+    "interfaces responsivas",
+    "responsive design",
+    "mobile first",
+    "mobile-first",
+    "responsivo",
+    "responsiva",
+    "responsivos",
+    "responsivas"
+   ]
+  },
+  {
+   "id": "acessibilidade",
+   "rotulo": "Acessibilidade",
+   "categoria": "pratica",
+   "aliases": [
+    "a11y",
+    "wcag",
+    "acessibilidade web"
+   ]
+  },
+  {
+   "id": "seo",
+   "rotulo": "SEO",
+   "categoria": "pratica",
+   "aliases": []
+  },
+  {
+   "id": "ux-ui",
+   "rotulo": "UX/UI",
+   "categoria": "pratica",
+   "aliases": [
+    "ui/ux",
+    "ux",
+    "ux design",
+    "ui design",
+    "user experience",
+    "experiência do usuário",
+    "usabilidade"
+   ]
+  },
+  {
+   "id": "pwa",
+   "rotulo": "PWA",
+   "categoria": "pratica",
+   "aliases": [
+    "progressive web app",
+    "progressive web apps"
+   ]
+  },
+  {
+   "id": "microfrontends",
+   "rotulo": "Micro-frontends",
+   "categoria": "pratica",
+   "aliases": [
+    "micro frontends",
+    "microfrontends",
+    "micro frontend",
+    "microfrontend",
+    "micro front-end",
+    "micro front-ends"
+   ]
+  },
+  {
+   "id": "observabilidade",
+   "rotulo": "Observabilidade",
+   "categoria": "pratica",
+   "aliases": [
+    "observability",
+    "monitoramento de aplicações",
+    "monitoramento e observabilidade",
+    "apm"
+   ],
+   "conceito": true
+  },
+  {
+   "id": "containers",
+   "rotulo": "Containers",
+   "categoria": "pratica",
+   "aliases": [
+    "contêineres",
+    "containerização",
+    "conteinerização"
+   ],
+   "conceito": true
+  },
+  {
+   "id": "html",
+   "rotulo": "HTML",
+   "categoria": "frontend",
+   "aliases": [
+    "html5"
+   ],
+   "implica": [
+    "frontend-dev"
+   ]
+  },
+  {
+   "id": "css",
+   "rotulo": "CSS",
+   "categoria": "frontend",
+   "aliases": [
+    "css3"
+   ],
+   "implica": [
+    "frontend-dev"
+   ]
+  },
+  {
+   "id": "sass",
+   "rotulo": "Sass",
+   "categoria": "frontend",
+   "aliases": [
+    "scss"
+   ],
+   "implica": [
+    "css",
+    "frontend-dev"
+   ]
+  },
+  {
+   "id": "react",
+   "rotulo": "React",
+   "categoria": "frontend",
+   "aliases": [
+    "react.js",
+    "reactjs",
+    "react js"
+   ],
+   "implica": [
+    "javascript",
+    "frontend-dev",
+    "html",
+    "css"
+   ]
+  },
+  {
+   "id": "nextjs",
+   "rotulo": "Next.js",
+   "categoria": "frontend",
+   "aliases": [
+    "nextjs",
+    "next js"
+   ],
+   "implica": [
+    "react",
+    "frontend-dev"
+   ]
+  },
+  {
+   "id": "angular",
+   "rotulo": "Angular",
+   "categoria": "frontend",
+   "aliases": [],
+   "implica": [
+    "typescript",
+    "frontend-dev",
+    "html",
+    "css"
+   ],
+   "relacionadas": [
+    "angularjs"
+   ]
+  },
+  {
+   "id": "angularjs",
+   "rotulo": "AngularJS",
+   "categoria": "frontend",
+   "aliases": [
+    "angular.js",
+    "angular js"
+   ],
+   "implica": [
+    "javascript",
+    "frontend-dev",
+    "html",
+    "css"
+   ]
+  },
+  {
+   "id": "vue",
+   "rotulo": "Vue.js",
+   "categoria": "frontend",
+   "aliases": [
+    "vue",
+    "vuejs",
+    "vue js"
+   ],
+   "implica": [
+    "javascript",
+    "frontend-dev",
+    "html",
+    "css"
+   ]
+  },
+  {
+   "id": "nuxt",
+   "rotulo": "Nuxt",
+   "categoria": "frontend",
+   "aliases": [
+    "nuxt.js",
+    "nuxtjs"
+   ],
+   "implica": [
+    "vue",
+    "frontend-dev"
+   ]
+  },
+  {
+   "id": "svelte",
+   "rotulo": "Svelte",
+   "categoria": "frontend",
+   "aliases": [
+    "sveltekit"
+   ],
+   "implica": [
+    "javascript",
+    "frontend-dev",
+    "html",
+    "css"
+   ]
+  },
+  {
+   "id": "jquery",
+   "rotulo": "jQuery",
+   "categoria": "frontend",
+   "aliases": [],
+   "implica": [
+    "javascript",
+    "frontend-dev",
+    "html"
+   ]
+  },
+  {
+   "id": "bootstrap",
+   "rotulo": "Bootstrap",
+   "categoria": "frontend",
+   "aliases": [],
+   "implica": [
+    "css",
+    "frontend-dev"
+   ]
+  },
+  {
+   "id": "tailwind",
+   "rotulo": "Tailwind CSS",
+   "categoria": "frontend",
+   "aliases": [
+    "tailwind",
+    "tailwindcss"
+   ],
+   "implica": [
+    "css",
+    "frontend-dev"
+   ]
+  },
+  {
+   "id": "material-ui",
+   "rotulo": "Material UI",
+   "categoria": "frontend",
+   "aliases": [
+    "mui",
+    "material-ui",
+    "material design"
+   ],
+   "implica": [
+    "frontend-dev"
+   ]
+  },
+  {
+   "id": "styled-components",
+   "rotulo": "Styled Components",
+   "categoria": "frontend",
+   "aliases": [
+    "styled-components"
+   ]
+  },
+  {
+   "id": "redux",
+   "rotulo": "Redux",
+   "categoria": "frontend",
+   "aliases": [
+    "redux toolkit"
+   ]
+  },
+  {
+   "id": "rxjs",
+   "rotulo": "RxJS",
+   "categoria": "frontend",
+   "aliases": []
+  },
+  {
+   "id": "webpack",
+   "rotulo": "Webpack",
+   "categoria": "frontend",
+   "aliases": []
+  },
+  {
+   "id": "vite",
+   "rotulo": "Vite",
+   "categoria": "frontend",
+   "aliases": []
+  },
+  {
+   "id": "storybook",
+   "rotulo": "Storybook",
+   "categoria": "frontend",
+   "aliases": []
+  },
+  {
+   "id": "d3",
+   "rotulo": "D3.js",
+   "categoria": "frontend",
+   "aliases": [
+    "d3"
+   ]
+  },
+  {
+   "id": "thymeleaf",
+   "rotulo": "Thymeleaf",
+   "categoria": "frontend",
+   "aliases": []
+  },
+  {
+   "id": "react-native",
+   "rotulo": "React Native",
+   "categoria": "mobile",
+   "aliases": [
+    "react-native"
+   ],
+   "implica": [
+    "react"
+   ]
+  },
+  {
+   "id": "flutter",
+   "rotulo": "Flutter",
+   "categoria": "mobile",
+   "aliases": [],
+   "implica": [
+    "dart"
+   ]
+  },
+  {
+   "id": "android",
+   "rotulo": "Android",
+   "categoria": "mobile",
+   "aliases": [
+    "android sdk",
+    "android nativo"
+   ]
+  },
+  {
+   "id": "ios",
+   "rotulo": "iOS",
+   "categoria": "mobile",
+   "aliases": [
+    "ios nativo"
+   ]
+  },
+  {
+   "id": "swiftui",
+   "rotulo": "SwiftUI",
+   "categoria": "mobile",
+   "aliases": [],
+   "implica": [
+    "swift",
+    "ios"
+   ]
+  },
+  {
+   "id": "jetpack-compose",
+   "rotulo": "Jetpack Compose",
+   "categoria": "mobile",
+   "aliases": [],
+   "implica": [
+    "android",
+    "kotlin"
+   ]
+  },
+  {
+   "id": "xamarin",
+   "rotulo": "Xamarin",
+   "categoria": "mobile",
+   "aliases": [],
+   "implica": [
+    "dotnet"
+   ]
+  },
+  {
+   "id": "ionic",
+   "rotulo": "Ionic",
+   "categoria": "mobile",
+   "aliases": []
+  },
+  {
+   "id": "cloud",
+   "rotulo": "Cloud",
+   "categoria": "cloud",
+   "aliases": [
+    "cloud computing",
+    "computação em nuvem",
+    "nuvem",
+    "cloud pública",
+    "nuvem pública",
+    "cloud native",
+    "cloud-native",
+    "ambiente cloud",
+    "ambientes cloud",
+    "serviços de nuvem",
+    "serviços cloud"
+   ],
+   "conceito": true
+  },
+  {
+   "id": "aws",
+   "rotulo": "AWS",
+   "categoria": "cloud",
+   "aliases": [
+    "amazon web services"
+   ],
+   "implica": [
+    "cloud"
+   ],
+   "relacionadas": [
+    "azure",
+    "gcp"
+   ]
+  },
+  {
+   "id": "azure",
+   "rotulo": "Azure",
+   "categoria": "cloud",
+   "aliases": [
+    "microsoft azure"
+   ],
+   "implica": [
+    "cloud"
+   ],
+   "relacionadas": [
+    "aws",
+    "gcp"
+   ]
+  },
+  {
+   "id": "gcp",
+   "rotulo": "Google Cloud",
+   "categoria": "cloud",
+   "aliases": [
+    "gcp",
+    "google cloud platform"
+   ],
+   "implica": [
+    "cloud"
+   ],
+   "relacionadas": [
+    "aws",
+    "azure"
+   ]
+  },
+  {
+   "id": "oci",
+   "rotulo": "Oracle Cloud",
+   "categoria": "cloud",
+   "aliases": [
+    "oci",
+    "oracle cloud infrastructure"
+   ],
+   "implica": [
+    "cloud"
+   ]
+  },
+  {
+   "id": "heroku",
+   "rotulo": "Heroku",
+   "categoria": "cloud",
+   "aliases": [],
+   "implica": [
+    "cloud"
+   ]
+  },
+  {
+   "id": "vercel",
+   "rotulo": "Vercel",
+   "categoria": "cloud",
+   "aliases": []
+  },
+  {
+   "id": "netlify",
+   "rotulo": "Netlify",
+   "categoria": "cloud",
+   "aliases": []
+  },
+  {
+   "id": "digitalocean",
+   "rotulo": "DigitalOcean",
+   "categoria": "cloud",
+   "aliases": [
+    "digital ocean"
+   ],
+   "implica": [
+    "cloud"
+   ]
+  },
+  {
+   "id": "ec2",
+   "rotulo": "EC2",
+   "categoria": "cloud",
+   "aliases": [
+    "aws ec2",
+    "amazon ec2"
+   ],
+   "implica": [
+    "aws"
+   ]
+  },
+  {
+   "id": "s3",
+   "rotulo": "S3",
+   "categoria": "cloud",
+   "aliases": [
+    "aws s3",
+    "amazon s3"
+   ],
+   "implica": [
+    "aws"
+   ]
+  },
+  {
+   "id": "lambda",
+   "rotulo": "AWS Lambda",
+   "categoria": "cloud",
+   "aliases": [
+    "aws lambda",
+    "amazon lambda",
+    "funções lambda",
+    "função lambda",
+    "lambda functions"
+   ],
+   "implica": [
+    "aws",
+    "serverless"
+   ],
+   "regex": "(?<![\\p{L}\\p{N}_])Lambdas?(?![\\p{L}\\p{N}_])"
+  },
+  {
+   "id": "sqs",
+   "rotulo": "SQS",
+   "categoria": "cloud",
+   "aliases": [
+    "aws sqs",
+    "amazon sqs"
+   ],
+   "implica": [
+    "aws",
+    "mensageria"
+   ]
+  },
+  {
+   "id": "sns",
+   "rotulo": "SNS",
+   "categoria": "cloud",
+   "aliases": [
+    "aws sns",
+    "amazon sns"
+   ],
+   "implica": [
+    "aws",
+    "mensageria"
+   ]
+  },
+  {
+   "id": "ecs",
+   "rotulo": "ECS",
+   "categoria": "cloud",
+   "aliases": [
+    "aws ecs",
+    "amazon ecs"
+   ],
+   "implica": [
+    "aws",
+    "containers"
+   ]
+  },
+  {
+   "id": "eks",
+   "rotulo": "EKS",
+   "categoria": "cloud",
+   "aliases": [
+    "aws eks",
+    "amazon eks"
+   ],
+   "implica": [
+    "aws",
+    "kubernetes"
+   ]
+  },
+  {
+   "id": "fargate",
+   "rotulo": "Fargate",
+   "categoria": "cloud",
+   "aliases": [
+    "aws fargate"
+   ],
+   "implica": [
+    "aws",
+    "containers"
+   ]
+  },
+  {
+   "id": "rds",
+   "rotulo": "RDS",
+   "categoria": "cloud",
+   "aliases": [
+    "aws rds",
+    "amazon rds"
+   ],
+   "implica": [
+    "aws",
+    "banco-relacional"
+   ]
+  },
+  {
+   "id": "aurora",
+   "rotulo": "Amazon Aurora",
+   "categoria": "cloud",
+   "aliases": [
+    "aws aurora"
+   ],
+   "implica": [
+    "aws",
+    "banco-relacional"
+   ]
+  },
+  {
+   "id": "cloudwatch",
+   "rotulo": "CloudWatch",
+   "categoria": "cloud",
+   "aliases": [
+    "cloud watch",
+    "aws cloudwatch"
+   ],
+   "implica": [
+    "aws",
+    "observabilidade"
+   ]
+  },
+  {
+   "id": "cloudformation",
+   "rotulo": "CloudFormation",
+   "categoria": "cloud",
+   "aliases": [
+    "cloud formation",
+    "aws cloudformation"
+   ],
+   "implica": [
+    "aws",
+    "iac"
+   ]
+  },
+  {
+   "id": "api-gateway",
+   "rotulo": "API Gateway",
+   "categoria": "cloud",
+   "aliases": [
+    "aws api gateway",
+    "amazon api gateway",
+    "api gateways"
+   ]
+  },
+  {
+   "id": "step-functions",
+   "rotulo": "Step Functions",
+   "categoria": "cloud",
+   "aliases": [
+    "aws step functions"
+   ],
+   "implica": [
+    "aws"
+   ]
+  },
+  {
+   "id": "kinesis",
+   "rotulo": "Kinesis",
+   "categoria": "cloud",
+   "aliases": [
+    "aws kinesis",
+    "amazon kinesis"
+   ],
+   "implica": [
+    "aws"
+   ]
+  },
+  {
+   "id": "athena",
+   "rotulo": "Amazon Athena",
+   "categoria": "cloud",
+   "aliases": [
+    "amazon athena",
+    "aws athena"
+   ],
+   "implica": [
+    "aws"
+   ],
+   "regex": "(?<![\\p{L}\\p{N}_])Athena(?![\\p{L}\\p{N}_])"
+  },
+  {
+   "id": "eventbridge",
+   "rotulo": "EventBridge",
+   "categoria": "cloud",
+   "aliases": [
+    "event bridge",
+    "aws eventbridge"
+   ],
+   "implica": [
+    "aws",
+    "mensageria"
+   ]
+  },
+  {
+   "id": "cognito",
+   "rotulo": "Cognito",
+   "categoria": "cloud",
+   "aliases": [
+    "aws cognito",
+    "amazon cognito"
+   ],
+   "implica": [
+    "aws"
+   ]
+  },
+  {
+   "id": "beanstalk",
+   "rotulo": "Elastic Beanstalk",
+   "categoria": "cloud",
+   "aliases": [
+    "aws elastic beanstalk",
+    "beanstalk"
+   ],
+   "implica": [
+    "aws"
+   ]
+  },
+  {
+   "id": "azure-functions",
+   "rotulo": "Azure Functions",
+   "categoria": "cloud",
+   "aliases": [],
+   "implica": [
+    "azure",
+    "serverless"
+   ]
+  },
+  {
+   "id": "aks",
+   "rotulo": "AKS",
+   "categoria": "cloud",
+   "aliases": [
+    "azure kubernetes service"
+   ],
+   "implica": [
+    "azure",
+    "kubernetes"
+   ]
+  },
+  {
+   "id": "azure-service-bus",
+   "rotulo": "Azure Service Bus",
+   "categoria": "cloud",
+   "aliases": [
+    "service bus"
+   ],
+   "implica": [
+    "azure",
+    "mensageria"
+   ]
+  },
+  {
+   "id": "cloud-run",
+   "rotulo": "Cloud Run",
+   "categoria": "cloud",
+   "aliases": [
+    "google cloud run"
+   ],
+   "implica": [
+    "gcp",
+    "containers"
+   ]
+  },
+  {
+   "id": "gke",
+   "rotulo": "GKE",
+   "categoria": "cloud",
+   "aliases": [
+    "google kubernetes engine"
+   ],
+   "implica": [
+    "gcp",
+    "kubernetes"
+   ]
+  },
+  {
+   "id": "pubsub",
+   "rotulo": "Pub/Sub",
+   "categoria": "cloud",
+   "aliases": [
+    "pubsub",
+    "google pub/sub",
+    "gcp pub/sub"
+   ],
+   "implica": [
+    "gcp",
+    "mensageria"
+   ]
+  },
+  {
+   "id": "cloud-functions",
+   "rotulo": "Cloud Functions",
+   "categoria": "cloud",
+   "aliases": [
+    "google cloud functions"
+   ],
+   "implica": [
+    "gcp",
+    "serverless"
+   ]
+  },
+  {
+   "id": "devops",
+   "rotulo": "DevOps",
+   "categoria": "devops",
+   "aliases": [
+    "cultura devops",
+    "práticas devops",
+    "devsecops"
+   ]
+  },
+  {
+   "id": "docker",
+   "rotulo": "Docker",
+   "categoria": "devops",
+   "aliases": [],
+   "implica": [
+    "containers"
+   ]
+  },
+  {
+   "id": "docker-compose",
+   "rotulo": "Docker Compose",
+   "categoria": "devops",
+   "aliases": [
+    "docker-compose"
+   ],
+   "implica": [
+    "docker"
+   ]
+  },
+  {
+   "id": "kubernetes",
+   "rotulo": "Kubernetes",
+   "categoria": "devops",
+   "aliases": [
+    "k8s"
+   ],
+   "implica": [
+    "containers"
+   ]
+  },
+  {
+   "id": "helm",
+   "rotulo": "Helm",
+   "categoria": "devops",
+   "aliases": [],
+   "implica": [
+    "kubernetes"
+   ]
+  },
+  {
+   "id": "openshift",
+   "rotulo": "OpenShift",
+   "categoria": "devops",
+   "aliases": [
+    "open shift"
+   ],
+   "implica": [
+    "kubernetes"
+   ]
+  },
+  {
+   "id": "istio",
+   "rotulo": "Istio",
+   "categoria": "devops",
+   "aliases": [],
+   "implica": [
+    "kubernetes"
+   ]
+  },
+  {
+   "id": "terraform",
+   "rotulo": "Terraform",
+   "categoria": "devops",
+   "aliases": [],
+   "implica": [
+    "iac"
+   ]
+  },
+  {
+   "id": "ansible",
+   "rotulo": "Ansible",
+   "categoria": "devops",
+   "aliases": [],
+   "implica": [
+    "iac"
+   ]
+  },
+  {
+   "id": "pulumi",
+   "rotulo": "Pulumi",
+   "categoria": "devops",
+   "aliases": [],
+   "implica": [
+    "iac"
+   ]
+  },
+  {
+   "id": "jenkins",
+   "rotulo": "Jenkins",
+   "categoria": "devops",
+   "aliases": [],
+   "implica": [
+    "ci-cd"
+   ],
+   "relacionadas": [
+    "github-actions",
+    "gitlab-ci",
+    "azure-devops",
+    "circleci",
+    "bitbucket-pipelines"
+   ]
+  },
+  {
+   "id": "github-actions",
+   "rotulo": "GitHub Actions",
+   "categoria": "devops",
+   "aliases": [
+    "gh actions"
+   ],
+   "implica": [
+    "ci-cd",
+    "github"
+   ],
+   "relacionadas": [
+    "jenkins",
+    "gitlab-ci",
+    "azure-devops",
+    "circleci",
+    "bitbucket-pipelines"
+   ]
+  },
+  {
+   "id": "gitlab-ci",
+   "rotulo": "GitLab CI",
+   "categoria": "devops",
+   "aliases": [
+    "gitlab ci/cd",
+    "gitlab-ci",
+    "gitlab pipelines"
+   ],
+   "implica": [
+    "ci-cd",
+    "gitlab"
+   ],
+   "relacionadas": [
+    "jenkins",
+    "github-actions",
+    "azure-devops",
+    "circleci",
+    "bitbucket-pipelines"
+   ]
+  },
+  {
+   "id": "azure-devops",
+   "rotulo": "Azure DevOps",
+   "categoria": "devops",
+   "aliases": [
+    "vsts",
+    "azure pipelines"
+   ],
+   "implica": [
+    "ci-cd"
+   ],
+   "relacionadas": [
+    "jenkins",
+    "github-actions",
+    "gitlab-ci",
+    "circleci",
+    "bitbucket-pipelines"
+   ]
+  },
+  {
+   "id": "circleci",
+   "rotulo": "CircleCI",
+   "categoria": "devops",
+   "aliases": [
+    "circle ci"
+   ],
+   "implica": [
+    "ci-cd"
+   ],
+   "relacionadas": [
+    "jenkins",
+    "github-actions",
+    "gitlab-ci",
+    "azure-devops",
+    "bitbucket-pipelines"
+   ]
+  },
+  {
+   "id": "bitbucket-pipelines",
+   "rotulo": "Bitbucket Pipelines",
+   "categoria": "devops",
+   "aliases": [],
+   "implica": [
+    "ci-cd",
+    "bitbucket"
+   ],
+   "relacionadas": [
+    "jenkins",
+    "github-actions",
+    "gitlab-ci",
+    "azure-devops",
+    "circleci"
+   ]
+  },
+  {
+   "id": "argocd",
+   "rotulo": "Argo CD",
+   "categoria": "devops",
+   "aliases": [
+    "argocd",
+    "gitops"
+   ],
+   "implica": [
+    "ci-cd",
+    "kubernetes"
+   ]
+  },
+  {
+   "id": "linux",
+   "rotulo": "Linux",
+   "categoria": "devops",
+   "aliases": [
+    "ubuntu",
+    "debian",
+    "centos",
+    "red hat",
+    "rhel"
+   ],
+   "implica": [
+    "sistemas-operacionais"
+   ]
+  },
+  {
+   "id": "unix",
+   "rotulo": "Unix",
+   "categoria": "devops",
+   "aliases": [
+    "unix-like"
+   ],
+   "implica": [
+    "sistemas-operacionais"
+   ],
+   "relacionadas": [
+    "linux"
+   ]
+  },
+  {
+   "id": "nginx",
+   "rotulo": "Nginx",
+   "categoria": "devops",
+   "aliases": []
+  },
+  {
+   "id": "apache-http",
+   "rotulo": "Apache HTTP Server",
+   "categoria": "devops",
+   "aliases": [
+    "apache httpd",
+    "apache web server"
+   ]
+  },
+  {
+   "id": "tomcat",
+   "rotulo": "Tomcat",
+   "categoria": "devops",
+   "aliases": [
+    "apache tomcat"
+   ]
+  },
+  {
+   "id": "wildfly",
+   "rotulo": "WildFly",
+   "categoria": "devops",
+   "aliases": [
+    "jboss"
+   ]
+  },
+  {
+   "id": "prometheus",
+   "rotulo": "Prometheus",
+   "categoria": "devops",
+   "aliases": [],
+   "implica": [
+    "observabilidade"
+   ]
+  },
+  {
+   "id": "grafana",
+   "rotulo": "Grafana",
+   "categoria": "devops",
+   "aliases": [],
+   "implica": [
+    "observabilidade"
+   ]
+  },
+  {
+   "id": "datadog",
+   "rotulo": "Datadog",
+   "categoria": "devops",
+   "aliases": [
+    "data dog"
+   ],
+   "implica": [
+    "observabilidade"
+   ]
+  },
+  {
+   "id": "new-relic",
+   "rotulo": "New Relic",
+   "categoria": "devops",
+   "aliases": [
+    "newrelic"
+   ],
+   "implica": [
+    "observabilidade"
+   ]
+  },
+  {
+   "id": "splunk",
+   "rotulo": "Splunk",
+   "categoria": "devops",
+   "aliases": [],
+   "implica": [
+    "observabilidade"
+   ]
+  },
+  {
+   "id": "elk",
+   "rotulo": "ELK",
+   "categoria": "devops",
+   "aliases": [
+    "elk stack",
+    "elastic stack",
+    "kibana",
+    "logstash"
+   ],
+   "implica": [
+    "observabilidade"
+   ]
+  },
+  {
+   "id": "opentelemetry",
+   "rotulo": "OpenTelemetry",
+   "categoria": "devops",
+   "aliases": [
+    "open telemetry",
+    "otel"
+   ],
+   "implica": [
+    "observabilidade"
+   ]
+  },
+  {
+   "id": "sonarqube",
+   "rotulo": "SonarQube",
+   "categoria": "devops",
+   "aliases": [
+    "sonar",
+    "sonarcloud",
+    "sonar qube"
+   ]
+  },
+  {
+   "id": "vault",
+   "rotulo": "HashiCorp Vault",
+   "categoria": "devops",
+   "aliases": [
+    "hashicorp vault"
+   ]
+  },
+  {
+   "id": "git",
+   "rotulo": "Git",
+   "categoria": "devops",
+   "aliases": [
+    "gitflow",
+    "git flow"
+   ],
+   "implica": [
+    "versionamento"
+   ]
+  },
+  {
+   "id": "github",
+   "rotulo": "GitHub",
+   "categoria": "devops",
+   "aliases": [],
+   "implica": [
+    "git"
+   ]
+  },
+  {
+   "id": "gitlab",
+   "rotulo": "GitLab",
+   "categoria": "devops",
+   "aliases": [],
+   "implica": [
+    "git"
+   ]
+  },
+  {
+   "id": "bitbucket",
+   "rotulo": "Bitbucket",
+   "categoria": "devops",
+   "aliases": [],
+   "implica": [
+    "git"
+   ]
+  },
+  {
+   "id": "svn",
+   "rotulo": "SVN",
+   "categoria": "devops",
+   "aliases": [
+    "subversion"
+   ],
+   "implica": [
+    "versionamento"
+   ]
+  },
+  {
+   "id": "kafka",
+   "rotulo": "Apache Kafka",
+   "categoria": "devops",
+   "aliases": [
+    "kafka",
+    "kafka streams"
+   ],
+   "implica": [
+    "mensageria"
+   ]
+  },
+  {
+   "id": "rabbitmq",
+   "rotulo": "RabbitMQ",
+   "categoria": "devops",
+   "aliases": [
+    "rabbit mq",
+    "rabbit"
+   ],
+   "implica": [
+    "mensageria"
+   ]
+  },
+  {
+   "id": "activemq",
+   "rotulo": "ActiveMQ",
+   "categoria": "devops",
+   "aliases": [
+    "active mq"
+   ],
+   "implica": [
+    "mensageria"
+   ]
+  },
+  {
+   "id": "testes-automatizados",
+   "rotulo": "Testes automatizados",
+   "categoria": "teste",
+   "aliases": [
+    "teste automatizado",
+    "automação de testes",
+    "automação de teste",
+    "test automation",
+    "automated tests",
+    "automated testing",
+    "write tests",
+    "writing tests"
+   ],
+   "implica": [
+    "qualidade-software"
+   ],
+   "conceito": true
+  },
+  {
+   "id": "testes-unitarios",
+   "rotulo": "Testes unitários",
+   "categoria": "teste",
+   "aliases": [
+    "teste unitário",
+    "testes de unidade",
+    "unit tests",
+    "unit test",
+    "unit testing"
+   ],
+   "implica": [
+    "testes-automatizados"
+   ],
+   "conceito": true
+  },
+  {
+   "id": "testes-integracao",
+   "rotulo": "Testes de integração",
+   "categoria": "teste",
+   "aliases": [
+    "teste de integração",
+    "integration tests",
+    "integration testing"
+   ],
+   "implica": [
+    "testes-automatizados"
+   ],
+   "conceito": true
+  },
+  {
+   "id": "testes-e2e",
+   "rotulo": "Testes end-to-end",
+   "categoria": "teste",
+   "aliases": [
+    "testes e2e",
+    "teste e2e",
+    "e2e",
+    "end-to-end",
+    "end to end"
+   ],
+   "implica": [
+    "testes-automatizados"
+   ],
+   "conceito": true
+  },
+  {
+   "id": "testes-performance",
+   "rotulo": "Testes de performance",
+   "categoria": "teste",
+   "aliases": [
+    "teste de performance",
+    "testes de carga",
+    "teste de carga",
+    "testes de estresse",
+    "load testing",
+    "performance testing"
+   ],
+   "conceito": true
+  },
+  {
+   "id": "junit",
+   "rotulo": "JUnit",
+   "categoria": "teste",
+   "aliases": [
+    "junit5",
+    "junit 5"
+   ],
+   "implica": [
+    "testes-unitarios"
+   ]
+  },
+  {
+   "id": "mockito",
+   "rotulo": "Mockito",
+   "categoria": "teste",
+   "aliases": [],
+   "implica": [
+    "testes-unitarios"
+   ]
+  },
+  {
+   "id": "testcontainers",
+   "rotulo": "Testcontainers",
+   "categoria": "teste",
+   "aliases": [
+    "test containers"
+   ],
+   "implica": [
+    "testes-integracao"
+   ]
+  },
+  {
+   "id": "rest-assured",
+   "rotulo": "REST Assured",
+   "categoria": "teste",
+   "aliases": [
+    "restassured",
+    "rest-assured"
+   ],
+   "implica": [
+    "testes-automatizados"
+   ]
+  },
+  {
+   "id": "cucumber",
+   "rotulo": "Cucumber",
+   "categoria": "teste",
+   "aliases": [],
+   "implica": [
+    "bdd",
+    "testes-automatizados"
+   ]
+  },
+  {
+   "id": "selenium",
+   "rotulo": "Selenium",
+   "categoria": "teste",
+   "aliases": [
+    "selenium webdriver",
+    "webdriver"
+   ],
+   "implica": [
+    "testes-e2e"
+   ]
+  },
+  {
+   "id": "cypress",
+   "rotulo": "Cypress",
+   "categoria": "teste",
+   "aliases": [],
+   "implica": [
+    "testes-e2e"
+   ]
+  },
+  {
+   "id": "playwright",
+   "rotulo": "Playwright",
+   "categoria": "teste",
+   "aliases": [],
+   "implica": [
+    "testes-e2e"
+   ]
+  },
+  {
+   "id": "appium",
+   "rotulo": "Appium",
+   "categoria": "teste",
+   "aliases": [],
+   "implica": [
+    "testes-e2e"
+   ]
+  },
+  {
+   "id": "jest",
+   "rotulo": "Jest",
+   "categoria": "teste",
+   "aliases": [],
+   "implica": [
+    "testes-unitarios"
+   ],
+   "relacionadas": [
+    "vitest"
+   ]
+  },
+  {
+   "id": "vitest",
+   "rotulo": "Vitest",
+   "categoria": "teste",
+   "aliases": [],
+   "implica": [
+    "testes-unitarios"
+   ]
+  },
+  {
+   "id": "mocha",
+   "rotulo": "Mocha",
+   "categoria": "teste",
+   "aliases": [],
+   "implica": [
+    "testes-unitarios"
+   ]
+  },
+  {
+   "id": "testing-library",
+   "rotulo": "Testing Library",
+   "categoria": "teste",
+   "aliases": [
+    "react testing library",
+    "@testing-library"
+   ],
+   "implica": [
+    "testes-automatizados"
+   ]
+  },
+  {
+   "id": "pytest",
+   "rotulo": "Pytest",
+   "categoria": "teste",
+   "aliases": [
+    "py.test"
+   ],
+   "implica": [
+    "testes-unitarios",
+    "python"
+   ]
+  },
+  {
+   "id": "jmeter",
+   "rotulo": "JMeter",
+   "categoria": "teste",
+   "aliases": [
+    "apache jmeter"
+   ],
+   "implica": [
+    "testes-performance"
+   ]
+  },
+  {
+   "id": "k6",
+   "rotulo": "k6",
+   "categoria": "teste",
+   "aliases": [
+    "grafana k6"
+   ],
+   "implica": [
+    "testes-performance"
+   ]
+  },
+  {
+   "id": "robot-framework",
+   "rotulo": "Robot Framework",
+   "categoria": "teste",
+   "aliases": [
+    "robotframework"
+   ],
+   "implica": [
+    "testes-automatizados"
+   ]
+  },
+  {
+   "id": "postman",
+   "rotulo": "Postman",
+   "categoria": "teste",
+   "aliases": []
+  },
+  {
+   "id": "insomnia",
+   "rotulo": "Insomnia",
+   "categoria": "teste",
+   "aliases": []
+  },
+  {
+   "id": "tdd",
+   "rotulo": "TDD",
+   "categoria": "teste",
+   "aliases": [
+    "test driven development",
+    "test-driven development",
+    "desenvolvimento orientado a testes"
+   ],
+   "implica": [
+    "testes-automatizados"
+   ]
+  },
+  {
+   "id": "bdd",
+   "rotulo": "BDD",
+   "categoria": "teste",
+   "aliases": [
+    "behavior driven development",
+    "behaviour driven development",
+    "desenvolvimento orientado a comportamento"
+   ]
+  },
+  {
+   "id": "openapi",
+   "rotulo": "Swagger/OpenAPI",
+   "categoria": "ferramenta",
+   "aliases": [
+    "swagger",
+    "openapi",
+    "open api"
+   ],
+   "implica": [
+    "apis"
+   ]
+  },
+  {
+   "id": "jira",
+   "rotulo": "Jira",
+   "categoria": "ferramenta",
+   "aliases": []
+  },
+  {
+   "id": "confluence",
+   "rotulo": "Confluence",
+   "categoria": "ferramenta",
+   "aliases": []
+  },
+  {
+   "id": "maven",
+   "rotulo": "Maven",
+   "categoria": "ferramenta",
+   "aliases": [
+    "apache maven"
+   ],
+   "relacionadas": [
+    "gradle"
+   ]
+  },
+  {
+   "id": "gradle",
+   "rotulo": "Gradle",
+   "categoria": "ferramenta",
+   "aliases": []
+  },
+  {
+   "id": "npm",
+   "rotulo": "npm",
+   "categoria": "ferramenta",
+   "aliases": [
+    "yarn",
+    "pnpm"
+   ]
+  },
+  {
+   "id": "keycloak",
+   "rotulo": "Keycloak",
+   "categoria": "ferramenta",
+   "aliases": []
+  },
+  {
+   "id": "jasper",
+   "rotulo": "JasperReports",
+   "categoria": "ferramenta",
+   "aliases": [
+    "jasper reports",
+    "jasper",
+    "ireport"
+   ]
+  },
+  {
+   "id": "apache-poi",
+   "rotulo": "Apache POI",
+   "categoria": "ferramenta",
+   "aliases": []
+  },
+  {
+   "id": "sap",
+   "rotulo": "SAP",
+   "categoria": "ferramenta",
+   "aliases": [
+    "sap erp",
+    "s/4hana",
+    "sap s/4hana"
+   ]
+  },
+  {
+   "id": "salesforce",
+   "rotulo": "Salesforce",
+   "categoria": "ferramenta",
+   "aliases": []
+  },
+  {
+   "id": "servicenow",
+   "rotulo": "ServiceNow",
+   "categoria": "ferramenta",
+   "aliases": [
+    "service now"
+   ],
+   "implica": [
+    "service-desk"
+   ]
+  },
+  {
+   "id": "zendesk",
+   "rotulo": "Zendesk",
+   "categoria": "ferramenta",
+   "aliases": [],
+   "implica": [
+    "service-desk"
+   ]
+  },
+  {
+   "id": "figma",
+   "rotulo": "Figma",
+   "categoria": "ferramenta",
+   "aliases": []
+  },
+  {
+   "id": "agil",
+   "rotulo": "Metodologias ágeis",
+   "categoria": "metodologia",
+   "aliases": [
+    "metodologia ágil",
+    "métodos ágeis",
+    "agile",
+    "ágil",
+    "ágeis",
+    "agilidade",
+    "ambiente ágil",
+    "times ágeis",
+    "equipes ágeis"
+   ],
+   "conceito": true
+  },
+  {
+   "id": "scrum",
+   "rotulo": "Scrum",
+   "categoria": "metodologia",
+   "aliases": [],
+   "implica": [
+    "agil"
+   ]
+  },
+  {
+   "id": "kanban",
+   "rotulo": "Kanban",
+   "categoria": "metodologia",
+   "aliases": [],
+   "implica": [
+    "agil"
+   ]
+  },
+  {
+   "id": "safe",
+   "rotulo": "SAFe",
+   "categoria": "metodologia",
+   "aliases": [
+    "scaled agile framework",
+    "scaled agile"
+   ],
+   "implica": [
+    "agil"
+   ],
+   "regex": "(?<![\\p{L}\\p{N}_])SAFe(?![\\p{L}\\p{N}_])"
+  },
+  {
+   "id": "lean",
+   "rotulo": "Lean",
+   "categoria": "metodologia",
+   "aliases": [
+    "lean six sigma"
+   ]
+  },
+  {
+   "id": "xp",
+   "rotulo": "Extreme Programming",
+   "categoria": "metodologia",
+   "aliases": [],
+   "implica": [
+    "agil"
+   ]
+  },
+  {
+   "id": "itil",
+   "rotulo": "ITIL",
+   "categoria": "metodologia",
+   "aliases": [
+    "gestão de incidentes",
+    "gerenciamento de incidentes",
+    "gestão de serviços de ti"
+   ]
+  },
+  {
+   "id": "etl",
+   "rotulo": "ETL",
+   "categoria": "dados",
+   "aliases": [
+    "elt",
+    "pipeline de dados",
+    "pipelines de dados",
+    "data pipeline",
+    "data pipelines"
+   ],
+   "implica": [
+    "engenharia-dados"
+   ],
+   "conceito": true
+  },
+  {
+   "id": "data-warehouse",
+   "rotulo": "Data Warehouse",
+   "categoria": "dados",
+   "aliases": [
+    "datawarehouse",
+    "data warehousing",
+    "dw"
+   ],
+   "conceito": true
+  },
+  {
+   "id": "data-lake",
+   "rotulo": "Data Lake",
+   "categoria": "dados",
+   "aliases": [
+    "datalake",
+    "lakehouse",
+    "data lakehouse"
+   ]
+  },
+  {
+   "id": "modelagem-dados",
+   "rotulo": "Modelagem de dados",
+   "categoria": "dados",
+   "aliases": [
+    "modelagem de banco de dados",
+    "modelagem relacional",
+    "modelagem dimensional",
+    "data modeling"
+   ]
+  },
+  {
+   "id": "bi",
+   "rotulo": "Business Intelligence",
+   "categoria": "dados",
+   "aliases": [
+    "bi"
+   ],
+   "conceito": true
+  },
+  {
+   "id": "big-data",
+   "rotulo": "Big Data",
+   "categoria": "dados",
+   "aliases": [],
+   "conceito": true
+  },
+  {
+   "id": "machine-learning",
+   "rotulo": "Machine Learning",
+   "categoria": "dados",
+   "aliases": [
+    "ml",
+    "aprendizado de máquina",
+    "aprendizagem de máquina"
+   ],
+   "conceito": true
+  },
+  {
+   "id": "deep-learning",
+   "rotulo": "Deep Learning",
+   "categoria": "dados",
+   "aliases": [
+    "aprendizado profundo",
+    "redes neurais",
+    "neural networks"
+   ],
+   "implica": [
+    "machine-learning"
+   ],
+   "conceito": true
+  },
+  {
+   "id": "ia",
+   "rotulo": "Inteligência artificial",
+   "categoria": "dados",
+   "aliases": [
+    "inteligência artificial",
+    "artificial intelligence"
+   ],
+   "regex": "(?<![\\p{L}\\p{N}_])(?:IA|AI)(?![\\p{L}\\p{N}_])"
+  },
+  {
+   "id": "ia-generativa",
+   "rotulo": "IA generativa",
+   "categoria": "dados",
+   "aliases": [
+    "genai",
+    "generative ai",
+    "llm",
+    "llms",
+    "large language models",
+    "prompt engineering",
+    "engenharia de prompt",
+    "rag",
+    "inteligência artificial generativa",
+    "ia gen",
+    "agentes de ia",
+    "agentes de inteligência artificial",
+    "ai agents"
+   ],
+   "implica": [
+    "ia"
+   ],
+   "conceito": true
+  },
+  {
+   "id": "nlp",
+   "rotulo": "NLP",
+   "categoria": "dados",
+   "aliases": [
+    "processamento de linguagem natural",
+    "natural language processing",
+    "pln"
+   ],
+   "implica": [
+    "machine-learning"
+   ]
+  },
+  {
+   "id": "visao-computacional",
+   "rotulo": "Visão computacional",
+   "categoria": "dados",
+   "aliases": [
+    "computer vision",
+    "opencv"
+   ],
+   "implica": [
+    "machine-learning"
+   ]
+  },
+  {
+   "id": "estatistica",
+   "rotulo": "Estatística",
+   "categoria": "dados",
+   "aliases": [
+    "statistics",
+    "análise estatística"
+   ]
+  },
+  {
+   "id": "pandas",
+   "rotulo": "Pandas",
+   "categoria": "dados",
+   "aliases": [],
+   "implica": [
+    "python"
+   ]
+  },
+  {
+   "id": "numpy",
+   "rotulo": "NumPy",
+   "categoria": "dados",
+   "aliases": [],
+   "implica": [
+    "python"
+   ]
+  },
+  {
+   "id": "scikit-learn",
+   "rotulo": "scikit-learn",
+   "categoria": "dados",
+   "aliases": [
+    "sklearn",
+    "scikit learn"
+   ],
+   "implica": [
+    "machine-learning",
+    "python"
+   ]
+  },
+  {
+   "id": "tensorflow",
+   "rotulo": "TensorFlow",
+   "categoria": "dados",
+   "aliases": [],
+   "implica": [
+    "deep-learning"
+   ]
+  },
+  {
+   "id": "pytorch",
+   "rotulo": "PyTorch",
+   "categoria": "dados",
+   "aliases": [
+    "torch"
+   ],
+   "implica": [
+    "deep-learning"
+   ]
+  },
+  {
+   "id": "keras",
+   "rotulo": "Keras",
+   "categoria": "dados",
+   "aliases": [],
+   "implica": [
+    "deep-learning"
+   ]
+  },
+  {
+   "id": "spark",
+   "rotulo": "Apache Spark",
+   "categoria": "dados",
+   "aliases": [
+    "spark",
+    "spark sql"
+   ],
+   "implica": [
+    "big-data"
+   ]
+  },
+  {
+   "id": "pyspark",
+   "rotulo": "PySpark",
+   "categoria": "dados",
+   "aliases": [],
+   "implica": [
+    "spark",
+    "python"
+   ]
+  },
+  {
+   "id": "hadoop",
+   "rotulo": "Hadoop",
+   "categoria": "dados",
+   "aliases": [
+    "apache hadoop",
+    "hdfs"
+   ],
+   "implica": [
+    "big-data"
+   ]
+  },
+  {
+   "id": "hive",
+   "rotulo": "Hive",
+   "categoria": "dados",
+   "aliases": [
+    "apache hive"
+   ],
+   "implica": [
+    "big-data"
+   ]
+  },
+  {
+   "id": "airflow",
+   "rotulo": "Apache Airflow",
+   "categoria": "dados",
+   "aliases": [
+    "airflow"
+   ],
+   "implica": [
+    "etl"
+   ]
+  },
+  {
+   "id": "dbt",
+   "rotulo": "dbt",
+   "categoria": "dados",
+   "aliases": [
+    "data build tool"
+   ],
+   "implica": [
+    "etl"
+   ]
+  },
+  {
+   "id": "databricks",
+   "rotulo": "Databricks",
+   "categoria": "dados",
+   "aliases": [],
+   "implica": [
+    "spark"
+   ]
+  },
+  {
+   "id": "snowflake",
+   "rotulo": "Snowflake",
+   "categoria": "dados",
+   "aliases": [],
+   "implica": [
+    "data-warehouse"
+   ]
+  },
+  {
+   "id": "bigquery",
+   "rotulo": "BigQuery",
+   "categoria": "dados",
+   "aliases": [
+    "big query",
+    "google bigquery"
+   ],
+   "implica": [
+    "gcp",
+    "data-warehouse"
+   ]
+  },
+  {
+   "id": "redshift",
+   "rotulo": "Amazon Redshift",
+   "categoria": "dados",
+   "aliases": [
+    "redshift",
+    "aws redshift"
+   ],
+   "implica": [
+    "aws",
+    "data-warehouse"
+   ]
+  },
+  {
+   "id": "glue",
+   "rotulo": "AWS Glue",
+   "categoria": "dados",
+   "aliases": [
+    "aws glue"
+   ],
+   "implica": [
+    "aws",
+    "etl"
+   ],
+   "regex": "(?<![\\p{L}\\p{N}_])Glue(?![\\p{L}\\p{N}_])"
+  },
+  {
+   "id": "clickhouse",
+   "rotulo": "ClickHouse",
+   "categoria": "dados",
+   "aliases": []
+  },
+  {
+   "id": "jupyter",
+   "rotulo": "Jupyter",
+   "categoria": "dados",
+   "aliases": [
+    "jupyter notebook",
+    "jupyter notebooks"
+   ]
+  },
+  {
+   "id": "mlflow",
+   "rotulo": "MLflow",
+   "categoria": "dados",
+   "aliases": []
+  },
+  {
+   "id": "langchain",
+   "rotulo": "LangChain",
+   "categoria": "dados",
+   "aliases": [],
+   "implica": [
+    "ia-generativa"
+   ]
+  },
+  {
+   "id": "hugging-face",
+   "rotulo": "Hugging Face",
+   "categoria": "dados",
+   "aliases": [
+    "huggingface"
+   ]
+  },
+  {
+   "id": "excel",
+   "rotulo": "Excel",
+   "categoria": "dados",
+   "aliases": [
+    "excel avançado",
+    "microsoft excel"
+   ],
+   "implica": [
+    "office"
+   ]
+  },
+  {
+   "id": "power-bi",
+   "rotulo": "Power BI",
+   "categoria": "dados",
+   "aliases": [
+    "powerbi"
+   ],
+   "implica": [
+    "bi"
+   ]
+  },
+  {
+   "id": "tableau",
+   "rotulo": "Tableau",
+   "categoria": "dados",
+   "aliases": [],
+   "implica": [
+    "bi"
+   ]
+  },
+  {
+   "id": "looker",
+   "rotulo": "Looker",
+   "categoria": "dados",
+   "aliases": [
+    "looker studio",
+    "google data studio",
+    "data studio"
+   ],
+   "implica": [
+    "bi"
+   ]
+  },
+  {
+   "id": "metabase",
+   "rotulo": "Metabase",
+   "categoria": "dados",
+   "aliases": [],
+   "implica": [
+    "bi"
+   ]
+  },
+  {
+   "id": "engenharia-dados",
+   "rotulo": "Engenharia de dados",
+   "categoria": "dados",
+   "aliases": [
+    "data engineering"
+   ],
+   "conceito": true
+  },
+  {
+   "id": "logica",
+   "rotulo": "Lógica de programação",
+   "categoria": "pratica",
+   "aliases": [
+    "programming logic",
+    "algoritmos e lógica"
+   ],
+   "conceito": true
+  },
+  {
+   "id": "backend-dev",
+   "rotulo": "Desenvolvimento back-end",
+   "categoria": "pratica",
+   "aliases": [
+    "back-end",
+    "backend",
+    "back end",
+    "desenvolvimento backend",
+    "backend technologies",
+    "tecnologias back-end"
+   ],
+   "conceito": true
+  },
+  {
+   "id": "frontend-dev",
+   "rotulo": "Desenvolvimento front-end",
+   "categoria": "pratica",
+   "aliases": [
+    "front-end",
+    "frontend",
+    "front end",
+    "desenvolvimento frontend"
+   ],
+   "conceito": true
+  },
+  {
+   "id": "apis",
+   "rotulo": "APIs",
+   "categoria": "pratica",
+   "aliases": [
+    "api",
+    "desenvolvimento de apis",
+    "integração de apis",
+    "consumo de apis",
+    "web apis"
+   ],
+   "implica": [
+    "integracao-sistemas"
+   ],
+   "conceito": true
+  },
+  {
+   "id": "web-services",
+   "rotulo": "Web services",
+   "categoria": "pratica",
+   "aliases": [
+    "webservices",
+    "web service",
+    "webservice"
+   ],
+   "conceito": true
+  },
+  {
+   "id": "http",
+   "rotulo": "HTTP",
+   "categoria": "pratica",
+   "aliases": [
+    "protocolo http",
+    "protocolos http"
+   ],
+   "regex": "(?<![\\p{L}\\p{N}_])HTTPS?(?![\\p{L}\\p{N}_]|:\\/\\/)"
+  },
+  {
+   "id": "integracao-sistemas",
+   "rotulo": "Integração de sistemas",
+   "categoria": "pratica",
+   "aliases": [
+    "integração entre sistemas",
+    "integrações entre sistemas",
+    "integrações de sistemas",
+    "integração com sistemas",
+    "integrações com sistemas",
+    "integração com apis",
+    "integrações com apis",
+    "system integration",
+    "system integrations"
+   ],
+   "conceito": true
+  },
+  {
+   "id": "resiliencia",
+   "rotulo": "Padrões de resiliência",
+   "categoria": "pratica",
+   "aliases": [
+    "circuit breaker",
+    "retry",
+    "retries",
+    "idempotência",
+    "resilience patterns"
+   ]
+  },
+  {
+   "id": "kiss-dry-yagni",
+   "rotulo": "KISS, DRY e YAGNI",
+   "categoria": "pratica",
+   "aliases": [
+    "princípio kiss",
+    "princípio dry",
+    "princípio yagni"
+   ],
+   "regex": "(?<![\\p{L}\\p{N}_])(?:KISS|DRY|YAGNI)(?![\\p{L}\\p{N}_])"
+  },
+  {
+   "id": "qualidade-software",
+   "rotulo": "Qualidade de software",
+   "categoria": "pratica",
+   "aliases": [
+    "testes de software",
+    "teste de software",
+    "garantia da qualidade",
+    "quality assurance",
+    "testes funcionais",
+    "teste funcional",
+    "testes manuais",
+    "testes de qualidade"
+   ],
+   "conceito": true
+  },
+  {
+   "id": "documentacao",
+   "rotulo": "Documentação técnica",
+   "categoria": "pratica",
+   "aliases": [
+    "documentações técnicas",
+    "documentação de software",
+    "base de conhecimento",
+    "documentação",
+    "documentações"
+   ],
+   "conceito": true
+  },
+  {
+   "id": "requisitos",
+   "rotulo": "Levantamento de requisitos",
+   "categoria": "pratica",
+   "aliases": [
+    "análise de requisitos",
+    "engenharia de requisitos",
+    "requisitos funcionais",
+    "especificação de requisitos",
+    "elicitação de requisitos",
+    "requirements gathering"
+   ]
+  },
+  {
+   "id": "processos",
+   "rotulo": "Mapeamento de processos",
+   "categoria": "pratica",
+   "aliases": [
+    "desenho de processos",
+    "modelagem de processos",
+    "bpmn",
+    "bpm"
+   ]
+  },
+  {
+   "id": "suporte",
+   "rotulo": "Suporte técnico",
+   "categoria": "pratica",
+   "aliases": [
+    "suporte a sistemas",
+    "suporte a usuários",
+    "suporte n1",
+    "suporte n2",
+    "suporte n3",
+    "atendimento n1",
+    "n1",
+    "n2",
+    "n3",
+    "sustentação",
+    "sustentação de sistemas",
+    "troubleshooting"
+   ],
+   "conceito": true
+  },
+  {
+   "id": "blockchain",
+   "rotulo": "Blockchain",
+   "categoria": "pratica",
+   "aliases": [
+    "web3",
+    "smart contracts",
+    "contratos inteligentes",
+    "tokenização",
+    "tokenization"
+   ],
+   "conceito": true
+  },
+  {
+   "id": "redes",
+   "rotulo": "Redes de computadores",
+   "categoria": "pratica",
+   "aliases": [
+    "redes de computadores",
+    "redes e internet",
+    "networking",
+    "tcp/ip",
+    "protocolos de rede",
+    "infraestrutura de redes"
+   ]
+  },
+  {
+   "id": "manutencao-computadores",
+   "rotulo": "Manutenção de computadores",
+   "categoria": "pratica",
+   "aliases": [
+    "formatação de computadores",
+    "formatação e configuração de computadores",
+    "configuração de computadores",
+    "manutenção de computadores",
+    "montagem e manutenção de computadores",
+    "manutenção de notebooks e computadores"
+   ],
+   "implica": [
+    "suporte"
+   ]
+  },
+  {
+   "id": "debugging",
+   "rotulo": "Depuração (debugging)",
+   "categoria": "pratica",
+   "aliases": [
+    "depuração",
+    "debugging",
+    "debug",
+    "ferramentas de depuração",
+    "depuração de código"
+   ]
+  },
+  {
+   "id": "low-code",
+   "rotulo": "Low-code / No-code",
+   "categoria": "ferramenta",
+   "aliases": [
+    "low code",
+    "lowcode",
+    "low-code",
+    "no-code",
+    "no code",
+    "nocode",
+    "n8n",
+    "zapier",
+    "power automate",
+    "outsystems",
+    "mendix",
+    "ferramentas de workflow"
+   ]
+  },
+  {
+   "id": "chatbots",
+   "rotulo": "Chatbots",
+   "categoria": "ferramenta",
+   "aliases": [
+    "chatbot",
+    "nlu",
+    "dialogflow",
+    "bots conversacionais"
+   ]
+  },
+  {
+   "id": "ai-coding",
+   "rotulo": "Ferramentas de IA para código",
+   "categoria": "ferramenta",
+   "aliases": [
+    "ai coding tools",
+    "claude code",
+    "github copilot",
+    "copilot",
+    "codex",
+    "assistentes de código",
+    "ferramentas de ia para código",
+    "ferramentas de ia para desenvolvimento",
+    "lovable"
+   ],
+   "implica": [
+    "ia-generativa"
+   ],
+   "regex": "(?<![\\p{L}\\p{N}_])Cursor(?![\\p{L}\\p{N}_])"
+  },
+  {
+   "id": "openai-api",
+   "rotulo": "OpenAI API",
+   "categoria": "ferramenta",
+   "aliases": [
+    "openai",
+    "chatgpt",
+    "gpt-4",
+    "gpt-4o"
+   ],
+   "implica": [
+    "ia-generativa"
+   ]
+  },
+  {
+   "id": "claude",
+   "rotulo": "Claude (Anthropic)",
+   "categoria": "ferramenta",
+   "aliases": [
+    "anthropic",
+    "claude api"
+   ],
+   "implica": [
+    "ia-generativa"
+   ],
+   "regex": "(?<![\\p{L}\\p{N}_])Claude(?![\\p{L}\\p{N}_])"
+  },
+  {
+   "id": "xml",
+   "rotulo": "XML",
+   "categoria": "ferramenta",
+   "aliases": [
+    "xsd",
+    "xslt"
+   ]
+  },
+  {
+   "id": "json",
+   "rotulo": "JSON",
+   "categoria": "ferramenta",
+   "aliases": []
+  },
+  {
+   "id": "office",
+   "rotulo": "Pacote Office",
+   "categoria": "ferramenta",
+   "aliases": [
+    "pacote office",
+    "microsoft office",
+    "microsoft 365",
+    "office 365",
+    "ferramentas de escritório",
+    "powerpoint",
+    "outlook",
+    "google workspace"
+   ],
+   "regex": "(?<![\\p{L}\\p{N}_])(?:Word|Teams)(?![\\p{L}\\p{N}_])"
+  },
+  {
+   "id": "service-desk",
+   "rotulo": "Service desk / chamados",
+   "categoria": "ferramenta",
+   "aliases": [
+    "service desk",
+    "help desk",
+    "helpdesk",
+    "gestão de chamados",
+    "atendimento de chamados",
+    "sistema de chamados",
+    "sistemas de chamados",
+    "ferramenta de chamados",
+    "ferramentas de chamados",
+    "abertura de chamados",
+    "tratamento de chamados",
+    "chamados",
+    "tickets",
+    "itsm"
+   ],
+   "implica": [
+    "suporte"
+   ],
+   "conceito": true
+  },
+  {
+   "id": "sistemas-operacionais",
+   "rotulo": "Sistemas operacionais",
+   "categoria": "ferramenta",
+   "aliases": [
+    "sistema operacional",
+    "windows server",
+    "windows"
+   ],
+   "conceito": true
+  }
+ ],
+ "combinacoes": [
+  [
+   "testes unitários e de integração",
+   [
+    "testes-unitarios",
+    "testes-integracao"
+   ]
+  ],
+  [
+   "testes unitários e integração",
+   [
+    "testes-unitarios",
+    "testes-integracao"
+   ]
+  ],
+  [
+   "testes de unidade e integração",
+   [
+    "testes-unitarios",
+    "testes-integracao"
+   ]
+  ],
+  [
+   "unitários e de integração",
+   [
+    "testes-unitarios",
+    "testes-integracao"
+   ]
+  ],
+  [
+   "unit and integration tests",
+   [
+    "testes-unitarios",
+    "testes-integracao"
+   ]
+  ],
+  [
+   "apis e integrações",
+   [
+    "apis",
+    "integracao-sistemas"
+   ]
+  ],
+  [
+   "html/css",
+   [
+    "html",
+    "css"
+   ]
+  ],
+  [
+   "html5/css3",
+   [
+    "html",
+    "css"
+   ]
+  ]
+ ]
+}

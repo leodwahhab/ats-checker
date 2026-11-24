@@ -113,6 +113,42 @@ public final class LocalParser {
         return null;
     }
 
+    /** "2x por semana no escritório", "1 ou 2 dias na semana", "com flexibilidade": presencial em parte da semana. */
+    private static final Pattern PARTE_DA_SEMANA = Pattern.compile(
+            "\\b(\\d+ ?x|uma|duas|tres|\\d+ (ou \\d+ )?dias?|\\d+ vezes) (por|na|a cada) semana\\b|\\bflexibilidade\\b");
+    private static final Pattern HIBRIDO = Pattern.compile("\\b(hibrid[oa]s?|hybrid)\\b");
+    private static final Pattern PRESENCIAL = Pattern.compile("\\b(presencia(l|is)|on-?site|in-?office)\\b");
+    private static final Pattern REMOTO = Pattern.compile(
+            "\\b(remot[oa]s?|remote|home[" + Js.WS_CLASS + "-]?office|anywhere|teletrabalho)\\b");
+
+    /** Modelo de trabalho citado no texto (já com fold). Híbrido vence: "hybrid remote model" é híbrido. */
+    public static Tipos.Modelo modeloDe(String f) {
+        if (HIBRIDO.matcher(f).find()) return Tipos.Modelo.HIBRIDO;
+        if (PRESENCIAL.matcher(f).find()) {
+            return PARTE_DA_SEMANA.matcher(f).find() ? Tipos.Modelo.HIBRIDO : Tipos.Modelo.PRESENCIAL;
+        }
+        if (REMOTO.matcher(f).find()) return Tipos.Modelo.REMOTO;
+        return null;
+    }
+
+    /** "Trabalho híbrido". */
+    public static String rotuloModelo(Tipos.Modelo m) {
+        return switch (m) {
+            case REMOTO -> "remoto";
+            case HIBRIDO -> "híbrido";
+            case PRESENCIAL -> "presencial";
+        };
+    }
+
+    /** "A vaga é híbrida". */
+    public static String rotuloModeloVaga(Tipos.Modelo m) {
+        return switch (m) {
+            case REMOTO -> "remota";
+            case HIBRIDO -> "híbrida";
+            case PRESENCIAL -> "presencial";
+        };
+    }
+
     /** "São Paulo - SP", "SP". */
     public static String rotuloLocal(Local l) {
         List<String> partes = new ArrayList<>();
