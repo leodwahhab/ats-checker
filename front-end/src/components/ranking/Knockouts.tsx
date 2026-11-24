@@ -1,4 +1,4 @@
-import type { EliminatoriaResult } from '../../lib/ranking/types';
+import type { EliminatoriaResult } from '../../api/tipos';
 import { Secao } from '../ui';
 
 interface Props {

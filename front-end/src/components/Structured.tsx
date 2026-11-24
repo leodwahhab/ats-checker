@@ -1,5 +1,5 @@
 import type { ReactNode } from 'react';
-import type { Periodo, Structured as StructuredData } from '../lib/types';
+import type { Periodo, Structured as StructuredData } from '../api/tipos';
 
 const period = (p?: Periodo) => (p ? `${p.inicio} – ${p.fim}` : undefined);
 

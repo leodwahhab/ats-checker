@@ -289,3 +289,10 @@ input[type='range'] { width: 220px; max-width: 100%; accent-color: var(--brand);
   .seg2 { padding: 0 var(--space-3); }
   .ddh { font-size: 18px; }
 }
+
+/* Histórico e navegação entre telas. */
+.topbar-nav { display: flex; gap: var(--space-2); }
+.main.historico { display: block; max-width: 1080px; margin: 0 auto; padding: var(--space-5); width: 100%; overflow-y: auto; }
+.historico-col { width: 100%; }
+.historico-col .robot { max-width: none; }
+.tbl tr[aria-selected="true"] td { background: var(--surface-soft); }

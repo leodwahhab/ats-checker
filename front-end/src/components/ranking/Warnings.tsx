@@ -1,4 +1,4 @@
-import type { Aviso, AvisoTipo } from '../../lib/ranking/types';
+import type { Aviso, AvisoTipo } from '../../api/tipos';
 import { Secao } from '../ui';
 
 const ROTULO: Record<AvisoTipo, string> = {

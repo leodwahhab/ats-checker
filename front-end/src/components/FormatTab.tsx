@@ -1,4 +1,4 @@
-import type { Analysis, CheckResult, Status } from '../lib/types';
+import type { Analysis, CheckResult, Status } from '../api/tipos';
 import { StructuredView } from './Structured';
 import { mesmaSelecao, Secao, StatusChip, tomDoFormato, VerNoCv, type Marcador } from './ui';
 

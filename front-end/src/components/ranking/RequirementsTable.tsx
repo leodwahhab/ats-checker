@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import type { LenteId, ReqTipo, RequirementResult } from '../../lib/ranking/types';
-import { FONTES } from '../../lib/ranking/lentes';
+import type { LenteId, ReqTipo, RequirementResult } from '../../api/tipos';
+import { useLentes } from '../../api/LentesContext';
 import { mesmaSelecao, Secao, StatusChip, VerNoCv, type Marcador } from '../ui';
 
 export interface RequirementHandlers {
@@ -110,6 +110,7 @@ interface Props {
 }
 
 export function RequirementsTable({ resultados, h, m, lente, limiar, onLimiar, classificacaoAutomatica }: Props) {
+  const { fontes } = useLentes();
   const [texto, setTexto] = useState('');
   const [tipo, setTipo] = useState<ReqTipo>('obrigatorio');
   const contados = resultados.filter((r) => r.requisito.tipo !== 'informativo').length;
@@ -130,7 +131,7 @@ export function RequirementsTable({ resultados, h, m, lente, limiar, onLimiar, c
             <input type="range" id="limiar" min={0} max={100} step={5} value={Math.round(limiar * 100)} onChange={(e) => onLimiar(Number(e.target.value) / 100)} />
             <span className="cap">
               Para Top fit, os desejáveis precisam chegar a este valor.{' '}
-              <a className="lnk" href={FONTES.linkedinAssistente.url} target="_blank" rel="noreferrer" title="O LinkedIn não publica o valor: quem publica a vaga define.">aproximação</a>
+              <a className="lnk" href={fontes.linkedinAssistente.url} target="_blank" rel="noreferrer" title="O LinkedIn não publica o valor: quem publica a vaga define.">aproximação</a>
             </span>
           </div>
         )}

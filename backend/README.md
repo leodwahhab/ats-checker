@@ -3,9 +3,8 @@
 API em Java com a regra de negócio do verificador de CV: leitura do PDF, análise de formato para ATS e,
 nas próximas etapas, ranqueamento por vaga e histórico de candidaturas.
 
-> **Status da migração:** o back-end já tem toda a regra de negócio (leitura do PDF, formato, vaga, ranking com as
-> 4 lentes), a API HTTP e o histórico em SQLite. O front-end (`../front-end`) ainda usa a lógica em TypeScript; a
-> troca para esta API é o próximo passo.
+> **Status:** a migração terminou. O back-end tem toda a regra de negócio (leitura do PDF, formato, vaga, ranking com as
+> 4 lentes), a API HTTP e o histórico em SQLite; o front-end (`../front-end`) só apresenta e chama esta API.
 
 ## Requisitos
 
@@ -56,18 +55,18 @@ Erros saem em `application/problem+json`, com a mensagem em português.
 
 ## Testes de paridade
 
-O comportamento de referência é o do TypeScript original. Os *golden files* vêm de lá:
+Durante a migração, o comportamento de referência era o do TypeScript original, que já foi removido do front. Os
+*golden files* (a saída do TypeScript para cada CV e vaga) foram gerados a partir dele (o gerador está no commit `64268f7`) e ficam em
+`src/test/resources/golden/`; os testes abaixo seguem valendo como rede de segurança contra regressões do Java:
 
-```powershell
-cd ../front-end
-$env:GERAR_GOLDEN = "1"; npx vitest run tests/golden.gen.test.ts
-```
-
-- `ParidadeFormatoTest`: a análise do Java, a partir do mesmo `ExtractedDoc` do pdf.js, tem de ser idêntica.
+- `ParidadeFormatoTest`: a análise do Java, a partir do mesmo `ExtractedDoc` do pdf.js, é idêntica à do TypeScript.
 - `ExtracaoPdfTest`: o PDFBox lendo os PDFs chega ao mesmo texto, nota, checagens e estrutura do pdf.js.
+- `ParidadeVagaTest` e `ParidadeRankingTest`: a leitura de cada vaga e o ranking de cada CV, em cada lente (com e sem
+  edições do usuário), são idênticos ao do TypeScript.
 
-Os golden files de `src/test/resources/golden/cvs/` contêm o texto dos seus CVs e ficam fora do git; sem
-eles (e sem os PDFs em `fixtures/`), esses testes são pulados.
+Os golden files de `golden/cvs/` e `golden/vagas/candidaturas/` contêm o texto dos seus CVs e ficam fora do git; sem
+eles (e sem os PDFs em `fixtures/`), os testes que dependem deles são pulados. Se uma regra mudar de propósito, a
+referência a atualizar é o próprio golden file (ou o teste), já que não há mais TypeScript para regerá-los.
 
 ## Dados pessoais
 

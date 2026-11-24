@@ -1,12 +1,16 @@
 package br.com.atscv.servico;
 
+import br.com.atscv.api.Dtos.BuscaDeMarca;
 import br.com.atscv.api.Dtos.CvDetalhe;
 import br.com.atscv.api.Dtos.CvResumo;
 import br.com.atscv.api.ErroApi;
 import br.com.atscv.extracao.PdfExtractor;
 import br.com.atscv.formato.Analyzer;
+import br.com.atscv.formato.Marcas;
 import br.com.atscv.formato.Modelos.Analysis;
 import br.com.atscv.formato.Modelos.ExtractedDoc;
+import br.com.atscv.formato.Sections.SectionKey;
+import br.com.atscv.formato.TextoPdf;
 import br.com.atscv.persistencia.CvRepositorio;
 import br.com.atscv.persistencia.CvRepositorio.Registro;
 import br.com.atscv.persistencia.CvRepositorio.Resumo;
@@ -16,7 +20,11 @@ import java.security.NoSuchAlgorithmException;
 import java.time.Clock;
 import java.time.Instant;
 import java.time.LocalDate;
+import java.util.Arrays;
 import java.util.HexFormat;
+import java.util.LinkedHashMap;
+import java.util.Locale;
+import java.util.Map;
 import java.util.List;
 import org.apache.pdfbox.pdmodel.encryption.InvalidPasswordException;
 import org.springframework.beans.factory.annotation.Value;
@@ -45,8 +53,27 @@ public class CvServico {
     }
 
     private CvDetalhe detalhe(Registro r, boolean jaExistia) {
-        return new CvDetalhe(resumo(r.resumo()), json.readValue(r.docJson(), ExtractedDoc.class),
-                json.readValue(r.analiseJson(), Analysis.class), jaExistia);
+        ExtractedDoc doc = json.readValue(r.docJson(), ExtractedDoc.class);
+        return new CvDetalhe(resumo(r.resumo()), doc, json.readValue(r.analiseJson(), Analysis.class),
+                Arrays.stream(TextoPdf.montar(doc.items()).inicios()).boxed().toList(), jaExistia);
+    }
+
+    /** Onde cada trecho aparece no PDF: para cada chave, os índices dos trechos (doc.items) que o cobrem. */
+    public Map<String, List<Integer>> marcas(long id, List<BuscaDeMarca> buscas) {
+        Marcas marcas = new Marcas(detalhe(id).doc());
+        Map<String, List<Integer>> out = new LinkedHashMap<>();
+        for (BuscaDeMarca b : buscas == null ? List.<BuscaDeMarca>of() : buscas) {
+            SectionKey secao = null;
+            if (b.secao() != null) {
+                try {
+                    secao = SectionKey.valueOf(b.secao().toUpperCase(Locale.ROOT));
+                } catch (IllegalArgumentException e) {
+                    throw ErroApi.invalido("Seção desconhecida: " + b.secao());
+                }
+            }
+            out.put(b.chave(), marcas.localizar(b.trecho() == null ? "" : b.trecho(), secao));
+        }
+        return out;
     }
 
     private static String sha256(byte[] bytes) {

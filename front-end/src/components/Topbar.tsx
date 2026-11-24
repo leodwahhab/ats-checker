@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
-import { LENTES, ORDEM_LENTES, VERIFICADO_EM } from '../lib/ranking/lentes';
-import { lista } from '../lib/ranking/texto';
-import type { FonteEvidencia, LenteId } from '../lib/ranking/types';
+import { useLentes } from '../api/LentesContext';
+import { lista } from '../formato';
+import type { FonteEvidencia, LenteId } from '../api/tipos';
 import { Fonte } from './ui';
 
 const NOME_FONTE: Partial<Record<FonteEvidencia, string>> = {
@@ -38,6 +38,7 @@ function ToggleTema() {
 
 /** Todas as lentes, com o que cada uma simula, as aproximações (Q23) e as fontes oficiais. */
 function SobreLentes({ atual, onFechar }: { atual: LenteId; onFechar: () => void }) {
+  const { lentes, ordem, verificadoEm } = useLentes();
   const ref = useRef<HTMLDivElement>(null);
   useEffect(() => {
     ref.current?.focus();
@@ -52,9 +53,9 @@ function SobreLentes({ atual, onFechar }: { atual: LenteId; onFechar: () => void
         <h2 className="h4">Sobre as lentes</h2>
         <button type="button" className="btn btn-ghost btn-sm" onClick={onFechar}>Fechar</button>
       </div>
-      <p className="cap">Todas as lentes. A que você está usando aparece marcada. Fontes conferidas em {VERIFICADO_EM}.</p>
-      {ORDEM_LENTES.map((id) => {
-        const l = LENTES[id];
+      <p className="cap">Todas as lentes. A que você está usando aparece marcada. Fontes conferidas em {verificadoEm}.</p>
+      {ordem.map((id) => {
+        const l = lentes[id];
         return (
           <div key={id} className="item">
             <div className="lbl">{l.nome}{id === atual && <> <span className="tag">em uso</span></>}</div>
@@ -81,7 +82,11 @@ function SobreLentes({ atual, onFechar }: { atual: LenteId; onFechar: () => void
   );
 }
 
-export function Topbar({ lente, sobreAberto, onSobre }: { lente: LenteId; sobreAberto: boolean; onSobre: (v: boolean) => void }) {
+export type Vista = 'analise' | 'historico';
+
+export function Topbar({ lente, sobreAberto, onSobre, vista, onVista }: {
+  lente: LenteId; sobreAberto: boolean; onSobre: (v: boolean) => void; vista: Vista; onVista: (v: Vista) => void;
+}) {
   const fechar = useCallback(() => onSobre(false), [onSobre]);
   return (
     <header className="topbar">
@@ -91,12 +96,16 @@ export function Topbar({ lente, sobreAberto, onSobre }: { lente: LenteId; sobreA
         </span>
         Verificador de CV para ATS
       </h1>
+      <nav className="topbar-nav" aria-label="Telas">
+        <button type="button" className={`btn btn-sm ${vista === 'analise' ? 'btn-secondary' : 'btn-ghost'}`} aria-pressed={vista === 'analise'} onClick={() => onVista('analise')}>Analisar</button>
+        <button type="button" className={`btn btn-sm ${vista === 'historico' ? 'btn-secondary' : 'btn-ghost'}`} aria-pressed={vista === 'historico'} onClick={() => onVista('historico')}>Histórico</button>
+      </nav>
       <div className="topbar-a">
         <button type="button" className="btn btn-ghost btn-sm" aria-expanded={sobreAberto} aria-controls="sobre-lentes" onClick={() => onSobre(!sobreAberto)}>
           Sobre as lentes
         </button>
         <ToggleTema />
-        <span className="badge-neutro">Tudo no seu navegador · nada é enviado</span>
+        <span className="badge-neutro">Roda no seu computador · o PDF fica no banco local</span>
       </div>
       {sobreAberto && <SobreLentes atual={lente} onFechar={fechar} />}
     </header>

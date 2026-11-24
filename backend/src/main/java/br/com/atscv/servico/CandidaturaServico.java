@@ -46,8 +46,11 @@ public class CandidaturaServico {
         return s == null || s.isBlank() ? null : s.strip();
     }
 
-    /** Valida os campos e monta a linha do banco, com a previsão calculada agora. */
-    private Linha montar(CandidaturaEntrada e, String criadoEm) {
+    /**
+     * Valida os campos e monta a linha do banco. A previsão (o snapshot do ranking) é calculada agora; ao atualizar uma
+     * candidatura sem mexer no CV, na vaga nem no estado dela, a previsão da época é mantida.
+     */
+    private Linha montar(CandidaturaEntrada e, Linha atual) {
         if (e.vagaTexto() == null || e.vagaTexto().isBlank()) throw ErroApi.invalido("O texto da vaga está vazio.");
         String plataforma = vazioParaNulo(e.plataforma());
         if (plataforma != null) plataforma = plataforma.toLowerCase();
@@ -67,19 +70,27 @@ public class CandidaturaServico {
         if (e.diasAteResposta() != null && e.diasAteResposta() < 0) throw ErroApi.invalido("Os dias até a resposta não podem ser negativos.");
 
         Analysis analise = cvs.detalhe(e.cvId()).analise();
+        boolean mantemPrevisao = atual != null && atual.cvId() == e.cvId() && atual.vagaTexto().equals(e.vagaTexto())
+                && e.estado() == null && atual.snapshotJson() != null;
         EstadoDaVaga estado = e.estado() == null ? new EstadoDaVaga(null, null, null, null, null, null) : e.estado();
         if (estado.job() == null) {
             estado = new EstadoDaVaga(ranking.lerVaga(e.vagaTexto(), estado.extras()), estado.declarados(), estado.respostas(),
                     estado.extras(), estado.limiar(), estado.lente());
         }
-        RankingResult snapshot = ranking.ranquear(analise, estado);
         String agora = Instant.now(clock).toString();
         List<Pergunta> perguntas = e.perguntas() == null ? List.of() : e.perguntas();
+        if (mantemPrevisao) {
+            return new Linha(null, e.cvId(), e.vagaTexto(), plataforma, vazioParaNulo(e.empresa()), vazioParaNulo(e.cargo()), mes,
+                    data, resultado, vazioParaNulo(e.etapa()), vazioParaNulo(e.observacoes()), e.diasAteResposta(),
+                    json.writeValueAsString(perguntas), atual.estadoJson(), atual.snapshotJson(), atual.faixa(),
+                    atual.rotuloFaixa(), atual.numero(), atual.versaoRegras(), atual.criadoEm(), agora, atual.origem());
+        }
+        RankingResult snapshot = ranking.ranquear(analise, estado);
         return new Linha(null, e.cvId(), e.vagaTexto(), plataforma, vazioParaNulo(e.empresa()), vazioParaNulo(e.cargo()), mes,
                 data, resultado, vazioParaNulo(e.etapa()), vazioParaNulo(e.observacoes()), e.diasAteResposta(),
                 json.writeValueAsString(perguntas), json.writeValueAsString(estado), json.writeValueAsString(snapshot),
                 snapshot.faixa().json(), snapshot.rotuloFaixa(), snapshot.numero(), Regras.VERSAO,
-                criadoEm != null ? criadoEm : agora, agora, vazioParaNulo(e.origem()));
+                atual != null ? atual.criadoEm() : agora, agora, atual != null ? atual.origem() : vazioParaNulo(e.origem()));
     }
 
     private Candidatura paraDto(Linha l) {
@@ -102,7 +113,7 @@ public class CandidaturaServico {
 
     public Candidatura atualizar(long id, CandidaturaEntrada e) {
         Linha atual = repo.porId(id).orElseThrow(() -> ErroApi.naoEncontrado("A candidatura", id));
-        Linha nova = montar(e, atual.criadoEm());
+        Linha nova = montar(e, atual);
         repo.atualizar(id, nova);
         return obter(id);
     }

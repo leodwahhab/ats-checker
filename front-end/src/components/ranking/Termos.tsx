@@ -1,4 +1,4 @@
-import type { RequirementResult } from '../../lib/ranking/types';
+import type { RequirementResult } from '../../api/tipos';
 import { Secao } from '../ui';
 import { termosDesconhecidos } from './RequirementsTable';
 

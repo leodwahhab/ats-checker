@@ -1,4 +1,4 @@
-import type { RankingResult } from '../../lib/ranking/types';
+import type { RankingResult } from '../../api/tipos';
 import { Secao, StatusChip, VerNoCv, type Marcador } from '../ui';
 import { Declarar, type RequirementHandlers } from './RequirementsTable';
 

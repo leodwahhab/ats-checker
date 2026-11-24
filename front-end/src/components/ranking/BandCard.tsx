@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import { LENTES, ORDEM_LENTES } from '../../lib/ranking/lentes';
-import type { FaixaId, JobSpec, LenteId, NotaWorkday, RankingResult, ReqStatus, RequirementResult, ResultadoLente } from '../../lib/ranking/types';
+import { useLentes } from '../../api/LentesContext';
+import type { FaixaId, JobSpec, LenteId, NotaWorkday, RankingResult, ReqStatus, RequirementResult, ResultadoLente } from '../../api/tipos';
 import { Fonte, Secao } from '../ui';
 
 const PESO: Record<ReqStatus, number> = { atende: 1, parcial: 0.5, nao_atende: 0, nao_verificavel: 0 };
@@ -29,9 +29,10 @@ function Selo({ lente }: { lente: ResultadoLente }) {
 }
 
 function Legenda({ lente }: { lente: ResultadoLente }) {
+  const { lentes } = useLentes();
   const itens = lente.id === 'workday'
     ? NOTAS.map((n) => ({ chave: n, rotulo: `Nota ${n}`, tom: TOM_NOTA[n], cur: lente.nota === n }))
-    : (['not', 'maybe', 'top'] as FaixaId[]).map((f) => ({ chave: f, rotulo: LENTES[lente.id].rotulos[f], tom: TOM[f], cur: lente.tom === f }));
+    : (['not', 'maybe', 'top'] as FaixaId[]).map((f) => ({ chave: f, rotulo: lentes[lente.id].rotulos[f], tom: TOM[f], cur: lente.tom === f }));
   return (
     <div className="legend" role="list" aria-label="Faixas desta lente">
       {itens.map((i) => <span key={i.chave} role="listitem" className={`lg ${i.tom}${i.cur ? ' cur' : ''}`}>{i.rotulo}</span>)}
@@ -115,14 +116,15 @@ interface Props {
 }
 
 export function BandCard({ ranking, job, lente, onLente, onSobreLentes }: Props) {
+  const { lentes, ordem } = useLentes();
   const r = ranking.lente;
   return (
     <Secao titulo="Sua faixa nesta vaga" aberta>
       <div className="lbl" id="lente-lbl">Como a plataforma mostraria</div>
       <div className="seg2wrap" role="radiogroup" aria-labelledby="lente-lbl">
-        {ORDEM_LENTES.map((id) => (
+        {ordem.map((id) => (
           <button key={id} type="button" role="radio" aria-checked={id === lente} className={`seg2${id === lente ? ' on' : ''}`} onClick={() => onLente(id)}>
-            {LENTES[id].nome}
+            {lentes[id].nome}
           </button>
         ))}
       </div>

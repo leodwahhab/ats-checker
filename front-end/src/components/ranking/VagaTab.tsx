@@ -1,4 +1,4 @@
-import type { JobSpec, LenteId, RankingResult } from '../../lib/ranking/types';
+import type { JobSpec, LenteId, RankingResult } from '../../api/tipos';
 import type { Marcador } from '../ui';
 import { BandCard } from './BandCard';
 import { Dimensions } from './Dimensions';

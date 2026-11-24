@@ -1,39 +1,39 @@
-import { useMemo, useRef, useState } from 'react';
-import { analyze } from './lib/analyze';
-import { abrirPdf, type PdfAberto } from './lib/extractBrowser';
-import { localizar } from './lib/marcas';
-import {
-  adicionarRequisito, alterarTipo, dicionario, parseJob, promoverTermo, rank, removerRequisito, termosAusentes,
-} from './lib/ranking';
-import type { FonteEvidencia, JobSpec, LenteId, SkillDef } from './lib/ranking/types';
-import type { SectionKey } from './lib/sections';
-import type { Analysis, ExtractedDoc } from './lib/types';
+import { useEffect, useMemo, useRef, useState } from 'react';
+import { api, ErroApi, type PedidoDeEdicao } from './api/cliente';
+import type {
+  Analysis, BuscaDeMarca, Candidatura, CvDetalhe, FonteEvidencia, JobSpec, LenteId, RankingResult, ReqTipo, SkillDef,
+} from './api/tipos';
 import { CvPane, type InfoSelecao } from './components/CvPane';
 import { faixaDoFormato, FormatTab } from './components/FormatTab';
+import { Historico } from './components/Historico';
 import { JobCard } from './components/JobCard';
-import { Topbar } from './components/Topbar';
+import { SalvarCandidatura } from './components/SalvarCandidatura';
+import { Topbar, type Vista } from './components/Topbar';
 import type { RequirementHandlers } from './components/ranking/RequirementsTable';
 import { VagaTab } from './components/ranking/VagaTab';
 import { mesmaSelecao, tomDoFormato, type Marcador, type Selecao } from './components/ui';
+import { abrirPdf, type PdfAberto } from './pdfPreview';
 
 type Aba = 'formato' | 'vaga';
 
 /** Seção do CV onde procurar o trecho de cada tipo de evidência. */
-const SECAO: Partial<Record<FonteEvidencia, SectionKey>> = {
+const SECAO: Partial<Record<FonteEvidencia, string>> = {
   habilidades: 'habilidades', experiencia: 'experiencia', resumo: 'resumo', certificacoes: 'certificacoes',
   projetos: 'projetos', formacao: 'formacao', idiomas: 'idiomas',
 };
 
+const mensagem = (e: unknown) => (e instanceof ErroApi ? e.message : 'Algo deu errado. Tente de novo.');
+
 export function App() {
-  const [file, setFile] = useState<File | null>(null);
-  const [doc, setDoc] = useState<ExtractedDoc | null>(null);
+  const [vista, setVista] = useState<Vista>('analise');
+  const [nomeArquivo, setNomeArquivo] = useState<string | null>(null);
+  const [cv, setCv] = useState<CvDetalhe | null>(null);
   const [pdf, setPdf] = useState<PdfAberto | null>(null);
-  const [analysis, setAnalysis] = useState<Analysis | null>(null);
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [jobText, setJobText] = useState('');
 
-  // Estado da vaga: tudo só em memória (Q22). Reler a vaga descarta as edições.
+  // Estado da vaga: só em memória até virar uma candidatura. Reler a vaga descarta as edições.
   const [job, setJob] = useState<JobSpec | null>(null);
   const [vagaLida, setVagaLida] = useState('');
   const [editado, setEditado] = useState(false);
@@ -43,6 +43,11 @@ export function App() {
   const [limiar, setLimiar] = useState(0.5);
   const [lente, setLente] = useState<LenteId>('nucleo');
 
+  // O que a API devolve para o estado acima.
+  const [ranking, setRanking] = useState<RankingResult | null>(null);
+  const [ausentes, setAusentes] = useState<string[]>([]);
+  const [marcasReq, setMarcasReq] = useState<Map<string, number[]>>(new Map());
+
   // Tela: aba escolhida, item marcado no CV e o painel "Sobre as lentes".
   const [abaEscolhida, setAbaEscolhida] = useState<Aba | null>(null);
   const [sel, setSel] = useState<Selecao | null>(null);
@@ -51,56 +56,84 @@ export function App() {
   const leitura = useRef(0);
   const fecharAnterior = useRef<(() => void) | null>(null);
 
-  const dict = useMemo(() => dicionario(extras), [extras]);
+  const analysis: Analysis | null = cv?.analise ?? null;
+  const doc = cv?.doc ?? null;
+
+  function zerarVaga() {
+    setExtras([]);
+    setDeclarados({});
+    setRespostas({});
+    setEditado(false);
+    setSel(null);
+  }
+
+  /** Mostra um CV já lido pela API: abre o PDF só para desenhar a prévia. */
+  async function mostrarCv(detalhe: CvDetalhe, bytes: ArrayBuffer, nome: string, vez: number) {
+    const lido = await abrirPdf(bytes);
+    if (vez !== leitura.current) return lido.fechar();
+    fecharAnterior.current?.();
+    fecharAnterior.current = lido.fechar;
+    setNomeArquivo(nome);
+    setCv(detalhe);
+    setPdf(lido.pdf);
+    setSel(null);
+  }
 
   async function run(f: File) {
     const vez = ++leitura.current;
     setBusy(true);
     setError(null);
     try {
-      const lido = await abrirPdf(f);
-      if (vez !== leitura.current) return lido.fechar();
-      fecharAnterior.current?.();
-      fecharAnterior.current = lido.fechar;
-      setFile(f);
-      setDoc(lido.doc);
-      setPdf(lido.pdf);
-      setAnalysis(analyze(lido.doc));
-      setSel(null);
-    } catch {
-      setError('Não foi possível ler este arquivo. Ele é um PDF válido e não está protegido por senha?');
+      const [detalhe, bytes] = await Promise.all([api.enviarCv(f), f.arrayBuffer()]);
+      await mostrarCv(detalhe, bytes, f.name, vez);
+    } catch (e) {
+      if (vez === leitura.current) setError(e instanceof ErroApi ? e.message : 'Não foi possível ler este arquivo. Ele é um PDF válido e não está protegido por senha?');
     } finally {
       if (vez === leitura.current) setBusy(false);
     }
   }
 
-  function lerVaga(texto: string) {
-    setExtras([]);
-    setDeclarados({});
-    setRespostas({});
-    setEditado(false);
+  async function lerVaga(texto: string) {
+    zerarVaga();
     setVagaLida(texto);
-    setSel(null);
-    const novo = texto.trim() ? parseJob(texto, dicionario()) : null;
-    setJob(novo);
-    // Com vaga, a tela abre no ranqueamento (Q20).
-    if (novo) setAbaEscolhida('vaga');
+    if (!texto.trim()) {
+      setJob(null);
+      return;
+    }
+    try {
+      const novo = await api.lerVaga(texto);
+      setJob(novo);
+      // Com vaga, a tela abre no ranqueamento.
+      setAbaEscolhida('vaga');
+    } catch (e) {
+      setError(mensagem(e));
+    }
   }
 
   function onFile(f: File) {
     void run(f);
-    if (jobText.trim() && !job) lerVaga(jobText);
+    if (jobText.trim() && !job) void lerVaga(jobText);
   }
 
   function onLerVaga(): boolean {
     if (editado && !window.confirm('Reler a vaga descarta as suas edições nos requisitos. Continuar?')) return false;
-    lerVaga(jobText);
+    void lerVaga(jobText);
     return true;
   }
 
-  function editar(novo: JobSpec) {
-    setJob(novo);
-    setEditado(true);
+  async function editar(pedido: Omit<PedidoDeEdicao, 'job' | 'extras'>) {
+    if (!job) return;
+    try {
+      const r = await api.editarVaga({ ...pedido, job, extras });
+      if (r.skill) {
+        const skill = r.skill;
+        setExtras((atual) => (atual.some((s) => s.id === skill.id) ? atual : [...atual, skill]));
+      }
+      setJob(r.job);
+      setEditado(true);
+    } catch (e) {
+      setError(mensagem(e));
+    }
   }
 
   /** Liga ou desliga uma resposta "tenho / não tenho" ou "sim / não" (null desfaz). */
@@ -115,46 +148,69 @@ export function App() {
   };
 
   const handlers: RequirementHandlers = {
-    onTipo: (id, tipo) => job && editar(alterarTipo(job, id, tipo)),
-    onRemover: (id) => job && editar(removerRequisito(job, id)),
-    onAdicionar: (texto, tipo) => job && editar(adicionarRequisito(job, texto, tipo, dict)),
+    onTipo: (id, tipo: ReqTipo) => void editar({ acao: 'alterar_tipo', id, tipo }),
+    onRemover: (id) => void editar({ acao: 'remover', id }),
+    onAdicionar: (texto, tipo) => void editar({ acao: 'adicionar', texto, tipo }),
     onDeclarar: responder(setDeclarados),
-    onPromover: (termo) => {
-      if (!job) return;
-      const { job: novo, skill } = promoverTermo(job, termo);
-      setExtras((atual) => (atual.some((s) => s.id === skill.id) ? atual : [...atual, skill]));
-      editar(novo);
-    },
+    onPromover: (termo) => void editar({ acao: 'promover', termo }),
   };
 
-  const semTexto = analysis?.formatScore === 0;
-  const ranking = useMemo(
-    () => (analysis && job
-      ? rank(analysis.structured, job, {
-        limiarDesejaveis: limiar, declarados, respostas, skillsExtras: extras, lente,
-        arquivo: { semTexto: analysis.formatScore === 0, exportLinkedin: analysis.exportLinkedin },
-      }, dict)
-      : null),
-    [analysis, job, limiar, declarados, respostas, extras, lente, dict],
-  );
-  const ausentes = useMemo(
-    () => (analysis && job ? termosAusentes(analysis.robotText, vagaLida, dict) : []),
-    [analysis, job, vagaLida, dict],
-  );
-
-  // Onde cada requisito e cada checagem aparecem no PDF.
-  const marcasReq = useMemo(() => {
-    const out = new Map<string, number[]>();
-    if (!doc || !ranking) return out;
-    for (const r of ranking.requisitos) {
-      const itens = new Set<number>();
-      for (const e of r.evidencias) {
-        if (e.fonte !== 'declarado') localizar(doc, e.trecho, SECAO[e.fonte]).forEach((i) => itens.add(i));
-      }
-      out.set(r.requisito.id, [...itens]);
+  // O ranking é calculado pela API a cada mudança; o limiar (um slider) espera um instante para não inundar o servidor.
+  useEffect(() => {
+    if (!cv || !job) {
+      setRanking(null);
+      return;
     }
-    return out;
-  }, [doc, ranking]);
+    const ac = new AbortController();
+    const espera = setTimeout(() => {
+      api.ranquear({ cvId: cv.cv.id, job, declarados, respostas, extras, limiar, lente }, ac.signal)
+        .then(setRanking)
+        .catch((e) => { if (!(e instanceof DOMException)) setError(mensagem(e)); });
+    }, 120);
+    return () => {
+      clearTimeout(espera);
+      ac.abort();
+    };
+  }, [cv, job, declarados, respostas, extras, limiar, lente]);
+
+  useEffect(() => {
+    if (!cv || !job) {
+      setAusentes([]);
+      return;
+    }
+    const ac = new AbortController();
+    api.termosAusentes(cv.cv.id, vagaLida, extras, ac.signal).then(setAusentes).catch(() => {});
+    return () => ac.abort();
+  }, [cv, job, vagaLida, extras]);
+
+  // Onde cada requisito aparece no PDF: a API localiza o trecho de cada evidência.
+  useEffect(() => {
+    if (!cv || !ranking) {
+      setMarcasReq(new Map());
+      return;
+    }
+    const buscas: BuscaDeMarca[] = [];
+    const chaves = new Map<string, string[]>();
+    for (const r of ranking.requisitos) {
+      const lista: string[] = [];
+      r.evidencias.forEach((e, i) => {
+        if (e.fonte === 'declarado') return;
+        const chave = `${r.requisito.id}#${i}`;
+        buscas.push({ chave, trecho: e.trecho, secao: SECAO[e.fonte] });
+        lista.push(chave);
+      });
+      chaves.set(r.requisito.id, lista);
+    }
+    const ac = new AbortController();
+    api.marcas(cv.cv.id, buscas, ac.signal).then((porChave) => {
+      const out = new Map<string, number[]>();
+      for (const [id, lista] of chaves) out.set(id, [...new Set(lista.flatMap((c) => porChave[c] ?? []))]);
+      setMarcasReq(out);
+    }).catch(() => {});
+    return () => ac.abort();
+  }, [cv, ranking]);
+
+  const semTexto = analysis?.formatScore === 0;
   const itensDe = (s: Selecao): number[] => (s.tipo === 'req'
     ? marcasReq.get(s.id) ?? []
     : analysis?.checks.find((c) => c.id === s.id)?.itens ?? []);
@@ -180,78 +236,118 @@ export function App() {
     }
   }
 
+  /** Abre uma candidatura do histórico na análise: o CV, a vaga e tudo o que foi editado. */
+  async function abrirCandidatura(c: Candidatura) {
+    const vez = ++leitura.current;
+    setBusy(true);
+    setError(null);
+    try {
+      const [detalhe, bytes] = await Promise.all([api.cv(c.cvId), api.pdf(c.cvId)]);
+      await mostrarCv(detalhe, bytes, detalhe.cv.nomeArquivo, vez);
+      zerarVaga();
+      setJobText(c.vagaTexto);
+      setVagaLida(c.vagaTexto);
+      setJob(c.estado.job ?? null);
+      setDeclarados(c.estado.declarados ?? {});
+      setRespostas(c.estado.respostas ?? {});
+      setExtras(c.estado.extras ?? []);
+      setLimiar(c.estado.limiar ?? 0.5);
+      setLente(c.estado.lente ?? 'nucleo');
+      setEditado(true);
+      setAbaEscolhida('vaga');
+      setVista('analise');
+    } catch (e) {
+      setError(mensagem(e));
+    } finally {
+      if (vez === leitura.current) setBusy(false);
+    }
+  }
+
   const aba: Aba = abaEscolhida ?? (ranking ? 'vaga' : 'formato');
   const trocarAba = (a: Aba) => { setAbaEscolhida(a); setSel(null); };
   const faltam = ranking?.requisitos.filter((r) => r.requisito.tipo === 'obrigatorio' && r.status !== 'atende').length ?? 0;
   const resumoVaga = ranking
     ? (ranking.vazio ? 'Nenhum requisito lido' : `${ranking.lente.rotulo} · ${faltam} a comprovar`)
-    : job ? 'Envie o PDF' : 'Cole a vaga para ver';
+    : job ? (cv ? 'Calculando…' : 'Envie o PDF') : 'Cole a vaga para ver';
+  const estado = useMemo(() => ({ job: job ?? undefined, declarados, respostas, extras, limiar, lente }),
+    [job, declarados, respostas, extras, limiar, lente]);
 
   return (
     <div className="app">
-      <Topbar lente={lente} sobreAberto={sobre} onSobre={setSobre} />
+      <Topbar lente={lente} sobreAberto={sobre} onSobre={setSobre} vista={vista} onVista={setVista} />
 
-      <main className={`main${analysis ? '' : ' inicio'}`}>
-        <CvPane
-          file={file} doc={doc} pdf={pdf} busy={busy} error={error} onFile={onFile}
-          marcados={marcados} pulso={pulso} info={info}
-        />
+      {vista === 'historico' ? (
+        <main className="main historico">
+          <Historico onAbrir={(c) => void abrirCandidatura(c)} />
+        </main>
+      ) : (
+        <main className={`main${analysis ? '' : ' inicio'}`}>
+          <CvPane
+            nome={nomeArquivo} doc={doc} inicios={cv?.inicios ?? []} pdf={pdf} busy={busy} error={error} onFile={onFile}
+            marcados={marcados} pulso={pulso} info={info}
+          />
 
-        <section className="dxpane" aria-label="Diagnóstico">
-          {file && analysis && (
-            <div className="card plain filecard">
-              <div className="lbl">Seu currículo</div>
-              <div className="cap nome-arquivo">{file.name}{doc && ` · ${doc.numPages} página${doc.numPages > 1 ? 's' : ''}`}</div>
-              <p className="cap">A prévia e a visão do robô ficam no fim da página.</p>
-            </div>
-          )}
-
-          <JobCard texto={jobText} onTexto={setJobText} job={job} temCv={!!analysis} onLer={onLerVaga} />
-
-          {analysis ? (
-            <>
-              <div className="tg" role="tablist" aria-label="Diagnóstico">
-                <span className={`tgthumb ${aba === 'formato' ? 'p0' : 'p1'}`} aria-hidden="true" />
-                <button type="button" role="tab" id="aba-formato" aria-controls="painel-formato" aria-selected={aba === 'formato'} className={`tgb${aba === 'formato' ? ' on' : ''}`} onClick={() => trocarAba('formato')}>
-                  <span className="tl">1 · Formato e leitura</span>
-                  <span className="ts">{analysis.formatScore} de 100 · {faixaDoFormato(analysis.formatScore).rotulo}</span>
-                </button>
-                <button type="button" role="tab" id="aba-vaga" aria-controls="painel-vaga" aria-selected={aba === 'vaga'} className={`tgb${aba === 'vaga' ? ' on' : ''}`} onClick={() => trocarAba('vaga')}>
-                  <span className="tl">2 · Vaga</span>
-                  <span className="ts">{resumoVaga}</span>
-                </button>
+          <section className="dxpane" aria-label="Diagnóstico">
+            {nomeArquivo && analysis && (
+              <div className="card plain filecard">
+                <div className="lbl">Seu currículo</div>
+                <div className="cap nome-arquivo">{nomeArquivo}{doc && ` · ${doc.numPages} página${doc.numPages > 1 ? 's' : ''}`}</div>
+                <p className="cap">A prévia e a visão do robô ficam no fim da página.</p>
               </div>
+            )}
 
-              {aba === 'formato' && <FormatTab analysis={analysis} m={marcador} />}
-              {aba === 'vaga' && (ranking && job ? (
-                <VagaTab
-                  ranking={ranking} job={job} semTexto={semTexto}
-                  limiar={limiar} onLimiar={setLimiar} lente={lente} onLente={setLente} onSobreLentes={() => setSobre(true)}
-                  ausentes={ausentes} handlers={handlers} onResponder={responder(setRespostas)} m={marcador}
-                />
-              ) : (
-                <section className="card flat anim-in" role="tabpanel" id="painel-vaga" aria-labelledby="aba-vaga">
-                  <h2 className="h3">Sem vaga, analisamos só o formato</h2>
-                  <p className="sm muted">Cole o texto da vaga acima e escolha “Ler a vaga” para ver a faixa, os requisitos e o que falta comprovar.</p>
-                </section>
-              ))}
-            </>
-          ) : (
-            <section className="card flat" aria-labelledby="inicio-t">
-              <h2 className="h3" id="inicio-t">Os resultados aparecem aqui</h2>
-              <div className="stack espaco">
-                <p className="sm"><span className="lbl">1 · Formato e leitura.</span> Aparece depois que você enviar o PDF.</p>
-                <p className="sm"><span className="lbl">2 · Vaga.</span> Aparece se você colar o texto da vaga. Sem vaga, analisamos só o formato.</p>
-              </div>
-              <p className="sm muted espaco">O PDF não sai do seu computador e fechar a página apaga tudo.</p>
-            </section>
-          )}
-        </section>
-      </main>
+            <JobCard texto={jobText} onTexto={setJobText} job={job} temCv={!!analysis} onLer={onLerVaga} />
+
+            {analysis ? (
+              <>
+                <div className="tg" role="tablist" aria-label="Diagnóstico">
+                  <span className={`tgthumb ${aba === 'formato' ? 'p0' : 'p1'}`} aria-hidden="true" />
+                  <button type="button" role="tab" id="aba-formato" aria-controls="painel-formato" aria-selected={aba === 'formato'} className={`tgb${aba === 'formato' ? ' on' : ''}`} onClick={() => trocarAba('formato')}>
+                    <span className="tl">1 · Formato e leitura</span>
+                    <span className="ts">{analysis.formatScore} de 100 · {faixaDoFormato(analysis.formatScore).rotulo}</span>
+                  </button>
+                  <button type="button" role="tab" id="aba-vaga" aria-controls="painel-vaga" aria-selected={aba === 'vaga'} className={`tgb${aba === 'vaga' ? ' on' : ''}`} onClick={() => trocarAba('vaga')}>
+                    <span className="tl">2 · Vaga</span>
+                    <span className="ts">{resumoVaga}</span>
+                  </button>
+                </div>
+
+                {aba === 'formato' && <FormatTab analysis={analysis} m={marcador} />}
+                {aba === 'vaga' && (ranking && job ? (
+                  <>
+                    <VagaTab
+                      ranking={ranking} job={job} semTexto={semTexto}
+                      limiar={limiar} onLimiar={setLimiar} lente={lente} onLente={setLente} onSobreLentes={() => setSobre(true)}
+                      ausentes={ausentes} handlers={handlers} onResponder={responder(setRespostas)} m={marcador}
+                    />
+                    <SalvarCandidatura cvId={cv!.cv.id} vagaTexto={vagaLida} estado={estado} onVerHistorico={() => setVista('historico')} />
+                  </>
+                ) : (
+                  <section className="card flat anim-in" role="tabpanel" id="painel-vaga" aria-labelledby="aba-vaga">
+                    <h2 className="h3">{job ? 'Calculando o ranking…' : 'Sem vaga, analisamos só o formato'}</h2>
+                    <p className="sm muted">
+                      {job ? 'A API está avaliando o CV contra a vaga.' : 'Cole o texto da vaga acima e escolha “Ler a vaga” para ver a faixa, os requisitos e o que falta comprovar.'}
+                    </p>
+                  </section>
+                ))}
+              </>
+            ) : (
+              <section className="card flat" aria-labelledby="inicio-t">
+                <h2 className="h3" id="inicio-t">Os resultados aparecem aqui</h2>
+                <div className="stack espaco">
+                  <p className="sm"><span className="lbl">1 · Formato e leitura.</span> Aparece depois que você enviar o PDF.</p>
+                  <p className="sm"><span className="lbl">2 · Vaga.</span> Aparece se você colar o texto da vaga. Sem vaga, analisamos só o formato.</p>
+                </div>
+                <p className="sm muted espaco">O PDF é enviado só para a API que roda no seu computador e fica guardado no banco local, onde você pode consultá-lo no histórico.</p>
+              </section>
+            )}
+          </section>
+        </main>
+      )}
 
       <footer className="foot">
         O score de formato é uma estimativa deste app. A faixa segue regras documentadas pelas plataformas (Gupy, LinkedIn, Workday) e
-        aproximações marcadas como tal; não é a nota oficial de nenhum ATS. Nada é salvo: fechar a página apaga tudo.
+        aproximações marcadas como tal; não é a nota oficial de nenhum ATS. Os currículos e as candidaturas ficam no banco do seu computador, não na nuvem.
       </footer>
     </div>
   );

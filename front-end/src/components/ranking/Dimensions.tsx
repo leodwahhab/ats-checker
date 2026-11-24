@@ -1,5 +1,5 @@
-import { duracao } from '../../lib/ranking/datas';
-import type { Dimensao, RankingResult } from '../../lib/ranking/types';
+import { duracao } from '../../formato';
+import type { Dimensao, RankingResult } from '../../api/tipos';
 import { Secao, StatusChip } from '../ui';
 
 function tempoLido({ mesesTotais, mesesEstagio, comData, semData }: RankingResult['experiencia']): string {

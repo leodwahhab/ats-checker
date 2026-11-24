@@ -164,6 +164,10 @@ class ApiTest {
         assertThat(atualizada.get("resultado").asString()).isEqualTo("passou_triagem");
         assertThat(atualizada.get("criadoEm").asString()).isEqualTo(c.get("criadoEm").asString());
 
+        // Atualizar só o resultado mantém a previsão da época.
+        assertThat(atualizada.get("snapshot")).isEqualTo(c.get("snapshot"));
+        assertThat(atualizada.get("versaoRegras").asString()).isEqualTo(c.get("versaoRegras").asString());
+
         mvc.perform(get("/api/candidaturas")).andExpect(jsonPath("$[0].resultado").value("passou_triagem"))
                 .andExpect(jsonPath("$[0].empresa").value("acme"));
 
@@ -197,5 +201,26 @@ class ApiTest {
     void expoAsLentes() throws Exception {
         mvc.perform(get("/api/lentes")).andExpect(status().isOk()).andExpect(jsonPath("$.ordem.length()").value(4))
                 .andExpect(jsonPath("$.lentes.gupy.nome").value("Gupy"));
+    }
+
+    @Test
+    void dizOndeCadaTrechoApareceNoPdf() throws Exception {
+        JsonNode cv = corpo(enviarCv(PdfSintetico.curriculoJava(), 201));
+        long id = cv.get("cv").get("id").asLong();
+        assertThat(cv.get("inicios").size()).isEqualTo(cv.get("doc").get("items").size());
+
+        var buscas = java.util.List.of(
+                java.util.Map.of("chave", "a", "trecho", "Spring Boot", "secao", "habilidades"),
+                java.util.Map.of("chave", "b", "trecho", "Kubernetes"));
+        JsonNode marcas = corpo(mvc.perform(post("/api/cvs/" + id + "/marcas").contentType(MediaType.APPLICATION_JSON)
+                .content(json.writeValueAsString(java.util.Map.of("buscas", buscas)))).andExpect(status().isOk()).andReturn());
+        assertThat(marcas.get("a").size()).isPositive();
+        int item = marcas.get("a").get(0).asInt();
+        assertThat(cv.get("doc").get("items").get(item).get("str").asString()).contains("Spring Boot");
+        assertThat(marcas.get("b").size()).isZero();
+
+        var invalida = java.util.List.of(java.util.Map.of("chave", "x", "trecho", "Java", "secao", "outra"));
+        mvc.perform(post("/api/cvs/" + id + "/marcas").contentType(MediaType.APPLICATION_JSON)
+                .content(json.writeValueAsString(java.util.Map.of("buscas", invalida)))).andExpect(status().isBadRequest());
     }
 }

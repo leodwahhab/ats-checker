@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useRef, useState, type DragEvent, type ReactNode } from 'react';
-import type { PdfAberto } from '../lib/extractBrowser';
-import { faixasNoTexto } from '../lib/marcas';
-import type { ExtractedDoc } from '../lib/types';
+import { faixasNoTexto } from '../formato';
+import type { PdfAberto } from '../pdfPreview';
+import type { ExtractedDoc } from '../api/tipos';
 import { StatusChip, Switch, type Tom } from './ui';
 
 export interface InfoSelecao {
@@ -13,8 +13,11 @@ export interface InfoSelecao {
 }
 
 interface Props {
-  file: File | null;
+  /** Nome do arquivo mostrado no cabeçalho. */
+  nome: string | null;
   doc: ExtractedDoc | null;
+  /** Posição de cada trecho (doc.items[i]) dentro de doc.text. */
+  inicios: number[];
   pdf: PdfAberto | null;
   busy: boolean;
   error: string | null;
@@ -76,18 +79,18 @@ function Pagina({ pdf, n, doc, marcados, onPronta }: {
 }
 
 /** O texto cru, com os trechos selecionados marcados. */
-function Robo({ doc, marcados }: { doc: ExtractedDoc; marcados: number[] }) {
+function Robo({ doc, inicios, marcados }: { doc: ExtractedDoc; inicios: number[]; marcados: number[] }) {
   const partes = useMemo(() => {
     const out: ReactNode[] = [];
     let pos = 0;
-    for (const [ini, fim] of faixasNoTexto(doc, marcados)) {
+    for (const [ini, fim] of faixasNoTexto(doc.items, inicios, marcados)) {
       if (ini > pos) out.push(doc.text.slice(pos, ini));
       out.push(<mark key={ini} className="mk on">{doc.text.slice(ini, fim)}</mark>);
       pos = fim;
     }
     out.push(doc.text.slice(pos));
     return out;
-  }, [doc, marcados]);
+  }, [doc, inicios, marcados]);
   return (
     <>
       <p className="cap paper-w">Este é o texto cru como o robô o recebe, na ordem em que ele lê.</p>
@@ -96,7 +99,7 @@ function Robo({ doc, marcados }: { doc: ExtractedDoc; marcados: number[] }) {
   );
 }
 
-export function CvPane({ file, doc, pdf, busy, error, onFile, marcados, pulso, info }: Props) {
+export function CvPane({ nome, doc, inicios, pdf, busy, error, onFile, marcados, pulso, info }: Props) {
   const input = useRef<HTMLInputElement>(null);
   const pane = useRef<HTMLElement>(null);
   const scroller = useRef<HTMLDivElement>(null);
@@ -163,7 +166,7 @@ export function CvPane({ file, doc, pdf, busy, error, onFile, marcados, pulso, i
       <div className="cvhead">
         <div className="cvhead-t">
           <h2 className="h4">Seu currículo</h2>
-          <div className="cap nome-arquivo">{file?.name} · {doc.numPages} página{doc.numPages > 1 ? 's' : ''}</div>
+          <div className="cap nome-arquivo">{nome} · {doc.numPages} página{doc.numPages > 1 ? 's' : ''}</div>
         </div>
         <div className="rowf cvhead-a">
           <button type="button" className="btn btn-ghost btn-sm" onClick={() => input.current?.click()}>Trocar PDF</button>
@@ -174,7 +177,7 @@ export function CvPane({ file, doc, pdf, busy, error, onFile, marcados, pulso, i
       {error && <p role="alert" className="erro cvaviso">{error}</p>}
       <div ref={scroller} className="cvscroll">
         {robo || !pdf
-          ? <Robo doc={doc} marcados={marcados} />
+          ? <Robo doc={doc} inicios={inicios} marcados={marcados} />
           : Array.from({ length: doc.numPages }, (_, i) => (
             <Pagina key={i} pdf={pdf} n={i + 1} doc={doc} marcados={marcadosSet} onPronta={() => setProntas((p) => p + 1)} />
           ))}

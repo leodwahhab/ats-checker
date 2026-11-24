@@ -1,6 +1,6 @@
 import { useId, useState, type ReactNode } from 'react';
-import type { FonteDoc, ReqStatus } from '../lib/ranking/types';
-import type { Status } from '../lib/types';
+import type { FonteDoc, ReqStatus } from '../api/tipos';
+import type { Status } from '../api/tipos';
 
 /** O que está selecionado para marcar no CV: um requisito da vaga ou uma checagem de formato. */
 export interface Selecao {

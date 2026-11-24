@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import type { JobSpec } from '../lib/ranking/types';
+import type { JobSpec } from '../api/tipos';
 
 interface Props {
   texto: string;

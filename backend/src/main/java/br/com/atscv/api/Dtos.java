@@ -17,8 +17,17 @@ public final class Dtos {
 
     public record CvResumo(long id, String sha256, String nomeArquivo, int numPaginas, int formatScore, String criadoEm) {}
 
-    /** O CV, o que se leu do PDF (trechos com posição, para a prévia) e a análise de formato. */
-    public record CvDetalhe(CvResumo cv, ExtractedDoc doc, Analysis analise, boolean jaExistia) {}
+    /**
+     * O CV, o que se leu do PDF (trechos com posição, para a prévia) e a análise de formato.
+     *
+     * @param inicios a posição de cada trecho (doc.items[i]) dentro de doc.text
+     */
+    public record CvDetalhe(CvResumo cv, ExtractedDoc doc, Analysis analise, List<Integer> inicios, boolean jaExistia) {}
+
+    /** Um trecho do CV a localizar no PDF; `secao` (opcional) é onde procurar primeiro: "habilidades", "experiencia"... */
+    public record BuscaDeMarca(String chave, String trecho, String secao) {}
+
+    public record PedidoMarcas(List<BuscaDeMarca> buscas) {}
 
     /** Tudo o que o usuário mexe numa vaga; vive só em memória até virar uma candidatura. */
     public record EstadoDaVaga(

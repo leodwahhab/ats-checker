@@ -1,4 +1,4 @@
-import type { Intervalo, Lacuna } from './datas';
+// Tipos do contrato da API. São mantidos à mão e batem com o JSON do backend (ver README do front-end).
 
 export type SkillCategoria =
   | 'linguagem' | 'framework' | 'frontend' | 'mobile' | 'banco' | 'cloud' | 'devops'
@@ -118,67 +118,6 @@ export interface Evidence {
   explicita: boolean;
   /** Índice da experiência, quando a fonte é uma experiência. */
   entrada?: number;
-}
-
-export interface ExperienciaPerfil {
-  /** Posição em Structured.experiencia (e em Evidence.entrada). */
-  indice: number;
-  /** "Revizia", ou o cargo quando a empresa não foi lida. */
-  rotulo: string;
-  cargo?: string;
-  /** Null quando o período não foi lido ou não faz sentido. */
-  intervalo: Intervalo | null;
-  atual: boolean;
-  estagio: boolean;
-  familia?: string;
-  senioridade?: Senioridade;
-}
-
-export type SituacaoFormacao = 'concluido' | 'cursando' | 'incompleto' | 'desconhecida';
-
-export interface FormacaoPerfil {
-  /** Undefined quando o nível não foi identificado. Intercâmbio não entra. */
-  nivel?: NivelFormacao;
-  curso?: string;
-  /** O curso é de TI (seção 11, item 10 do plano). */
-  areaTi: boolean;
-  situacao: SituacaoFormacao;
-  /** A situação veio da data de término, não de um "(Concluído)" escrito. */
-  inferida: boolean;
-  /** "Graduação · Análise e Desenvolvimento de Sistemas · Fatec · Concluído". */
-  descricao: string;
-}
-
-export interface IdiomaPerfil {
-  /** Nome canônico: "Inglês". */
-  idioma: string;
-  nivel?: NivelIdioma;
-  fonte: 'idiomas' | 'resumo';
-  trecho: string;
-}
-
-export interface CvProfile {
-  /** Evidências diretas de cada skill no CV. */
-  skills: Map<string, Evidence[]>;
-  /** Quantas skills do dicionário aparecem na seção Habilidades. */
-  habilidadesExplicitas: number;
-  experiencias: ExperienciaPerfil[];
-  /** União dos intervalos: períodos simultâneos contam uma vez. */
-  mesesTotais: number;
-  /** Parte do total que é só estágio. */
-  mesesEstagio: number;
-  lacunas: Lacuna[];
-  formacao: FormacaoPerfil[];
-  idiomas: IdiomaPerfil[];
-  /** Família e senioridade de agora (4.4 do plano). */
-  atual: {
-    experiencia?: ExperienciaPerfil;
-    familia?: string;
-    senioridade?: Senioridade;
-    fonteSenioridade?: 'cargo' | 'cabecalho' | 'anos';
-  };
-  local?: Local;
-  idioma?: IdiomaTexto;
 }
 
 export type ReqStatus = 'atende' | 'parcial' | 'nao_atende' | 'nao_verificavel';
@@ -306,19 +245,212 @@ export interface ResultadoLente {
   documentacao: FonteDoc[];
 }
 
-export interface RankOptions {
-  /** Fração mínima de desejáveis para Top fit (0 a 1). */
-  limiarDesejaveis: number;
-  /** Respostas "tenho" (true) / "não tenho" (false) por id de requisito. */
-  declarados: Record<string, boolean>;
-  /** Termos que o usuário promoveu a skill nesta sessão. */
-  skillsExtras: SkillDef[];
-  /** Respostas às eliminatórias: atende (true) / não atende (false), por id. */
+// ---------- Leitura do PDF e análise de formato ----------
+
+export interface TextItem {
+  str: string;
+  x: number;
+  y: number;
+  page: number;
+  hasEOL: boolean;
+  /** Largura e altura do trecho, em pontos do PDF (para marcar o trecho na prévia). */
+  w?: number;
+  h?: number;
+}
+
+export interface ExtractedDoc {
+  numPages: number;
+  pageWidth: number;
+  pageHeight?: number;
+  producer: string;
+  imageCount: number;
+  items: TextItem[];
+  /** Texto na ordem do stream do PDF, como um parser ingênuo de ATS o leria. */
+  text: string;
+}
+
+export type Status = 'pass' | 'warn' | 'fail';
+
+export interface CheckResult {
+  id: string;
+  title: string;
+  status: Status;
+  weight: number;
+  detail: string;
+  fix?: string;
+  /** Índices em ExtractedDoc.items dos trechos que a checagem aponta no CV. */
+  itens?: number[];
+}
+
+export interface Periodo {
+  inicio: string;
+  fim: string;
+  atual: boolean;
+}
+
+export interface ExperienceEntry {
+  cargo?: string;
+  empresa?: string;
+  periodo?: Periodo;
+  local?: string;
+  resumo?: string;
+  responsabilidades: string[];
+  tecnologias?: string;
+}
+
+export interface EducationEntry {
+  nivel: string;
+  curso?: string;
+  instituicao?: string;
+  status?: string;
+  statusInferido: boolean;
+  periodo?: Periodo;
+}
+
+export interface CertificationEntry {
+  nome: string;
+  emissor?: string;
+  data?: string;
+}
+
+export interface LanguageEntry {
+  idioma: string;
+  nivel?: string;
+}
+
+export interface SkillGroup {
+  categoria: string;
+  itens: string[];
+}
+
+export interface Structured {
+  experiencia: ExperienceEntry[];
+  formacao: EducationEntry[];
+  certificacoes: CertificationEntry[];
+  idiomas: LanguageEntry[];
+  habilidades: SkillGroup[];
+  resumo?: string;
+  cabecalho: string[];
+  /** Linhas de contato do topo (e-mail, telefone, links). */
+  contato: string[];
+  projetos: string[];
+}
+
+export interface Analysis {
+  structured: Structured;
+  formatScore: number;
+  checks: CheckResult[];
+  robotText: string;
+  /** O PDF é o "Salvar como PDF" do perfil do LinkedIn (a Gupy diz ler melhor esse formato). */
+  exportLinkedin: boolean;
+}
+
+// ---------- O que a API devolve e recebe (ver backend: br.com.atscv.api.Dtos) ----------
+
+export interface CvResumo {
+  id: number;
+  sha256: string;
+  nomeArquivo: string;
+  numPaginas: number;
+  formatScore: number;
+  criadoEm: string;
+}
+
+/** O CV, o que se leu do PDF (trechos com posição, para a prévia), a análise de formato e a posição de cada trecho no texto. */
+export interface CvDetalhe {
+  cv: CvResumo;
+  doc: ExtractedDoc;
+  analise: Analysis;
+  /** Posição de cada trecho (doc.items[i]) dentro de doc.text. */
+  inicios: number[];
+  jaExistia: boolean;
+}
+
+/** Tudo o que o usuário mexe numa vaga; vive só em memória até virar uma candidatura. */
+export interface EstadoDaVaga {
+  job?: JobSpec;
+  declarados?: Record<string, boolean>;
   respostas?: Record<string, boolean>;
-  /** Data de referência para "Atual" e lacunas (padrão: hoje). */
-  hoje?: Date;
-  /** Plataforma simulada (padrão: núcleo). */
+  extras?: SkillDef[];
+  limiar?: number;
   lente?: LenteId;
-  /** O que a leitura do PDF diz sobre o arquivo. */
-  arquivo?: { semTexto?: boolean; exportLinkedin?: boolean };
+}
+
+export type AcaoDeEdicao = 'alterar_tipo' | 'remover' | 'adicionar' | 'promover';
+
+export interface Pergunta {
+  pergunta: string;
+  resposta: string;
+}
+
+export type Plataforma = 'gupy' | 'linkedin' | 'workday' | 'inhire' | 'greenhouse' | 'outra';
+export type ResultadoReal = 'passou_triagem' | 'reprovado' | 'sem_retorno';
+
+export interface CandidaturaEntrada {
+  cvId: number;
+  vagaTexto: string;
+  plataforma?: string;
+  empresa?: string;
+  cargo?: string;
+  mes?: string;
+  data?: string;
+  resultado?: string;
+  etapa?: string;
+  observacoes?: string;
+  diasAteResposta?: number | null;
+  perguntas?: Pergunta[];
+  estado?: EstadoDaVaga;
+  origem?: string;
+}
+
+export interface Candidatura {
+  id: number;
+  cvId: number;
+  vagaTexto: string;
+  plataforma?: string;
+  empresa?: string;
+  cargo?: string;
+  mes?: string;
+  data?: string;
+  resultado: string;
+  etapa?: string;
+  observacoes?: string;
+  diasAteResposta?: number;
+  perguntas: Pergunta[];
+  estado: EstadoDaVaga;
+  snapshot?: RankingResult;
+  versaoRegras?: string;
+  criadoEm: string;
+  atualizadoEm: string;
+  origem?: string;
+}
+
+export interface CandidaturaResumo {
+  id: number;
+  cvId: number;
+  plataforma?: string;
+  empresa?: string;
+  cargo?: string;
+  mes?: string;
+  resultado: string;
+  etapa?: string;
+  faixa?: FaixaId;
+  rotuloFaixa?: string;
+  numero?: number;
+  criadoEm: string;
+}
+
+/** As lentes e as páginas oficiais em que se baseiam (GET /api/lentes). */
+export interface Lentes {
+  verificadoEm: string;
+  ordem: LenteId[];
+  lentes: Record<LenteId, LensConfig>;
+  fontes: Record<string, FonteDoc>;
+}
+
+/** Pedidos de marcação do CV: onde cada trecho aparece no PDF (POST /api/cvs/{id}/marcas). */
+export interface BuscaDeMarca {
+  chave: string;
+  trecho: string;
+  secao?: string;
 }
