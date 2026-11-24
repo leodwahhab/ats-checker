@@ -6,6 +6,7 @@ import { describe, it } from 'vitest';
 import * as lexicos from '../src/lib/ranking/dicionario/lexicos';
 import { PAISES } from '../src/lib/ranking/dicionario/locais';
 import { COMBINACOES, SKILLS } from '../src/lib/ranking/dicionario/skills';
+import { FONTES, LENTES, VERIFICADO_EM } from '../src/lib/ranking/lentes';
 import { FAMILIAS, SENIORIDADES } from '../src/lib/ranking/dicionario/cargos';
 
 const SAIDA = path.resolve(__dirname, '../../backend/src/main/resources/ranking');
@@ -24,6 +25,7 @@ describe.runIf(process.env.GERAR_GOLDEN === '1')('dicionário', () => {
     const w = (nome: string, dados: unknown) => fs.writeFileSync(path.join(SAIDA, nome), JSON.stringify(serializar(dados), null, 1));
     w('skills.json', { skills: SKILLS, combinacoes: COMBINACOES });
     w('lexicos.json', { ...lexicos, PAISES });
+    w('lentes.json', { VERIFICADO_EM, FONTES, LENTES });
     w('cargos.json', { familias: FAMILIAS, senioridades: SENIORIDADES });
   });
 });

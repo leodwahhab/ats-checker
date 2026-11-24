@@ -4,8 +4,8 @@ API em Java com a regra de negócio do verificador de CV: leitura do PDF, análi
 nas próximas etapas, ranqueamento por vaga e histórico de candidaturas.
 
 > **Status da migração:** o front-end (`../front-end`) ainda tem a lógica em TypeScript. Aqui já estão
-> portados a extração do PDF, a análise de formato e a leitura da vaga (`Vaga.parseJob`). O ranking (avaliação,
-> faixa, lentes), a persistência e a API HTTP vêm a seguir.
+> portados a extração do PDF, a análise de formato, a leitura da vaga (`Vaga.parseJob`) e o ranqueamento
+> (`Ranking.rank`, com as 4 lentes). A persistência, a API HTTP e a troca do front vêm a seguir.
 
 ## Requisitos
 
@@ -25,7 +25,7 @@ mvn spring-boot:run # sobe a API em 127.0.0.1:8080
 |---|---|
 | `br.com.atscv.extracao` | `PdfExtractor`: lê o PDF com PDFBox (trechos de texto com posição, imagens, gerador). |
 | `br.com.atscv.formato` | Análise de formato: seções, estrutura (experiência, formação...), contato, colunas, margens, `Analyzer`. |
-| `br.com.atscv.ranking` | Leitura da vaga (`Vaga`, `Requisitos`, `Condicoes`), dicionário de skills (`Dicionario`), léxicos e cargos. Os dados estão em `src/main/resources/ranking/*.json`, exportados do dicionário original. |
+| `br.com.atscv.ranking` | Ranqueamento: leitura da vaga (`Vaga`, `Requisitos`, `Condicoes`), perfil do CV (`Perfil`), avaliação (`Avaliar`), faixa, dimensões, lentes, avisos e o ponto de entrada `Ranking`; dicionário de skills (`Dicionario`), léxicos e cargos. Os dados estão em `src/main/resources/ranking/*.json`, exportados do dicionário original. |
 | `br.com.atscv.comum` | `Js` e `Normalizar`: equivalências com o JavaScript (espaços, `trim`, `fold`). |
 
 ## Testes de paridade

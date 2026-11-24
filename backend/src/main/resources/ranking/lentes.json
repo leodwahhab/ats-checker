@@ -1,0 +1,408 @@
+{
+ "VERIFICADO_EM": "12/10/2026",
+ "FONTES": {
+  "gupyOrdenacao": {
+   "rotulo": "Gupy: como funciona a ordenação",
+   "url": "https://www.gupy.io/blog-do-emprego/como-funciona-a-ordenacao-da-gupy"
+  },
+  "gupyIa": {
+   "rotulo": "Gupy: agentes de IA",
+   "url": "https://www.gupy.io/blog-do-emprego/gupy-ia"
+  },
+  "gupyPreenchimento": {
+   "rotulo": "Gupy: preenchimento do currículo",
+   "url": "https://www.gupy.io/blog-do-emprego/preenchimento-de-curriculo"
+  },
+  "gupyAlgoritmo": {
+   "rotulo": "Gupy: ordenação de pessoas candidatas",
+   "url": "https://www.gupy.io/blog-do-emprego/algoritmo-de-pessoas-candidatas"
+  },
+  "gupyEmpresas": {
+   "rotulo": "Gupy: nova ordenação (página para empresas)",
+   "url": "https://www.gupy.io/nova-ordenacao-com-agentes-de-ia"
+  },
+  "gupyAgentes": {
+   "rotulo": "Gupy: como passar pelos agentes de IA",
+   "url": "https://www.gupy.io/inteligencia-artificial/criterios-eliminatorios-no-cadastro"
+  },
+  "linkedinAssistente": {
+   "rotulo": "LinkedIn: assistente de IA para vagas",
+   "url": "https://business.linkedin.com/hire/post-jobs/ai-assistant"
+  },
+  "linkedinHiringPro": {
+   "rotulo": "LinkedIn: FAQ do Hiring Pro",
+   "url": "https://www.linkedin.com/help/learning/answer/a6898871"
+  },
+  "linkedinMatch": {
+   "rotulo": "LinkedIn: job match e Top Applicant",
+   "url": "https://www.linkedin.com/help/linkedin/answer/a7120158"
+  },
+  "linkedinSkills": {
+   "rotulo": "LinkedIn: skills match",
+   "url": "https://www.linkedin.com/help/linkedin/answer/a793433"
+  },
+  "linkedinTriagem": {
+   "rotulo": "LinkedIn: perguntas de triagem",
+   "url": "https://www.linkedin.com/help/linkedin/answer/a519651"
+  },
+  "workdayNotas": {
+   "rotulo": "Workday HiredScore: notas dos candidatos",
+   "url": "https://doc.workday.com/hiredscore/en-us/workday-hiredscore/recruiter-productivity-/reference--candidate-grades.html"
+  },
+  "workdaySpotlight": {
+   "rotulo": "Workday HiredScore: Spotlight (quando não há nota)",
+   "url": "https://doc.workday.com/hiredscore/en-us/workday-hiredscore/recruiter-productivity-/concept--spotlight.html"
+  },
+  "workdayFaq": {
+   "rotulo": "Workday HiredScore: FAQ",
+   "url": "https://doc.workday.com/hiredscore/en-us/workday-hiredscore/recruiter-productivity-/faq--hiredscore-general.html"
+  },
+  "workdayFitGap": {
+   "rotulo": "Workday HiredScore: Fit & Gap",
+   "url": "https://doc.workday.com/hiredscore/en-us/workday-hiredscore/recruiter-productivity-/concept--fit---gap.html"
+  },
+  "workdayRelease": {
+   "rotulo": "Workday HiredScore: novidades de agosto de 2026",
+   "url": "https://doc.workday.com/hiredscore/en-us/workday-hiredscore/hiredscore-release-notes/2026/august/wednesday--5th-august.html"
+  },
+  "taleo": {
+   "rotulo": "Oracle Taleo: triagem de candidatos",
+   "url": "https://docs.oracle.com/en/cloud/saas/taleo-enterprise/20b/otrec/candidate-prescreening.html"
+  },
+  "greenhouse": {
+   "rotulo": "Greenhouse: Talent Matching",
+   "url": "https://support.greenhouse.io/hc/en-us/articles/41396009937307-Talent-Matching"
+  }
+ },
+ "LENTES": {
+  "nucleo": {
+   "id": "nucleo",
+   "nome": "Núcleo",
+   "descricao": "Regra comum às plataformas: requisitos obrigatórios e desejáveis, com todas as seções do CV como evidência.",
+   "rotulos": {
+    "top": "Alta aderência (Top fit)",
+    "maybe": "Aderência parcial (Maybe)",
+    "not": "Não atende (Not fit)"
+   },
+   "aproximacoes": [
+    {
+     "texto": "A faixa usa a regra do assistente de vagas do LinkedIn para todas as plataformas.",
+     "fonte": {
+      "rotulo": "LinkedIn: assistente de IA para vagas",
+      "url": "https://business.linkedin.com/hire/post-jobs/ai-assistant"
+     }
+    },
+    {
+     "texto": "Desejáveis para Top fit: 50% por padrão. O Taleo sugere começar com 75% no equivalente dele.",
+     "fonte": {
+      "rotulo": "Oracle Taleo: triagem de candidatos",
+      "url": "https://docs.oracle.com/en/cloud/saas/taleo-enterprise/20b/otrec/candidate-prescreening.html"
+     }
+    },
+    {
+     "texto": "Os pesos do número secundário (50, 25, 10, 10 e 5) são do app: cada empresa configura os seus.",
+     "fonte": {
+      "rotulo": "Gupy: ordenação de pessoas candidatas",
+      "url": "https://www.gupy.io/blog-do-emprego/algoritmo-de-pessoas-candidatas"
+     }
+    }
+   ],
+   "notas": [
+    {
+     "texto": "O Greenhouse também compara o currículo com a vaga e nunca avança nem rejeita ninguém sozinho.",
+     "fonte": {
+      "rotulo": "Greenhouse: Talent Matching",
+      "url": "https://support.greenhouse.io/hc/en-us/articles/41396009937307-Talent-Matching"
+     }
+    }
+   ],
+   "documentacao": [
+    {
+     "rotulo": "LinkedIn: assistente de IA para vagas",
+     "url": "https://business.linkedin.com/hire/post-jobs/ai-assistant"
+    },
+    {
+     "rotulo": "Gupy: como funciona a ordenação",
+     "url": "https://www.gupy.io/blog-do-emprego/como-funciona-a-ordenacao-da-gupy"
+    },
+    {
+     "rotulo": "Workday HiredScore: notas dos candidatos",
+     "url": "https://doc.workday.com/hiredscore/en-us/workday-hiredscore/recruiter-productivity-/reference--candidate-grades.html"
+    },
+    {
+     "rotulo": "Greenhouse: Talent Matching",
+     "url": "https://support.greenhouse.io/hc/en-us/articles/41396009937307-Talent-Matching"
+    },
+    {
+     "rotulo": "Oracle Taleo: triagem de candidatos",
+     "url": "https://docs.oracle.com/en/cloud/saas/taleo-enterprise/20b/otrec/candidate-prescreening.html"
+    }
+   ]
+  },
+  "gupy": {
+   "id": "gupy",
+   "nome": "Gupy",
+   "descricao": "A ordenação da Gupy compara o perfil com os requisitos da vaga a partir dos campos Experiência e Habilidades.",
+   "fontes": [
+    "habilidades",
+    "experiencia",
+    "formacao",
+    "idiomas"
+   ],
+   "rotulos": {
+    "top": "Aderência alta",
+    "maybe": "Aderência média",
+    "not": "Aderência baixa"
+   },
+   "aproximacoes": [
+    {
+     "texto": "Formação e idiomas contam: a página dos agentes de IA os lista entre o que é analisado, embora diga que só Experiência e Habilidades são lidos.",
+     "fonte": {
+      "rotulo": "Gupy: agentes de IA",
+      "url": "https://www.gupy.io/blog-do-emprego/gupy-ia"
+     }
+    },
+    {
+     "texto": "Os rótulos alta, média e baixa são do app: a Gupy não publica faixas.",
+     "fonte": {
+      "rotulo": "Gupy: como funciona a ordenação",
+      "url": "https://www.gupy.io/blog-do-emprego/como-funciona-a-ordenacao-da-gupy"
+     }
+    }
+   ],
+   "notas": [
+    {
+     "texto": "A IA não reprova ninguém: só os requisitos obrigatórios definidos pela empresa eliminam automaticamente.",
+     "fonte": {
+      "rotulo": "Gupy: ordenação de pessoas candidatas",
+      "url": "https://www.gupy.io/blog-do-emprego/algoritmo-de-pessoas-candidatas"
+     }
+    },
+    {
+     "texto": "Testes da plataforma e respostas às perguntas eliminatórias também entram na ordenação; quem conclui etapas aparece antes.",
+     "fonte": {
+      "rotulo": "Gupy: ordenação de pessoas candidatas",
+      "url": "https://www.gupy.io/blog-do-emprego/algoritmo-de-pessoas-candidatas"
+     }
+    },
+    {
+     "texto": "O parser preenche o perfil, mas não chega a 100%: revise campo a campo o que ele leu.",
+     "fonte": {
+      "rotulo": "Gupy: preenchimento do currículo",
+      "url": "https://www.gupy.io/blog-do-emprego/preenchimento-de-curriculo"
+     }
+    },
+    {
+     "texto": "A leitura é melhor com DOC/DOCX ou o PDF exportado do LinkedIn, em uma coluna, sem imagens e no idioma da vaga.",
+     "fonte": {
+      "rotulo": "Gupy: preenchimento do currículo",
+      "url": "https://www.gupy.io/blog-do-emprego/preenchimento-de-curriculo"
+     }
+    },
+    {
+     "texto": "Preencha em Habilidades as 30 com maior aderência a você.",
+     "fonte": {
+      "rotulo": "Gupy: como funciona a ordenação",
+      "url": "https://www.gupy.io/blog-do-emprego/como-funciona-a-ordenacao-da-gupy"
+     }
+    },
+    {
+     "texto": "Quantifique conquistas: números ajudam.",
+     "fonte": {
+      "rotulo": "Gupy: agentes de IA",
+      "url": "https://www.gupy.io/blog-do-emprego/gupy-ia"
+     }
+    },
+    {
+     "texto": "A ordenação entende contexto, em vez de buscar palavras-chave de forma rígida.",
+     "fonte": {
+      "rotulo": "Gupy: como funciona a ordenação",
+      "url": "https://www.gupy.io/blog-do-emprego/como-funciona-a-ordenacao-da-gupy"
+     }
+    },
+    {
+     "texto": "Inflar o perfil com palavras-chave não engana os agentes e pode pesar contra na revisão humana.",
+     "fonte": {
+      "rotulo": "Gupy: como passar pelos agentes de IA",
+      "url": "https://www.gupy.io/inteligencia-artificial/criterios-eliminatorios-no-cadastro"
+     }
+    }
+   ],
+   "documentacao": [
+    {
+     "rotulo": "Gupy: como funciona a ordenação",
+     "url": "https://www.gupy.io/blog-do-emprego/como-funciona-a-ordenacao-da-gupy"
+    },
+    {
+     "rotulo": "Gupy: agentes de IA",
+     "url": "https://www.gupy.io/blog-do-emprego/gupy-ia"
+    },
+    {
+     "rotulo": "Gupy: preenchimento do currículo",
+     "url": "https://www.gupy.io/blog-do-emprego/preenchimento-de-curriculo"
+    },
+    {
+     "rotulo": "Gupy: ordenação de pessoas candidatas",
+     "url": "https://www.gupy.io/blog-do-emprego/algoritmo-de-pessoas-candidatas"
+    },
+    {
+     "rotulo": "Gupy: nova ordenação (página para empresas)",
+     "url": "https://www.gupy.io/nova-ordenacao-com-agentes-de-ia"
+    },
+    {
+     "rotulo": "Gupy: como passar pelos agentes de IA",
+     "url": "https://www.gupy.io/inteligencia-artificial/criterios-eliminatorios-no-cadastro"
+    }
+   ]
+  },
+  "linkedin": {
+   "id": "linkedin",
+   "nome": "LinkedIn",
+   "descricao": "Assistente de vagas do LinkedIn: Top fit, Maybe ou Not a fit, e quantas skills da vaga aparecem no perfil.",
+   "rotulos": {
+    "top": "Top fit",
+    "maybe": "Maybe",
+    "not": "Not a fit"
+   },
+   "aproximacoes": [
+    {
+     "texto": "Quem publica a vaga define a porcentagem de desejáveis para Top fit; o padrão não é divulgado.",
+     "fonte": {
+      "rotulo": "LinkedIn: assistente de IA para vagas",
+      "url": "https://business.linkedin.com/hire/post-jobs/ai-assistant"
+     }
+    },
+    {
+     "texto": "Como um requisito \"parcial\" entra na faixa não é documentado: aqui ele impede Top fit sem causar Not a fit.",
+     "fonte": {
+      "rotulo": "LinkedIn: assistente de IA para vagas",
+      "url": "https://business.linkedin.com/hire/post-jobs/ai-assistant"
+     }
+    },
+    {
+     "texto": "O FAQ do Hiring Pro descreve a regra com um número de desejáveis, não uma porcentagem.",
+     "fonte": {
+      "rotulo": "LinkedIn: FAQ do Hiring Pro",
+      "url": "https://www.linkedin.com/help/learning/answer/a6898871"
+     }
+    }
+   ],
+   "notas": [
+    {
+     "texto": "A classificação Top fit / Maybe / Not a fit existe só em vagas promovidas, com o LinkedIn em inglês, no desktop.",
+     "fonte": {
+      "rotulo": "LinkedIn: assistente de IA para vagas",
+      "url": "https://business.linkedin.com/hire/post-jobs/ai-assistant"
+     }
+    },
+    {
+     "texto": "O nível de match e o selo Top Applicant que o candidato vê são do Premium; quem contrata não vê esse nível.",
+     "fonte": {
+      "rotulo": "LinkedIn: job match e Top Applicant",
+      "url": "https://www.linkedin.com/help/linkedin/answer/a7120158"
+     }
+    },
+    {
+     "texto": "Skills contam como explícitas na seção Skills e como implícitas no resto do perfil (resumo, cargos, headline).",
+     "fonte": {
+      "rotulo": "LinkedIn: skills match",
+      "url": "https://www.linkedin.com/help/linkedin/answer/a793433"
+     }
+    }
+   ],
+   "documentacao": [
+    {
+     "rotulo": "LinkedIn: assistente de IA para vagas",
+     "url": "https://business.linkedin.com/hire/post-jobs/ai-assistant"
+    },
+    {
+     "rotulo": "LinkedIn: FAQ do Hiring Pro",
+     "url": "https://www.linkedin.com/help/learning/answer/a6898871"
+    },
+    {
+     "rotulo": "LinkedIn: job match e Top Applicant",
+     "url": "https://www.linkedin.com/help/linkedin/answer/a7120158"
+    },
+    {
+     "rotulo": "LinkedIn: skills match",
+     "url": "https://www.linkedin.com/help/linkedin/answer/a793433"
+    },
+    {
+     "rotulo": "LinkedIn: perguntas de triagem",
+     "url": "https://www.linkedin.com/help/linkedin/answer/a519651"
+    }
+   ]
+  },
+  "workday": {
+   "id": "workday",
+   "nome": "Workday",
+   "descricao": "Notas A a D do HiredScore (algoritmo legado): qualificações básicas são os obrigatórios; as preferenciais, os desejáveis.",
+   "rotulos": {
+    "top": "Nota A",
+    "maybe": "Nota B",
+    "not": "Nota D"
+   },
+   "aproximacoes": [
+    {
+     "texto": "\"Maioria\" é lida como mais de 50%, com parcial valendo 0,5 e \"?\" valendo 0.",
+     "fonte": {
+      "rotulo": "Workday HiredScore: notas dos candidatos",
+      "url": "https://doc.workday.com/hiredscore/en-us/workday-hiredscore/recruiter-productivity-/reference--candidate-grades.html"
+     }
+    },
+    {
+     "texto": "A nota A também exige um match médio acima de um limiar que não é divulgado.",
+     "fonte": {
+      "rotulo": "Workday HiredScore: notas dos candidatos",
+      "url": "https://doc.workday.com/hiredscore/en-us/workday-hiredscore/recruiter-productivity-/reference--candidate-grades.html"
+     }
+    },
+    {
+     "texto": "Usa o algoritmo legado: o novo, de agosto de 2026, depende de cada empresa ativar.",
+     "fonte": {
+      "rotulo": "Workday HiredScore: novidades de agosto de 2026",
+      "url": "https://doc.workday.com/hiredscore/en-us/workday-hiredscore/hiredscore-release-notes/2026/august/wednesday--5th-august.html"
+     }
+    }
+   ],
+   "notas": [
+    {
+     "texto": "A tabela de requisitos faz o papel do Fit & Gap, que avalia cada qualificação contra o currículo (recurso opcional).",
+     "fonte": {
+      "rotulo": "Workday HiredScore: Fit & Gap",
+      "url": "https://doc.workday.com/hiredscore/en-us/workday-hiredscore/recruiter-productivity-/concept--fit---gap.html"
+     }
+    },
+    {
+     "texto": "O HiredScore aceita DOC, DOCX, PDF, RTF e TXT.",
+     "fonte": {
+      "rotulo": "Workday HiredScore: FAQ",
+      "url": "https://doc.workday.com/hiredscore/en-us/workday-hiredscore/recruiter-productivity-/faq--hiredscore-general.html"
+     }
+    }
+   ],
+   "documentacao": [
+    {
+     "rotulo": "Workday HiredScore: notas dos candidatos",
+     "url": "https://doc.workday.com/hiredscore/en-us/workday-hiredscore/recruiter-productivity-/reference--candidate-grades.html"
+    },
+    {
+     "rotulo": "Workday HiredScore: Spotlight (quando não há nota)",
+     "url": "https://doc.workday.com/hiredscore/en-us/workday-hiredscore/recruiter-productivity-/concept--spotlight.html"
+    },
+    {
+     "rotulo": "Workday HiredScore: FAQ",
+     "url": "https://doc.workday.com/hiredscore/en-us/workday-hiredscore/recruiter-productivity-/faq--hiredscore-general.html"
+    },
+    {
+     "rotulo": "Workday HiredScore: Fit & Gap",
+     "url": "https://doc.workday.com/hiredscore/en-us/workday-hiredscore/recruiter-productivity-/concept--fit---gap.html"
+    },
+    {
+     "rotulo": "Workday HiredScore: novidades de agosto de 2026",
+     "url": "https://doc.workday.com/hiredscore/en-us/workday-hiredscore/hiredscore-release-notes/2026/august/wednesday--5th-august.html"
+    }
+   ]
+  }
+ }
+}

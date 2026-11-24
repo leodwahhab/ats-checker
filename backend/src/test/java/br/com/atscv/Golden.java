@@ -47,8 +47,11 @@ public final class Golden {
 
     private static void comparar(String caminho, JsonNode a, JsonNode b, List<String> out) {
         if (out.size() >= 25) return;
-        if (a == null || b == null) {
-            if (a != b) out.add(caminho + ": esperado=" + a + " obtido=" + b);
+        // Campo ausente e null valem o mesmo: o TypeScript emite null onde o Java omite o campo.
+        if (a == null || b == null || a.isNull() || b.isNull()) {
+            boolean nuloA = a == null || a.isNull();
+            boolean nuloB = b == null || b.isNull();
+            if (nuloA != nuloB) out.add(caminho + ": esperado=" + a + " obtido=" + b);
             return;
         }
         if (a.isNumber() && b.isNumber()) {

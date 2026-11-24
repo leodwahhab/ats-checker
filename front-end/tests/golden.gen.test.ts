@@ -6,6 +6,7 @@ import path from 'node:path';
 import { describe, it } from 'vitest';
 import { analyze } from '../src/lib/analyze';
 import { dicionario, parseJob, rank } from '../src/lib/ranking';
+import { eliminatoriasDosRequisitos } from '../src/lib/ranking/eliminatorias';
 import type { LenteId } from '../src/lib/ranking/types';
 import { FIXTURES, loadPdf } from './helpers';
 
@@ -50,16 +51,27 @@ describe.runIf(process.env.GERAR_GOLDEN === '1')('golden files', () => {
       gravar(`cvs/${cv.id}.doc.json`, doc);
       gravar(`cvs/${cv.id}.analysis.json`, analise);
       const ranking: Record<string, Record<string, unknown>> = {};
+      const variante: Record<string, Record<string, unknown>> = {};
       for (const v of cv.vagas) {
         ranking[v] = {};
+        variante[v] = {};
+        // Variante: limiar 80%, respostas às eliminatórias alternadas e 'tenho' nos requisitos de índice múltiplo de 3.
+        const elim = [...jobs[v].eliminatorias, ...eliminatoriasDosRequisitos(jobs[v])];
+        const respostas = Object.fromEntries(elim.map((e, i) => [e.id, i % 2 === 0]));
+        const declarados = Object.fromEntries(jobs[v].requisitos.map((r, i) => [r.id, i % 3 === 0]));
         for (const lente of LENTES) {
           ranking[v][lente] = rank(analise.structured, jobs[v], {
             limiarDesejaveis: 0.5, declarados: {}, skillsExtras: [], hoje, lente,
             arquivo: { semTexto: analise.formatScore === 0, exportLinkedin: analise.exportLinkedin },
           }, dict);
+          variante[v][lente] = rank(analise.structured, jobs[v], {
+            limiarDesejaveis: 0.8, declarados, respostas, skillsExtras: [], hoje, lente,
+            arquivo: { semTexto: analise.formatScore === 0, exportLinkedin: analise.exportLinkedin },
+          }, dict);
         }
       }
       gravar(`cvs/${cv.id}.rank.json`, ranking);
+      gravar(`cvs/${cv.id}.rankvar.json`, variante);
     }
   });
 });

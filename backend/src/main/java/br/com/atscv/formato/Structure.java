@@ -19,7 +19,7 @@ import br.com.atscv.formato.Modelos.Periodo;
 import br.com.atscv.formato.Modelos.SkillGroup;
 import br.com.atscv.formato.Modelos.Structured;
 import br.com.atscv.formato.Sections.SectionKey;
-import br.com.atscv.ranking.Datas.Intervalo;
+import br.com.atscv.ranking.Datas.PeriodoLido;
 import br.com.atscv.ranking.LocalParser;
 import java.time.LocalDate;
 import java.util.ArrayList;
@@ -96,7 +96,7 @@ public final class Structure {
 
         for (int i : anchors) {
             String linha = lines.get(i);
-            Intervalo r = findRange(linha);
+            PeriodoLido r = findRange(linha);
             String rest = tidy(linha.substring(0, r.start()) + " " + linha.substring(r.end()));
             int floor = (starts.isEmpty() ? -1 : anchors.get(starts.size() - 1)) + 1;
             String cargo = null;
