@@ -6,3 +6,21 @@ spring:
     name: ats-cv-checker
   jackson:
     default-property-inclusion: non_null
+  datasource:
+    url: jdbc:sqlite:data/ats.db
+    driver-class-name: org.sqlite.JDBC
+    hikari:
+      # SQLite grava uma conexão por vez.
+      maximum-pool-size: 1
+  servlet:
+    multipart:
+      max-file-size: 5MB
+      max-request-size: 6MB
+ats:
+  pdf:
+    max-paginas: 10
+springdoc:
+  api-docs:
+    path: /api/openapi
+  swagger-ui:
+    path: /api/docs
