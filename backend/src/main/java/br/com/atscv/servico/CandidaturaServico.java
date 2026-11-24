@@ -79,7 +79,7 @@ public class CandidaturaServico {
                 data, resultado, vazioParaNulo(e.etapa()), vazioParaNulo(e.observacoes()), e.diasAteResposta(),
                 json.writeValueAsString(perguntas), json.writeValueAsString(estado), json.writeValueAsString(snapshot),
                 snapshot.faixa().json(), snapshot.rotuloFaixa(), snapshot.numero(), Regras.VERSAO,
-                criadoEm != null ? criadoEm : agora, agora);
+                criadoEm != null ? criadoEm : agora, agora, vazioParaNulo(e.origem()));
     }
 
     private Candidatura paraDto(Linha l) {
@@ -88,7 +88,7 @@ public class CandidaturaServico {
                 json.readValue(l.perguntasJson(), new TypeReference<List<Pergunta>>() {}),
                 json.readValue(l.estadoJson(), EstadoDaVaga.class),
                 l.snapshotJson() == null ? null : json.readValue(l.snapshotJson(), RankingResult.class), l.versaoRegras(),
-                l.criadoEm(), l.atualizadoEm());
+                l.criadoEm(), l.atualizadoEm(), l.origem());
     }
 
     public Candidatura criar(CandidaturaEntrada e) {

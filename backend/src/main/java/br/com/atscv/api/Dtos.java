@@ -50,12 +50,12 @@ public final class Dtos {
     public record CandidaturaEntrada(
             long cvId, String vagaTexto, String plataforma, String empresa, String cargo, String mes, String data,
             String resultado, String etapa, String observacoes, Integer diasAteResposta, List<Pergunta> perguntas,
-            EstadoDaVaga estado) {}
+            EstadoDaVaga estado, String origem) {}
 
     public record Candidatura(
             long id, long cvId, String vagaTexto, String plataforma, String empresa, String cargo, String mes, String data,
             String resultado, String etapa, String observacoes, Integer diasAteResposta, List<Pergunta> perguntas,
-            EstadoDaVaga estado, RankingResult snapshot, String versaoRegras, String criadoEm, String atualizadoEm) {}
+            EstadoDaVaga estado, RankingResult snapshot, String versaoRegras, String criadoEm, String atualizadoEm, String origem) {}
 
     public record CandidaturaResumo(
             long id, long cvId, String plataforma, String empresa, String cargo, String mes, String resultado, String etapa,

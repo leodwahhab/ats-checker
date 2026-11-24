@@ -5,7 +5,9 @@ sua vira uma pasta com três arquivos: o texto da vaga, o CV que você enviou e 
 resultado. Com 20 casos ou mais dá para medir o acerto do app (o plano não define meta antes disso).
 
 Tudo fica só no seu computador: a pasta `fixtures/candidaturas/` está no `.gitignore` e nunca vai
-para o git, porque tem dados pessoais.
+para o git, porque tem dados pessoais. As pastas são o formato de entrada: o comando `importar` as lê e grava no banco
+(`data/ats.db`), onde o histórico passa a viver. Depois da importação, o resultado de cada candidatura (quando a resposta
+chegar) pode ser atualizado pela API (`PUT /api/candidaturas/{id}`), sem mexer nas pastas.
 
 ## Antes de começar
 
@@ -91,7 +93,7 @@ tiver `plataforma`, vale o nome da pasta.
 
 Campos opcionais podem ficar vazios (`""`, `null` ou `[]`), e um valor que sobrou do modelo
 (`"AAAA-MM-DD"`) conta como vazio. O JSON usa aspas duplas e não aceita vírgula depois do último
-item: o VS Code marca em vermelho quando algo está errado, e `npm run calibrar` diz qual caso
+item: o VS Code marca em vermelho quando algo está errado, e o comando `importar` diz qual caso
 corrigir.
 
 ### 6. Decida o resultado e atualize quando houver resposta
@@ -115,7 +117,7 @@ corrigir.
 - [ ] O `cv.pdf` é o arquivo que foi enviado.
 - [ ] O `meta.json` abre sem erro no VS Code.
 
-Se quiser, abra o app (`npm run dev`), envie o `cv.pdf` e cole o `vaga.txt` para ver o que ele
+Se quiser, abra o app, envie o `cv.pdf` e cole o `vaga.txt` para ver o que ele
 prevê. Só não mude os arquivos do caso por causa do resultado do app: o caso precisa registrar o
 que aconteceu.
 
@@ -130,13 +132,15 @@ que aconteceu.
 
 ## Gere o relatório
 
-```bash
-npm run calibrar
+```powershell
+mvn spring-boot:run "-Dspring-boot.run.arguments=importar --pasta=fixtures/candidaturas"
+mvn spring-boot:run "-Dspring-boot.run.arguments=calibrar --saida=data/relatorio-calibracao.md"
 ```
 
-O comando confere cada pasta (nome, `meta.json`, `vaga.txt` e `cv.pdf`), roda o app com a vaga e o
-CV nas quatro lentes e grava `fixtures/candidaturas/relatorio.md`, também fora do git. Um caso com
-problema aparece no terminal e no topo do relatório, e fica fora da análise até ser corrigido.
+O `importar` confere cada pasta (nome, `meta.json`, `vaga.txt` e `cv.pdf`) e grava no banco; uma pasta com
+problema aparece no terminal e fica de fora até ser corrigida. O `calibrar` roda o app com a vaga e o CV de cada
+candidatura do banco nas quatro lentes, com as regras de hoje, e grava o relatório em `data/relatorio-calibracao.md`,
+também fora do git.
 
 O relatório põe a previsão ao lado do resultado real, na lente da plataforma de cada caso, diz qual
 versão do CV foi enviada (pelo nome, quando é um dos PDFs de referência) e destaca:

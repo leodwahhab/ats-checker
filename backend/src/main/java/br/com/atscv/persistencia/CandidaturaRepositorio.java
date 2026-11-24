@@ -14,18 +14,18 @@ public class CandidaturaRepositorio {
             Long id, long cvId, String vagaTexto, String plataforma, String empresa, String cargo, String mes, String data,
             String resultado, String etapa, String observacoes, Integer diasAteResposta, String perguntasJson,
             String estadoJson, String snapshotJson, String faixa, String rotuloFaixa, Integer numero, String versaoRegras,
-            String criadoEm, String atualizadoEm) {
+            String criadoEm, String atualizadoEm, String origem) {
 
         public Linha comId(long novo) {
             return new Linha(novo, cvId, vagaTexto, plataforma, empresa, cargo, mes, data, resultado, etapa, observacoes,
                     diasAteResposta, perguntasJson, estadoJson, snapshotJson, faixa, rotuloFaixa, numero, versaoRegras,
-                    criadoEm, atualizadoEm);
+                    criadoEm, atualizadoEm, origem);
         }
     }
 
     private static final String COLUNAS = """
             id, cv_id, vaga_texto, plataforma, empresa, cargo, mes, data, resultado, etapa, observacoes, dias_ate_resposta,
-            perguntas_json, estado_json, snapshot_json, faixa, rotulo_faixa, numero, versao_regras, criado_em, atualizado_em""";
+            perguntas_json, estado_json, snapshot_json, faixa, rotulo_faixa, numero, versao_regras, criado_em, atualizado_em, origem""";
 
     private final JdbcClient jdbc;
 
@@ -43,7 +43,7 @@ public class CandidaturaRepositorio {
                 rs.getString("resultado"), rs.getString("etapa"), rs.getString("observacoes"), diasAte,
                 rs.getString("perguntas_json"), rs.getString("estado_json"), rs.getString("snapshot_json"),
                 rs.getString("faixa"), rs.getString("rotulo_faixa"), num, rs.getString("versao_regras"),
-                rs.getString("criado_em"), rs.getString("atualizado_em"));
+                rs.getString("criado_em"), rs.getString("atualizado_em"), rs.getString("origem"));
     }
 
     public List<Linha> listar() {
@@ -59,16 +59,16 @@ public class CandidaturaRepositorio {
         return jdbc.sql("""
                 INSERT INTO candidatura (cv_id, vaga_texto, plataforma, empresa, cargo, mes, data, resultado, etapa,
                     observacoes, dias_ate_resposta, perguntas_json, estado_json, snapshot_json, faixa, rotulo_faixa, numero,
-                    versao_regras, criado_em, atualizado_em)
+                    versao_regras, criado_em, atualizado_em, origem)
                 VALUES (:cv, :vaga, :plataforma, :empresa, :cargo, :mes, :data, :resultado, :etapa, :obs, :dias, :perguntas,
-                    :estado, :snapshot, :faixa, :rotulo, :numero, :versao, :criado, :atualizado) RETURNING id""")
+                    :estado, :snapshot, :faixa, :rotulo, :numero, :versao, :criado, :atualizado, :origem) RETURNING id""")
                 .param("cv", l.cvId()).param("vaga", l.vagaTexto()).param("plataforma", l.plataforma())
                 .param("empresa", l.empresa()).param("cargo", l.cargo()).param("mes", l.mes()).param("data", l.data())
                 .param("resultado", l.resultado()).param("etapa", l.etapa()).param("obs", l.observacoes())
                 .param("dias", l.diasAteResposta()).param("perguntas", l.perguntasJson()).param("estado", l.estadoJson())
                 .param("snapshot", l.snapshotJson()).param("faixa", l.faixa()).param("rotulo", l.rotuloFaixa())
                 .param("numero", l.numero()).param("versao", l.versaoRegras()).param("criado", l.criadoEm())
-                .param("atualizado", l.atualizadoEm()).query(Long.class).single();
+                .param("atualizado", l.atualizadoEm()).param("origem", l.origem()).query(Long.class).single();
     }
 
     /** Atualiza tudo menos a data de criação. Devolve quantas linhas mudaram. */
@@ -86,6 +86,11 @@ public class CandidaturaRepositorio {
                 .param("dias", l.diasAteResposta()).param("perguntas", l.perguntasJson()).param("estado", l.estadoJson())
                 .param("snapshot", l.snapshotJson()).param("faixa", l.faixa()).param("rotulo", l.rotuloFaixa())
                 .param("numero", l.numero()).param("versao", l.versaoRegras()).param("atualizado", l.atualizadoEm()).update();
+    }
+
+    public Optional<Linha> porOrigem(String origem) {
+        return jdbc.sql("SELECT " + COLUNAS + " FROM candidatura WHERE origem = :o").param("o", origem)
+                .query((rs, i) -> linha(rs)).optional();
     }
 
     public int excluir(long id) {

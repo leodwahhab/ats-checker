@@ -10,10 +10,10 @@ import org.apache.pdfbox.pdmodel.font.PDType1Font;
 import org.apache.pdfbox.pdmodel.font.Standard14Fonts;
 
 /** PDF de teste gerado em código: uma linha de texto por item, de cima para baixo, em colunas únicas. */
-final class PdfSintetico {
+public final class PdfSintetico {
     private PdfSintetico() {}
 
-    static byte[] gerar(List<String> linhas, int paginas) throws IOException {
+    public static byte[] gerar(List<String> linhas, int paginas) throws IOException {
         try (PDDocument doc = new PDDocument(); ByteArrayOutputStream out = new ByteArrayOutputStream()) {
             var fonte = new PDType1Font(Standard14Fonts.FontName.HELVETICA);
             for (int p = 0; p < paginas; p++) {
@@ -37,7 +37,7 @@ final class PdfSintetico {
     }
 
     /** Um currículo curto de desenvolvedor Java, com as seções que um ATS espera. */
-    static byte[] curriculoJava() throws IOException {
+    public static byte[] curriculoJava() throws IOException {
         return gerar(List.of(
                 "Maria Teste", "Desenvolvedora Java Junior",
                 "(11) 91234-5678 | maria.teste@exemplo.com | linkedin.com/in/maria-teste | Osasco - SP",
