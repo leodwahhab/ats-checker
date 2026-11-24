@@ -1,0 +1,12 @@
+target/
+data/
+
+# Casos de calibração com dados pessoais (não versionar)
+fixtures/candidaturas/
+
+# CVs e perfis pessoais usados como fixtures locais (não versionar)
+fixtures/*.pdf
+
+# Golden files gerados a partir dos CVs pessoais (contêm o texto dos CVs)
+src/test/resources/golden/cvs/
+src/test/resources/golden/vagas/candidaturas/

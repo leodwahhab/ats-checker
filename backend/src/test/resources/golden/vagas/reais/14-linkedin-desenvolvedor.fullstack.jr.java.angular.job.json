@@ -1,0 +1,723 @@
+{
+ "familia": "fullstack",
+ "senioridade": "junior",
+ "temSecoes": true,
+ "requisitos": [
+  {
+   "id": "r1",
+   "texto": "Co-criamos soluções inovadoras em parceria com nossos clientes, combinando tecnologia de ponta, inteligência artificial e a criatividade humana.",
+   "tipo": "informativo",
+   "tipoFonte": "secao",
+   "origem": "atividades",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "ia"
+     ],
+     "modo": "todas"
+    }
+   ]
+  },
+  {
+   "id": "r2",
+   "texto": "Participar do levantamento e da especificação de requisitos;",
+   "tipo": "informativo",
+   "tipoFonte": "secao",
+   "origem": "atividades",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "requisitos"
+     ],
+     "modo": "todas"
+    }
+   ]
+  },
+  {
+   "id": "r3",
+   "texto": "Implementar e consumir APIs;",
+   "tipo": "informativo",
+   "tipoFonte": "secao",
+   "origem": "atividades",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "apis"
+     ],
+     "modo": "todas"
+    }
+   ]
+  },
+  {
+   "id": "r4",
+   "texto": "Desenvolver soluções utilizando plataformas Low Code e ferramentas de workflow;",
+   "tipo": "informativo",
+   "tipoFonte": "secao",
+   "origem": "atividades",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "low-code"
+     ],
+     "modo": "todas"
+    }
+   ]
+  },
+  {
+   "id": "r5",
+   "texto": "Elaborar documentação técnica clara e objetiva;",
+   "tipo": "informativo",
+   "tipoFonte": "secao",
+   "origem": "atividades",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "documentacao"
+     ],
+     "modo": "todas"
+    }
+   ]
+  },
+  {
+   "id": "r6",
+   "texto": "Realizar revisões de código, seguindo os padrões e boas práticas da empresa;",
+   "tipo": "informativo",
+   "tipoFonte": "secao",
+   "origem": "atividades",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "code-review"
+     ],
+     "modo": "todas"
+    }
+   ]
+  },
+  {
+   "id": "r7",
+   "texto": "Experiência acadêmica, profissional ou em projetos de desenvolvimento de software;",
+   "tipo": "desejavel",
+   "tipoFonte": "secao",
+   "origem": "diferenciais",
+   "componentes": [
+    {
+     "tipo": "nao_reconhecido",
+     "termos": []
+    }
+   ]
+  },
+  {
+   "id": "r8",
+   "texto": "Vivência com desenvolvimento de sistemas, APIs, banco de dados ou automações;",
+   "tipo": "desejavel",
+   "tipoFonte": "secao",
+   "origem": "diferenciais",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "apis"
+     ],
+     "modo": "todas"
+    }
+   ]
+  },
+  {
+   "id": "r9",
+   "texto": "Experiência com levantamento de requisitos e entendimento das necessidades dos usuários;",
+   "tipo": "desejavel",
+   "tipoFonte": "secao",
+   "origem": "diferenciais",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "requisitos"
+     ],
+     "modo": "todas"
+    }
+   ]
+  },
+  {
+   "id": "r10",
+   "texto": "Conhecimento em manutenção e evolução de aplicações;",
+   "tipo": "desejavel",
+   "tipoFonte": "secao",
+   "origem": "diferenciais",
+   "componentes": [
+    {
+     "tipo": "nao_reconhecido",
+     "termos": []
+    }
+   ]
+  },
+  {
+   "id": "r11",
+   "texto": "Experiência com testes, documentação técnica ou revisão de código será considerada um diferencial;",
+   "tipo": "desejavel",
+   "tipoFonte": "marcador",
+   "origem": "diferenciais",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "documentacao",
+      "code-review"
+     ],
+     "modo": "alguma"
+    }
+   ]
+  },
+  {
+   "id": "r12",
+   "texto": "Conhecimento em lógica de programação;",
+   "tipo": "obrigatorio",
+   "tipoFonte": "secao",
+   "origem": "requisitos",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "logica"
+     ],
+     "modo": "todas"
+    }
+   ]
+  },
+  {
+   "id": "r13",
+   "texto": "Conhecimento em pelo menos uma linguagem de programação, como Java, JavaScript, C#, .NET, J2EE ou Python;",
+   "tipo": "obrigatorio",
+   "tipoFonte": "secao",
+   "origem": "requisitos",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "java",
+      "javascript",
+      "csharp",
+      "dotnet",
+      "jakarta-ee",
+      "python"
+     ],
+     "modo": "alguma"
+    }
+   ]
+  },
+  {
+   "id": "r14",
+   "texto": "Conhecimento em desenvolvimento de APIs e integrações;",
+   "tipo": "obrigatorio",
+   "tipoFonte": "secao",
+   "origem": "requisitos",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "apis"
+     ],
+     "modo": "todas"
+    }
+   ]
+  },
+  {
+   "id": "r15",
+   "texto": "Conhecimento em HTML, XML e CSS;",
+   "tipo": "obrigatorio",
+   "tipoFonte": "secao",
+   "origem": "requisitos",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "html"
+     ],
+     "modo": "todas"
+    },
+    {
+     "tipo": "skill",
+     "ids": [
+      "xml"
+     ],
+     "modo": "todas"
+    },
+    {
+     "tipo": "skill",
+     "ids": [
+      "css"
+     ],
+     "modo": "todas"
+    }
+   ]
+  },
+  {
+   "id": "r16",
+   "texto": "Conhecimento em SQL e bancos de dados;",
+   "tipo": "obrigatorio",
+   "tipoFonte": "secao",
+   "origem": "requisitos",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "sql"
+     ],
+     "modo": "todas"
+    }
+   ]
+  },
+  {
+   "id": "r17",
+   "texto": "Noções de modelagem de dados e criação de tabelas;",
+   "tipo": "obrigatorio",
+   "tipoFonte": "secao",
+   "origem": "requisitos",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "modelagem-dados"
+     ],
+     "modo": "todas"
+    }
+   ]
+  },
+  {
+   "id": "r18",
+   "texto": "Noções de análise e arquitetura de sistemas;",
+   "tipo": "obrigatorio",
+   "tipoFonte": "secao",
+   "origem": "requisitos",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "arquitetura-software"
+     ],
+     "modo": "todas"
+    }
+   ]
+  },
+  {
+   "id": "r19",
+   "texto": "Conhecimento em desenvolvimento e manutenção de aplicações;",
+   "tipo": "obrigatorio",
+   "tipoFonte": "secao",
+   "origem": "requisitos",
+   "componentes": [
+    {
+     "tipo": "nao_reconhecido",
+     "termos": []
+    }
+   ]
+  },
+  {
+   "id": "r20",
+   "texto": "Noções de testes de software e garantia da qualidade;",
+   "tipo": "obrigatorio",
+   "tipoFonte": "secao",
+   "origem": "requisitos",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "qualidade-software"
+     ],
+     "modo": "todas"
+    }
+   ]
+  },
+  {
+   "id": "r21",
+   "texto": "Conhecimento em Git e controle de versão;",
+   "tipo": "obrigatorio",
+   "tipoFonte": "secao",
+   "origem": "requisitos",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "git"
+     ],
+     "modo": "todas"
+    },
+    {
+     "tipo": "skill",
+     "ids": [
+      "versionamento"
+     ],
+     "modo": "todas"
+    }
+   ]
+  },
+  {
+   "id": "r22",
+   "texto": "Noções de microsserviços, DevSecOps e segurança da informação;",
+   "tipo": "obrigatorio",
+   "tipoFonte": "secao",
+   "origem": "requisitos",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "microsservicos"
+     ],
+     "modo": "todas"
+    },
+    {
+     "tipo": "skill",
+     "ids": [
+      "devops"
+     ],
+     "modo": "todas"
+    },
+    {
+     "tipo": "skill",
+     "ids": [
+      "seguranca-app"
+     ],
+     "modo": "todas"
+    }
+   ]
+  },
+  {
+   "id": "r23",
+   "texto": "Conhecimento em sistemas operacionais e boas práticas de proteção de ambientes;",
+   "tipo": "obrigatorio",
+   "tipoFonte": "secao",
+   "origem": "requisitos",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "sistemas-operacionais"
+     ],
+     "modo": "todas"
+    }
+   ]
+  },
+  {
+   "id": "r24",
+   "texto": "Noções de usabilidade e acessibilidade na web;",
+   "tipo": "obrigatorio",
+   "tipoFonte": "secao",
+   "origem": "requisitos",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "ux-ui"
+     ],
+     "modo": "todas"
+    },
+    {
+     "tipo": "skill",
+     "ids": [
+      "acessibilidade"
+     ],
+     "modo": "todas"
+    }
+   ]
+  },
+  {
+   "id": "r25",
+   "texto": "Conhecimento ou interesse em ferramentas de workflow e plataformas Low Code.",
+   "tipo": "obrigatorio",
+   "tipoFonte": "secao",
+   "origem": "requisitos",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "low-code"
+     ],
+     "modo": "todas"
+    }
+   ]
+  },
+  {
+   "id": "r26",
+   "texto": "Java;",
+   "tipo": "informativo",
+   "tipoFonte": "secao",
+   "origem": "atividades",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "java"
+     ],
+     "modo": "todas"
+    }
+   ]
+  },
+  {
+   "id": "r27",
+   "texto": "JavaScript;",
+   "tipo": "informativo",
+   "tipoFonte": "secao",
+   "origem": "atividades",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "javascript"
+     ],
+     "modo": "todas"
+    }
+   ]
+  },
+  {
+   "id": "r28",
+   "texto": "Angular;",
+   "tipo": "informativo",
+   "tipoFonte": "secao",
+   "origem": "atividades",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "angular"
+     ],
+     "modo": "todas"
+    }
+   ]
+  },
+  {
+   "id": "r29",
+   "texto": "React Native;",
+   "tipo": "informativo",
+   "tipoFonte": "secao",
+   "origem": "atividades",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "react-native"
+     ],
+     "modo": "todas"
+    }
+   ]
+  },
+  {
+   "id": "r30",
+   "texto": "C# e .NET;",
+   "tipo": "informativo",
+   "tipoFonte": "secao",
+   "origem": "atividades",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "csharp"
+     ],
+     "modo": "todas"
+    },
+    {
+     "tipo": "skill",
+     "ids": [
+      "dotnet"
+     ],
+     "modo": "todas"
+    }
+   ]
+  },
+  {
+   "id": "r31",
+   "texto": "Python;",
+   "tipo": "informativo",
+   "tipoFonte": "secao",
+   "origem": "atividades",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "python"
+     ],
+     "modo": "todas"
+    }
+   ]
+  },
+  {
+   "id": "r32",
+   "texto": "HTML, XML e CSS;",
+   "tipo": "informativo",
+   "tipoFonte": "secao",
+   "origem": "atividades",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "html"
+     ],
+     "modo": "todas"
+    },
+    {
+     "tipo": "skill",
+     "ids": [
+      "xml"
+     ],
+     "modo": "todas"
+    },
+    {
+     "tipo": "skill",
+     "ids": [
+      "css"
+     ],
+     "modo": "todas"
+    }
+   ]
+  },
+  {
+   "id": "r33",
+   "texto": "SQL;",
+   "tipo": "informativo",
+   "tipoFonte": "secao",
+   "origem": "atividades",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "sql"
+     ],
+     "modo": "todas"
+    }
+   ]
+  },
+  {
+   "id": "r34",
+   "texto": "Oracle, MySQL, PostgreSQL ou SQL Server;",
+   "tipo": "informativo",
+   "tipoFonte": "secao",
+   "origem": "atividades",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "oracle",
+      "mysql",
+      "postgresql",
+      "sql-server"
+     ],
+     "modo": "alguma"
+    }
+   ]
+  },
+  {
+   "id": "r35",
+   "texto": "Eclipse, JBoss e SQL Developer;",
+   "tipo": "informativo",
+   "tipoFonte": "secao",
+   "origem": "atividades",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "wildfly"
+     ],
+     "modo": "todas"
+    },
+    {
+     "tipo": "skill",
+     "ids": [
+      "sql"
+     ],
+     "modo": "todas"
+    }
+   ]
+  },
+  {
+   "id": "r36",
+   "texto": "ServiceNow ou outras ferramentas de ITSM;",
+   "tipo": "informativo",
+   "tipoFonte": "secao",
+   "origem": "atividades",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "servicenow",
+      "service-desk"
+     ],
+     "modo": "alguma"
+    }
+   ]
+  },
+  {
+   "id": "r37",
+   "texto": "Ferramentas de workflow e automação.",
+   "tipo": "informativo",
+   "tipoFonte": "secao",
+   "origem": "atividades",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "low-code"
+     ],
+     "modo": "todas"
+    }
+   ]
+  },
+  {
+   "id": "r38",
+   "texto": "Certificações em desenvolvimento, cloud, DevOps, bancos de dados, ITSM ou metodologias ágeis serão consideradas diferenciais;",
+   "tipo": "desejavel",
+   "tipoFonte": "marcador",
+   "origem": "diferenciais",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "cloud",
+      "devops",
+      "service-desk",
+      "agil"
+     ],
+     "modo": "alguma"
+    }
+   ]
+  },
+  {
+   "id": "r39",
+   "texto": "Certificações desejáveis: AWS Certified Developer, Microsoft Azure Developer Associate, Microsoft DevOps Engineer, Google Cloud Architect, IBM Cloud, CSDP ou ITIL 4 Foundation.",
+   "tipo": "desejavel",
+   "tipoFonte": "marcador",
+   "origem": "diferenciais",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "aws",
+      "azure",
+      "devops",
+      "gcp",
+      "cloud",
+      "itil"
+     ],
+     "modo": "alguma"
+    }
+   ]
+  }
+ ],
+ "naoAvaliaveis": [
+  "Vontade de aprender e se desenvolver profissionalmente;",
+  "Proatividade e curiosidade;",
+  "Organização e atenção aos detalhes;",
+  "Capacidade de análise e resolução de problemas;",
+  "Boa comunicação e trabalho em equipe;",
+  "Comprometimento com prazos e qualidade das entregas;",
+  "Interesse por inovação, automação e melhoria contínua;",
+  "Capacidade de receber orientações, aprender com o time e evoluir tecnicamente."
+ ],
+ "termosNaoReconhecidos": [],
+ "eliminatorias": [],
+ "idioma": "pt"
+}

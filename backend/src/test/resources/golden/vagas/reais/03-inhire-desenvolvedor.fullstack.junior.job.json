@@ -1,0 +1,499 @@
+{
+ "titulo": "Desenvolvedor FullStack Júnior",
+ "familia": "fullstack",
+ "senioridade": "junior",
+ "temSecoes": true,
+ "requisitos": [
+  {
+   "id": "r1",
+   "texto": "Desenvolver funcionalidades ponta a ponta (do banco de dados à interface) nos protótipos e produtos da CN Innovation, com backend em C#/.NET e/ou Node.js + TypeScript e frontend em Angular ou React.",
+   "tipo": "informativo",
+   "tipoFonte": "secao",
+   "origem": "atividades",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "backend-dev"
+     ],
+     "modo": "todas"
+    },
+    {
+     "tipo": "skill",
+     "ids": [
+      "csharp",
+      "dotnet",
+      "nodejs"
+     ],
+     "modo": "alguma"
+    },
+    {
+     "tipo": "skill",
+     "ids": [
+      "typescript"
+     ],
+     "modo": "todas"
+    },
+    {
+     "tipo": "skill",
+     "ids": [
+      "frontend-dev"
+     ],
+     "modo": "todas"
+    },
+    {
+     "tipo": "skill",
+     "ids": [
+      "angular",
+      "react"
+     ],
+     "modo": "alguma"
+    }
+   ]
+  },
+  {
+   "id": "r2",
+   "texto": "Participar do desenho técnico das soluções: modelagem de dados, contratos de API, divisão em módulos/serviços e registro de decisões (ADRs leves).",
+   "tipo": "informativo",
+   "tipoFonte": "secao",
+   "origem": "atividades",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "modelagem-dados"
+     ],
+     "modo": "todas"
+    },
+    {
+     "tipo": "skill",
+     "ids": [
+      "apis"
+     ],
+     "modo": "todas"
+    }
+   ]
+  },
+  {
+   "id": "r3",
+   "texto": "Aplicar boas práticas de engenharia: código limpo, princípios SOLID, code review, versionamento com Git e documentação técnica.",
+   "tipo": "informativo",
+   "tipoFonte": "secao",
+   "origem": "atividades",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "clean-code"
+     ],
+     "modo": "todas"
+    },
+    {
+     "tipo": "skill",
+     "ids": [
+      "solid"
+     ],
+     "modo": "todas"
+    },
+    {
+     "tipo": "skill",
+     "ids": [
+      "code-review"
+     ],
+     "modo": "todas"
+    },
+    {
+     "tipo": "skill",
+     "ids": [
+      "git"
+     ],
+     "modo": "todas"
+    },
+    {
+     "tipo": "skill",
+     "ids": [
+      "documentacao"
+     ],
+     "modo": "todas"
+    }
+   ]
+  },
+  {
+   "id": "r4",
+   "texto": "Escrever testes em todos os níveis (unitários, integração e E2E) e participar da esteira de CI/CD, com apoio de ferramentas como Playwright.",
+   "tipo": "informativo",
+   "tipoFonte": "secao",
+   "origem": "atividades",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "testes-e2e"
+     ],
+     "modo": "todas"
+    },
+    {
+     "tipo": "skill",
+     "ids": [
+      "ci-cd"
+     ],
+     "modo": "todas"
+    },
+    {
+     "tipo": "skill",
+     "ids": [
+      "playwright"
+     ],
+     "modo": "todas"
+    }
+   ]
+  },
+  {
+   "id": "r5",
+   "texto": "Integrar recursos de IA (APIs de LLM, extração de documentos) às funcionalidades, respeitando fallback, limites de custo e latência.",
+   "tipo": "informativo",
+   "tipoFonte": "secao",
+   "origem": "atividades",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "ia",
+      "apis",
+      "ia-generativa"
+     ],
+     "modo": "alguma"
+    }
+   ]
+  },
+  {
+   "id": "r6",
+   "texto": "Graduação em andamento/concluída em TI, Engenharia, Ciência da Computação ou áreas correlatas (ou experiência equivalente comprovada em projetos/portfólio).",
+   "tipo": "obrigatorio",
+   "tipoFonte": "secao",
+   "origem": "requisitos",
+   "componentes": [
+    {
+     "tipo": "formacao",
+     "nivelMinimo": "graduacao",
+     "area": "ti",
+     "aceitaCursando": true
+    }
+   ]
+  },
+  {
+   "id": "r7",
+   "texto": "Fundamentos de engenharia de software: lógica, estruturas de dados, POO, HTTP/REST e noções de arquitetura em camadas.",
+   "tipo": "obrigatorio",
+   "tipoFonte": "secao",
+   "origem": "requisitos",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "estruturas-dados"
+     ],
+     "modo": "todas"
+    },
+    {
+     "tipo": "skill",
+     "ids": [
+      "poo"
+     ],
+     "modo": "todas"
+    },
+    {
+     "tipo": "skill",
+     "ids": [
+      "http",
+      "rest"
+     ],
+     "modo": "alguma"
+    },
+    {
+     "tipo": "skill",
+     "ids": [
+      "arquitetura-software"
+     ],
+     "modo": "todas"
+    }
+   ]
+  },
+  {
+   "id": "r8",
+   "texto": "Experiência acadêmica, estágio ou projetos pessoais com ao menos uma linguagem backend (C#/.NET, Node.js/TypeScript ou Python) e com um framework frontend (Angular, React ou Vue).",
+   "tipo": "obrigatorio",
+   "tipoFonte": "secao",
+   "origem": "requisitos",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "backend-dev",
+      "csharp",
+      "dotnet",
+      "nodejs",
+      "typescript",
+      "python"
+     ],
+     "modo": "alguma"
+    },
+    {
+     "tipo": "skill",
+     "ids": [
+      "frontend-dev",
+      "angular",
+      "react",
+      "vue"
+     ],
+     "modo": "alguma"
+    }
+   ]
+  },
+  {
+   "id": "r9",
+   "texto": "SQL e modelagem relacional básica.",
+   "tipo": "obrigatorio",
+   "tipoFonte": "secao",
+   "origem": "requisitos",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "sql"
+     ],
+     "modo": "todas"
+    },
+    {
+     "tipo": "skill",
+     "ids": [
+      "modelagem-dados"
+     ],
+     "modo": "todas"
+    }
+   ]
+  },
+  {
+   "id": "r10",
+   "texto": "Git e fluxo de pull request/code review.",
+   "tipo": "obrigatorio",
+   "tipoFonte": "secao",
+   "origem": "requisitos",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "git"
+     ],
+     "modo": "todas"
+    },
+    {
+     "tipo": "skill",
+     "ids": [
+      "code-review"
+     ],
+     "modo": "todas"
+    }
+   ]
+  },
+  {
+   "id": "r11",
+   "texto": "Testes automatizados básicos.",
+   "tipo": "obrigatorio",
+   "tipoFonte": "secao",
+   "origem": "requisitos",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "testes-automatizados"
+     ],
+     "modo": "todas"
+    }
+   ]
+  },
+  {
+   "id": "r12",
+   "texto": "Leitura de documentação técnica em inglês.",
+   "tipo": "obrigatorio",
+   "tipoFonte": "secao",
+   "origem": "requisitos",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "documentacao"
+     ],
+     "modo": "todas"
+    },
+    {
+     "tipo": "idioma",
+     "idioma": "Inglês",
+     "nivelMinimo": "intermediario"
+    }
+   ]
+  },
+  {
+   "id": "r13",
+   "texto": "Noções de Docker, CI/CD (Azure DevOps/GitHub Actions) e nuvem (Azure).",
+   "tipo": "desejavel",
+   "tipoFonte": "secao",
+   "origem": "diferenciais",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "docker"
+     ],
+     "modo": "todas"
+    },
+    {
+     "tipo": "skill",
+     "ids": [
+      "ci-cd",
+      "azure-devops",
+      "github-actions"
+     ],
+     "modo": "alguma"
+    },
+    {
+     "tipo": "skill",
+     "ids": [
+      "cloud",
+      "azure"
+     ],
+     "modo": "alguma"
+    }
+   ]
+  },
+  {
+   "id": "r14",
+   "texto": "Experiência com Playwright, Cypress ou outra ferramenta de testes E2E.",
+   "tipo": "desejavel",
+   "tipoFonte": "secao",
+   "origem": "diferenciais",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "playwright",
+      "cypress",
+      "testes-e2e"
+     ],
+     "modo": "alguma"
+    }
+   ]
+  },
+  {
+   "id": "r15",
+   "texto": "Contato com APIs de LLM e prompts (Claude/OpenAI).",
+   "tipo": "desejavel",
+   "tipoFonte": "secao",
+   "origem": "diferenciais",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "apis"
+     ],
+     "modo": "todas"
+    },
+    {
+     "tipo": "skill",
+     "ids": [
+      "ia-generativa"
+     ],
+     "modo": "todas"
+    },
+    {
+     "tipo": "skill",
+     "ids": [
+      "claude",
+      "openai-api"
+     ],
+     "modo": "alguma"
+    }
+   ]
+  },
+  {
+   "id": "r16",
+   "texto": "Noções de mensageria/filas, cache e observabilidade.",
+   "tipo": "desejavel",
+   "tipoFonte": "secao",
+   "origem": "diferenciais",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "mensageria"
+     ],
+     "modo": "todas"
+    },
+    {
+     "tipo": "skill",
+     "ids": [
+      "caching"
+     ],
+     "modo": "todas"
+    },
+    {
+     "tipo": "skill",
+     "ids": [
+      "observabilidade"
+     ],
+     "modo": "todas"
+    }
+   ]
+  },
+  {
+   "id": "r17",
+   "texto": "Interesse em fintech, mercado financeiro regulado ou blockchain/tokenização.",
+   "tipo": "desejavel",
+   "tipoFonte": "secao",
+   "origem": "diferenciais",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "blockchain"
+     ],
+     "modo": "todas"
+    }
+   ]
+  },
+  {
+   "id": "r18",
+   "texto": "Projetos no GitHub/portfólio publicado.",
+   "tipo": "desejavel",
+   "tipoFonte": "secao",
+   "origem": "diferenciais",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "github"
+     ],
+     "modo": "todas"
+    }
+   ]
+  }
+ ],
+ "naoAvaliaveis": [],
+ "termosNaoReconhecidos": [],
+ "modelo": "hibrido",
+ "local": {
+  "cidade": "São Paulo",
+  "uf": "SP",
+  "trecho": "São Paulo/SP"
+ },
+ "pais": "Brasil",
+ "eliminatorias": [
+  {
+   "tipo": "local",
+   "rotulo": "Trabalho híbrido em São Paulo - SP",
+   "trecho": "Modelo de atuação: Híbrido na Zona Sul de São Paulo (1 ou 2 dias na semana) · Local de Atuação da vaga: São Paulo/SP",
+   "id": "v1"
+  }
+ ],
+ "idioma": "pt"
+}

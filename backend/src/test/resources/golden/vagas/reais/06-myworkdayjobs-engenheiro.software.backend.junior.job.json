@@ -1,0 +1,172 @@
+{
+ "temSecoes": true,
+ "requisitos": [
+  {
+   "id": "r1",
+   "texto": "Auxiliar no design e desenvolvimento de componentes, microsserviços e APIs em Java, mantendo a documentação técnica atualizada.",
+   "tipo": "informativo",
+   "tipoFonte": "secao",
+   "origem": "atividades",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "microsservicos"
+     ],
+     "modo": "todas"
+    },
+    {
+     "tipo": "skill",
+     "ids": [
+      "apis"
+     ],
+     "modo": "todas"
+    },
+    {
+     "tipo": "skill",
+     "ids": [
+      "java"
+     ],
+     "modo": "todas"
+    },
+    {
+     "tipo": "skill",
+     "ids": [
+      "documentacao"
+     ],
+     "modo": "todas"
+    }
+   ]
+  },
+  {
+   "id": "r2",
+   "texto": "Escrever código limpo, testável e participar ativamente de code reviews e discussões de arquitetura.",
+   "tipo": "informativo",
+   "tipoFonte": "secao",
+   "origem": "atividades",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "clean-code"
+     ],
+     "modo": "todas"
+    },
+    {
+     "tipo": "skill",
+     "ids": [
+      "code-review"
+     ],
+     "modo": "todas"
+    }
+   ]
+  },
+  {
+   "id": "r3",
+   "texto": "Atuar em um time colaborativo utilizando metodologias ágeis para transformar requisitos de negócio em soluções de tecnologia.",
+   "tipo": "informativo",
+   "tipoFonte": "secao",
+   "origem": "atividades",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "agil"
+     ],
+     "modo": "todas"
+    }
+   ]
+  },
+  {
+   "id": "r4",
+   "texto": "Aplicar práticas modernas de desenvolvimento (microsserviços, arquitetura serverless , CI/CD e Infraestrutura como Código).",
+   "tipo": "informativo",
+   "tipoFonte": "secao",
+   "origem": "atividades",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "microsservicos",
+      "serverless",
+      "ci-cd",
+      "iac"
+     ],
+     "modo": "alguma"
+    }
+   ]
+  },
+  {
+   "id": "r5",
+   "texto": "Superior completo em Ciência da Computação, Engenharia de Software, Sistemas de Informação ou áreas correlatas.",
+   "tipo": "obrigatorio",
+   "tipoFonte": "secao",
+   "origem": "requisitos",
+   "componentes": [
+    {
+     "tipo": "formacao",
+     "nivelMinimo": "graduacao",
+     "area": "ti",
+     "aceitaCursando": false
+    }
+   ]
+  },
+  {
+   "id": "r6",
+   "texto": "Familiaridade e vivência prévia em linguagem de programação Java.",
+   "tipo": "obrigatorio",
+   "tipoFonte": "secao",
+   "origem": "requisitos",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "java"
+     ],
+     "modo": "todas"
+    }
+   ]
+  },
+  {
+   "id": "r7",
+   "texto": "Familiaridade ou vivência prévia com serviços em Nuvem (AWS, GCP ou Azure).",
+   "tipo": "obrigatorio",
+   "tipoFonte": "secao",
+   "origem": "requisitos",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "cloud",
+      "aws",
+      "gcp",
+      "azure"
+     ],
+     "modo": "alguma"
+    }
+   ]
+  },
+  {
+   "id": "r8",
+   "texto": "Familiaridade com controle de versão (Git / GitHub).",
+   "tipo": "obrigatorio",
+   "tipoFonte": "secao",
+   "origem": "requisitos",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "versionamento",
+      "git",
+      "github"
+     ],
+     "modo": "alguma"
+    }
+   ]
+  }
+ ],
+ "naoAvaliaveis": [],
+ "termosNaoReconhecidos": [],
+ "eliminatorias": [],
+ "idioma": "pt"
+}

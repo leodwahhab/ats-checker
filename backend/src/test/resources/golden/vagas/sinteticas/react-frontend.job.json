@@ -1,0 +1,117 @@
+{
+ "titulo": "Desenvolvedor(a) Front-end React",
+ "familia": "frontend",
+ "temSecoes": true,
+ "requisitos": [
+  {
+   "id": "r1",
+   "texto": "Construir interfaces web responsivas",
+   "tipo": "informativo",
+   "tipoFonte": "secao",
+   "origem": "atividades",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "responsividade"
+     ],
+     "modo": "todas"
+    }
+   ]
+  },
+  {
+   "id": "r2",
+   "texto": "Experiência com React e TypeScript",
+   "tipo": "obrigatorio",
+   "tipoFonte": "secao",
+   "origem": "requisitos",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "react"
+     ],
+     "modo": "todas"
+    },
+    {
+     "tipo": "skill",
+     "ids": [
+      "typescript"
+     ],
+     "modo": "todas"
+    }
+   ]
+  },
+  {
+   "id": "r3",
+   "texto": "Next.js",
+   "tipo": "obrigatorio",
+   "tipoFonte": "secao",
+   "origem": "requisitos",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "nextjs"
+     ],
+     "modo": "todas"
+    }
+   ]
+  },
+  {
+   "id": "r4",
+   "texto": "Testes automatizados (Jest, Testing Library ou similares)",
+   "tipo": "obrigatorio",
+   "tipoFonte": "secao",
+   "origem": "requisitos",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "testes-automatizados",
+      "jest",
+      "testing-library"
+     ],
+     "modo": "alguma"
+    }
+   ]
+  },
+  {
+   "id": "r5",
+   "texto": "Tailwind CSS",
+   "tipo": "desejavel",
+   "tipoFonte": "secao",
+   "origem": "diferenciais",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "tailwind"
+     ],
+     "modo": "todas"
+    }
+   ]
+  },
+  {
+   "id": "r6",
+   "texto": "Storybook",
+   "tipo": "desejavel",
+   "tipoFonte": "secao",
+   "origem": "diferenciais",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "storybook"
+     ],
+     "modo": "todas"
+    }
+   ]
+  }
+ ],
+ "naoAvaliaveis": [
+  "Boa comunicação"
+ ],
+ "termosNaoReconhecidos": [],
+ "eliminatorias": []
+}

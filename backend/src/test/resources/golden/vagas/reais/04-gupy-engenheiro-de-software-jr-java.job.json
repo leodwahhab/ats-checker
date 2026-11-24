@@ -1,0 +1,329 @@
+{
+ "titulo": "Engenheiro de Software Jr. (Java)",
+ "familia": "desenvolvimento",
+ "senioridade": "junior",
+ "temSecoes": true,
+ "requisitos": [
+  {
+   "id": "r1",
+   "texto": "Atuar no desenvolvimento e manutenção de aplicações Java, seguindo boas práticas de desenvolvimento de software.",
+   "tipo": "informativo",
+   "tipoFonte": "secao",
+   "origem": "atividades",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "java"
+     ],
+     "modo": "todas"
+    }
+   ]
+  },
+  {
+   "id": "r2",
+   "texto": "Auxiliar na elaboração e atualização de documentações técnicas, fluxos e diagramas.",
+   "tipo": "informativo",
+   "tipoFonte": "secao",
+   "origem": "atividades",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "documentacao"
+     ],
+     "modo": "todas"
+    }
+   ]
+  },
+  {
+   "id": "r3",
+   "texto": "Colaborar com desenvolvedores mais experientes na evolução e sustentação dos sistemas.",
+   "tipo": "informativo",
+   "tipoFonte": "secao",
+   "origem": "atividades",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "suporte"
+     ],
+     "modo": "todas"
+    }
+   ]
+  },
+  {
+   "id": "r4",
+   "texto": "Desenvolver e manter testes unitários e de integração.",
+   "tipo": "informativo",
+   "tipoFonte": "secao",
+   "origem": "atividades",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "testes-unitarios"
+     ],
+     "modo": "todas"
+    },
+    {
+     "tipo": "skill",
+     "ids": [
+      "testes-integracao"
+     ],
+     "modo": "todas"
+    }
+   ]
+  },
+  {
+   "id": "r5",
+   "texto": "Apoiar o desenvolvimento e manutenção de APIs e serviços.",
+   "tipo": "informativo",
+   "tipoFonte": "secao",
+   "origem": "atividades",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "apis"
+     ],
+     "modo": "todas"
+    }
+   ]
+  },
+  {
+   "id": "r6",
+   "texto": "Trabalhar em conjunto com equipes multidisciplinares utilizando metodologias ágeis.",
+   "tipo": "informativo",
+   "tipoFonte": "secao",
+   "origem": "atividades",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "agil"
+     ],
+     "modo": "todas"
+    }
+   ]
+  },
+  {
+   "id": "r7",
+   "texto": "Ensino Superior completo ou em andamento em Ciência da Computação, Engenharia da Computação, Sistemas de Informação ou áreas correlatas.",
+   "tipo": "obrigatorio",
+   "tipoFonte": "secao",
+   "origem": "requisitos",
+   "componentes": [
+    {
+     "tipo": "formacao",
+     "nivelMinimo": "graduacao",
+     "area": "ti",
+     "aceitaCursando": true
+    }
+   ]
+  },
+  {
+   "id": "r8",
+   "texto": "Conhecimento em desenvolvimento Java.",
+   "tipo": "obrigatorio",
+   "tipoFonte": "secao",
+   "origem": "requisitos",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "java"
+     ],
+     "modo": "todas"
+    }
+   ]
+  },
+  {
+   "id": "r9",
+   "texto": "Conhecimento básico em banco de dados relacionais e SQL (Oracle, MySQL ou PostgreSQL).",
+   "tipo": "obrigatorio",
+   "tipoFonte": "secao",
+   "origem": "requisitos",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "banco-relacional"
+     ],
+     "modo": "todas"
+    },
+    {
+     "tipo": "skill",
+     "ids": [
+      "sql",
+      "oracle",
+      "mysql",
+      "postgresql"
+     ],
+     "modo": "alguma"
+    }
+   ]
+  },
+  {
+   "id": "r10",
+   "texto": "Conhecimento em controle de versão utilizando Git.",
+   "tipo": "obrigatorio",
+   "tipoFonte": "secao",
+   "origem": "requisitos",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "versionamento"
+     ],
+     "modo": "todas"
+    },
+    {
+     "tipo": "skill",
+     "ids": [
+      "git"
+     ],
+     "modo": "todas"
+    }
+   ]
+  },
+  {
+   "id": "r11",
+   "texto": "Conhecimento em metodologias ágeis, como Scrum ou Kanban.",
+   "tipo": "obrigatorio",
+   "tipoFonte": "secao",
+   "origem": "requisitos",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "agil",
+      "scrum",
+      "kanban"
+     ],
+     "modo": "alguma"
+    }
+   ]
+  },
+  {
+   "id": "r12",
+   "texto": "Conhecimento em orientação a objetos e conceitos básicos de padrões de projeto.",
+   "tipo": "obrigatorio",
+   "tipoFonte": "secao",
+   "origem": "requisitos",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "poo"
+     ],
+     "modo": "todas"
+    },
+    {
+     "tipo": "skill",
+     "ids": [
+      "design-patterns"
+     ],
+     "modo": "todas"
+    }
+   ]
+  },
+  {
+   "id": "r13",
+   "texto": "Conhecimento em testes automatizados utilizando JUnit, Mockito ou frameworks similares.",
+   "tipo": "obrigatorio",
+   "tipoFonte": "secao",
+   "origem": "requisitos",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "testes-automatizados"
+     ],
+     "modo": "todas"
+    },
+    {
+     "tipo": "skill",
+     "ids": [
+      "junit",
+      "mockito"
+     ],
+     "modo": "alguma"
+    }
+   ]
+  },
+  {
+   "id": "r14",
+   "texto": "Desejável conhecimento em Spring Boot.",
+   "tipo": "desejavel",
+   "tipoFonte": "marcador",
+   "origem": "requisitos",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "spring-boot"
+     ],
+     "modo": "todas"
+    }
+   ]
+  },
+  {
+   "id": "r15",
+   "texto": "Desejável conhecimento em ferramentas de integração e entrega contínua (CI/CD).",
+   "tipo": "desejavel",
+   "tipoFonte": "marcador",
+   "origem": "requisitos",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "ci-cd"
+     ],
+     "modo": "todas"
+    }
+   ]
+  },
+  {
+   "id": "r16",
+   "texto": "Desejável conhecimento em Python e aplicações de Inteligência Artificial.",
+   "tipo": "desejavel",
+   "tipoFonte": "marcador",
+   "origem": "requisitos",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "python"
+     ],
+     "modo": "todas"
+    },
+    {
+     "tipo": "skill",
+     "ids": [
+      "ia"
+     ],
+     "modo": "todas"
+    }
+   ]
+  }
+ ],
+ "naoAvaliaveis": [],
+ "termosNaoReconhecidos": [],
+ "modelo": "hibrido",
+ "local": {
+  "cidade": "São Paulo",
+  "uf": "SP",
+  "trecho": "São Paulo - SPjobTypes.vacancy_type_effectiveSão Paulo - SP"
+ },
+ "pais": "Brasil",
+ "eliminatorias": [
+  {
+   "tipo": "local",
+   "rotulo": "Trabalho híbrido em São Paulo - SP",
+   "trecho": "Modelo de trabalho: Híbrido · Local de trabalho: São Paulo - SP",
+   "id": "v1"
+  }
+ ],
+ "idioma": "pt"
+}

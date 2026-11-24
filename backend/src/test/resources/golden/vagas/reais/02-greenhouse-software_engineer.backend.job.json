@@ -1,0 +1,293 @@
+{
+ "titulo": "Software Engineer, Backend (All teams) – Brazil – Vaga exclusiva para PCD",
+ "familia": "backend",
+ "temSecoes": true,
+ "requisitos": [
+  {
+   "id": "r1",
+   "texto": "We’re looking for Backend Engineers who are excited to solve real-world problems at scale.",
+   "tipo": "informativo",
+   "tipoFonte": "secao",
+   "origem": "atividades",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "backend-dev"
+     ],
+     "modo": "todas"
+    }
+   ]
+  },
+  {
+   "id": "r2",
+   "texto": "Design, build, and maintain large-scale backend systems used by millions of users",
+   "tipo": "informativo",
+   "tipoFonte": "secao",
+   "origem": "atividades",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "backend-dev"
+     ],
+     "modo": "todas"
+    }
+   ]
+  },
+  {
+   "id": "r3",
+   "texto": "Help transition parts of our monolithic codebase to a microservices architecture",
+   "tipo": "informativo",
+   "tipoFonte": "secao",
+   "origem": "atividades",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "microsservicos"
+     ],
+     "modo": "todas"
+    }
+   ]
+  },
+  {
+   "id": "r4",
+   "texto": "Work on high-impact features that directly improve the user experience for Dashers, Merchants, or Consumers",
+   "tipo": "informativo",
+   "tipoFonte": "secao",
+   "origem": "atividades",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "ux-ui"
+     ],
+     "modo": "todas"
+    }
+   ]
+  },
+  {
+   "id": "r5",
+   "texto": "You have 1+ years of experience with backend technologies and distributed systems",
+   "tipo": "obrigatorio",
+   "tipoFonte": "secao",
+   "origem": "requisitos",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "backend-dev"
+     ],
+     "modo": "todas"
+    },
+    {
+     "tipo": "skill",
+     "ids": [
+      "sistemas-distribuidos"
+     ],
+     "modo": "todas"
+    },
+    {
+     "tipo": "anos",
+     "minimo": 1,
+     "skillIds": [
+      "backend-dev",
+      "sistemas-distribuidos"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "r6",
+   "texto": "You have proficiency in using AI coding tools (e.g., Claude Code, Codex, Cursor) in the full software development lifecycle, including designing, generating code, testing, monitoring and releasing software",
+   "tipo": "obrigatorio",
+   "tipoFonte": "secao",
+   "origem": "requisitos",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "ai-coding"
+     ],
+     "modo": "todas"
+    }
+   ]
+  },
+  {
+   "id": "r7",
+   "texto": "You’re comfortable with modern web architecture (HTTP, REST APIs, grpc, microservices)",
+   "tipo": "obrigatorio",
+   "tipoFonte": "secao",
+   "origem": "requisitos",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "http",
+      "rest",
+      "grpc",
+      "microsservicos"
+     ],
+     "modo": "alguma"
+    }
+   ]
+  },
+  {
+   "id": "r8",
+   "texto": "You’ve worked with relational and non-relational databases",
+   "tipo": "obrigatorio",
+   "tipoFonte": "secao",
+   "origem": "requisitos",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "banco-relacional"
+     ],
+     "modo": "todas"
+    },
+    {
+     "tipo": "skill",
+     "ids": [
+      "nosql"
+     ],
+     "modo": "todas"
+    }
+   ]
+  },
+  {
+   "id": "r9",
+   "texto": "You’re comfortable collaborating in English, including participating in meetings and code reviews.",
+   "tipo": "obrigatorio",
+   "tipoFonte": "secao",
+   "origem": "requisitos",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "code-review"
+     ],
+     "modo": "todas"
+    },
+    {
+     "tipo": "idioma",
+     "idioma": "Inglês",
+     "nivelMinimo": "intermediario"
+    }
+   ]
+  },
+  {
+   "id": "r10",
+   "texto": "You’re fluent in English and confident participating in meetings and code reviews in English",
+   "tipo": "obrigatorio",
+   "tipoFonte": "secao",
+   "origem": "requisitos",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "code-review"
+     ],
+     "modo": "todas"
+    },
+    {
+     "tipo": "idioma",
+     "idioma": "Inglês",
+     "nivelMinimo": "fluente"
+    }
+   ]
+  },
+  {
+   "id": "r11",
+   "texto": "You care about quality and write tests to ensure your code works as expected",
+   "tipo": "obrigatorio",
+   "tipoFonte": "secao",
+   "origem": "requisitos",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "testes-automatizados"
+     ],
+     "modo": "todas"
+    }
+   ]
+  },
+  {
+   "id": "r12",
+   "texto": "Experience working at a tech company with scale",
+   "tipo": "desejavel",
+   "tipoFonte": "secao",
+   "origem": "diferenciais",
+   "componentes": [
+    {
+     "tipo": "nao_reconhecido",
+     "termos": []
+    }
+   ]
+  },
+  {
+   "id": "r13",
+   "texto": "Familiarity with Java, Kotlin, or similar JVM languages",
+   "tipo": "desejavel",
+   "tipoFonte": "secao",
+   "origem": "diferenciais",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "java",
+      "kotlin"
+     ],
+     "modo": "alguma"
+    }
+   ]
+  },
+  {
+   "id": "r14",
+   "texto": "Exposure to big data technologies or event-driven architecture",
+   "tipo": "desejavel",
+   "tipoFonte": "secao",
+   "origem": "diferenciais",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "big-data"
+     ],
+     "modo": "todas"
+    },
+    {
+     "tipo": "skill",
+     "ids": [
+      "event-driven"
+     ],
+     "modo": "todas"
+    }
+   ]
+  }
+ ],
+ "naoAvaliaveis": [
+  "You take ownership and enjoy working with autonomy in a fast-paced environment",
+  "Interest in mentorship or growing into a technical leadership role"
+ ],
+ "termosNaoReconhecidos": [],
+ "modelo": "hibrido",
+ "local": {
+  "cidade": "São Paulo",
+  "uf": "SP",
+  "trecho": "São Paulo, Brazil; São Paulo, Brasil"
+ },
+ "pais": "Brasil",
+ "eliminatorias": [
+  {
+   "tipo": "local",
+   "rotulo": "Trabalho híbrido em São Paulo - SP",
+   "trecho": "Hybrid remote model with great office space in Av. Paulista · São Paulo, Brazil; São Paulo, Brasil",
+   "id": "v1"
+  }
+ ],
+ "afirmativa": "Software Engineer, Backend (All teams) – Brazil – Vaga exclusiva para PCD",
+ "idioma": "en"
+}

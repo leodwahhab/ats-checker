@@ -1,0 +1,94 @@
+{
+ "titulo": "Engenheiro(a) de Software | Assistente e Júnior",
+ "familia": "desenvolvimento",
+ "senioridade": "junior",
+ "temSecoes": true,
+ "requisitos": [
+  {
+   "id": "r1",
+   "texto": "Conhecimento básico em desenvolvimento de software em uma ou mais linguagens de programação (C#, Java, Go ou Rust)",
+   "tipo": "obrigatorio",
+   "tipoFonte": "secao",
+   "origem": "requisitos",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "csharp",
+      "java",
+      "go",
+      "rust"
+     ],
+     "modo": "alguma"
+    }
+   ]
+  },
+  {
+   "id": "r2",
+   "texto": "Noção de boas práticas de desenvolvimento;",
+   "tipo": "obrigatorio",
+   "tipoFonte": "secao",
+   "origem": "requisitos",
+   "componentes": [
+    {
+     "tipo": "nao_reconhecido",
+     "termos": []
+    }
+   ]
+  },
+  {
+   "id": "r3",
+   "texto": "Conhecimento em Cloud pública, preferencialmente Azure.",
+   "tipo": "desejavel",
+   "tipoFonte": "marcador",
+   "origem": "diferenciais",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "cloud",
+      "azure"
+     ],
+     "modo": "alguma"
+    }
+   ]
+  },
+  {
+   "id": "r4",
+   "texto": "Conhecimento em Front-end, preferencialmente React.",
+   "tipo": "desejavel",
+   "tipoFonte": "marcador",
+   "origem": "diferenciais",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "frontend-dev",
+      "react"
+     ],
+     "modo": "alguma"
+    }
+   ]
+  }
+ ],
+ "naoAvaliaveis": [
+  "Disponibilidade para trabalhar no modelo presencial com flexibilidade (2x por semana no escritório) em São Paulo/SP."
+ ],
+ "termosNaoReconhecidos": [],
+ "modelo": "hibrido",
+ "local": {
+  "cidade": "São Paulo",
+  "uf": "SP",
+  "trecho": "São Paulo, SP"
+ },
+ "pais": "Brasil",
+ "eliminatorias": [
+  {
+   "tipo": "local",
+   "rotulo": "Trabalho híbrido em São Paulo - SP",
+   "trecho": "Disponibilidade para trabalhar no modelo presencial com flexibilidade (2x por semana no escritório) em São Paulo/SP. · São Paulo, SP",
+   "id": "v1"
+  }
+ ],
+ "idioma": "pt"
+}

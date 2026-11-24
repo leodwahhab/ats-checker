@@ -1,0 +1,145 @@
+{
+ "titulo": "Pessoa Desenvolvedora Back-end Java",
+ "familia": "backend",
+ "temSecoes": true,
+ "requisitos": [
+  {
+   "id": "r1",
+   "texto": "Desenvolver e manter microsserviços em Java",
+   "tipo": "informativo",
+   "tipoFonte": "secao",
+   "origem": "atividades",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "microsservicos"
+     ],
+     "modo": "todas"
+    },
+    {
+     "tipo": "skill",
+     "ids": [
+      "java"
+     ],
+     "modo": "todas"
+    }
+   ]
+  },
+  {
+   "id": "r2",
+   "texto": "Participar de code reviews",
+   "tipo": "informativo",
+   "tipoFonte": "secao",
+   "origem": "atividades",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "code-review"
+     ],
+     "modo": "todas"
+    }
+   ]
+  },
+  {
+   "id": "r3",
+   "texto": "Java",
+   "tipo": "obrigatorio",
+   "tipoFonte": "secao",
+   "origem": "requisitos",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "java"
+     ],
+     "modo": "todas"
+    }
+   ]
+  },
+  {
+   "id": "r4",
+   "texto": "Spring Boot",
+   "tipo": "obrigatorio",
+   "tipoFonte": "secao",
+   "origem": "requisitos",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "spring-boot"
+     ],
+     "modo": "todas"
+    }
+   ]
+  },
+  {
+   "id": "r5",
+   "texto": "SQL",
+   "tipo": "obrigatorio",
+   "tipoFonte": "secao",
+   "origem": "requisitos",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "sql"
+     ],
+     "modo": "todas"
+    }
+   ]
+  },
+  {
+   "id": "r6",
+   "texto": "Docker",
+   "tipo": "obrigatorio",
+   "tipoFonte": "secao",
+   "origem": "requisitos",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "docker"
+     ],
+     "modo": "todas"
+    }
+   ]
+  },
+  {
+   "id": "r7",
+   "texto": "Kafka",
+   "tipo": "desejavel",
+   "tipoFonte": "secao",
+   "origem": "diferenciais",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "kafka"
+     ],
+     "modo": "todas"
+    }
+   ]
+  },
+  {
+   "id": "r8",
+   "texto": "AWS",
+   "tipo": "desejavel",
+   "tipoFonte": "secao",
+   "origem": "diferenciais",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "aws"
+     ],
+     "modo": "todas"
+    }
+   ]
+  }
+ ],
+ "naoAvaliaveis": [],
+ "termosNaoReconhecidos": [],
+ "eliminatorias": []
+}

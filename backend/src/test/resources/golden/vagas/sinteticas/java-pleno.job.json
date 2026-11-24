@@ -1,0 +1,144 @@
+{
+ "titulo": "Desenvolvedor Java Pleno",
+ "familia": "backend",
+ "senioridade": "pleno",
+ "temSecoes": true,
+ "requisitos": [
+  {
+   "id": "r1",
+   "texto": "Você vai atuar no time de pagamentos, desenvolvendo APIs REST em microsserviços.",
+   "tipo": "informativo",
+   "tipoFonte": "secao",
+   "origem": "atividades",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "rest"
+     ],
+     "modo": "todas"
+    },
+    {
+     "tipo": "skill",
+     "ids": [
+      "microsservicos"
+     ],
+     "modo": "todas"
+    }
+   ]
+  },
+  {
+   "id": "r2",
+   "texto": "3+ anos de experiência com Java e Spring Boot",
+   "tipo": "obrigatorio",
+   "tipoFonte": "secao",
+   "origem": "requisitos",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "java"
+     ],
+     "modo": "todas"
+    },
+    {
+     "tipo": "skill",
+     "ids": [
+      "spring-boot"
+     ],
+     "modo": "todas"
+    },
+    {
+     "tipo": "anos",
+     "minimo": 3,
+     "skillIds": [
+      "java",
+      "spring-boot"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "r3",
+   "texto": "Bancos relacionais (PostgreSQL ou MySQL)",
+   "tipo": "obrigatorio",
+   "tipoFonte": "secao",
+   "origem": "requisitos",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "banco-relacional",
+      "postgresql",
+      "mysql"
+     ],
+     "modo": "alguma"
+    }
+   ]
+  },
+  {
+   "id": "r4",
+   "texto": "Inglês intermediário",
+   "tipo": "obrigatorio",
+   "tipoFonte": "secao",
+   "origem": "requisitos",
+   "componentes": [
+    {
+     "tipo": "idioma",
+     "idioma": "Inglês",
+     "nivelMinimo": "intermediario"
+    }
+   ]
+  },
+  {
+   "id": "r5",
+   "texto": "AWS ou GCP",
+   "tipo": "desejavel",
+   "tipoFonte": "secao",
+   "origem": "diferenciais",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "aws",
+      "gcp"
+     ],
+     "modo": "alguma"
+    }
+   ]
+  },
+  {
+   "id": "r6",
+   "texto": "Kubernetes",
+   "tipo": "desejavel",
+   "tipoFonte": "secao",
+   "origem": "diferenciais",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "kubernetes"
+     ],
+     "modo": "todas"
+    }
+   ]
+  }
+ ],
+ "naoAvaliaveis": [],
+ "termosNaoReconhecidos": [],
+ "modelo": "hibrido",
+ "local": {
+  "cidade": "São Paulo",
+  "uf": "SP",
+  "trecho": "Modelo híbrido em São Paulo - SP"
+ },
+ "pais": "Brasil",
+ "eliminatorias": [
+  {
+   "tipo": "local",
+   "rotulo": "Trabalho híbrido em São Paulo - SP",
+   "trecho": "Modelo híbrido em São Paulo - SP",
+   "id": "v1"
+  }
+ ]
+}

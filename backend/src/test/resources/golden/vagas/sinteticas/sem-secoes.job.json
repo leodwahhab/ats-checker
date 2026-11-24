@@ -1,0 +1,97 @@
+{
+ "familia": "backend",
+ "temSecoes": false,
+ "requisitos": [
+  {
+   "id": "r1",
+   "texto": "Estamos contratando pessoa desenvolvedora Python para o time de dados.",
+   "tipo": "desejavel",
+   "tipoFonte": "padrao",
+   "origem": "sem_secao",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "python"
+     ],
+     "modo": "todas"
+    }
+   ]
+  },
+  {
+   "id": "r2",
+   "texto": "Buscamos experiência com Python e Django, conhecimento em AWS e familiaridade com Docker.",
+   "tipo": "obrigatorio",
+   "tipoFonte": "heuristica",
+   "origem": "sem_secao",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "python"
+     ],
+     "modo": "todas"
+    },
+    {
+     "tipo": "skill",
+     "ids": [
+      "django"
+     ],
+     "modo": "todas"
+    },
+    {
+     "tipo": "skill",
+     "ids": [
+      "aws"
+     ],
+     "modo": "todas"
+    },
+    {
+     "tipo": "skill",
+     "ids": [
+      "docker"
+     ],
+     "modo": "todas"
+    }
+   ]
+  },
+  {
+   "id": "r3",
+   "texto": "Diferencial: Airflow.",
+   "tipo": "desejavel",
+   "tipoFonte": "marcador",
+   "origem": "sem_secao",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "airflow"
+     ],
+     "modo": "todas"
+    }
+   ]
+  },
+  {
+   "id": "r4",
+   "texto": "Conhecimento em Protheus é um plus.",
+   "tipo": "desejavel",
+   "tipoFonte": "marcador",
+   "origem": "sem_secao",
+   "componentes": [
+    {
+     "tipo": "nao_reconhecido",
+     "termos": [
+      "Protheus"
+     ]
+    }
+   ]
+  }
+ ],
+ "naoAvaliaveis": [
+  "Boa comunicação e trabalho em equipe."
+ ],
+ "termosNaoReconhecidos": [
+  "Protheus"
+ ],
+ "eliminatorias": []
+}

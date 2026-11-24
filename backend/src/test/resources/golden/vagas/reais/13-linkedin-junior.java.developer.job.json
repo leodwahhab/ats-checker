@@ -1,0 +1,252 @@
+{
+ "familia": "desenvolvimento",
+ "temSecoes": true,
+ "requisitos": [
+  {
+   "id": "r1",
+   "texto": "Na CI&T , ajudamos grandes empresas a transformar o potencial da AI em impacto real nos negócios com AI Deployment, execução AI-native e tech-integrated business solutions.",
+   "tipo": "informativo",
+   "tipoFonte": "secao",
+   "origem": "atividades",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "ia"
+     ],
+     "modo": "todas"
+    }
+   ]
+  },
+  {
+   "id": "r2",
+   "texto": "Com 30 anos de experiência em transformação tecnológica, aceleramos inovação com expertise em agentic SDLC, application modernization, Data & AI, martech e business strategy.",
+   "tipo": "informativo",
+   "tipoFonte": "secao",
+   "origem": "atividades",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "ia"
+     ],
+     "modo": "todas"
+    }
+   ]
+  },
+  {
+   "id": "r3",
+   "texto": "AI já faz parte da forma como trabalhamos, evoluímos e inovamos todos os dias.",
+   "tipo": "informativo",
+   "tipoFonte": "secao",
+   "origem": "atividades",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "ia"
+     ],
+     "modo": "todas"
+    }
+   ]
+  },
+  {
+   "id": "r4",
+   "texto": "Estamos procurando um profissional de Desenvolvimento de Software com foco em Java que esteja preparado para enfrentar desafios técnicos complexos e contribuir para a criação de soluções escaláveis e de alto desempenho.",
+   "tipo": "informativo",
+   "tipoFonte": "secao",
+   "origem": "atividades",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "java"
+     ],
+     "modo": "todas"
+    }
+   ]
+  },
+  {
+   "id": "r5",
+   "texto": "Experiência com desenvolvimento em Java, utilizando Spring Boot 3;",
+   "tipo": "obrigatorio",
+   "tipoFonte": "secao",
+   "origem": "requisitos",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "java"
+     ],
+     "modo": "todas"
+    },
+    {
+     "tipo": "skill",
+     "ids": [
+      "spring-boot"
+     ],
+     "modo": "todas"
+    }
+   ]
+  },
+  {
+   "id": "r6",
+   "texto": "Experiência com JavaScript e TypeScript (v4+);",
+   "tipo": "obrigatorio",
+   "tipoFonte": "secao",
+   "origem": "requisitos",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "javascript"
+     ],
+     "modo": "todas"
+    },
+    {
+     "tipo": "skill",
+     "ids": [
+      "typescript"
+     ],
+     "modo": "todas"
+    }
+   ]
+  },
+  {
+   "id": "r7",
+   "texto": "Conhecimento em Design Patterns, POO, SOLID, KISS, DRY e YAGNI;",
+   "tipo": "obrigatorio",
+   "tipoFonte": "secao",
+   "origem": "requisitos",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "design-patterns"
+     ],
+     "modo": "todas"
+    },
+    {
+     "tipo": "skill",
+     "ids": [
+      "poo"
+     ],
+     "modo": "todas"
+    },
+    {
+     "tipo": "skill",
+     "ids": [
+      "solid"
+     ],
+     "modo": "todas"
+    },
+    {
+     "tipo": "skill",
+     "ids": [
+      "kiss-dry-yagni"
+     ],
+     "modo": "todas"
+    }
+   ]
+  },
+  {
+   "id": "r8",
+   "texto": "Conhecimento em com Testes Automatizados;",
+   "tipo": "obrigatorio",
+   "tipoFonte": "secao",
+   "origem": "requisitos",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "testes-automatizados"
+     ],
+     "modo": "todas"
+    }
+   ]
+  },
+  {
+   "id": "r9",
+   "texto": "Vivência com Git;",
+   "tipo": "obrigatorio",
+   "tipoFonte": "secao",
+   "origem": "requisitos",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "git"
+     ],
+     "modo": "todas"
+    }
+   ]
+  },
+  {
+   "id": "r10",
+   "texto": "Conhecimento em bancos de dados relacionais e/ou não relacionais;",
+   "tipo": "obrigatorio",
+   "tipoFonte": "secao",
+   "origem": "requisitos",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "banco-relacional",
+      "nosql"
+     ],
+     "modo": "alguma"
+    }
+   ]
+  },
+  {
+   "id": "r11",
+   "texto": "Experiência na construção e consumo de APIs RESTful",
+   "tipo": "obrigatorio",
+   "tipoFonte": "secao",
+   "origem": "requisitos",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "apis"
+     ],
+     "modo": "todas"
+    },
+    {
+     "tipo": "skill",
+     "ids": [
+      "rest"
+     ],
+     "modo": "todas"
+    }
+   ]
+  },
+  {
+   "id": "r12",
+   "texto": "Conhecimento em desenvolvimento Front-end",
+   "tipo": "desejavel",
+   "tipoFonte": "secao",
+   "origem": "diferenciais",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "frontend-dev"
+     ],
+     "modo": "todas"
+    }
+   ]
+  }
+ ],
+ "naoAvaliaveis": [],
+ "termosNaoReconhecidos": [],
+ "eliminatorias": [
+  {
+   "tipo": "local",
+   "rotulo": "Local de residência",
+   "trecho": "Importante: se você reside na Região Metropolitana de Campinas, sua presença nos escritórios da cidade será obrigatória, conforme a política de frequencia vigente.",
+   "id": "v1"
+  }
+ ],
+ "idioma": "pt"
+}

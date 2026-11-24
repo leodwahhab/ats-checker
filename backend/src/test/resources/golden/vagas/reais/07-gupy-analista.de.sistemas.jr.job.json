@@ -1,0 +1,217 @@
+{
+ "titulo": "Analista de sistemas Jr (TI Sistemas Backoffice)",
+ "familia": "desenvolvimento",
+ "senioridade": "junior",
+ "temSecoes": true,
+ "requisitos": [
+  {
+   "id": "r1",
+   "texto": "Há 50 anos, transformamos o varejo de moda com estilo, qualidade e acessibilidade.",
+   "tipo": "informativo",
+   "tipoFonte": "secao",
+   "origem": "atividades",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "acessibilidade"
+     ],
+     "modo": "todas"
+    }
+   ]
+  },
+  {
+   "id": "r2",
+   "texto": "O profissional fará parte de uma equipe de Sistemas responsável por projetos e sustentação de aplicações, participando de atividades de análise, desenvolvimento, testes, implantação e suporte às soluções.",
+   "tipo": "informativo",
+   "tipoFonte": "secao",
+   "origem": "atividades",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "suporte"
+     ],
+     "modo": "todas"
+    }
+   ]
+  },
+  {
+   "id": "r3",
+   "texto": "Desenvolver e manter aplicações e integrações utilizando tecnologias Web, Low-Code e No-Code.",
+   "tipo": "informativo",
+   "tipoFonte": "secao",
+   "origem": "atividades",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "low-code"
+     ],
+     "modo": "todas"
+    }
+   ]
+  },
+  {
+   "id": "r4",
+   "texto": "Desenvolver programas, scripts, APIs e integrações.",
+   "tipo": "informativo",
+   "tipoFonte": "secao",
+   "origem": "atividades",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "apis"
+     ],
+     "modo": "todas"
+    },
+    {
+     "tipo": "skill",
+     "ids": [
+      "integracao-sistemas"
+     ],
+     "modo": "todas"
+    }
+   ]
+  },
+  {
+   "id": "r5",
+   "texto": "Realizar testes funcionais e apoiar a construção de testes automatizados.",
+   "tipo": "informativo",
+   "tipoFonte": "secao",
+   "origem": "atividades",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "qualidade-software"
+     ],
+     "modo": "todas"
+    },
+    {
+     "tipo": "skill",
+     "ids": [
+      "testes-automatizados"
+     ],
+     "modo": "todas"
+    }
+   ]
+  },
+  {
+   "id": "r6",
+   "texto": "Elaborar documentação técnica básica das soluções desenvolvidas.",
+   "tipo": "informativo",
+   "tipoFonte": "secao",
+   "origem": "atividades",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "documentacao"
+     ],
+     "modo": "todas"
+    }
+   ]
+  },
+  {
+   "id": "r7",
+   "texto": "Utilizar ferramentas de Inteligência Artificial Generativa como apoio ao desenvolvimento de software, respeitando padrões de segurança, qualidade e governança definidos pela empresa.",
+   "tipo": "informativo",
+   "tipoFonte": "secao",
+   "origem": "atividades",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "ia-generativa"
+     ],
+     "modo": "todas"
+    }
+   ]
+  },
+  {
+   "id": "r8",
+   "texto": "Graduação completa em Ciência da Computação, Sistemas de Informação, Engenharia de Software, Análise e Desenvolvimento de Sistemas, Engenharia da Computação ou áreas correlatas;",
+   "tipo": "obrigatorio",
+   "tipoFonte": "secao",
+   "origem": "requisitos",
+   "componentes": [
+    {
+     "tipo": "formacao",
+     "nivelMinimo": "graduacao",
+     "area": "ti",
+     "aceitaCursando": false
+    }
+   ]
+  },
+  {
+   "id": "r9",
+   "texto": "Conhecimentos de lógica de programação e desenvolvimento de sistemas.",
+   "tipo": "obrigatorio",
+   "tipoFonte": "secao",
+   "origem": "requisitos",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "logica"
+     ],
+     "modo": "todas"
+    }
+   ]
+  },
+  {
+   "id": "r10",
+   "texto": "Conhecimentos básicos sobre Inteligência Artificial Generativa e seu uso no desenvolvimento de software.",
+   "tipo": "obrigatorio",
+   "tipoFonte": "secao",
+   "origem": "requisitos",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "ia-generativa"
+     ],
+     "modo": "todas"
+    }
+   ]
+  },
+  {
+   "id": "r11",
+   "texto": "Familiaridade com metodologias ágeis, como Scrum ou Kanban.",
+   "tipo": "obrigatorio",
+   "tipoFonte": "secao",
+   "origem": "requisitos",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "agil",
+      "scrum",
+      "kanban"
+     ],
+     "modo": "alguma"
+    }
+   ]
+  }
+ ],
+ "naoAvaliaveis": [],
+ "termosNaoReconhecidos": [],
+ "modelo": "hibrido",
+ "local": {
+  "cidade": "São Paulo",
+  "uf": "SP",
+  "trecho": "São Paulo - SPjobTypes.vacancy_type_effectiveSão Paulo - SP"
+ },
+ "pais": "Brasil",
+ "eliminatorias": [
+  {
+   "tipo": "local",
+   "rotulo": "Trabalho híbrido em São Paulo - SP",
+   "trecho": "Modelo de trabalho: Híbrido · Local de trabalho: São Paulo - SP",
+   "id": "v1"
+  }
+ ],
+ "idioma": "pt"
+}

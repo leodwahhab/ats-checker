@@ -1,0 +1,259 @@
+{
+ "titulo": "Analista de Sistemas Jr. (Sustentação)",
+ "familia": "suporte",
+ "senioridade": "junior",
+ "temSecoes": true,
+ "requisitos": [
+  {
+   "id": "r1",
+   "texto": "Prestar suporte técnico a sistemas corporativos, aplicativos e softwares básicos, atuando na resolução de incidentes e requisições de baixa e média complexidade, com orientação quando necessário.",
+   "tipo": "informativo",
+   "tipoFonte": "secao",
+   "origem": "atividades",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "suporte"
+     ],
+     "modo": "todas"
+    }
+   ]
+  },
+  {
+   "id": "r2",
+   "texto": "Registrar, acompanhar e atualizar chamados, garantindo atendimento dentro dos prazos acordados e a continuidade dos processos das áreas de negócio.",
+   "tipo": "informativo",
+   "tipoFonte": "secao",
+   "origem": "atividades",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "service-desk"
+     ],
+     "modo": "todas"
+    }
+   ]
+  },
+  {
+   "id": "r3",
+   "texto": "Apoiar o levantamento e a documentação das necessidades do negócio, contribuindo para a tradução das demandas em requisitos funcionais.",
+   "tipo": "informativo",
+   "tipoFonte": "secao",
+   "origem": "atividades",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "documentacao"
+     ],
+     "modo": "todas"
+    },
+    {
+     "tipo": "skill",
+     "ids": [
+      "requisitos"
+     ],
+     "modo": "todas"
+    }
+   ]
+  },
+  {
+   "id": "r4",
+   "texto": "Apoiar a elaboração e execução de testes funcionais, validando se as entregas atendem aos requisitos definidos.",
+   "tipo": "informativo",
+   "tipoFonte": "secao",
+   "origem": "atividades",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "qualidade-software"
+     ],
+     "modo": "todas"
+    }
+   ]
+  },
+  {
+   "id": "r5",
+   "texto": "Ensino Superior completo nas áreas de Tecnologia da Informação, Sistemas de Informação, Administração ou áreas correlatas.",
+   "tipo": "obrigatorio",
+   "tipoFonte": "secao",
+   "origem": "requisitos",
+   "componentes": [
+    {
+     "tipo": "formacao",
+     "nivelMinimo": "graduacao",
+     "area": "ti",
+     "aceitaCursando": false
+    }
+   ]
+  },
+  {
+   "id": "r6",
+   "texto": "Experiência com suporte a sistemas corporativos e atendimento de chamados (SLA/Incidentes).",
+   "tipo": "obrigatorio",
+   "tipoFonte": "secao",
+   "origem": "requisitos",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "suporte"
+     ],
+     "modo": "todas"
+    },
+    {
+     "tipo": "skill",
+     "ids": [
+      "service-desk"
+     ],
+     "modo": "todas"
+    }
+   ]
+  },
+  {
+   "id": "r7",
+   "texto": "Noções de levantamento de requisitos e desenho de processos.",
+   "tipo": "obrigatorio",
+   "tipoFonte": "secao",
+   "origem": "requisitos",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "requisitos"
+     ],
+     "modo": "todas"
+    },
+    {
+     "tipo": "skill",
+     "ids": [
+      "processos"
+     ],
+     "modo": "todas"
+    }
+   ]
+  },
+  {
+   "id": "r8",
+   "texto": "Domínio de ferramentas de escritório (Excel, ferramentas de chamados).",
+   "tipo": "obrigatorio",
+   "tipoFonte": "secao",
+   "origem": "requisitos",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "office",
+      "excel",
+      "service-desk"
+     ],
+     "modo": "alguma"
+    }
+   ]
+  },
+  {
+   "id": "r9",
+   "texto": "Conhecimentos em linguagem SQL.",
+   "tipo": "obrigatorio",
+   "tipoFonte": "secao",
+   "origem": "requisitos",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "sql"
+     ],
+     "modo": "todas"
+    }
+   ]
+  },
+  {
+   "id": "r10",
+   "texto": "Conhecimento em sistemas ERP saúde operadora.",
+   "tipo": "desejavel",
+   "tipoFonte": "secao",
+   "origem": "diferenciais",
+   "componentes": [
+    {
+     "tipo": "nao_reconhecido",
+     "termos": [
+      "ERP"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "r11",
+   "texto": "Experiência prévia no setor de Saúde Suplementar (Regras ANS).",
+   "tipo": "desejavel",
+   "tipoFonte": "secao",
+   "origem": "diferenciais",
+   "componentes": [
+    {
+     "tipo": "nao_reconhecido",
+     "termos": [
+      "Saúde Suplementar",
+      "Regras ANS"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "r12",
+   "texto": "Familiaridade com operações da Operadora (produtos, contratos, prestadores, fluxos de autorizações e contas médicas).",
+   "tipo": "desejavel",
+   "tipoFonte": "secao",
+   "origem": "diferenciais",
+   "componentes": [
+    {
+     "tipo": "nao_reconhecido",
+     "termos": [
+      "Operadora"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "r13",
+   "texto": "Certificado em ITIL.",
+   "tipo": "desejavel",
+   "tipoFonte": "secao",
+   "origem": "diferenciais",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "itil"
+     ],
+     "modo": "alguma"
+    }
+   ]
+  }
+ ],
+ "naoAvaliaveis": [],
+ "termosNaoReconhecidos": [
+  "ERP",
+  "Saúde Suplementar",
+  "Regras ANS",
+  "Operadora"
+ ],
+ "modelo": "hibrido",
+ "local": {
+  "cidade": "São Paulo",
+  "uf": "SP",
+  "trecho": "São Paulo - SPjobTypes.vacancy_type_effectiveSão Paulo - SP"
+ },
+ "pais": "Brasil",
+ "eliminatorias": [
+  {
+   "tipo": "local",
+   "rotulo": "Trabalho híbrido em São Paulo - SP",
+   "trecho": "Modelo de trabalho: Híbrido · Local de trabalho: São Paulo - SP",
+   "id": "v1"
+  }
+ ],
+ "idioma": "pt"
+}

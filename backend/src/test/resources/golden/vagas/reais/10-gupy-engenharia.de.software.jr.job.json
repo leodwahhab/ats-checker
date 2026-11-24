@@ -1,0 +1,361 @@
+{
+ "titulo": "CAS | Engenharia de Software JR - (Preferencialmente para Pessoas com Deficiência)",
+ "familia": "desenvolvimento",
+ "senioridade": "junior",
+ "temSecoes": true,
+ "requisitos": [
+  {
+   "id": "r1",
+   "texto": "Participar do desenvolvimento e manutenção de aplicações e APIs.",
+   "tipo": "informativo",
+   "tipoFonte": "secao",
+   "origem": "atividades",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "apis"
+     ],
+     "modo": "todas"
+    }
+   ]
+  },
+  {
+   "id": "r2",
+   "texto": "Colaborar com desenvolvedores mais experientes em revisões de código e definição de soluções.",
+   "tipo": "informativo",
+   "tipoFonte": "secao",
+   "origem": "atividades",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "code-review"
+     ],
+     "modo": "todas"
+    }
+   ]
+  },
+  {
+   "id": "r3",
+   "texto": "Conhecimento em desenvolvimento de aplicações back-end utilizando Java e Spring Boot.",
+   "tipo": "obrigatorio",
+   "tipoFonte": "secao",
+   "origem": "requisitos",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "backend-dev"
+     ],
+     "modo": "todas"
+    },
+    {
+     "tipo": "skill",
+     "ids": [
+      "java"
+     ],
+     "modo": "todas"
+    },
+    {
+     "tipo": "skill",
+     "ids": [
+      "spring-boot"
+     ],
+     "modo": "todas"
+    }
+   ]
+  },
+  {
+   "id": "r4",
+   "texto": "Experiência acadêmica, projetos pessoais ou profissionais na construção e manutenção de APIs RESTful.",
+   "tipo": "obrigatorio",
+   "tipoFonte": "secao",
+   "origem": "requisitos",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "rest"
+     ],
+     "modo": "todas"
+    }
+   ]
+  },
+  {
+   "id": "r5",
+   "texto": "Conhecimento básico em bancos de dados relacionais e/ou não relacionais, incluindo consultas e modelagem de dados.",
+   "tipo": "obrigatorio",
+   "tipoFonte": "secao",
+   "origem": "requisitos",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "banco-relacional",
+      "nosql"
+     ],
+     "modo": "alguma"
+    },
+    {
+     "tipo": "skill",
+     "ids": [
+      "modelagem-dados"
+     ],
+     "modo": "todas"
+    }
+   ]
+  },
+  {
+   "id": "r6",
+   "texto": "Noções de arquitetura de microsserviços e integração entre sistemas.",
+   "tipo": "obrigatorio",
+   "tipoFonte": "secao",
+   "origem": "requisitos",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "microsservicos"
+     ],
+     "modo": "todas"
+    },
+    {
+     "tipo": "skill",
+     "ids": [
+      "integracao-sistemas"
+     ],
+     "modo": "todas"
+    }
+   ]
+  },
+  {
+   "id": "r7",
+   "texto": "Familiaridade com boas práticas de desenvolvimento, como Clean Code, princípios básicos de SOLID e versionamento de código.",
+   "tipo": "obrigatorio",
+   "tipoFonte": "secao",
+   "origem": "requisitos",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "clean-code"
+     ],
+     "modo": "todas"
+    },
+    {
+     "tipo": "skill",
+     "ids": [
+      "solid"
+     ],
+     "modo": "todas"
+    },
+    {
+     "tipo": "skill",
+     "ids": [
+      "versionamento"
+     ],
+     "modo": "todas"
+    }
+   ]
+  },
+  {
+   "id": "r8",
+   "texto": "Conhecimento em testes unitários e preocupação com qualidade de software.",
+   "tipo": "obrigatorio",
+   "tipoFonte": "secao",
+   "origem": "requisitos",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "testes-unitarios"
+     ],
+     "modo": "todas"
+    },
+    {
+     "tipo": "skill",
+     "ids": [
+      "qualidade-software"
+     ],
+     "modo": "todas"
+    }
+   ]
+  },
+  {
+   "id": "r9",
+   "texto": "Interesse ou experiência inicial com mensageria e arquitetura orientada a eventos, como Kafka.",
+   "tipo": "obrigatorio",
+   "tipoFonte": "secao",
+   "origem": "requisitos",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "mensageria"
+     ],
+     "modo": "todas"
+    },
+    {
+     "tipo": "skill",
+     "ids": [
+      "event-driven",
+      "kafka"
+     ],
+     "modo": "alguma"
+    }
+   ]
+  },
+  {
+   "id": "r10",
+   "texto": "Conhecimento básico em Docker e conceitos de conteinerização.",
+   "tipo": "obrigatorio",
+   "tipoFonte": "secao",
+   "origem": "requisitos",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "docker"
+     ],
+     "modo": "todas"
+    },
+    {
+     "tipo": "skill",
+     "ids": [
+      "containers"
+     ],
+     "modo": "todas"
+    }
+   ]
+  },
+  {
+   "id": "r11",
+   "texto": "Experiência com ferramentas de versionamento, especialmente Git.",
+   "tipo": "obrigatorio",
+   "tipoFonte": "secao",
+   "origem": "requisitos",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "versionamento",
+      "git"
+     ],
+     "modo": "alguma"
+    }
+   ]
+  },
+  {
+   "id": "r12",
+   "texto": "Familiaridade com conceitos de CI/CD e ferramentas de automação de build e deploy.",
+   "tipo": "obrigatorio",
+   "tipoFonte": "secao",
+   "origem": "requisitos",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "ci-cd"
+     ],
+     "modo": "todas"
+    }
+   ]
+  },
+  {
+   "id": "r13",
+   "texto": "Conhecimento básico ou interesse em ambientes AWS, como S3, SQS e ECS.",
+   "tipo": "obrigatorio",
+   "tipoFonte": "secao",
+   "origem": "requisitos",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "aws",
+      "s3",
+      "sqs",
+      "ecs"
+     ],
+     "modo": "alguma"
+    }
+   ]
+  },
+  {
+   "id": "r14",
+   "texto": "Interesse em ferramentas de monitoramento e observabilidade, como Grafana, Prometheus ou similares.",
+   "tipo": "obrigatorio",
+   "tipoFonte": "secao",
+   "origem": "requisitos",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "observabilidade",
+      "grafana",
+      "prometheus"
+     ],
+     "modo": "alguma"
+    }
+   ]
+  },
+  {
+   "id": "r15",
+   "texto": "Experiência com metodologias ágeis.",
+   "tipo": "desejavel",
+   "tipoFonte": "secao",
+   "origem": "diferenciais",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "agil"
+     ],
+     "modo": "todas"
+    }
+   ]
+  },
+  {
+   "id": "r16",
+   "texto": "Conhecimento em Kubernetes, Kafka ou arquitetura de microsserviços.",
+   "tipo": "desejavel",
+   "tipoFonte": "secao",
+   "origem": "diferenciais",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "kubernetes",
+      "kafka",
+      "microsservicos"
+     ],
+     "modo": "alguma"
+    }
+   ]
+  },
+  {
+   "id": "r17",
+   "texto": "Certificações ou cursos relacionados a desenvolvimento back-end, cloud ou DevOps.",
+   "tipo": "desejavel",
+   "tipoFonte": "secao",
+   "origem": "diferenciais",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "backend-dev",
+      "cloud",
+      "devops"
+     ],
+     "modo": "alguma"
+    }
+   ]
+  }
+ ],
+ "naoAvaliaveis": [],
+ "termosNaoReconhecidos": [],
+ "modelo": "remoto",
+ "eliminatorias": [],
+ "afirmativa": "CAS | Engenharia de Software JR - (Preferencialmente para Pessoas com Deficiência)",
+ "idioma": "pt"
+}

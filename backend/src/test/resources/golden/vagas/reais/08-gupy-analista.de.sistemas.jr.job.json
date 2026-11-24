@@ -1,0 +1,400 @@
+{
+ "titulo": "Analista de Sistemas Jr - Vila Olímpia",
+ "familia": "desenvolvimento",
+ "senioridade": "junior",
+ "temSecoes": true,
+ "requisitos": [
+  {
+   "id": "r1",
+   "texto": "Realizar atendimento N1 aos usuários do Ecomex, analisando incidentes, requisições e dúvidas operacionais.",
+   "tipo": "informativo",
+   "tipoFonte": "secao",
+   "origem": "atividades",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "suporte"
+     ],
+     "modo": "todas"
+    }
+   ]
+  },
+  {
+   "id": "r2",
+   "texto": "Acompanhar e tratar chamados junto ao fornecedor NSI/Ecomex.",
+   "tipo": "informativo",
+   "tipoFonte": "secao",
+   "origem": "atividades",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "service-desk"
+     ],
+     "modo": "todas"
+    }
+   ]
+  },
+  {
+   "id": "r3",
+   "texto": "Apoiar a análise e monitoração das integrações Ecomex x SAP, identificando falhas, coletando evidências e realizando o direcionamento para os times responsáveis quando necessário.",
+   "tipo": "informativo",
+   "tipoFonte": "secao",
+   "origem": "atividades",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "sap"
+     ],
+     "modo": "todas"
+    }
+   ]
+  },
+  {
+   "id": "r4",
+   "texto": "Acompanhar chamados até sua resolução e validação.",
+   "tipo": "informativo",
+   "tipoFonte": "secao",
+   "origem": "atividades",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "service-desk"
+     ],
+     "modo": "todas"
+    }
+   ]
+  },
+  {
+   "id": "r5",
+   "texto": "Produzir documentações, procedimentos e orientação aos usuários",
+   "tipo": "informativo",
+   "tipoFonte": "secao",
+   "origem": "atividades",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "documentacao"
+     ],
+     "modo": "todas"
+    }
+   ]
+  },
+  {
+   "id": "r6",
+   "texto": "Ensino Superior cursando ou completo em Sistemas de Informação, Análise e Desenvolvimento de Sistemas, Ciência da Computação, Engenharia da Computação ou áreas correlatas",
+   "tipo": "obrigatorio",
+   "tipoFonte": "secao",
+   "origem": "requisitos",
+   "componentes": [
+    {
+     "tipo": "formacao",
+     "nivelMinimo": "graduacao",
+     "area": "ti",
+     "aceitaCursando": true
+    }
+   ]
+  },
+  {
+   "id": "r7",
+   "texto": "Conhecimentos ou cursos relacionados a Comércio Exterior, Importação e Exportação",
+   "tipo": "obrigatorio",
+   "tipoFonte": "secao",
+   "origem": "requisitos",
+   "componentes": [
+    {
+     "tipo": "nao_reconhecido",
+     "termos": [
+      "Comércio Exterior",
+      "Importação",
+      "Exportação"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "r8",
+   "texto": "Conhecimentos de SAP, especialmente processos integrados com sistemas de comércio exterior",
+   "tipo": "obrigatorio",
+   "tipoFonte": "secao",
+   "origem": "requisitos",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "sap"
+     ],
+     "modo": "todas"
+    }
+   ]
+  },
+  {
+   "id": "r9",
+   "texto": "ITIL ou fundamentos de gestão de incidentes e serviços de TI",
+   "tipo": "obrigatorio",
+   "tipoFonte": "secao",
+   "origem": "requisitos",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "itil"
+     ],
+     "modo": "todas"
+    }
+   ]
+  },
+  {
+   "id": "r10",
+   "texto": "Desejável conhecimento do Ecomex/NSI",
+   "tipo": "desejavel",
+   "tipoFonte": "marcador",
+   "origem": "requisitos",
+   "componentes": [
+    {
+     "tipo": "nao_reconhecido",
+     "termos": [
+      "Ecomex",
+      "NSI"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "r11",
+   "texto": "Conhecimentos básicos sobre integrações entre sistemas (IDoc, RFC, APIs/Webservices) serão considerados diferencial.",
+   "tipo": "desejavel",
+   "tipoFonte": "marcador",
+   "origem": "requisitos",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "integracao-sistemas"
+     ],
+     "modo": "todas"
+    },
+    {
+     "tipo": "skill",
+     "ids": [
+      "apis",
+      "web-services"
+     ],
+     "modo": "alguma"
+    }
+   ]
+  },
+  {
+   "id": "r12",
+   "texto": "Capacidade de análise e troubleshooting de incidentes",
+   "tipo": "obrigatorio",
+   "tipoFonte": "secao",
+   "origem": "requisitos",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "suporte"
+     ],
+     "modo": "todas"
+    }
+   ]
+  },
+  {
+   "id": "r13",
+   "texto": "Conhecimento de processos de suporte N1 e gestão de chamados",
+   "tipo": "obrigatorio",
+   "tipoFonte": "secao",
+   "origem": "requisitos",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "suporte"
+     ],
+     "modo": "todas"
+    },
+    {
+     "tipo": "skill",
+     "ids": [
+      "service-desk"
+     ],
+     "modo": "todas"
+    }
+   ]
+  },
+  {
+   "id": "r14",
+   "texto": "Conhecimento básico de processos de Importação e Exportação",
+   "tipo": "obrigatorio",
+   "tipoFonte": "secao",
+   "origem": "requisitos",
+   "componentes": [
+    {
+     "tipo": "nao_reconhecido",
+     "termos": [
+      "Importação",
+      "Exportação"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "r15",
+   "texto": "Capacidade de conduzir homologações e produzir documentações",
+   "tipo": "obrigatorio",
+   "tipoFonte": "secao",
+   "origem": "requisitos",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "documentacao"
+     ],
+     "modo": "todas"
+    }
+   ]
+  },
+  {
+   "id": "r16",
+   "texto": "Conhecimento de integrações entre sistemas, especialmente Ecomex x SAP",
+   "tipo": "obrigatorio",
+   "tipoFonte": "secao",
+   "origem": "requisitos",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "integracao-sistemas"
+     ],
+     "modo": "todas"
+    },
+    {
+     "tipo": "skill",
+     "ids": [
+      "sap"
+     ],
+     "modo": "todas"
+    },
+    {
+     "tipo": "nao_reconhecido",
+     "termos": [
+      "Ecomex"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "r17",
+   "texto": "Ecomex / NSI desejável conhecimento básico ou experiência de utilização",
+   "tipo": "desejavel",
+   "tipoFonte": "marcador",
+   "origem": "requisitos",
+   "componentes": [
+    {
+     "tipo": "nao_reconhecido",
+     "termos": [
+      "Ecomex",
+      "NSI"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "r18",
+   "texto": "Microsoft Excel nível intermediário",
+   "tipo": "obrigatorio",
+   "tipoFonte": "secao",
+   "origem": "requisitos",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "excel"
+     ],
+     "modo": "todas"
+    }
+   ]
+  },
+  {
+   "id": "r19",
+   "texto": "Microsoft 365 (Outlook, Teams, Word e PowerPoint)",
+   "tipo": "obrigatorio",
+   "tipoFonte": "secao",
+   "origem": "requisitos",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "office"
+     ],
+     "modo": "todas"
+    }
+   ]
+  },
+  {
+   "id": "r20",
+   "texto": "Ferramentas de gestão de chamados / Service Desk",
+   "tipo": "obrigatorio",
+   "tipoFonte": "secao",
+   "origem": "requisitos",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "service-desk"
+     ],
+     "modo": "todas"
+    }
+   ]
+  },
+  {
+   "id": "r21",
+   "texto": "Conhecimentos básicos em ferramentas e tecnologias de integração (IDoc, RFC, APIs/Webservices) desejável",
+   "tipo": "desejavel",
+   "tipoFonte": "marcador",
+   "origem": "requisitos",
+   "componentes": [
+    {
+     "tipo": "skill",
+     "ids": [
+      "apis",
+      "web-services"
+     ],
+     "modo": "alguma"
+    }
+   ]
+  }
+ ],
+ "naoAvaliaveis": [
+  "Organização e acompanhamento de pendências até a resolução",
+  "Boa comunicação com usuários, áreas de negócio e fornecedores"
+ ],
+ "termosNaoReconhecidos": [
+  "Comércio Exterior",
+  "Importação",
+  "Exportação",
+  "Ecomex",
+  "NSI"
+ ],
+ "modelo": "hibrido",
+ "local": {
+  "cidade": "São Paulo",
+  "uf": "SP",
+  "trecho": "São Paulo - SPjobTypes.vacancy_type_effectiveSão Paulo - SP"
+ },
+ "pais": "Brasil",
+ "eliminatorias": [
+  {
+   "tipo": "local",
+   "rotulo": "Trabalho híbrido em São Paulo - SP",
+   "trecho": "Modelo de trabalho: Híbrido · Local de trabalho: São Paulo - SP",
+   "id": "v1"
+  }
+ ],
+ "idioma": "pt"
+}

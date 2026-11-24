@@ -1,12 +1,2 @@
-node_modules
-dist
-*.tsbuildinfo
-
-# Casos de calibração com dados pessoais (não versionar)
-fixtures/candidaturas/
-
 # Configuração local do Claude Code
 .claude/settings.local.json
-
-# CVs e perfis pessoais usados como fixtures locais (não versionar)
-fixtures/*.pdf
